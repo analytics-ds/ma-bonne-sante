@@ -1,0 +1,54 @@
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col-about">
+                <a href="{{ "/" | relURL }}" class="footer-logo">
+                    {{ with .Site.Params.logo }}
+                    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" width="32" height="32">
+                    {{ end }}
+                    <span>{{ .Site.Title }}</span>
+                </a>
+                <p>{{ .Site.Params.description }}</p>
+            </div>
+            <div class="footer-col">
+                <h4>Domaines</h4>
+                <ul>
+                    {{ range .Site.Params.domaines }}
+                    {{ $slug := . | urlize }}
+                    {{ $tax := index $.Site.Taxonomies.categories $slug }}
+                    {{ if $tax }}
+                    <li><a href="{{ $tax.Page.RelPermalink }}">{{ $tax.Page.Title }}</a></li>
+                    {{ else }}
+                    <li><a href="{{ printf "/categories/%s/" $slug | relURL }}">{{ . }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Besoins</h4>
+                <ul>
+                    {{ range .Site.Params.besoins }}
+                    {{ $slug := . | urlize }}
+                    {{ $tax := index $.Site.Taxonomies.categories $slug }}
+                    {{ if $tax }}
+                    <li><a href="{{ $tax.Page.RelPermalink }}">{{ $tax.Page.Title }}</a></li>
+                    {{ else }}
+                    <li><a href="{{ printf "/categories/%s/" $slug | relURL }}">{{ . }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="{{ "/" | relURL }}">Accueil</a></li>
+                    <li><a href="{{ "blog/" | relURL }}">Blog</a></li>
+                    <li><a href="{{ "plan-du-site/" | relURL }}">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. Tous droits reserves.</p>
+        </div>
+    </div>
+</footer>

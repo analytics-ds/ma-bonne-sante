@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<article class="single-article">
+    <header class="article-header">
+        <div class="container">
+            <div class="article-meta">
+                {{ with .Params.categories }}
+                <a href="{{ "/categories/" | relURL }}{{ index . 0 | urlize }}/" class="article-category">{{ index . 0 }}</a>
+                {{ end }}
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+                <span class="reading-time">{{ .ReadingTime }} min de lecture</span>
+            </div>
+            <h1>{{ .Title }}</h1>
+            {{ with .Description }}
+            <p class="article-description">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.author }}
+            <div class="article-author">
+                <span class="author-label">Par</span>
+                <span class="author-name">{{ . }}</span>
+            </div>
+            {{ end }}
+            <div class="article-tags">
+                {{ range .Params.tags }}
+                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </header>
+
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="article-hero-image" loading="lazy">
+    {{ end }}
+
+    <div class="article-content">
+        <div class="container container-narrow">
+            {{ .Content }}
+
+            <!-- Bloc auteur -->
+            <div class="author-block">
+                <div class="author-block-avatar">
+                    <span class="author-block-avatar-initials">{{ substr (default "LR" .Params.author) 0 1 }}{{ substr (default "LR" .Params.author) (sub (len (default "LR" .Params.author)) 1) 1 }}</span>
+                </div>
+                <div class="author-block-info">
+                    <h4>{{ .Params.author | default .Site.Params.author_name }}</h4>
+                    <p class="author-job">{{ .Site.Params.author_job_title }}</p>
+                    <p>{{ .Site.Params.author_bio }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="article-footer">
+        <div class="container container-narrow">
+            <nav class="article-nav">
+                {{ with .PrevInSection }}
+                <a href="{{ .RelPermalink }}" class="nav-prev">
+                    <span class="nav-label">Article precedent</span>
+                    <span class="nav-title">{{ .Title }}</span>
+                </a>
+                {{ end }}
+                {{ with .NextInSection }}
+                <a href="{{ .RelPermalink }}" class="nav-next">
+                    <span class="nav-label">Article suivant</span>
+                    <span class="nav-title">{{ .Title }}</span>
+                </a>
+                {{ end }}
+            </nav>
+        </div>
+    </footer>
+</article>
+
+{{ end }}

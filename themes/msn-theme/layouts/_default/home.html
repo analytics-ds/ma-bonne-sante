@@ -1,0 +1,115 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">Sante naturelle et bien-etre</span>
+        <h1>Meilleures Solutions Naturelles</h1>
+        <p class="hero-description">Aromatherapie, gemmotherapie, Huiles Essentielles et complements alimentaires : des guides experts pour prendre soin de soi au naturel.</p>
+        <a href="{{ "blog/" | relURL }}" class="btn-primary">Decouvrir nos articles</a>
+    </div>
+</section>
+
+<!-- Categories par domaine -->
+<section class="categories-section">
+    <div class="container">
+        <h2 class="section-title">Explorer par domaine</h2>
+        <p class="section-subtitle">Plongez dans l'univers des therapies naturelles</p>
+        <div class="grid-categories grid-domaines">
+            {{ $icons := dict "Aromatherapie" "💧" "Huiles Essentielles" "🌿" "Huiles Vegetales" "🫒" "Gemmotherapie" "🌱" "Complements Alimentaires" "💊" }}
+            {{ $images := dict "Aromatherapie" "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&h=350&fit=crop" "Huiles Essentielles" "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=350&fit=crop" "Huiles Vegetales" "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=350&fit=crop" "Gemmotherapie" "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=500&h=350&fit=crop" "Complements Alimentaires" "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=350&fit=crop" }}
+            {{ range $name := .Site.Params.domaines }}
+                {{ $icon := index $icons $name | default "🌿" }}
+                {{ $img := index $images $name }}
+                {{ $found := false }}
+                {{ range $key, $tax := $.Site.Taxonomies.categories }}
+                    {{ if eq (lower $name) (lower $tax.Page.Title) }}
+                    {{ $found = true }}
+                <a href="{{ $tax.Page.RelPermalink }}" class="category-card-domaine" {{ with $img }}style="--bg-image: url('{{ . }}')"{{ end }}>
+                    <div class="card-domaine-overlay"></div>
+                    <div class="card-domaine-content">
+                        <span class="card-domaine-icon">{{ $icon }}</span>
+                        <h3>{{ $tax.Page.Title }}</h3>
+                        <span class="category-count">{{ $tax.Count }} {{ if gt $tax.Count 1 }}articles{{ else }}article{{ end }}</span>
+                    </div>
+                </a>
+                    {{ end }}
+                {{ end }}
+                {{ if not $found }}
+                <a href="{{ printf "/categories/%s/" ($name | urlize) | relURL }}" class="category-card-domaine" {{ with $img }}style="--bg-image: url('{{ . }}')"{{ end }}>
+                    <div class="card-domaine-overlay"></div>
+                    <div class="card-domaine-content">
+                        <span class="card-domaine-icon">{{ $icon }}</span>
+                        <h3>{{ $name }}</h3>
+                        <span class="category-count">0 article</span>
+                    </div>
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Categories par besoin -->
+<section class="categories-section">
+    <div class="container">
+        <h2 class="section-title">Explorer par besoin</h2>
+        <p class="section-subtitle">Trouvez la solution naturelle adaptee a votre situation</p>
+        <div class="grid-categories grid-besoins">
+            {{ $besoin_icons := dict "Immunite et Defenses" "🛡️" "Sommeil et Detente" "🌙" "Douleurs et Articulations" "🦴" "Bien-etre Feminin" "🌸" "Digestion et Detox" "🍃" "Minceur et Drainage" "⚖️" "Beaute et Soins" "✨" "Stress et Equilibre emotionnel" "🧘" "Respiration" "🌬️" }}
+            {{ $besoin_colors := dict "Immunite et Defenses" "#E8F5E9" "Sommeil et Detente" "#EDE7F6" "Douleurs et Articulations" "#FFF3E0" "Bien-etre Feminin" "#FCE4EC" "Digestion et Detox" "#E0F2F1" "Minceur et Drainage" "#F1F8E9" "Beaute et Soins" "#FFF8E1" "Stress et Equilibre emotionnel" "#E3F2FD" "Respiration" "#E8EAF6" }}
+            {{ range $name := .Site.Params.besoins }}
+                {{ $icon := index $besoin_icons $name | default "🌿" }}
+                {{ $color := index $besoin_colors $name | default "#F2F0EA" }}
+                {{ $found := false }}
+                {{ range $key, $tax := $.Site.Taxonomies.categories }}
+                    {{ if eq (lower $name) (lower $tax.Page.Title) }}
+                    {{ $found = true }}
+                <a href="{{ $tax.Page.RelPermalink }}" class="category-card-besoin" style="--card-accent: {{ $color }}">
+                    <span class="card-besoin-icon">{{ $icon }}</span>
+                    <h3>{{ $tax.Page.Title }}</h3>
+                    <span class="category-count">{{ $tax.Count }} {{ if gt $tax.Count 1 }}articles{{ else }}article{{ end }}</span>
+                </a>
+                    {{ end }}
+                {{ end }}
+                {{ if not $found }}
+                <a href="{{ printf "/categories/%s/" ($name | urlize) | relURL }}" class="category-card-besoin" style="--card-accent: {{ $color }}">
+                    <span class="card-besoin-icon">{{ $icon }}</span>
+                    <h3>{{ $name }}</h3>
+                    <span class="category-count">0 article</span>
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Latest Articles Section -->
+<section class="latest-section">
+    <div class="container">
+        <h2 class="section-title">Derniers articles</h2>
+        <p class="section-subtitle">Nos publications les plus recentes</p>
+        <div class="grid-articles">
+            {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+            <article class="article-card">
+                {{ with .Params.image }}
+                <img src="{{ . }}" alt="{{ $.Title }}" class="article-card-image" loading="lazy">
+                {{ end }}
+                <div class="article-card-body">
+                    <div class="article-meta">
+                        {{ with .Params.categories }}
+                        <span class="article-category">{{ index . 0 }}</span>
+                        {{ end }}
+                        <time>{{ .Date.Format "2 January 2006" }}</time>
+                    </div>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">Lire la suite</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

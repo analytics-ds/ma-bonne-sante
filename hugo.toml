@@ -1,0 +1,47 @@
+baseURL = "https://meilleuresolutionnaturelle.fr/"
+languageCode = "fr"
+title = "Meilleures Solutions Naturelles"
+theme = "msn-theme"
+paginate = 12
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Menu principal (Accueil + Blog, les dropdowns Domaines/Besoins sont geres dans le header partial)
+[[menus.main]]
+  name = "Accueil"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
+
+[params]
+  description = "Guide expert en sante naturelle : aromatherapie, gemmotherapie, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin, validees par la science."
+  author_name = "La Redaction"
+  author_url = "https://meilleuresolutionnaturelle.fr/"
+  author_job_title = "Equipe editoriale"
+  author_bio = "L'equipe editoriale de Meilleures Solutions Naturelles reunit des passionnes de sante naturelle. Chaque article est documente a partir de sources scientifiques fiables et redige dans le respect des bonnes pratiques YMYL."
+  logo = "/images/logo.png"
+
+  # Categories par domaine
+  domaines = ["Aromatherapie", "Huiles Essentielles", "Huiles Vegetales", "Gemmotherapie", "Complements Alimentaires"]
+
+  # Categories par besoin
+  besoins = ["Immunite et Defenses", "Sommeil et Detente", "Douleurs et Articulations", "Bien-etre Feminin", "Digestion et Detox", "Minceur et Drainage", "Beaute et Soins", "Stress et Equilibre emotionnel", "Respiration"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
