@@ -31,7 +31,7 @@ paginate = 12
   domaines = ["Aromatherapie", "Huiles Essentielles", "Huiles Vegetales", "Gemmotherapie", "Complements Alimentaires"]
 
   # Categories par besoin
-  besoins = ["Immunite et Defenses", "Sommeil et Detente", "Douleurs et Articulations", "Bien-etre Feminin", "Digestion et Detox", "Minceur et Drainage", "Beaute et Soins", "Stress et Equilibre emotionnel", "Respiration"]
+  besoins = ["Immunite et Defenses", "Sommeil et Detente", "Douleurs et Articulations", "Bien-etre Feminin", "Digestion et Detox", "Minceur et Drainage", "Beaute et Soins", "Stress et Equilibre emotionnel", "Respiration", "Nuisibles"]
 
 [markup]
   [markup.goldmark]

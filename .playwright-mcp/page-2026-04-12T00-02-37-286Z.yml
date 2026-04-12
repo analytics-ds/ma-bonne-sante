@@ -1,0 +1,254 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meilleures Solutions Naturelles Meilleures Solutions Naturelles" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Meilleures Solutions Naturelles" [ref=e5]
+        - generic [ref=e6]: Meilleures Solutions Naturelles
+      - navigation [ref=e7]:
+        - link "Accueil" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - button "Domaines" [ref=e10] [cursor=pointer]:
+          - text: Domaines
+          - img [ref=e11]
+        - button "Besoins" [ref=e14] [cursor=pointer]:
+          - text: Besoins
+          - img [ref=e15]
+        - link "Blog" [ref=e17] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/blog/
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Sante naturelle et bien-etre
+      - heading "Meilleures Solutions Naturelles" [level=1] [ref=e22]
+      - paragraph [ref=e23]: "Aromatherapie, gemmotherapie, Huiles Essentielles et complements alimentaires : des guides experts pour prendre soin de soi au naturel."
+      - link "Decouvrir nos articles" [ref=e24] [cursor=pointer]:
+        - /url: /meilleures-solutions-naturelles/blog/
+    - generic [ref=e26]:
+      - heading "Explorer par domaine" [level=2] [ref=e27]
+      - paragraph [ref=e28]: Plongez dans l'univers des therapies naturelles
+      - generic [ref=e29]:
+        - link "💧 Aromatherapie 1 article" [ref=e30] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/aromatherapie/
+          - generic [ref=e32]:
+            - generic [ref=e33]: 💧
+            - heading "Aromatherapie" [level=3] [ref=e34]
+            - text: 1 article
+        - link "🌿 Huiles Essentielles 1 article" [ref=e35] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/huiles-essentielles/
+          - generic [ref=e37]:
+            - generic [ref=e38]: 🌿
+            - heading "Huiles Essentielles" [level=3] [ref=e39]
+            - text: 1 article
+        - link "🫒 Huiles Vegetales 1 article" [ref=e40] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/huiles-vegetales/
+          - generic [ref=e42]:
+            - generic [ref=e43]: 🫒
+            - heading "Huiles Vegetales" [level=3] [ref=e44]
+            - text: 1 article
+        - link "🌱 Gemmotherapie 1 article" [ref=e45] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/gemmotherapie/
+          - generic [ref=e47]:
+            - generic [ref=e48]: 🌱
+            - heading "Gemmotherapie" [level=3] [ref=e49]
+            - text: 1 article
+        - link "💊 Complements Alimentaires 1 article" [ref=e50] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/complements-alimentaires/
+          - generic [ref=e52]:
+            - generic [ref=e53]: 💊
+            - heading "Complements Alimentaires" [level=3] [ref=e54]
+            - text: 1 article
+    - generic [ref=e56]:
+      - heading "Explorer par besoin" [level=2] [ref=e57]
+      - paragraph [ref=e58]: Trouvez la solution naturelle adaptee a votre situation
+      - generic [ref=e59]:
+        - link "🛡️ Immunite Et Defenses 1 article" [ref=e60] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/immunite-et-defenses/
+          - generic [ref=e61]: 🛡️
+          - heading "Immunite Et Defenses" [level=3] [ref=e62]
+          - text: 1 article
+        - link "🌙 Sommeil Et Detente 1 article" [ref=e63] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/sommeil-et-detente/
+          - generic [ref=e64]: 🌙
+          - heading "Sommeil Et Detente" [level=3] [ref=e65]
+          - text: 1 article
+        - link "🦴 Douleurs Et Articulations 1 article" [ref=e66] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/douleurs-et-articulations/
+          - generic [ref=e67]: 🦴
+          - heading "Douleurs Et Articulations" [level=3] [ref=e68]
+          - text: 1 article
+        - link "🌸 Bien-Etre Feminin 1 article" [ref=e69] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/bien-etre-feminin/
+          - generic [ref=e70]: 🌸
+          - heading "Bien-Etre Feminin" [level=3] [ref=e71]
+          - text: 1 article
+        - link "🍃 Digestion Et Detox 1 article" [ref=e72] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/digestion-et-detox/
+          - generic [ref=e73]: 🍃
+          - heading "Digestion Et Detox" [level=3] [ref=e74]
+          - text: 1 article
+        - link "⚖️ Minceur Et Drainage 1 article" [ref=e75] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/minceur-et-drainage/
+          - generic [ref=e76]: ⚖️
+          - heading "Minceur Et Drainage" [level=3] [ref=e77]
+          - text: 1 article
+        - link "✨ Beaute Et Soins 1 article" [ref=e78] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/beaute-et-soins/
+          - generic [ref=e79]: ✨
+          - heading "Beaute Et Soins" [level=3] [ref=e80]
+          - text: 1 article
+        - link "🧘 Stress Et Equilibre Emotionnel 1 article" [ref=e81] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/stress-et-equilibre-emotionnel/
+          - generic [ref=e82]: 🧘
+          - heading "Stress Et Equilibre Emotionnel" [level=3] [ref=e83]
+          - text: 1 article
+        - link "🌬️ Respiration 1 article" [ref=e84] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/categories/respiration/
+          - generic [ref=e85]: 🌬️
+          - heading "Respiration" [level=3] [ref=e86]
+          - text: 1 article
+    - generic [ref=e88]:
+      - heading "Derniers articles" [level=2] [ref=e89]
+      - paragraph [ref=e90]: Nos publications les plus recentes
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - img "Meilleures Solutions Naturelles" [ref=e93]
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: Immunite et Defenses
+              - time [ref=e97]: 20 March 2026
+            - heading "Comment renforcer son immunite avec des solutions naturelles" [level=3] [ref=e98]:
+              - link "Comment renforcer son immunite avec des solutions naturelles" [ref=e99] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/blog/renforcer-immunite-solutions-naturelles/
+            - paragraph [ref=e100]: "Decouvrez les meilleures solutions naturelles pour soutenir le systeme immunitaire : Huiles Essentielles, gemmotherapie, propolis et habitudes de vie."
+            - link "Lire la suite →" [ref=e101] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/renforcer-immunite-solutions-naturelles/
+        - article [ref=e102]:
+          - img "Meilleures Solutions Naturelles" [ref=e103]
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]: Sommeil et Detente
+              - time [ref=e107]: 18 March 2026
+            - 'heading "Sommeil et detente : les meilleures solutions naturelles" [level=3] [ref=e108]':
+              - 'link "Sommeil et detente : les meilleures solutions naturelles" [ref=e109] [cursor=pointer]':
+                - /url: /meilleures-solutions-naturelles/blog/solutions-naturelles-sommeil-detente/
+            - paragraph [ref=e110]: "Huiles Essentielles, gemmotherapie et Fleurs de Bach : decouvrez les solutions naturelles les plus efficaces pour retrouver un sommeil de qualite et favoriser la detente."
+            - link "Lire la suite →" [ref=e111] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/solutions-naturelles-sommeil-detente/
+        - article [ref=e112]:
+          - img "Meilleures Solutions Naturelles" [ref=e113]
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: Douleurs et Articulations
+              - time [ref=e117]: 16 March 2026
+            - heading "Comment soulager les douleurs articulaires naturellement" [level=3] [ref=e118]:
+              - link "Comment soulager les douleurs articulaires naturellement" [ref=e119] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/blog/soulager-douleurs-articulaires-naturellement/
+            - paragraph [ref=e120]: "Gaultherie, cassis, curcuma : tour d'horizon des solutions naturelles qui contribuent au confort articulaire et a la mobilite au quotidien."
+            - link "Lire la suite →" [ref=e121] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/soulager-douleurs-articulaires-naturellement/
+        - article [ref=e122]:
+          - img "Meilleures Solutions Naturelles" [ref=e123]
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]: Aromatherapie
+              - time [ref=e127]: 15 March 2026
+            - 'heading "Aromatherapie : guide complet pour bien debuter" [level=3] [ref=e128]':
+              - 'link "Aromatherapie : guide complet pour bien debuter" [ref=e129] [cursor=pointer]':
+                - /url: /meilleures-solutions-naturelles/blog/aromatherapie-guide-debutant/
+            - paragraph [ref=e130]: Decouvrez les bases de l'aromatherapie scientifique, les precautions essentielles et les Huiles Essentielles incontournables pour commencer en toute securite.
+            - link "Lire la suite →" [ref=e131] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/aromatherapie-guide-debutant/
+        - article [ref=e132]:
+          - img "Meilleures Solutions Naturelles" [ref=e133]
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Bien-etre Feminin
+              - time [ref=e137]: 14 March 2026
+            - 'heading "Bien-etre feminin : les solutions naturelles a chaque etape de la vie" [level=3] [ref=e138]':
+              - 'link "Bien-etre feminin : les solutions naturelles a chaque etape de la vie" [ref=e139] [cursor=pointer]':
+                - /url: /meilleures-solutions-naturelles/blog/bien-etre-feminin-solutions-naturelles/
+            - paragraph [ref=e140]: "Cycle menstruel, grossesse, menopause : decouvrez les solutions naturelles adaptees au bien-etre feminin, de l'aromatherapie a la gemmotherapie."
+            - link "Lire la suite →" [ref=e141] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/bien-etre-feminin-solutions-naturelles/
+        - article [ref=e142]:
+          - img "Meilleures Solutions Naturelles" [ref=e143]
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: Huiles Essentielles
+              - time [ref=e147]: 12 March 2026
+            - heading "Les Huiles Essentielles indispensables pour passer l'hiver sereinement" [level=3] [ref=e148]:
+              - link "Les Huiles Essentielles indispensables pour passer l'hiver sereinement" [ref=e149] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/blog/huiles-essentielles-indispensables-hiver/
+            - paragraph [ref=e150]: Decouvrez les Huiles Essentielles les plus utiles pour renforcer les defenses naturelles, soulager les maux hivernaux et retrouver du confort pendant la saison froide.
+            - link "Lire la suite →" [ref=e151] [cursor=pointer]:
+              - /url: /meilleures-solutions-naturelles/blog/huiles-essentielles-indispensables-hiver/
+  - contentinfo [ref=e152]:
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - link "Meilleures Solutions Naturelles Meilleures Solutions Naturelles" [ref=e156] [cursor=pointer]:
+            - /url: /
+            - img "Meilleures Solutions Naturelles" [ref=e157]
+            - generic [ref=e158]: Meilleures Solutions Naturelles
+          - paragraph [ref=e159]: "Guide expert en sante naturelle : aromatherapie, gemmotherapie, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin, validees par la science."
+        - generic [ref=e160]:
+          - heading "Domaines" [level=4] [ref=e161]
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - link "Aromatherapie" [ref=e164] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/aromatherapie/
+            - listitem [ref=e165]:
+              - link "Huiles Essentielles" [ref=e166] [cursor=pointer]:
+                - /url: /categories/huiles-essentielles/
+            - listitem [ref=e167]:
+              - link "Huiles Vegetales" [ref=e168] [cursor=pointer]:
+                - /url: /categories/huiles-vegetales/
+            - listitem [ref=e169]:
+              - link "Gemmotherapie" [ref=e170] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/gemmotherapie/
+            - listitem [ref=e171]:
+              - link "Complements Alimentaires" [ref=e172] [cursor=pointer]:
+                - /url: /categories/complements-alimentaires/
+        - generic [ref=e173]:
+          - heading "Besoins" [level=4] [ref=e174]
+          - list [ref=e175]:
+            - listitem [ref=e176]:
+              - link "Immunite et Defenses" [ref=e177] [cursor=pointer]:
+                - /url: /categories/immunite-et-defenses/
+            - listitem [ref=e178]:
+              - link "Sommeil et Detente" [ref=e179] [cursor=pointer]:
+                - /url: /categories/sommeil-et-detente/
+            - listitem [ref=e180]:
+              - link "Douleurs et Articulations" [ref=e181] [cursor=pointer]:
+                - /url: /categories/douleurs-et-articulations/
+            - listitem [ref=e182]:
+              - link "Bien-etre Feminin" [ref=e183] [cursor=pointer]:
+                - /url: /categories/bien-etre-feminin/
+            - listitem [ref=e184]:
+              - link "Digestion et Detox" [ref=e185] [cursor=pointer]:
+                - /url: /categories/digestion-et-detox/
+            - listitem [ref=e186]:
+              - link "Minceur et Drainage" [ref=e187] [cursor=pointer]:
+                - /url: /categories/minceur-et-drainage/
+            - listitem [ref=e188]:
+              - link "Beaute et Soins" [ref=e189] [cursor=pointer]:
+                - /url: /categories/beaute-et-soins/
+            - listitem [ref=e190]:
+              - link "Stress et Equilibre emotionnel" [ref=e191] [cursor=pointer]:
+                - /url: /categories/stress-et-equilibre-emotionnel/
+            - listitem [ref=e192]:
+              - link "Respiration" [ref=e193] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/respiration/
+        - generic [ref=e194]:
+          - heading "Navigation" [level=4] [ref=e195]
+          - list [ref=e196]:
+            - listitem [ref=e197]:
+              - link "Accueil" [ref=e198] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e199]:
+              - link "Blog" [ref=e200] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/blog/
+            - listitem [ref=e201]:
+              - link "Plan du site" [ref=e202] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/plan-du-site/
+      - paragraph [ref=e204]: © 2026 Meilleures Solutions Naturelles. Tous droits reserves.

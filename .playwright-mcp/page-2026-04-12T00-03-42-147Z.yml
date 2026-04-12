@@ -1,0 +1,300 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meilleures Solutions Naturelles Meilleures Solutions Naturelles" [ref=e4] [cursor=pointer]:
+        - /url: /meilleures-solutions-naturelles/
+        - img "Meilleures Solutions Naturelles" [ref=e5]
+        - generic [ref=e6]: Meilleures Solutions Naturelles
+      - navigation [ref=e7]:
+        - link "Accueil" [ref=e8] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/
+        - button "Domaines" [ref=e10] [cursor=pointer]:
+          - text: Domaines
+          - img [ref=e11]
+        - button "Besoins" [ref=e14] [cursor=pointer]:
+          - text: Besoins
+          - img [ref=e15]
+        - link "Blog" [ref=e17] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/blog/
+  - main [ref=e18]:
+    - article [ref=e19]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - link "Aromatherapie" [ref=e23] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/categories/aromatherapie/
+          - time [ref=e24]: 12 April 2026
+          - generic [ref=e25]: 9 min de lecture
+        - heading "Quelles sont les meilleures marques de spray anti-moustique naturel ?" [level=1] [ref=e26]
+        - paragraph [ref=e27]: "Comparatif des meilleures marques de spray anti-moustique naturel : efficacité, durée de protection et composition analysées pour bien choisir."
+        - generic [ref=e28]: Par La Rédaction
+        - generic [ref=e29]:
+          - link "#anti-moustique" [ref=e30] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/tags/anti-moustique/
+          - link "#spray naturel" [ref=e31] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/tags/spray-naturel/
+          - link "#comparatif" [ref=e32] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/tags/comparatif/
+          - link "#huiles essentielles" [ref=e33] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/tags/huiles-essentielles/
+          - link "#été" [ref=e34] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/tags/%C3%A9t%C3%A9/
+      - img "Quelles sont les meilleures marques de spray anti-moustique naturel ?" [ref=e35]
+      - generic [ref=e37]:
+        - blockquote [ref=e38]:
+          - paragraph [ref=e39]:
+            - strong [ref=e40]: "En bref :"
+          - list [ref=e41]:
+            - listitem [ref=e42]: Les sprays anti-moustique naturels utilisent des actifs comme le citriodiol ou les Huiles Essentielles d’eucalyptus citronné, avec une efficacité de 1 à 8 heures selon les marques
+            - listitem [ref=e43]: Pranarôm Aromapic offre la durée de protection la plus longue du segment naturel (7 à 8 heures) grâce à une synergie d’Huiles Essentielles bio certifiées HEBBD
+            - listitem [ref=e44]: Les 4 marques comparées (Pranarôm, Puressentiel, Care Plus, MoustiCare) sont toutes formulées sans DEET ni insecticide de synthèse
+            - listitem [ref=e45]: Le citriodiol (PMD) est le seul actif naturel reconnu par l’OMS comme aussi efficace que les répulsifs chimiques
+        - heading "Sommaire" [level=2] [ref=e46]
+        - list [ref=e47]:
+          - listitem [ref=e48]:
+            - link "Pourquoi choisir un spray anti-moustique naturel plutôt qu’un répulsif chimique ?" [ref=e49] [cursor=pointer]:
+              - /url: "#pourquoi-choisir"
+          - listitem [ref=e50]:
+            - link "Quels actifs naturels sont réellement efficaces contre les moustiques ?" [ref=e51] [cursor=pointer]:
+              - /url: "#actifs-naturels"
+          - listitem [ref=e52]:
+            - link "Comparatif des 4 meilleures marques de spray anti-moustique naturel" [ref=e53] [cursor=pointer]:
+              - /url: "#comparatif-marques"
+          - listitem [ref=e54]:
+            - 'link "Tableau comparatif : Pranarôm vs Puressentiel vs Care Plus vs MoustiCare" [ref=e55] [cursor=pointer]':
+              - /url: "#tableau-comparatif"
+          - listitem [ref=e56]:
+            - link "Quel spray anti-moustique naturel choisir selon votre profil ?" [ref=e57] [cursor=pointer]:
+              - /url: "#choisir-selon-profil"
+          - listitem [ref=e58]:
+            - link "Comment bien utiliser un spray anti-moustique naturel pour une efficacité maximale ?" [ref=e59] [cursor=pointer]:
+              - /url: "#conseils-utilisation"
+          - listitem [ref=e60]:
+            - link "Questions fréquentes" [ref=e61] [cursor=pointer]:
+              - /url: "#questions-frequentes"
+        - heading "Pourquoi choisir un spray anti-moustique naturel plutôt qu’un répulsif chimique ?" [level=2] [ref=e62]
+        - paragraph [ref=e63]: Le spray anti-moustique naturel est devenu une alternative incontournable pour se protéger des piqûres sans recourir aux formules chimiques. Face à la multiplication des marques et des formulations, il est difficile de savoir laquelle choisir.
+        - paragraph [ref=e64]: Les répulsifs chimiques classiques contiennent des actifs comme le DEET ou l’icaridine. Le DEET, utilisé depuis les années 1950, offre une protection longue (jusqu’à 10 heures à 50% de concentration) mais fait l’objet de préoccupations croissantes.
+        - paragraph [ref=e65]: "Plusieurs études pointent des effets indésirables potentiels : irritations cutanées, risques neurologiques en cas d’utilisation prolongée et toxicité pour les organismes aquatiques. Le DEET est notamment déconseillé pour les femmes enceintes et les enfants de moins de 2 ans par l’ANSES."
+        - paragraph [ref=e66]: Les sprays anti-moustique naturels répondent à ces préoccupations. Formulés à base d’Huiles Essentielles ou de citriodiol, ils offrent une protection efficace sans insecticide de synthèse. Leur profil de tolérance est généralement meilleur, et leur impact environnemental est réduit.
+        - paragraph [ref=e67]: Le marché des répulsifs naturels représente aujourd’hui environ 35% des ventes de produits anti-moustique en France, une part en progression constante depuis 5 ans.
+        - heading "Quels actifs naturels sont réellement efficaces contre les moustiques ?" [level=2] [ref=e68]
+        - 'heading "Le citriodiol (PMD) : le plus efficace des actifs naturels" [level=3] [ref=e69]'
+        - paragraph [ref=e70]: Le citriodiol, aussi appelé PMD (p-menthane-3,8-diol), est une molécule naturellement présente dans l’eucalyptus citronné. C’est le seul actif d’origine naturelle reconnu par l’Organisation mondiale de la santé comme équivalent aux répulsifs chimiques en termes d’efficacité.
+        - paragraph [ref=e71]: À une concentration de 20 à 30%, le citriodiol assure une protection de 4 à 6 heures contre les moustiques, y compris le moustique tigre. Il agit en créant une barrière olfactive qui perturbe les récepteurs sensoriels de l’insecte.
+        - blockquote [ref=e72]:
+          - paragraph [ref=e73]:
+            - text: “Le PMD, dérivé de l’huile d’eucalyptus citronné, est le seul répulsif d’origine végétale recommandé par l’OMS pour la prévention des piqûres de moustiques vecteurs de maladies.”
+            - emphasis [ref=e74]: Organisation mondiale de la santé, Recommandations sur l’utilisation des répulsifs, 2023
+        - 'heading "Les Huiles Essentielles répulsives : eucalyptus citronné, géranium, citronnelle" [level=3] [ref=e75]'
+        - paragraph [ref=e76]: Plusieurs Huiles Essentielles possèdent des propriétés répulsives scientifiquement documentées. L’eucalyptus citronné (Corymbia citriodora) est la plus étudiée, grâce à sa richesse naturelle en citronellal.
+        - paragraph [ref=e77]: Le géranium rosat (Pelargonium graveolens) repousse les moustiques par sa teneur en géraniol. La citronnelle de Java (Cymbopogon winterianus) est l’une des plus connues du grand public, bien que sa durée d’action seule soit limitée (environ 1 heure).
+        - paragraph [ref=e78]:
+          - text: La différence fondamentale entre une Huile Essentielle utilisée seule et une formulation complète réside dans la synergie. Un spray combinant plusieurs Huiles Essentielles bio dans une
+          - link "formulation d’aromathérapie scientifique" [ref=e79] [cursor=pointer]:
+            - /url: https://analytics-ds.github.io/meilleures-solutions-naturelles/blog/aromatherapie-guide-debutant/
+          - text: optimise la durée et l’intensité de la protection naturelle.
+        - heading "Comparatif des 4 meilleures marques de spray anti-moustique naturel" [level=2] [ref=e80]
+        - paragraph [ref=e81]: Les 4 marques retenues dans ce comparatif ont été sélectionnées sur la base de leur notoriété, de leur disponibilité en pharmacie et parapharmacie, et des tests indépendants publiés. Les critères d’évaluation portent sur la composition, la durée de protection, l’adaptabilité aux peaux sensibles et aux enfants, et le rapport qualité-prix.
+        - 'heading "Pranarôm Aromapic : l’expertise aromathérapie au service de la protection" [level=3] [ref=e82]'
+        - paragraph [ref=e83]:
+          - text: Pranarôm est un laboratoire spécialisé en aromathérapie scientifique depuis plus de 30 ans. Sa gamme Aromapic repose sur une synergie d’
+          - link "Huiles Essentielles soigneusement sélectionnées" [ref=e84] [cursor=pointer]:
+            - /url: https://analytics-ds.github.io/meilleures-solutions-naturelles/blog/huiles-essentielles-indispensables-hiver/
+          - text: certifiées bio et HEBBD (Huile Essentielle Botaniquement et Biochimiquement Définie).
+        - paragraph [ref=e85]: Le spray corporel Aromapic combine l’eucalyptus citronné, le géranium et la citronnelle dans une formulation brevetée. La durée de protection atteint 7 à 8 heures, la plus longue du segment naturel selon les tests indépendants de Selectos (2026).
+        - paragraph [ref=e86]: La certification HEBBD garantit la traçabilité de chaque lot, du champ de culture au flacon. Cette rigueur est un marqueur de qualité dans le domaine de l’aromathérapie, où la composition chimique de l’Huile Essentielle varie selon l’origine géographique, la méthode de distillation et le chemotype de la plante.
+        - 'heading "Puressentiel Anti-Pique : la notoriété grand public" [level=3] [ref=e87]'
+        - paragraph [ref=e88]: Puressentiel est la marque la plus visible en grande distribution et en pharmacie. Son spray Anti-Pique combine 11 Huiles Essentielles, dont l’eucalyptus citronné, la citronnelle et la lavande. La formule est présentée comme 99,9% d’origine naturelle.
+        - paragraph [ref=e89]: La durée de protection annoncée est de 7 heures en zone tempérée. La gamme est accessible en termes de prix, avec un positionnement grand public.
+        - paragraph [ref=e90]: Le nombre élevé d’Huiles Essentielles dans la formulation peut toutefois être un inconvénient pour les peaux sensibles ou réactives. Plus il y a d’actifs, plus le risque de réaction individuelle augmente.
+        - 'heading "Care Plus Natural : le choix des voyageurs" [level=3] [ref=e91]'
+        - paragraph [ref=e92]: Care Plus est une marque néerlandaise spécialisée dans la protection anti-insectes pour les voyageurs. Son spray Natural repose sur le citriodiol à 30%, l’actif naturel le plus concentré du comparatif.
+        - paragraph [ref=e93]: La durée de protection se situe entre 4 et 6 heures. Le spray est efficace contre le moustique tigre et d’autres insectes piqueurs. Son format 100 ml est adapté au voyage.
+        - paragraph [ref=e94]: Le citriodiol étant un actif unique (et non une synergie), la formulation est plus simple et généralement mieux tolérée par les peaux sensibles. En revanche, la durée de protection reste inférieure à celle des formulations multi-Huiles Essentielles les plus abouties.
+        - 'heading "MoustiCare : la gamme familiale complète" [level=3] [ref=e95]'
+        - paragraph [ref=e96]: "MoustiCare se distingue par l’étendue de sa gamme : sprays zone tempérée, sprays zone infestée, rollers, et une ligne dédiée aux enfants dès 6 mois (MoustiKids). Les formulations sont à base d’Huiles Essentielles et de géraniol."
+        - paragraph [ref=e97]: La durée de protection varie de 4 à 6 heures selon le produit. Le prix d’entrée est le plus bas du comparatif, avec des formats économiques (125 ml).
+        - paragraph [ref=e98]: La gamme MoustiKids est un vrai atout pour les familles, avec une formulation spécifiquement étudiée pour les jeunes enfants. La contrepartie est une durée de protection plus courte (4 heures pour le spray enfant).
+        - 'heading "Tableau comparatif : Pranarôm vs Puressentiel vs Care Plus vs MoustiCare" [level=2] [ref=e99]'
+        - table [ref=e100]:
+          - rowgroup [ref=e101]:
+            - row "Critère Pranarôm Aromapic Puressentiel Anti-Pique Care Plus Natural MoustiCare" [ref=e102]:
+              - columnheader "Critère" [ref=e103]
+              - columnheader "Pranarôm Aromapic" [ref=e104]
+              - columnheader "Puressentiel Anti-Pique" [ref=e105]
+              - columnheader "Care Plus Natural" [ref=e106]
+              - columnheader "MoustiCare" [ref=e107]
+          - rowgroup [ref=e108]:
+            - row "Actif principal Synergie HE bio (eucalyptus citronné, géranium, citronnelle) 11 Huiles Essentielles Citriodiol 30% HE + géraniol" [ref=e109]:
+              - cell "Actif principal" [ref=e110]
+              - cell "Synergie HE bio (eucalyptus citronné, géranium, citronnelle)" [ref=e111]
+              - cell "11 Huiles Essentielles" [ref=e112]
+              - cell "Citriodiol 30%" [ref=e113]
+              - cell "HE + géraniol" [ref=e114]
+            - row "Certification bio Oui (HEBBD) Non (99,9% naturel) Non Non" [ref=e115]:
+              - cell "Certification bio" [ref=e116]
+              - cell "Oui (HEBBD)" [ref=e117]
+              - cell "Non (99,9% naturel)" [ref=e118]
+              - cell "Non" [ref=e119]
+              - cell "Non" [ref=e120]
+            - row "Durée de protection 7-8 heures 7 heures (annoncé) 4-6 heures 4-6 heures" [ref=e121]:
+              - cell "Durée de protection" [ref=e122]
+              - cell "7-8 heures" [ref=e123]
+              - cell "7 heures (annoncé)" [ref=e124]
+              - cell "4-6 heures" [ref=e125]
+              - cell "4-6 heures" [ref=e126]
+            - row "Efficace moustique tigre Oui Oui Oui Oui" [ref=e127]:
+              - cell "Efficace moustique tigre" [ref=e128]
+              - cell "Oui" [ref=e129]
+              - cell "Oui" [ref=e130]
+              - cell "Oui" [ref=e131]
+              - cell "Oui" [ref=e132]
+            - row "Adapté enfants Dès 30 mois Dès 6 mois (gamme bébé) Dès 3 ans Dès 6 mois (MoustiKids)" [ref=e133]:
+              - cell "Adapté enfants" [ref=e134]
+              - cell "Dès 30 mois" [ref=e135]
+              - cell "Dès 6 mois (gamme bébé)" [ref=e136]
+              - cell "Dès 3 ans" [ref=e137]
+              - cell "Dès 6 mois (MoustiKids)" [ref=e138]
+            - row "Adapté grossesse Sur avis médical Sur avis médical Oui Sur avis médical" [ref=e139]:
+              - cell "Adapté grossesse" [ref=e140]
+              - cell "Sur avis médical" [ref=e141]
+              - cell "Sur avis médical" [ref=e142]
+              - cell "Oui" [ref=e143]
+              - cell "Sur avis médical" [ref=e144]
+            - row "Format 75 ml spray 75 ml spray 100 ml spray 125 ml spray" [ref=e145]:
+              - cell "Format" [ref=e146]
+              - cell "75 ml spray" [ref=e147]
+              - cell "75 ml spray" [ref=e148]
+              - cell "100 ml spray" [ref=e149]
+              - cell "125 ml spray" [ref=e150]
+            - row "Prix indicatif 12-15 € 10-14 € 11-13 € 8-12 €" [ref=e151]:
+              - cell "Prix indicatif" [ref=e152]
+              - cell "12-15 €" [ref=e153]
+              - cell "10-14 €" [ref=e154]
+              - cell "11-13 €" [ref=e155]
+              - cell "8-12 €" [ref=e156]
+            - row "Sans DEET Oui Oui Oui Oui" [ref=e157]:
+              - cell "Sans DEET" [ref=e158]
+              - cell "Oui" [ref=e159]
+              - cell "Oui" [ref=e160]
+              - cell "Oui" [ref=e161]
+              - cell "Oui" [ref=e162]
+            - row "Verdict Meilleure durée, expertise HE Bonne notoriété, large gamme Formule simple, bien tolérée Meilleur rapport qualité-prix famille" [ref=e163]:
+              - cell "Verdict" [ref=e164]:
+                - strong [ref=e165]: Verdict
+              - cell "Meilleure durée, expertise HE" [ref=e166]:
+                - strong [ref=e167]: Meilleure durée, expertise HE
+              - cell "Bonne notoriété, large gamme" [ref=e168]:
+                - strong [ref=e169]: Bonne notoriété, large gamme
+              - cell "Formule simple, bien tolérée" [ref=e170]:
+                - strong [ref=e171]: Formule simple, bien tolérée
+              - cell "Meilleur rapport qualité-prix famille" [ref=e172]:
+                - strong [ref=e173]: Meilleur rapport qualité-prix famille
+        - heading "Quel spray anti-moustique naturel choisir selon votre profil ?" [level=2] [ref=e174]
+        - heading "Pour les familles avec enfants en bas âge" [level=3] [ref=e175]
+        - paragraph [ref=e176]: MoustiCare et sa gamme MoustiKids sont adaptés dès 6 mois, avec des formulations douces. Puressentiel propose également une ligne bébé. Pour les enfants de plus de 30 mois, Pranarôm Aromapic offre une protection plus longue, ce qui réduit le nombre d’applications nécessaires dans la journée.
+        - heading "Pour les voyageurs en zone tropicale" [level=3] [ref=e177]
+        - paragraph [ref=e178]: Le moustique tigre et les espèces tropicales nécessitent une protection renforcée. Pranarôm Aromapic est le choix le plus adapté grâce à sa durée de protection de 7 à 8 heures, réduisant le besoin de réapplication en conditions d’exposition prolongée. Care Plus Natural, avec son citriodiol concentré à 30%, est également une option solide pour les voyageurs, avec l’avantage d’un format 100 ml compact.
+        - heading "Pour une utilisation quotidienne en été" [level=3] [ref=e179]
+        - paragraph [ref=e180]:
+          - text: Pour une utilisation régulière en zone tempérée, le critère déterminant est le rapport entre efficacité et tolérance cutanée sur la durée. Pranarôm Aromapic combine les deux grâce à sa formulation bio certifiée HEBBD. Les
+          - link "huiles végétales utilisées comme support" [ref=e181] [cursor=pointer]:
+            - /url: https://analytics-ds.github.io/meilleures-solutions-naturelles/blog/huiles-vegetales-guide-utilisation/
+          - text: dans les formulations naturelles contribuent également au confort de l’application cutanée quotidienne.
+        - heading "Comment bien utiliser un spray anti-moustique naturel pour une efficacité maximale ?" [level=2] [ref=e182]
+        - paragraph [ref=e183]: L’application correcte conditionne l’efficacité du produit. Le spray doit être appliqué sur les zones de peau exposées, en évitant le contour des yeux, les muqueuses et les plaies.
+        - paragraph [ref=e184]: "La réapplication est nécessaire après la durée de protection indiquée par le fabricant, ou après une baignade ou une transpiration importante. En zone tropicale, il est recommandé de combiner le spray corporel avec d’autres formats : un roller pour les zones ciblées (poignets, chevilles) et une protection vestimentaire."
+        - paragraph [ref=e185]: L’efficacité des Huiles Essentielles diminue sous l’effet de la chaleur et de l’humidité. Conserver le flacon à l’abri de la lumière directe et de températures supérieures à 30°C permet de préserver les actifs.
+        - paragraph [ref=e186]: Il est également conseillé de ne pas appliquer le spray anti-moustique en même temps qu’une crème solaire. Un intervalle de 20 minutes entre les deux applications est recommandé pour éviter les interactions entre les formulations.
+        - heading "Questions fréquentes" [level=2] [ref=e187]
+        - group [ref=e188]:
+          - generic "Un spray anti-moustique naturel est-il efficace contre le moustique tigre ? +" [ref=e189] [cursor=pointer]
+        - group [ref=e190]:
+          - generic "À partir de quel âge peut-on utiliser un spray anti-moustique naturel ? +" [ref=e191] [cursor=pointer]
+        - group [ref=e192]:
+          - generic "Combien de temps dure la protection d'un spray anti-moustique naturel ? +" [ref=e193] [cursor=pointer]
+        - group [ref=e194]:
+          - generic "Peut-on utiliser un spray anti-moustique naturel pendant la grossesse ? +" [ref=e195] [cursor=pointer]
+        - group [ref=e196]:
+          - generic "Quelle est la différence entre un spray au citriodiol et un spray aux Huiles Essentielles ? +" [ref=e197] [cursor=pointer]
+        - generic [ref=e198]:
+          - generic [ref=e200]: L
+          - generic [ref=e201]:
+            - heading "La Rédaction" [level=4] [ref=e202]
+            - paragraph [ref=e203]: Equipe editoriale
+            - paragraph [ref=e204]: L'equipe editoriale de Meilleures Solutions Naturelles reunit des passionnes de sante naturelle. Chaque article est documente a partir de sources scientifiques fiables et redige dans le respect des bonnes pratiques YMYL.
+      - navigation [ref=e207]:
+        - link "Article precedent Comment renforcer son immunite avec des solutions naturelles" [ref=e208] [cursor=pointer]:
+          - /url: /meilleures-solutions-naturelles/blog/renforcer-immunite-solutions-naturelles/
+          - generic [ref=e209]: Article precedent
+          - generic [ref=e210]: Comment renforcer son immunite avec des solutions naturelles
+  - contentinfo [ref=e211]:
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - link "Meilleures Solutions Naturelles Meilleures Solutions Naturelles" [ref=e215] [cursor=pointer]:
+            - /url: /meilleures-solutions-naturelles/
+            - img "Meilleures Solutions Naturelles" [ref=e216]
+            - generic [ref=e217]: Meilleures Solutions Naturelles
+          - paragraph [ref=e218]: "Guide expert en sante naturelle : aromatherapie, gemmotherapie, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin, validees par la science."
+        - generic [ref=e219]:
+          - heading "Domaines" [level=4] [ref=e220]
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - link "Aromatherapie" [ref=e223] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/aromatherapie/
+            - listitem [ref=e224]:
+              - link "Huiles Essentielles" [ref=e225] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/huiles-essentielles/
+            - listitem [ref=e226]:
+              - link "Huiles Vegetales" [ref=e227] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/huiles-vegetales/
+            - listitem [ref=e228]:
+              - link "Gemmotherapie" [ref=e229] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/gemmotherapie/
+            - listitem [ref=e230]:
+              - link "Complements Alimentaires" [ref=e231] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/complements-alimentaires/
+        - generic [ref=e232]:
+          - heading "Besoins" [level=4] [ref=e233]
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - link "Immunite et Defenses" [ref=e236] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/immunite-et-defenses/
+            - listitem [ref=e237]:
+              - link "Sommeil et Detente" [ref=e238] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/sommeil-et-detente/
+            - listitem [ref=e239]:
+              - link "Douleurs et Articulations" [ref=e240] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/douleurs-et-articulations/
+            - listitem [ref=e241]:
+              - link "Bien-etre Feminin" [ref=e242] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/bien-etre-feminin/
+            - listitem [ref=e243]:
+              - link "Digestion et Detox" [ref=e244] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/digestion-et-detox/
+            - listitem [ref=e245]:
+              - link "Minceur et Drainage" [ref=e246] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/minceur-et-drainage/
+            - listitem [ref=e247]:
+              - link "Beaute et Soins" [ref=e248] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/beaute-et-soins/
+            - listitem [ref=e249]:
+              - link "Stress et Equilibre emotionnel" [ref=e250] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/stress-et-equilibre-emotionnel/
+            - listitem [ref=e251]:
+              - link "Respiration" [ref=e252] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/categories/respiration/
+        - generic [ref=e253]:
+          - heading "Navigation" [level=4] [ref=e254]
+          - list [ref=e255]:
+            - listitem [ref=e256]:
+              - link "Accueil" [ref=e257] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/
+            - listitem [ref=e258]:
+              - link "Blog" [ref=e259] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/blog/
+            - listitem [ref=e260]:
+              - link "Plan du site" [ref=e261] [cursor=pointer]:
+                - /url: /meilleures-solutions-naturelles/plan-du-site/
+      - paragraph [ref=e263]: © 2026 Meilleures Solutions Naturelles. Tous droits reserves.
