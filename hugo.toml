@@ -49,3 +49,8 @@ paginate = 12
 [outputs]
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
+
+# Desactiver la minification XML pour avoir un sitemap lisible
+[minify]
+  disableXML = true
+
