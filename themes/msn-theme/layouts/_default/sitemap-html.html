@@ -1,52 +1,123 @@
 {{ define "main" }}
+{{ $currentLang := .Lang | default "fr" }}
+{{ $isEN := eq $currentLang "en" }}
 
-<section class="sitemap-page">
-    <header class="list-header">
-        <div class="container">
-            <h1>Plan du site</h1>
-            <p class="list-description">Toutes les pages de {{ .Site.Title }}</p>
-        </div>
+<section class="plan-site-page">
+  <div class="container">
+    <header class="plan-site-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="plan-site-desc">{{ . }}</p>{{ end }}
     </header>
 
-    <div class="sitemap-content">
-        <div class="container container-narrow">
+    <div class="plan-site-grid">
 
-            <div class="sitemap-section">
-                <h2>Pages principales</h2>
-                <ul class="sitemap-list">
-                    <li>
-                        <a href="{{ site.Home.RelPermalink }}">Accueil</a>
-                    </li>
-                    {{ range .Site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
+      {{/* --- Pages principales --- */}}
+      <div class="plan-site-col">
+        <h2 class="plan-site-title">{{ if $isEN }}Main pages{{ else }}Pages principales{{ end }}</h2>
+        <ul class="plan-site-list">
+          <li><span class="plan-emoji">🏠</span> <a href="{{ "/" | relLangURL }}">{{ if $isEN }}Home{{ else }}Accueil{{ end }}</a></li>
+          {{ $legalSlugs := slice "mentions-legales" "politique-de-confidentialite" "legal-notice" "privacy-policy" "cgu" "cookies" }}
+          {{ range (where (where .Site.RegularPages "Kind" "page") "Section" "") }}
+            {{ $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+            {{ if in $legalSlugs $slug }}{{ continue }}{{ end }}
+            {{ if eq $slug (cond $isEN "site-map" "plan-du-site") }}{{ continue }}{{ end }}
+            {{ $emoji := "📄" }}
+            {{ if in (slice "a-propos" "about") $slug }}{{ $emoji = "👤" }}{{ end }}
+            {{ if in (slice "contact") $slug }}{{ $emoji = "✉️" }}{{ end }}
+            {{ if in (slice "methodologie" "methodology") $slug }}{{ $emoji = "📐" }}{{ end }}
+            {{ if in (slice "lexique" "glossary") $slug }}{{ $emoji = "📖" }}{{ end }}
+            <li><span class="plan-emoji">{{ $emoji }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
 
-            {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-            <div class="sitemap-section">
-                <h2>{{ $taxonomy.Page.Title }}</h2>
-                <ul class="sitemap-list">
-                    {{ range $taxonomy.Pages.ByDate.Reverse }}
-                    <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        <span class="sitemap-date">
-                            {{ with .Params.lastmod }}
-                                {{ (time .).Format "02/01/2006" }}
-                            {{ else }}
-                                {{ .Date.Format "02/01/2006" }}
-                            {{ end }}
-                        </span>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
+      {{/* --- Blog --- */}}
+      {{ $blogPages := where (where .Site.RegularPages "Section" "blog") "Kind" "page" }}
+      {{ if $blogPages }}
+      <div class="plan-site-col">
+        <h2 class="plan-site-title">Blog</h2>
+        <ul class="plan-site-list">
+          <li><span class="plan-emoji">📁</span> <a href="{{ "blog/" | relLangURL }}"><strong>{{ if $isEN }}All articles{{ else }}Tous les articles{{ end }}</strong></a></li>
+          {{ range $blogPages.ByDate.Reverse }}
+            <li><span class="plan-emoji">📝</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      {{/* --- Categories --- */}}
+      {{ $localCats := slice }}
+      {{ range (where .Site.Pages "Section" "categories") }}
+        {{ if eq .Kind "term" }}
+          {{ with .File }}{{ if hasSuffix .LogicalName "_index.md" }}
+            {{ $isEnPage := hasPrefix $.RelPermalink "/en/" }}
+            {{ if or (and $isEN $isEnPage) (and (not $isEN) (not $isEnPage)) }}
+              {{ $localCats = $localCats | append $ }}
             {{ end }}
+          {{ end }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if $localCats }}
+      <div class="plan-site-col">
+        <h2 class="plan-site-title">{{ if $isEN }}Categories{{ else }}Catégories{{ end }}</h2>
+        <ul class="plan-site-list">
+          {{ range $localCats }}
+          {{ $count := 0 }}
+          {{ range .Pages }}{{ if eq .Kind "page" }}{{ $count = add $count 1 }}{{ end }}{{ end }}
+          <li><span class="plan-emoji">{{ .Params.icon | default "🗂️" }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if gt $count 0 }} <span class="plan-count">({{ $count }})</span>{{ end }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
 
-        </div>
+      {{/* --- Authors --- */}}
+      {{ $auths := slice }}
+      {{ range (where .Site.Pages "Section" "authors") }}
+        {{ if eq .Kind "term" }}
+          {{ with .File }}{{ if hasSuffix .LogicalName "_index.md" }}
+            {{ $isEnPage := hasPrefix $.RelPermalink "/en/" }}
+            {{ if or (and $isEN $isEnPage) (and (not $isEN) (not $isEnPage)) }}
+              {{ $auths = $auths | append $ }}
+            {{ end }}
+          {{ end }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if $auths }}
+      <div class="plan-site-col">
+        <h2 class="plan-site-title">{{ if $isEN }}Authors{{ else }}Auteurs{{ end }}</h2>
+        <ul class="plan-site-list">
+          <li><span class="plan-emoji">👥</span> <a href="{{ "authors/" | relLangURL }}"><strong>{{ if $isEN }}All authors{{ else }}Tous les auteurs{{ end }}</strong></a></li>
+          {{ range $auths }}
+            <li><span class="plan-emoji">✍️</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      {{/* --- Legal --- */}}
+      {{ $legalPages := slice }}
+      {{ $legalSlugsAll := slice "mentions-legales" "politique-de-confidentialite" "legal-notice" "privacy-policy" "cgu" "cookies" }}
+      {{ range (where (where .Site.RegularPages "Kind" "page") "Section" "") }}
+        {{ $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+        {{ if in $legalSlugsAll $slug }}{{ $legalPages = $legalPages | append . }}{{ end }}
+      {{ end }}
+      {{ if $legalPages }}
+      <div class="plan-site-col">
+        <h2 class="plan-site-title">{{ if $isEN }}Legal{{ else }}Pages légales{{ end }}</h2>
+        <ul class="plan-site-list">
+          {{ range $legalPages }}
+            {{ $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+            {{ $emoji := "📄" }}
+            {{ if in (slice "mentions-legales" "legal-notice") $slug }}{{ $emoji = "⚖️" }}{{ end }}
+            {{ if in (slice "politique-de-confidentialite" "privacy-policy") $slug }}{{ $emoji = "🔒" }}{{ end }}
+            {{ if eq $slug "cookies" }}{{ $emoji = "🍪" }}{{ end }}
+            <li><span class="plan-emoji">{{ $emoji }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
     </div>
+  </div>
 </section>
-
 {{ end }}
