@@ -45,4 +45,4 @@ Les macerats se prennent par voie orale, purs ou dilues dans un peu d'eau, ideal
 
 ## Gemmotherapie et Huiles Essentielles : une complementarite naturelle
 
-Les bourgeons et les [Huiles Essentielles]({{< ref "/blog/huiles-essentielles-indispensables-hiver" >}}) agissent sur des plans differents et peuvent etre associes pour une approche globale. Par exemple, un macerat de bourgeon de cassis pour le soutien de fond, associe a une Huile Essentielle de gaultherie en application locale pour le confort articulaire immediat.
+Les bourgeons et les Huiles Essentielles agissent sur des plans differents et peuvent etre associes pour une approche globale. Par exemple, un macerat de bourgeon de cassis pour le soutien de fond, associe a une Huile Essentielle de gaultherie en application locale pour le confort articulaire immediat.

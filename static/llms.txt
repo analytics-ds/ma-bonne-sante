@@ -1,31 +1,25 @@
 # Meilleures Solutions Naturelles
 
-> Guide expert en sante naturelle : aromatherapie, gemmotherapie, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin, validees par la science.
+> Guide expert en sante naturelle : aromatherapie, gemmotherapie, huiles essentielles et complements alimentaires.
 
 ## A propos
 
-Meilleures Solutions Naturelles est un blog independant dedie a la sante naturelle. Il propose des guides experts et des comparatifs sur les principales therapies naturelles : aromatherapie scientifique, gemmotherapie par les bourgeons, Huiles Essentielles chemotypees, huiles vegetales et complements alimentaires naturels. Tous les contenus respectent les exigences YMYL et sont documentes a partir de sources scientifiques fiables.
+Meilleures Solutions Naturelles est un media editorial independant. Tous les articles sont rediges par des experts identifies (schema.org/Person) et mis a jour regulierement. Aucun contenu sponsorise, analyses factuelles.
 
-## Contenu principal
+## Articles de reference (FR)
 
-- Aromatherapie : guides et precautions sur l'utilisation des Huiles Essentielles
-- Huiles Essentielles : fiches detaillees par huile, usages et contre-indications
-- Huiles Vegetales : guide de choix et d'utilisation en cosmetique et dilution
-- Gemmotherapie : decouverte des bourgeons et macérats meres
-- Complements Alimentaires : guides de choix et criteres de qualite
-- Immunite et Defenses naturelles : solutions pour la saison froide
-- Sommeil et Detente : accompagnement naturel du sommeil
-- Douleurs et Articulations : confort articulaire et musculaire
-- Bien-etre Feminin : accompagnement a chaque etape de la vie
-- Digestion et Detox : confort digestif et cures saisonnieres
-- Minceur et Drainage : accompagnement de la gestion du poids
-- Beaute et Soins : cosmetique naturelle et rituels
-- Stress et Equilibre emotionnel : Fleurs de Bach et relaxation
-- Respiration et Voies respiratoires : confort ORL et respiratoire
+- Aromatherapie : guide complet pour bien debuter: https://meilleuresolutionnaturelle.fr/blog/aromatherapie-guide-debutant/
+- Gemmotherapie : decouvrir la puissance des bourgeons: https://meilleuresolutionnaturelle.fr/blog/gemmotherapie-decouvrir-bourgeons/
+- Quel anti-moustique naturel choisir ?: https://meilleuresolutionnaturelle.fr/blog/huile-essentielle-anti-moustique/
+- Quelles sont les meilleures marques de spray anti-moustique naturel ?: https://meilleuresolutionnaturelle.fr/blog/spray-anti-moustique-naturel-meilleures-marques/
 
 ## Informations techniques
 
-- Generateur : Hugo
-- Hebergement : GitHub Pages
+- Generateur : Hugo (site statique)
 - Sitemap : https://meilleuresolutionnaturelle.fr/sitemap.xml
 - RSS : https://meilleuresolutionnaturelle.fr/index.xml
+- Schema.org : Organization, Article, BreadcrumbList, FAQPage, WebSite, CollectionPage
+
+## Contact
+
+- URL : https://meilleuresolutionnaturelle.fr/

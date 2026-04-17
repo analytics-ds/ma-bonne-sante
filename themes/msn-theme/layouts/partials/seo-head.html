@@ -1,52 +1,152 @@
-<!-- Canonical -->
+{{- /* --- SEO / GEO HEAD --- */ -}}
+
+{{- /* Canonical */ -}}
 <link rel="canonical" href="{{ .Permalink }}">
 
-<!-- Open Graph -->
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{- /* Hreflangs : deduplique pour gerer les cas multi-contentDir */ -}}
+{{- if .IsTranslated }}
+{{- $defaultLang := "fr" }}
+{{- $xDefault := .Permalink }}
+{{- $seen := slice }}
+{{- $currentLang := .Lang }}
+<link rel="alternate" hreflang="{{ $currentLang }}" href="{{ .Permalink }}">
+{{- $seen = $seen | append $currentLang }}
+{{- if eq $currentLang $defaultLang }}{{ $xDefault = .Permalink }}{{ end }}
+{{- range .Translations }}
+{{- $tLang := .Lang }}
+{{- if not (in $seen $tLang) }}
+<link rel="alternate" hreflang="{{ $tLang }}" href="{{ .Permalink }}">
+{{- $seen = $seen | append $tLang }}
+{{- if eq $tLang $defaultLang }}{{ $xDefault = .Permalink }}{{ end }}
+{{- end }}
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
+{{- end }}
+
+{{- /* Robots */ -}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+{{- /* Author */ -}}
+{{- if .IsPage }}
+{{- with .Params.author }}
+{{- $authorData := index $.Site.Data.authors . }}
+{{- with $authorData }}<meta name="author" content="{{ .name }}">{{ end }}
+{{- end }}
+{{- end }}
+
+{{- /* Open Graph */ -}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ .Site.LanguageCode | default "fr_FR" }}">
-{{ if .IsPage }}
-{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
-{{ with .Params.author }}<meta property="article:author" content="{{ . }}">{{ end }}
-<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">
-{{ end }}
-{{ end }}
+<meta property="og:locale" content="{{ .Site.Language.LanguageCode | default (.Site.LanguageCode | default "fr_FR") | replaceRE "-" "_" }}">
+{{- range .Site.Languages }}
+{{- if ne .Lang $.Site.Language.Lang }}
+<meta property="og:locale:alternate" content="{{ .LanguageCode | replaceRE "-" "_" }}">
+{{- end }}
+{{- end }}
 
-<!-- Twitter Card -->
+{{- $ogImage := .Site.Params.default_og_image }}
+{{- if .IsPage }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{- with $ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{- with $.Params.imageAlt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
+{{- end }}
+
+{{- /* Twitter / X Card */ -}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-{{ if .IsPage }}{{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}{{ end }}
+{{- with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+{{- with .Site.Params.twitter_handle }}
+<meta name="twitter:site" content="{{ . }}">
+<meta name="twitter:creator" content="{{ . }}">
+{{- end }}
 
-<!-- JSON-LD Schema.org : BlogPosting (articles) -->
-{{ if .IsPage }}
+{{- /* Article meta */ -}}
+{{- if .IsPage }}
+{{- with .Params.author }}
+{{- $articleAuthor := index $.Site.Data.authors . }}
+{{- with $articleAuthor }}<meta property="article:author" content="{{ .name }}">{{ end }}
+{{- end }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- with .Params.categories }}{{ range . }}
+<meta property="article:section" content="{{ . }}">
+{{- end }}{{ end }}
+{{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+
+{{- /* Favicon */ -}}
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "favicon.svg" | relURL }}">
+
+{{- /* RSS */ -}}
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | absLangURL }}">
+
+{{- /* JSON-LD : Organization (toutes les pages) */ -}}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "{{ .Title }}",
-    "description": "{{ .Description }}",
-    "datePublished": "{{ .Date.Format "2006-01-02" }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}"{{ with .Site.Params.logo }},
+    "logo": {
+        "@type": "ImageObject",
+        "url": "{{ . | absURL }}"
+    }{{ end }}{{ with .Site.Params.founding_year }},
+    "foundingDate": "{{ . }}"{{ end }}{{ with .Site.Params.expertise }},
+    "knowsAbout": [{{ range $i, $e := . }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]{{ end }}
+}
+</script>
+
+{{- /* JSON-LD : Article (articles) */ -}}
+{{ if and .IsPage (eq .Section "blog") }}
+{{- $lang := .Site.Language.Lang }}
+{{- $author := dict }}
+{{- with .Params.author }}
+    {{- $author = index $.Site.Data.authors . }}
+{{- end }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Description | jsonify }},
+    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "wordCount": {{ .WordCount }},
-    "timeRequired": "PT{{ .ReadingTime }}M",
-    {{ with .Params.image }}"image": "{{ . | absURL }}",{{ end }}
-    {{ with .Params.author }}
+    "timeRequired": "PT{{ .ReadingTime }}M",{{ with .Params.image }}
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ . | absURL }}",
+        "width": 1200,
+        "height": 630
+    },{{ end }}
+    {{ with $author }}
     "author": {
-        "@type": "Person",
-        "name": "{{ . }}"{{ with $.Site.Params.author_url }},
-        "url": "{{ . }}"{{ end }}{{ with $.Site.Params.author_job_title }},
-        "jobTitle": "{{ . }}"{{ end }}
+        "@type": "{{ if eq .type "organization" }}Organization{{ else }}Person{{ end }}",
+        "name": {{ .name | jsonify }}{{ with .avatar }},
+        "image": "{{ . | absURL }}"{{ end }}{{ with index .jobTitle $lang }},
+        "jobTitle": {{ . | jsonify }}{{ end }}{{ with index .bio $lang }},
+        "description": {{ . | jsonify }}{{ end }}{{ with .expertise }},
+        "knowsAbout": [{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }}]{{ end }}{{ with .linkedinUrl }},
+        "sameAs": ["{{ . }}"]{{ end }},
+        "worksFor": { "@id": "{{ $.Site.BaseURL }}#organization" }
     },
     {{ end }}
     "publisher": {
         "@type": "Organization",
-        "name": "{{ .Site.Title }}"
+        "name": {{ .Site.Title | jsonify }},
+        "@id": "{{ .Site.BaseURL }}#organization"
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -54,13 +154,14 @@
     },
     "isPartOf": {
         "@type": "Blog",
-        "name": "{{ .Site.Title }}",
+        "name": {{ .Site.Title | jsonify }},
         "url": "{{ .Site.BaseURL }}"
-    }
+    }{{ with .Params.tags }},
+    "keywords": [{{ range $i, $t := . }}{{ if $i }}, {{ end }}{{ $t | jsonify }}{{ end }}]{{ end }}
 }
 </script>
 
-<!-- JSON-LD Schema.org : BreadcrumbList (articles) -->
+{{- /* JSON-LD : BreadcrumbList (articles) */ -}}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -69,45 +170,124 @@
         {
             "@type": "ListItem",
             "position": 1,
-            "name": "Accueil",
+            "name": {{ (i18n "breadcrumb_home") | jsonify }},
             "item": "{{ .Site.BaseURL }}"
         },
         {
             "@type": "ListItem",
             "position": 2,
-            "name": "Blog",
-            "item": "{{ "blog/" | absURL }}"
-        },
+            "name": {{ (i18n "breadcrumb_blog") | jsonify }},
+            "item": "{{ "blog/" | absLangURL }}"
+        }{{ with .Params.categories }}{{ range . }},
         {
             "@type": "ListItem",
             "position": 3,
-            "name": "{{ .Title }}",
+            "name": {{ . | jsonify }},
+            "item": "{{ (printf "categories/%s/" (. | urlize)) | absLangURL }}"
+        }{{ end }}{{ end }},
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": {{ .Title | jsonify }},
             "item": "{{ .Permalink }}"
         }
     ]
 }
 </script>
+
+{{- /* JSON-LD : FAQPage */ -}}
+{{ if .Params.faq }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $item := .Params.faq }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $item.question | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $item.answer | jsonify }}
+            }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+
 {{ else if .IsHome }}
 
-<!-- JSON-LD Schema.org : WebSite (accueil) -->
+{{- /* JSON-LD : WebSite + SearchAction */ -}}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "description": "{{ .Site.Params.description }}",
-    "url": "{{ .Site.BaseURL }}"
+    "@id": "{{ .Site.BaseURL }}#website",
+    "name": {{ .Site.Title | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }},
+    "url": "{{ .Site.BaseURL }}",
+    "publisher": { "@id": "{{ .Site.BaseURL }}#organization" },
+    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ .Site.BaseURL }}?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+    }
 }
 </script>
 
-<!-- JSON-LD Schema.org : Organization (accueil) -->
+{{ else if or (eq .Section "categories") (and .IsNode (eq .Kind "section")) }}
+
+{{- /* JSON-LD : CollectionPage + ItemList + BreadcrumbList pour pages de liste */ -}}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}"
+    "@type": "CollectionPage",
+    "name": {{ .Title | jsonify }},
+    "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
+    "url": "{{ .Permalink }}",
+    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
+    "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": {{ len .Pages }},
+        "itemListElement": [
+            {{ range $i, $p := .Pages }}{{ if $i }},{{ end }}
+            {
+                "@type": "ListItem",
+                "position": {{ add $i 1 }},
+                "url": "{{ $p.Permalink }}",
+                "name": {{ $p.Title | jsonify }}
+            }
+            {{ end }}
+        ]
+    }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": {{ (i18n "breadcrumb_home") | jsonify }},
+            "item": "{{ .Site.BaseURL }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ .Title | jsonify }},
+            "item": "{{ .Permalink }}"
+        }
+    ]
+}
+</script>
+
 {{ end }}

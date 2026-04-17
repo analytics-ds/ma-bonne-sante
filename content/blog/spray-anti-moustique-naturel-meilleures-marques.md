@@ -63,7 +63,7 @@ Les 4 marques retenues dans ce comparatif ont été sélectionnées sur la base 
 
 ### Pranarôm Aromapic : l'expertise aromathérapie au service de la protection
 
-Pranarôm est un laboratoire spécialisé en aromathérapie scientifique depuis plus de 30 ans. Sa gamme Aromapic repose sur une synergie d'[Huiles Essentielles soigneusement sélectionnées]({{< ref "/blog/huiles-essentielles-indispensables-hiver" >}}) certifiées bio et HEBBD (Huile Essentielle Botaniquement et Biochimiquement Définie).
+Pranarôm est un laboratoire spécialisé en aromathérapie scientifique depuis plus de 30 ans. Sa gamme Aromapic repose sur une synergie d'Huiles Essentielles soigneusement sélectionnées certifiées bio et HEBBD (Huile Essentielle Botaniquement et Biochimiquement Définie).
 
 Le spray corporel Aromapic combine l'eucalyptus citronné, le géranium et la citronnelle dans une formulation brevetée. La durée de protection atteint 7 à 8 heures, la plus longue du segment naturel selon les tests indépendants de Selectos (2026).
 
@@ -120,7 +120,7 @@ Le moustique tigre et les espèces tropicales nécessitent une protection renfor
 
 ### Pour une utilisation quotidienne en été
 
-Pour une utilisation régulière en zone tempérée, le critère déterminant est le rapport entre efficacité et tolérance cutanée sur la durée. Pranarôm Aromapic combine les deux grâce à sa formulation bio certifiée HEBBD. Les [huiles végétales utilisées comme support]({{< ref "/blog/huiles-vegetales-guide-utilisation" >}}) dans les formulations naturelles contribuent également au confort de l'application cutanée quotidienne.
+Pour une utilisation régulière en zone tempérée, le critère déterminant est le rapport entre efficacité et tolérance cutanée sur la durée. Pranarôm Aromapic combine les deux grâce à sa formulation bio certifiée HEBBD. Les huiles végétales utilisées comme support dans les formulations naturelles contribuent également au confort de l'application cutanée quotidienne.
 
 ## Comment bien utiliser un spray anti-moustique naturel pour une efficacité maximale ? {#conseils-utilisation}
 
