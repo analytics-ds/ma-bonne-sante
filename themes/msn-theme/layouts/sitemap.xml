@@ -1,56 +1,122 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{{- $siteLang := .Site.Language.Lang -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- $siteLang := site.Language.Lang -}}
+{{- $isDefault := eq $siteLang "fr" -}}
+{{- $prefix := printf "/%s/" $siteLang -}}
 {{- $pages := slice -}}
 {{- range .Data.Pages -}}
-  {{- $k := .Kind -}}
-  {{- $keep := true -}}
-  {{- if eq $k "taxonomy" }}{{ $keep = false }}{{ end -}}
-  {{- if eq $k "term" -}}
-    {{- $hasIndex := false -}}
-    {{- with .File -}}{{ if hasSuffix .LogicalName "_index.md" }}{{ $hasIndex = true }}{{ end }}{{- end -}}
-    {{- if not $hasIndex }}{{ $keep = false }}{{ end -}}
-  {{- end -}}
-  {{- if .Params.private }}{{ $keep = false }}{{ end -}}
-  {{- if .Params.noindex }}{{ $keep = false }}{{ end -}}
-  {{- $belongsToLang := false -}}
-  {{- if eq $siteLang "fr" -}}
-    {{- if not (hasPrefix .RelPermalink "/en/") }}{{ $belongsToLang = true }}{{ end -}}
+  {{- $belongs := false -}}
+  {{- if $isDefault -}}
+    {{- if not (hasPrefix .RelPermalink "/en/") }}{{ $belongs = true }}{{ end -}}
   {{- else -}}
-    {{- if hasPrefix .RelPermalink (printf "/%s/" $siteLang) }}{{ $belongsToLang = true }}{{ end -}}
+    {{- if hasPrefix .RelPermalink $prefix }}{{ $belongs = true }}{{ end -}}
   {{- end -}}
-  {{- if and $keep $belongsToLang -}}
-    {{- $pages = $pages | append . -}}
+  {{- if and $belongs (ne .Kind "taxonomy") }}
+    {{- $isRealTerm := true -}}
+    {{- if eq .Kind "term" -}}
+      {{- $isRealTerm = false -}}
+      {{- with .File }}{{ if hasSuffix .LogicalName "_index.md" }}{{ $isRealTerm = true }}{{ end }}{{ end -}}
+    {{- end -}}
+    {{- if and $isRealTerm (not .Params.private) (not .Params.noindex) }}{{ $pages = $pages | append . }}{{ end -}}
   {{- end -}}
 {{- end -}}
-{{- range $pages }}
-  {{- $p := . -}}
-  {{- $priority := "0.5" -}}
-  {{- $changefreq := "monthly" -}}
-  {{- if eq .Kind "home" }}{{ $priority = "1.0" }}{{ $changefreq = "weekly" }}{{ end -}}
-  {{- if and (eq .Kind "section") (eq .Section "blog") }}{{ $priority = "0.9" }}{{ $changefreq = "daily" }}{{ end -}}
-  {{- if and (eq .Kind "page") (eq .Section "blog") }}{{ $priority = "0.8" }}{{ $changefreq = "weekly" }}{{ end -}}
-  {{- if eq .Section "categories" }}{{ $priority = "0.7" }}{{ $changefreq = "weekly" }}{{ end -}}
-  {{- if eq .Section "authors" }}{{ $priority = "0.6" }}{{ $changefreq = "monthly" }}{{ end }}
+
+{{- $homes := where $pages "Kind" "home" -}}
+{{- if $homes }}
+  {{ printf "<!--  Accueil  -->" | safeHTML }}
+  {{- range $homes }}
   <url>
-    <loc>{{ $p.Permalink }}</loc>
-    {{- if not $p.Lastmod.IsZero }}
-    <lastmod>{{ $p.Lastmod.Format "2006-01-02" }}</lastmod>
-    {{- end }}
-    <changefreq>{{ $changefreq }}</changefreq>
-    <priority>{{ $priority }}</priority>
-    {{- if $p.IsTranslated }}
-    {{- $seen := slice $siteLang }}
-    <xhtml:link rel="alternate" hreflang="{{ $siteLang }}" href="{{ $p.Permalink }}" />
-    {{- range $p.Translations }}
-    {{- $tLang := "fr" -}}
-    {{- if hasPrefix .RelPermalink "/en/" }}{{ $tLang = "en" }}{{ end -}}
-    {{- if not (in $seen $tLang) }}
-    <xhtml:link rel="alternate" hreflang="{{ $tLang }}" href="{{ .Permalink }}" />
-    {{- $seen = $seen | append $tLang -}}
-    {{- end -}}
-    {{- end -}}
-    {{- end }}
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
+  {{- end }}
 {{- end }}
+
+{{- $blogIndex := where (where $pages "Kind" "section") "Section" "blog" -}}
+{{- $articles := where (where $pages "Kind" "page") "Section" "blog" -}}
+{{- if or $blogIndex $articles }}
+
+  {{ printf "<!--  Blog  -->" | safeHTML }}
+  {{- range $blogIndex }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  {{- end }}
+  {{- range $articles.ByDate.Reverse }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+{{- $cats := where $pages "Section" "categories" -}}
+{{- if $cats }}
+
+  {{ printf "<!--  Categories  -->" | safeHTML }}
+  {{- range $cats }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+{{- $auths := where $pages "Section" "authors" -}}
+{{- if $auths }}
+
+  {{ printf "<!--  Auteurs  -->" | safeHTML }}
+  {{- range $auths }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+{{- $staticPages := where (where $pages "Kind" "page") "Section" "" -}}
+{{- $legalSlugs := slice "mentions-legales" "politique-de-confidentialite" "legal-notice" "privacy-policy" "cgu" "cookies" -}}
+{{- $contentStatic := slice -}}
+{{- $legalStatic := slice -}}
+{{- range $staticPages -}}
+  {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) -}}
+  {{- if in $legalSlugs $slug }}{{ $legalStatic = $legalStatic | append . }}{{ else }}{{ $contentStatic = $contentStatic | append . }}{{ end -}}
+{{- end -}}
+{{- if $contentStatic }}
+
+  {{ printf "<!--  Pages  -->" | safeHTML }}
+  {{- range $contentStatic }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+{{- if $legalStatic }}
+
+  {{ printf "<!--  Pages legales  -->" | safeHTML }}
+  {{- range $legalStatic }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
 </urlset>
