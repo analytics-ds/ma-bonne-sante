@@ -13,7 +13,7 @@
 {{- $seen = $seen | append $currentLang }}
 {{- if eq $currentLang $defaultLang }}{{ $xDefault = .Permalink }}{{ end }}
 {{- range .Translations }}
-{{- $tLang := .Lang }}
+{{- $tLang := "fr" -}}{{- if in .RelPermalink "/en/" -}}{{- $tLang = "en" -}}{{- end -}}
 {{- if not (in $seen $tLang) }}
 <link rel="alternate" hreflang="{{ $tLang }}" href="{{ .Permalink }}">
 {{- $seen = $seen | append $tLang }}
@@ -24,7 +24,11 @@
 {{- end }}
 
 {{- /* Robots */ -}}
+{{- if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (eq .Data.Singular "tag") }}
+<meta name="robots" content="noindex, follow">
+{{- else }}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{- end }}
 
 {{- /* Author */ -}}
 {{- if .IsPage }}
