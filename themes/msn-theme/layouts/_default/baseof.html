@@ -20,7 +20,7 @@
     {{ end }}
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ "images/logo.png" | relURL }}" type="image/png">
+    <link rel="icon" href="{{ .Site.Params.logo | relURL }}" type="image/png">
 </head>
 <body>
     {{ partial "header.html" . }}
