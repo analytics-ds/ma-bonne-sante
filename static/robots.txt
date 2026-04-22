@@ -1,6 +1,6 @@
-# Ma Bonne Sante
+# Ma Bonne Santé
 # https://ma-bonne-sante.com
-# robots.txt - Derniere mise a jour : 2026-04-22
+# robots.txt - Dernière mise à jour : 2026-04-22
 
 # ==============================
 # Tous les robots

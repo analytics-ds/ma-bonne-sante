@@ -3,21 +3,21 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <span class="hero-badge">Sante naturelle et bien-etre</span>
-        <h1>Ma Bonne Sante</h1>
-        <p class="hero-description">Aromatherapie, gemmotherapie, fleurs de Bach, huiles essentielles et complements alimentaires : des guides experts pour prendre soin de soi au naturel.</p>
-        <a href="{{ "blog/" | relURL }}" class="btn-primary">Decouvrir nos articles</a>
+        <span class="hero-badge">Santé naturelle et bien-être</span>
+        <h1>Ma Bonne Santé</h1>
+        <p class="hero-description">Aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires : des guides experts pour prendre soin de soi au naturel.</p>
+        <a href="{{ "blog/" | relURL }}" class="btn-primary">Découvrir nos articles</a>
     </div>
 </section>
 
-<!-- Categories par domaine -->
+<!-- Catégories par domaine -->
 <section class="categories-section">
     <div class="container">
         <h2 class="section-title">Explorer par domaine</h2>
-        <p class="section-subtitle">Plongez dans l'univers des therapies naturelles</p>
+        <p class="section-subtitle">Plongez dans l'univers des thérapies naturelles</p>
         <div class="grid-categories grid-domaines">
-            {{ $icons := dict "Aromatherapie" "💧" "Huiles Essentielles" "🌿" "Huiles Vegetales" "🫒" "Gemmotherapie" "🌱" "Fleurs de Bach" "🌼" "Complements Alimentaires" "💊" }}
-            {{ $images := dict "Aromatherapie" "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&h=350&fit=crop" "Huiles Essentielles" "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=350&fit=crop" "Huiles Vegetales" "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=350&fit=crop" "Gemmotherapie" "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=500&h=350&fit=crop" "Fleurs de Bach" "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&h=350&fit=crop" "Complements Alimentaires" "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=350&fit=crop" }}
+            {{ $icons := dict "Aromathérapie" "💧" "Huiles Essentielles" "🌿" "Huiles Végétales" "🫒" "Gemmothérapie" "🌱" "Fleurs de Bach" "🌼" "Compléments Alimentaires" "💊" }}
+            {{ $images := dict "Aromathérapie" "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&h=350&fit=crop" "Huiles Essentielles" "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=350&fit=crop" "Huiles Végétales" "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=350&fit=crop" "Gemmothérapie" "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=500&h=350&fit=crop" "Fleurs de Bach" "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&h=350&fit=crop" "Compléments Alimentaires" "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=350&fit=crop" }}
             {{ range $name := .Site.Params.domaines }}
                 {{ $icon := index $icons $name | default "🌿" }}
                 {{ $img := index $images $name }}
@@ -50,14 +50,14 @@
     </div>
 </section>
 
-<!-- Categories par besoin -->
+<!-- Catégories par besoin -->
 <section class="categories-section">
     <div class="container">
         <h2 class="section-title">Explorer par besoin</h2>
-        <p class="section-subtitle">Trouvez la solution naturelle adaptee a votre situation</p>
+        <p class="section-subtitle">Trouvez la solution naturelle adaptée à votre situation</p>
         <div class="grid-categories grid-besoins">
-            {{ $besoin_icons := dict "Immunite et Defenses" "🛡️" "Sommeil et Detente" "🌙" "Douleurs et Articulations" "🦴" "Bien-etre Feminin" "🌸" "Digestion et Detox" "🍃" "Minceur et Drainage" "⚖️" "Beaute et Soins" "✨" "Stress et Equilibre emotionnel" "🧘" "Peurs et Angoisses" "💚" "Confiance et Estime de Soi" "💪" "Respiration" "🌬️" "Nuisibles" "🦟" }}
-            {{ $besoin_colors := dict "Immunite et Defenses" "#E8F5E9" "Sommeil et Detente" "#EDE7F6" "Douleurs et Articulations" "#FFF3E0" "Bien-etre Feminin" "#FCE4EC" "Digestion et Detox" "#E0F2F1" "Minceur et Drainage" "#F1F8E9" "Beaute et Soins" "#FFF8E1" "Stress et Equilibre emotionnel" "#E3F2FD" "Peurs et Angoisses" "#FFF0F5" "Confiance et Estime de Soi" "#FFF8E1" "Respiration" "#E8EAF6" "Nuisibles" "#F5F5F5" }}
+            {{ $besoin_icons := dict "Immunité et Défenses" "🛡️" "Sommeil et Détente" "🌙" "Douleurs et Articulations" "🦴" "Bien-être Féminin" "🌸" "Digestion et Détox" "🍃" "Minceur et Drainage" "⚖️" "Beauté et Soins" "✨" "Stress et Équilibre émotionnel" "🧘" "Peurs et Angoisses" "💚" "Confiance et Estime de Soi" "💪" "Respiration" "🌬️" "Nuisibles" "🦟" }}
+            {{ $besoin_colors := dict "Immunité et Défenses" "#E8F5E9" "Sommeil et Détente" "#EDE7F6" "Douleurs et Articulations" "#FFF3E0" "Bien-être Féminin" "#FCE4EC" "Digestion et Détox" "#E0F2F1" "Minceur et Drainage" "#F1F8E9" "Beauté et Soins" "#FFF8E1" "Stress et Équilibre émotionnel" "#E3F2FD" "Peurs et Angoisses" "#FFF0F5" "Confiance et Estime de Soi" "#FFF8E1" "Respiration" "#E8EAF6" "Nuisibles" "#F5F5F5" }}
             {{ range $name := .Site.Params.besoins }}
                 {{ $icon := index $besoin_icons $name | default "🌿" }}
                 {{ $color := index $besoin_colors $name | default "#F2F0EA" }}
@@ -88,7 +88,7 @@
 <section class="latest-section">
     <div class="container">
         <h2 class="section-title">Derniers articles</h2>
-        <p class="section-subtitle">Nos publications les plus recentes</p>
+        <p class="section-subtitle">Nos publications les plus récentes</p>
         <div class="grid-articles">
             {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
             <article class="article-card">

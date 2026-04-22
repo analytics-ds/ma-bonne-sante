@@ -1,14 +1,15 @@
 baseURL = "https://ma-bonne-sante.com/"
 languageCode = "fr"
-title = "Ma Bonne Sante"
+title = "Ma Bonne Santé"
 theme = "ma-bonne-sante-theme"
 paginate = 12
+removePathAccents = true
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
-# Menu principal (Accueil + Blog, les dropdowns Domaines/Besoins sont geres dans le header partial)
+# Menu principal (Accueil + Blog, les dropdowns Domaines/Besoins sont gérés dans le header partial)
 [[menus.main]]
   name = "Accueil"
   pageRef = "/"
@@ -20,18 +21,18 @@ paginate = 12
   weight = 4
 
 [params]
-  description = "Guide expert en sante naturelle et bien-etre : aromatherapie, gemmotherapie, fleurs de Bach, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin, validees par la science."
-  author_name = "La Redaction"
+  description = "Guide expert en santé naturelle et bien-être : aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires. Des solutions naturelles pour chaque besoin, validées par la science."
+  author_name = "La Rédaction"
   author_url = "https://ma-bonne-sante.com/"
-  author_job_title = "Equipe editoriale"
-  author_bio = "L'equipe editoriale de Ma Bonne Sante reunit des passionnes de sante naturelle et de bien-etre. Chaque article est documente a partir de sources scientifiques fiables et redige dans le respect des bonnes pratiques YMYL."
+  author_job_title = "Équipe éditoriale"
+  author_bio = "L'équipe éditoriale de Ma Bonne Santé réunit des passionnés de santé naturelle et de bien-être. Chaque article est documenté à partir de sources scientifiques fiables et rédigé dans le respect des bonnes pratiques YMYL."
   logo = "images/logo-ma-bonne-sante.png"
 
-  # Categories par domaine (modalites therapeutiques)
-  domaines = ["Aromatherapie", "Huiles Essentielles", "Huiles Vegetales", "Gemmotherapie", "Fleurs de Bach", "Complements Alimentaires"]
+  # Catégories par domaine (modalités thérapeutiques)
+  domaines = ["Aromathérapie", "Huiles Essentielles", "Huiles Végétales", "Gemmothérapie", "Fleurs de Bach", "Compléments Alimentaires"]
 
-  # Categories par besoin (usages sante et bien-etre)
-  besoins = ["Immunite et Defenses", "Sommeil et Detente", "Douleurs et Articulations", "Bien-etre Feminin", "Digestion et Detox", "Minceur et Drainage", "Beaute et Soins", "Stress et Equilibre emotionnel", "Peurs et Angoisses", "Confiance et Estime de Soi", "Respiration", "Nuisibles"]
+  # Catégories par besoin (usages santé et bien-être)
+  besoins = ["Immunité et Défenses", "Sommeil et Détente", "Douleurs et Articulations", "Bien-être Féminin", "Digestion et Détox", "Minceur et Drainage", "Beauté et Soins", "Stress et Équilibre émotionnel", "Peurs et Angoisses", "Confiance et Estime de Soi", "Respiration", "Nuisibles"]
 
 [markup]
   [markup.tableOfContents]
@@ -50,7 +51,6 @@ paginate = 12
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
 
-# Desactiver la minification XML pour avoir un sitemap lisible
+# Désactiver la minification XML pour avoir un sitemap lisible
 [minify]
   disableXML = true
-

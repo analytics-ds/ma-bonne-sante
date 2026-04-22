@@ -1,4 +1,4 @@
 ---
-title: "Ma Bonne Sante"
-description: "Guide expert en sante naturelle et bien-etre : aromatherapie, gemmotherapie, fleurs de Bach, huiles essentielles et complements alimentaires. Des solutions naturelles pour chaque besoin."
+title: "Ma Bonne Santé"
+description: "Guide expert en santé naturelle et bien-être : aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires. Des solutions naturelles pour chaque besoin."
 ---

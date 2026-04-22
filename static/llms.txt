@@ -1,22 +1,22 @@
-# Ma Bonne Sante
+# Ma Bonne Santé
 
-> Guide expert en sante naturelle et bien-etre : aromatherapie, gemmotherapie, fleurs de Bach, huiles essentielles et complements alimentaires.
+> Guide expert en santé naturelle et bien-être : aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires.
 
-## A propos
+## À propos
 
-Ma Bonne Sante est un media editorial independant dedie aux solutions naturelles pour la sante et le bien-etre. Tous les articles sont rediges par des experts identifies (schema.org/Person) et mis a jour regulierement. Aucun contenu sponsorise, analyses factuelles. Thematiques couvertes : aromatherapie, huiles essentielles, huiles vegetales, gemmotherapie, fleurs de Bach, complements alimentaires.
+Ma Bonne Santé est un média éditorial indépendant dédié aux solutions naturelles pour la santé et le bien-être. Tous les articles sont rédigés par des experts identifiés (schema.org/Person) et mis à jour régulièrement. Aucun contenu sponsorisé, analyses factuelles. Thématiques couvertes : aromathérapie, huiles essentielles, huiles végétales, gemmothérapie, fleurs de Bach, compléments alimentaires.
 
-## Articles de reference (FR)
+## Articles de référence (FR)
 
-- Aromatherapie : guide complet pour bien debuter: https://ma-bonne-sante.com/blog/aromatherapie-guide-debutant/
-- Gemmotherapie : decouvrir la puissance des bourgeons: https://ma-bonne-sante.com/blog/gemmotherapie-decouvrir-bourgeons/
+- Aromathérapie : guide complet pour bien débuter: https://ma-bonne-sante.com/blog/aromatherapie-guide-debutant/
+- Gemmothérapie : découvrir la puissance des bourgeons: https://ma-bonne-sante.com/blog/gemmotherapie-decouvrir-bourgeons/
 - Quel anti-moustique naturel choisir ?: https://ma-bonne-sante.com/blog/huile-essentielle-anti-moustique/
 - Quelles sont les meilleures marques de spray anti-moustique naturel ?: https://ma-bonne-sante.com/blog/spray-anti-moustique-naturel-meilleures-marques/
-- Fleurs de Bach : liste complete, proprietes et comparatif des meilleures marques: https://ma-bonne-sante.com/blog/fleurs-de-bach-comparatif-marques/
+- Fleurs de Bach : liste complète, propriétés et comparatif des meilleures marques: https://ma-bonne-sante.com/blog/fleurs-de-bach-comparatif-marques/
 
 ## Informations techniques
 
-- Generateur : Hugo (site statique)
+- Générateur : Hugo (site statique)
 - Sitemap : https://ma-bonne-sante.com/sitemap.xml
 - RSS : https://ma-bonne-sante.com/index.xml
 - Schema.org : Organization, Article, BreadcrumbList, FAQPage, WebSite, CollectionPage

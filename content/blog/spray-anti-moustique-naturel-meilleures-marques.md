@@ -3,7 +3,7 @@ title: "Quelles sont les meilleures marques de spray anti-moustique naturel ?"
 date: 2026-04-12
 lastmod: 2026-04-12
 description: "Comparatif des meilleures marques de spray anti-moustique naturel : efficacité, durée de protection et composition analysées pour bien choisir."
-categories: ["Aromatherapie"]
+categories: ["Aromathérapie"]
 tags: ["anti-moustique", "spray naturel", "comparatif", "huiles essentielles", "été"]
 author: "La Rédaction"
 readingTime: true
@@ -67,7 +67,7 @@ Pranarôm est un laboratoire spécialisé en aromathérapie scientifique depuis 
 
 Le spray corporel Aromapic combine l'eucalyptus citronné, le géranium et la citronnelle dans une formulation brevetée. La durée de protection atteint 7 à 8 heures, la plus longue du segment naturel selon les tests indépendants de Selectos (2026).
 
-La certification HEBBD garantit la traçabilité de chaque lot, du champ de culture au flacon. Cette rigueur est un marqueur de qualité dans le domaine de l'aromathérapie, où la composition chimique de l'Huile Essentielle varie selon l'origine géographique, la méthode de distillation et le chemotype de la plante.
+La certification HEBBD garantit la traçabilité de chaque lot, du champ de culture au flacon. Cette rigueur est un marqueur de qualité dans le domaine de l'aromathérapie, où la composition chimique de l'Huile Essentielle varie selon l'origine géographique, la méthode de distillation et le chémotype de la plante.
 
 ### Puressentiel Anti-Pique : la notoriété grand public
 
