@@ -10,10 +10,10 @@
     </div>
 </section>
 
-<!-- Catégories par domaine -->
+<!-- Catégories -->
 <section class="categories-section">
     <div class="container">
-        <h2 class="section-title">Explorer par domaine</h2>
+        <h2 class="section-title">Explorer par catégorie</h2>
         <p class="section-subtitle">Plongez dans l'univers des thérapies naturelles</p>
         <div class="grid-categories grid-domaines">
             {{ $icons := dict "Aromathérapie" "💧" "Huiles Essentielles" "🌿" "Huiles Végétales" "🫒" "Gemmothérapie" "🌱" "Fleurs de Bach" "🌼" "Compléments Alimentaires" "💊" }}
@@ -21,29 +21,17 @@
             {{ range $name := .Site.Params.domaines }}
                 {{ $icon := index $icons $name | default "🌿" }}
                 {{ $img := index $images $name }}
-                {{ $found := false }}
                 {{ range $key, $tax := $.Site.Taxonomies.categories }}
                     {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                    {{ $found = true }}
                 <a href="{{ $tax.Page.RelPermalink }}" class="category-card-domaine" {{ with $img }}style="--bg-image: url('{{ . }}')"{{ end }}>
                     <div class="card-domaine-overlay"></div>
                     <div class="card-domaine-content">
                         <span class="card-domaine-icon">{{ $icon }}</span>
-                        <h3>{{ $tax.Page.Title }}</h3>
+                        <h3>{{ $name }}</h3>
                         <span class="category-count">{{ $tax.Count }} {{ if gt $tax.Count 1 }}articles{{ else }}article{{ end }}</span>
                     </div>
                 </a>
                     {{ end }}
-                {{ end }}
-                {{ if not $found }}
-                <a href="{{ printf "categories/%s/" ($name | urlize) | relURL }}" class="category-card-domaine" {{ with $img }}style="--bg-image: url('{{ . }}')"{{ end }}>
-                    <div class="card-domaine-overlay"></div>
-                    <div class="card-domaine-content">
-                        <span class="card-domaine-icon">{{ $icon }}</span>
-                        <h3>{{ $name }}</h3>
-                        <span class="category-count">0 article</span>
-                    </div>
-                </a>
                 {{ end }}
             {{ end }}
         </div>
@@ -61,23 +49,14 @@
             {{ range $name := .Site.Params.besoins }}
                 {{ $icon := index $besoin_icons $name | default "🌿" }}
                 {{ $color := index $besoin_colors $name | default "#F2F0EA" }}
-                {{ $found := false }}
                 {{ range $key, $tax := $.Site.Taxonomies.categories }}
                     {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                    {{ $found = true }}
                 <a href="{{ $tax.Page.RelPermalink }}" class="category-card-besoin" style="--card-accent: {{ $color }}">
                     <span class="card-besoin-icon">{{ $icon }}</span>
-                    <h3>{{ $tax.Page.Title }}</h3>
+                    <h3>{{ $name }}</h3>
                     <span class="category-count">{{ $tax.Count }} {{ if gt $tax.Count 1 }}articles{{ else }}article{{ end }}</span>
                 </a>
                     {{ end }}
-                {{ end }}
-                {{ if not $found }}
-                <a href="{{ printf "categories/%s/" ($name | urlize) | relURL }}" class="category-card-besoin" style="--card-accent: {{ $color }}">
-                    <span class="card-besoin-icon">{{ $icon }}</span>
-                    <h3>{{ $name }}</h3>
-                    <span class="category-count">0 article</span>
-                </a>
                 {{ end }}
             {{ end }}
         </div>

@@ -11,15 +11,14 @@
                 <p>{{ .Site.Params.description }}</p>
             </div>
             <div class="footer-col">
-                <h4>Domaines</h4>
+                <h4>Catégories</h4>
                 <ul>
                     {{ range .Site.Params.domaines }}
-                    {{ $slug := . | urlize }}
-                    {{ $tax := index $.Site.Taxonomies.categories $slug }}
-                    {{ if $tax }}
-                    <li><a href="{{ $tax.Page.RelPermalink }}">{{ $tax.Page.Title }}</a></li>
-                    {{ else }}
-                    <li><a href="{{ printf "categories/%s/" $slug | relURL }}">{{ . }}</a></li>
+                    {{ $name := . }}
+                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
+                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
+                        <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
+                        {{ end }}
                     {{ end }}
                     {{ end }}
                 </ul>
@@ -28,12 +27,11 @@
                 <h4>Besoins</h4>
                 <ul>
                     {{ range .Site.Params.besoins }}
-                    {{ $slug := . | urlize }}
-                    {{ $tax := index $.Site.Taxonomies.categories $slug }}
-                    {{ if $tax }}
-                    <li><a href="{{ $tax.Page.RelPermalink }}">{{ $tax.Page.Title }}</a></li>
-                    {{ else }}
-                    <li><a href="{{ printf "categories/%s/" $slug | relURL }}">{{ . }}</a></li>
+                    {{ $name := . }}
+                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
+                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
+                        <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
+                        {{ end }}
                     {{ end }}
                     {{ end }}
                 </ul>
