@@ -17,6 +17,7 @@ Ce repo ne contient pas de site. Il contient les **instructions et templates** p
 ### Utilisation courante
 
 - `/create-article` : creer un nouvel article de blog (choix parmi plusieurs types : article standard, comparatif). Push automatiquement sur GitHub si le repo est configure
+- `/create-articles-batch` : **production en batch local** d'articles evergreen SEO bilingues FR+EN depuis la roadmap. Tourne sur le Mac de Damien avec Opus 4.7 (analyse SERP avec fetch concurrents reel, maillage cross-batch). Pose 2 questions au debut (source roadmap + nombre d'articles), puis tourne en autonomie. Articles ecrits avec `publishDate` futur. Voir section "Publications evergreen automatiques" plus bas
 - `/seo-setup` : generer ou mettre a jour les fichiers SEO techniques de base (robots.txt, llms.txt, sitemap, structured data)
 - `/seo` : mode interactif pour modifier/ajouter des elements SEO (meta tags, JSON-LD, audit on-page, etc.)
 - `/serve` : lancer le serveur Hugo en local (previsualisation sur `http://localhost:1313/`)
@@ -79,9 +80,7 @@ Ce repo ne contient pas de site. Il contient les **instructions et templates** p
 - **Categories domaines (modalites therapeutiques)** : Aromatherapie, Huiles Essentielles, Huiles Vegetales, Gemmotherapie, Fleurs de Bach, Complements Alimentaires
 - **Categories besoins (usages sante et bien-etre)** : Immunite et Defenses, Sommeil et Detente, Douleurs et Articulations, Bien-etre Feminin, Digestion et Detox, Minceur et Drainage, Beaute et Soins, Stress et Equilibre emotionnel, Peurs et Angoisses, Confiance et Estime de Soi, Respiration, Nuisibles
 - **Langue** : FR (EN prevu en sous-dossier)
-- **Auteur** : La Redaction
-- **URL auteur** : https://ma-bonne-sante.com/
-- **Fonction auteur** : Equipe editoriale
+- **Auteur principal** : Laura Verdier (ID slug : `laura-verdier`). Source de verite : `data/authors.yaml` (6 personas partages avec le reseau, copiees depuis le template). Frontmatter des articles : `author: laura-verdier`. Le rendu du nom et la fiche schema.org/Person sont resolus automatiquement par les layouts via `.Site.Data.authors`. Avatar : `/images/authors/laura-verdier.webp`.
 - **Client principal** : Inula (Pranarom, HerbalGem, Biofloral). Blog pense pour publier du contenu editorial valorisant les produits des 3 marques du groupe. D'autres clients datashake peuvent publier sur ce site si leur thematique rentre dans le champ sante naturelle ou bien-etre.
 - **Historique** : site initialement lance sous le nom "Meilleures Solutions Naturelles" (domaine meilleuresolutionnaturelle.fr). Renomme en "Ma Bonne Sante" en avril 2026 avec elargissement de la thematique aux fleurs de Bach et a l'equilibre emotionnel. Le repo GitHub conserve le nom historique "meilleures-solutions-naturelles" par simplicite, mais toute communication utilisateur doit utiliser "Ma Bonne Sante".
 
@@ -237,4 +236,52 @@ git add -A && git commit -m "Article : <titre>" && git push origin main
 ```
 
 **Si l une des 5 verifications echoue, NE PAS COMMIT et debugger.**
+
+## Publications evergreen automatiques (methode 2 : batch + GitHub Actions cron)
+
+Ce blog utilise la **methode 2** du systeme PBN GEO datashake (par opposition a la methode 1 utilisee sur como-blog-ai qui repose sur des routines CCR cloud). Voir spec master `geo-pbn-create-articles-batch` dans 000 Data.
+
+### Principe
+
+- **Production en batch local** : 1x/mois Damien lance `/create-articles-batch` sur son Mac, qui rredige N articles d'un coup avec Opus 4.7 (sans limite Stream idle timeout). La skill pose 2 questions au debut (source roadmap + nombre d'articles), puis tourne en autonomie.
+- **Stockage en attente** : chaque article est ecrit avec un frontmatter `publishDate` correspondant a sa `scheduled_date` dans la roadmap. Hugo (`buildFuture: false` par defaut) masque automatiquement les articles dont `publishDate > today` lors du build.
+- **Publication automatique** : un GitHub Actions cron (defini dans `.github/workflows/hugo.yml`, schedule `0 1 * * 2,5` = mardi + vendredi 3h Paris) rebuild le site 2x/semaine. Chaque rebuild inclut les articles dont `publishDate <= today`, ce qui les fait apparaitre sur le site public sans intervention humaine.
+
+### Roadmap
+
+Fichier : `roadmap.yaml` a la racine du repo (40 entrees au 25/04/2026, source Haloscan avril 2026). Chaque entree decrit 1 article a publier avec ses metas (kw, category, volume, kd, scheduled_date, status).
+
+**Statuts utilises** :
+- `todo` : pas encore traite par la batch
+- `queued` : redige par la batch (fichier .md present avec publishDate futur, en attente de publication via cron)
+- `failed` : erreur pendant la batch, voir le champ `error`
+
+**Categories valides** (doivent matcher le hugo.toml) : Aromatherapie, Huiles Essentielles, Huiles Vegetales, Gemmotherapie, Fleurs de Bach, Complements Alimentaires, Immunite et Defenses, Sommeil et Detente, Douleurs et Articulations, Bien-etre Feminin, Digestion et Detox, Minceur et Drainage, Beaute et Soins, Stress et Equilibre emotionnel, Peurs et Angoisses, Confiance et Estime de Soi, Respiration, Nuisibles.
+
+### Cycle complet de publication d'un article (timeline type)
+
+1. Damien renseigne le KW dans la roadmap (`status: todo`, scheduled_date dans le futur)
+2. 1x/mois, Damien lance `/create-articles-batch` -> N articles redings avec `publishDate` futur, status passe a `queued`
+3. Damien relit les articles, push sur GitHub
+4. Sur push, GitHub Actions rebuild le site (mais les nouveaux articles restent invisibles, publishDate futur)
+5. Mardi/vendredi 3h Paris, GitHub Actions cron rebuild le site -> les articles dont publishDate <= today apparaissent automatiquement
+6. Damien n'a rien a faire entre la batch et l'apparition publique
+
+### Comment editer la roadmap (humain)
+
+- **Ajouter une entree** : copier un bloc, remplir kw / category / scheduled_date, garder `status: todo`
+- **Reporter** : changer `scheduled_date`
+- **Debloquer un failed** : corriger la cause indiquee dans `error`, repasser `status: todo`, vider `error`
+
+### Difference avec como-blog-ai (methode 1)
+
+| Aspect | como-blog-ai (methode 1) | ma-bonne-sante (methode 2) |
+|---|---|---|
+| Skill principale | `/create-article-auto` (CCR cloud) | `/create-articles-batch` (local) |
+| Frequence run | 2x/sem auto | 1x/mois manuel |
+| Modele | Sonnet 4.6 (force, bug Opus stream timeout) | Opus 4.7 |
+| Fetch concurrents | Bloque par sandbox cloud | Marche normalement |
+| Maillage cross-batch | Non | Oui |
+| Publication | Push immediat -> en ligne | Push -> publishDate futur -> apparait au cron |
+
 

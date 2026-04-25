@@ -4,6 +4,11 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # Cron de publication evergreen : mardi + vendredi 1h UTC = 3h Paris (heure d'ete)
+  # Rebuild le site pour faire apparaitre les articles dont publishDate <= today
+  # (Hugo masque les articles avec publishDate futur via buildFuture: false par defaut)
+  schedule:
+    - cron: '0 1 * * 2,5'
 
 permissions:
   contents: read
