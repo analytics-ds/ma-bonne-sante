@@ -56,7 +56,8 @@ articles:
     volume: 800
     kd: null
     scheduled_date: "2026-05-08"
-    status: todo
+    status: queued
+    queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
     published_url_en: null
@@ -68,7 +69,8 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-12"
-    status: todo
+    status: queued
+    queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
     published_url_en: null

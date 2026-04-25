@@ -1,5 +1,16 @@
 # Journal de publication
 
+## Semaine 20 (12/05/2026 - 17/05/2026)
+- 2026-05-12 | Comment renforcer son systeme immunitaire naturellement (FR+EN) | Immunite et Defenses | batch (queued)
+
+## Semaine 19 (05/05/2026 - 11/05/2026)
+- 2026-05-05 | Huile essentielle pour deboucher le nez (FR+EN) | Respiration | batch (queued)
+- 2026-05-08 | Bourgeon de figuier : utilisation, bienfaits et posologie (FR+EN) | Gemmotherapie | batch (queued)
+
+## Semaine 18 (28/04/2026 - 03/05/2026)
+- 2026-04-28 | Huile essentielle pour le stress et l'anxiete (FR+EN) | Stress et Equilibre emotionnel | batch (queued)
+- 2026-05-01 | Quelle est la meilleure tisane pour dormir (FR+EN) | Sommeil et Detente | batch (queued)
+
 ## Semaine 17 (20/04/2026 - 26/04/2026)
 - 2026-04-22 | Fleurs de Bach : liste complete, proprietes et comparatif des meilleures marques | Fleurs de Bach (article migre depuis le blog fleurs-de-bach suite au rebranding "Ma Bonne Sante")
 
