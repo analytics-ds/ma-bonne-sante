@@ -132,6 +132,37 @@ Si scheduling option (2) ou (3) a ete choisi :
 - Commit intermediaire optionnel : `git commit -m "chore: cascade remapping des scheduled_date"` (utile pour tracer le decalage)
 - Continuer ensuite avec la production
 
+### Validation diversite des categories (obligatoire, applique APRES tout scheduling)
+
+Une fois les `scheduled_date` finales calculees, valider l'ordre chronologique
+de publication contre la regle de diversite :
+
+```
+sequence = entrees [todo, queued] de roadmap.yaml triees par scheduled_date croissante
+pour chaque paire consecutive (i, i+1) :
+  si sequence[i].category == sequence[i+1].category : ECHEC regle 1
+pour chaque fenetre glissante de 5 entrees :
+  si nb_categories_distinctes < 3 : ECHEC regle 2
+```
+
+**Regles** :
+1. JAMAIS 2 articles consecutifs de la meme categorie.
+2. Sur toute fenetre glissante de 5 articles consecutifs, au moins 3 categories
+   distinctes doivent etre representees.
+3. Cas degrade : si le blog n'a que 2 categories disponibles dans le pool,
+   imposer alternance stricte 1 sur 2 (la regle 2 est alors levee).
+
+**En cas d'echec** :
+- Reordonner automatiquement les `scheduled_date` des entrees en conflit en
+  les permutant avec la prochaine entree compatible (categorie differente).
+- Ne JAMAIS modifier les `scheduled_date` deja `done`.
+- Logguer chaque permutation a l'utilisateur dans le recap (Etape 5).
+- Si aucune permutation possible (cas extreme), demander l'arbitrage humain
+  avant de continuer.
+
+Cette validation s'applique aussi a chaque ajout d'entree dans la roadmap
+(mode A nouvelle entree, mode B import, mode C insertion).
+
 ## Etape 2 — Pour chaque article (boucle sur les N entrees)
 
 La rediaction se fait en **sequence**. Apres chaque article rredige, il rejoint le pool de "articles dispo pour maillage" pour les articles suivants du meme batch (cross-batch).

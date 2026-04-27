@@ -10,6 +10,16 @@
 # Extension : 82 articles repartis du 28/04/2026 au 12/02/2027.
 #
 # Format documente dans .claude/templates/roadmap-template.yaml
+#
+# REGLE DE DIVERSITE DES CATEGORIES (obligatoire)
+# -----------------------------------------------
+# L'ordre chronologique de publication doit alterner les categories pour
+# proposer un flux varie aux lecteurs et aux moteurs.
+#   1. JAMAIS 2 articles consecutifs (par scheduled_date) de la meme categorie.
+#   2. Sur toute fenetre glissante de 5 articles consecutifs, au moins
+#      3 categories distinctes doivent etre representees.
+#   3. Si peu de categories sont disponibles, alternance maximale.
+# A respecter a chaque ajout d'entree ET a chaque reordonnancement.
 
 articles:
 
