@@ -91,7 +91,32 @@ Apres avoir collecte tous les KW :
 Avant de demarrer le batch :
 - Verifier les pre-requis fichiers (authors.yaml, fetch-image.sh, MCP serpapi, hugo binary)
 - Lister les N articles qui seront produits avec leur publishDate finale (apres scheduling)
-- Demander confirmation : "OK pour lancer ? (oui/non)"
+
+#### Garde-fou cannibalisation (mode B et C avec fusion, ou tout ajout dans roadmap.yaml)
+
+Si le run va ajouter de **nouvelles entrees** dans `roadmap.yaml` (mode B avec fusion oui, mode C avec fusion oui), executer le check de cannibalisation **avant** confirmation finale :
+
+1. Lire toutes les entrees existantes de `roadmap.yaml` (tous statuts).
+2. Pour chaque KW propose, comparer aux KW existants :
+   - Tokeniser (lowercase, retirer stop words FR/EN courants : le/la/les/de/du/des/un/une/a/au/aux/the/of/and/or/in/on/for...).
+   - Calculer overlap : tokens communs / tokens du KW le plus court.
+   - Drapeau "risque" si overlap >= 50% OU si un KW est sous-string de l'autre.
+3. Si au moins un drapeau leve : afficher la liste des couples suspects et demander confirmation explicite ("Cannibalisation potentielle avec : [liste]. Continuer quand meme ? oui/non").
+4. Si aucun risque : pas de warning, on continue.
+
+Soft, jamais bloquant. L'utilisateur peut toujours forcer.
+
+#### Repere indicatif quota hebdomadaire (warning soft, jamais bloquant)
+
+Compter dans `MEMORY.md` les articles avec `publishDate` ou date de publication dans la **semaine en cours** (lundi-dimanche). Si le batch en cours (apres scheduling) va porter le total au-dela de 4 articles publies cette semaine :
+- Afficher un **simple warning** : "Note : ce batch portera la semaine en cours a X articles. Repere indicatif a 4/semaine pour etaler la publication. Continuer ? (oui/non)"
+- Si l'utilisateur confirme, continuer normalement.
+
+Important : c'est un repere indicatif, jamais un blocage. Ne pas refuser de soi-meme. Ne s'applique qu'aux articles avec `publishDate` dans la semaine en cours (les articles avec `publishDate` futur dans une autre semaine ne comptent pas pour ce check).
+
+#### Confirmation finale
+
+Demander confirmation : "OK pour lancer ? (oui/non)"
 
 ## Etape 1 — Resolution du scheduling
 

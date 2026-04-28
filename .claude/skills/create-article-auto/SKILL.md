@@ -28,6 +28,14 @@ Aucune question a l'utilisateur. Toutes les decisions sont prises par l'agent a 
 
 Si une etape bloque (SerpAPI indispo, image introuvable, build Hugo echoue, push rejete apres rebase), l'agent **n'insiste pas** : il marque l'entree `status: failed` dans la roadmap avec le message d'erreur, commit le roadmap, et sort proprement en exit code non-zero.
 
+## Pas de quota hebdomadaire (regle exemptee)
+
+Cette skill **ignore completement** la regle indicative "4 articles par semaine" mentionnee dans le `CLAUDE.md` du blog. Elle s'applique uniquement aux skills interactives (`/create-article-geo`, `/create-article-seo`).
+
+`/create-article-auto` est faite pour tourner en routine cron (mardi/vendredi 3h Paris) et doit publier l'entree eligible de la roadmap **sans aucune verification de quota**. Ne pas lire le `MEMORY.md` pour compter les publications de la semaine. Ne pas afficher de warning. Publier point.
+
+Le seul critere d'eligibilite est defini a l'Etape 0 : `status == todo` et `scheduled_date <= today`.
+
 ## Difference avec /create-article-geo
 
 | Element | `/create-article-geo` | `/create-article-auto` |

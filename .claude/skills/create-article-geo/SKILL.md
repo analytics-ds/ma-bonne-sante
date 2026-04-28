@@ -28,15 +28,21 @@ Si le pull echoue (conflit de merge, divergence, etc.) : **STOP**. Ne pas tenter
 
 Si le repo n'a pas de remote configure (site encore en local, pas encore passe par `/github-setup`), passer cette etape et continuer.
 
-## Etape 0.5 — Verification du quota hebdomadaire
+## Etape 0.5 — Repere indicatif quota hebdomadaire (warning soft, jamais bloquant)
 
 Apres le pull, lire le fichier `MEMORY.md` a la racine du projet. Ce fichier contient l'historique des articles publies, classe par semaine.
 
 Compter le nombre d'articles publies dans la **semaine en cours** (lundi a dimanche). Si **4 articles ou plus** sont deja enregistres cette semaine :
-- Avertir l'utilisateur : "4 articles ont deja ete publies cette semaine. Pour une strategie de cocon semantique efficace, il est recommande d'etaler la publication. Tu veux quand meme continuer ?"
-- Si l'utilisateur confirme, continuer. Sinon, arreter.
+- Afficher un **simple warning** : "Note : 4 articles ou plus deja publies cette semaine. Pour etaler la publication, il est recommande de patienter. Tu veux quand meme continuer ? (oui/non)"
+- Si l'utilisateur confirme, continuer normalement. Sinon, arreter.
+
+**Important** : c'est un repere indicatif, pas un blocage. Ne jamais refuser de continuer de soi-meme. La decision revient toujours a l'utilisateur.
 
 Si le fichier `MEMORY.md` n'existe pas encore, le creer vide (il sera rempli a l'etape 7).
+
+## Etape 0.6 — Garde-fou cannibalisation (si ajout d'un KW a la roadmap)
+
+Cette skill ne fait pas elle-meme d'ajout dans `roadmap.yaml`, mais si l'utilisateur demande plus tard "ajoute ce KW a la roadmap" en parallele d'une session de creation, appliquer la regle decrite dans le `CLAUDE.md` du blog (section "Garde-fou cannibalisation a l'ajout dans la roadmap"). Avertir si overlap >= 50% des tokens significatifs avec un KW existant, ou si un KW est sous-string de l'autre. Soft, jamais bloquant.
 
 ## Etape 1 — Collecter les informations
 
