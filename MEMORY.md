@@ -8,6 +8,7 @@
 - 2026-05-08 | Bourgeon de figuier : utilisation, bienfaits et posologie (FR+EN) | Gemmotherapie | batch (queued)
 
 ## Semaine 18 (28/04/2026 - 03/05/2026)
+- 2026-05-02 | Comment faire passer une migraine sans medicament (FR+EN) | Douleurs et Articulations | ponctuel
 - 2026-04-28 | Huile essentielle pour le stress et l'anxiete (FR+EN) | Stress et Equilibre emotionnel | batch (queued)
 - 2026-04-29 | Quelles sont les meilleures marques de complements alimentaires pour la menopause (FR+EN) | Complements Alimentaires + Bien-etre Feminin | manuel (geo comparatif)
 - 2026-05-01 | Quelle est la meilleure tisane pour dormir (FR+EN) | Sommeil et Detente | batch (queued)

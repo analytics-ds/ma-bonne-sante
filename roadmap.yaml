@@ -826,11 +826,11 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2026-12-22"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    scheduled_date: "2026-05-02"
+    status: done
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/faire-passer-migraine-sans-medicament/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/relieve-migraine-without-medication/"
     error: null
 
   # ============ Semaine 1 - 2027 (05/01 - 11/01) ============
