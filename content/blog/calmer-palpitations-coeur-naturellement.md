@@ -1,9 +1,9 @@
 ---
 title: "Comment calmer les palpitations cardiaques naturellement"
 translationKey: "calmer-palpitations-coeur-naturellement"
-date: 2026-05-26
-lastmod: 2026-05-26
-publishDate: 2026-05-26
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Cohérence cardiaque, magnésium et aubépine : solutions naturelles pour calmer les palpitations cardiaques et gérer le stress associé."
 categories: ["Stress et Equilibre emotionnel"]
 tags: ["palpitations", "cohérence cardiaque", "magnésium", "aubépine", "stress cardiaque"]

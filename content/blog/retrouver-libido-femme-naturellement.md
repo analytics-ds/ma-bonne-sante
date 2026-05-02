@@ -1,9 +1,9 @@
 ---
 title: "Libido féminine : retrouver l'envie naturellement"
 translationKey: "retrouver-libido-femme-naturellement"
-date: 2026-05-29
-lastmod: 2026-05-29
-publishDate: 2026-05-29
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Ménopause, stress, pilule : causes de la baisse de libido chez la femme et solutions naturelles avec la maca, l'ashwagandha et les plantes adaptogènes."
 categories: ["Bien-etre Feminin"]
 tags: ["libido féminine", "maca", "ashwagandha", "désir sexuel", "ménopause"]

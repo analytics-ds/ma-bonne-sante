@@ -1,9 +1,9 @@
 ---
 title: "Faire baisser la tension naturellement : solutions efficaces"
 translationKey: "faire-baisser-tension-naturellement"
-date: 2026-05-22
-lastmod: 2026-05-22
-publishDate: 2026-05-22
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Alimentation, activité physique, gemmothérapie, magnésium : méthodes naturelles validées pour faire baisser la tension artérielle durablement."
 categories: ["Gemmotherapie"]
 tags: ["tension artérielle", "hypertension", "gemmothérapie", "aubépine", "remèdes naturels"]

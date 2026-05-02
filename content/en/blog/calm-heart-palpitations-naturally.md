@@ -1,9 +1,9 @@
 ---
 title: "How to Calm Heart Palpitations Naturally"
 translationKey: "calmer-palpitations-coeur-naturellement"
-date: 2026-05-26
-lastmod: 2026-05-26
-publishDate: 2026-05-26
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Heart coherence, magnesium and hawthorn: natural solutions to calm heart palpitations and manage associated stress."
 categories: ["Stress and Emotional Balance"]
 tags: ["palpitations", "heart coherence", "magnesium", "hawthorn", "cardiac stress"]

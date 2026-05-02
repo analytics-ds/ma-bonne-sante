@@ -1,15 +1,11 @@
 # Journal de publication
 
-## Semaine 22 (25/05/2026 - 31/05/2026)
-- 2026-05-26 | Comment calmer les palpitations cardiaques naturellement (FR+EN) | Stress et Equilibre emotionnel | ponctuel (queued)
-- 2026-05-29 | Libido feminine : retrouver l envie naturellement (FR+EN) | Bien-etre Feminin | ponctuel (queued)
-
-## Semaine 21 (18/05/2026 - 24/05/2026)
-- 2026-05-19 | Huile de nigelle : dangers, contre-indications et precautions (FR+EN) | Huiles Vegetales | ponctuel (queued)
-- 2026-05-22 | Faire baisser la tension naturellement : solutions efficaces (FR+EN) | Gemmotherapie | ponctuel (queued)
-
-## Semaine 20 (12/05/2026 - 17/05/2026)
-- 2026-05-15 | Manque de vitamine D chez l adulte : symptomes et solutions (FR+EN) | Complements Alimentaires | ponctuel (queued)
+## Semaine 18 (28/04/2026 - 03/05/2026) — ajouts ponctuel datafer
+- 2026-05-02 | Comment calmer les palpitations cardiaques naturellement (FR+EN) | Stress et Equilibre emotionnel | ponctuel
+- 2026-05-02 | Libido feminine : retrouver l envie naturellement (FR+EN) | Bien-etre Feminin | ponctuel
+- 2026-05-02 | Huile de nigelle : dangers, contre-indications et precautions (FR+EN) | Huiles Vegetales | ponctuel
+- 2026-05-02 | Faire baisser la tension naturellement : solutions efficaces (FR+EN) | Gemmotherapie | ponctuel
+- 2026-05-02 | Manque de vitamine D chez l adulte : symptomes et solutions (FR+EN) | Complements Alimentaires | ponctuel
 - 2026-05-12 | Comment renforcer son systeme immunitaire naturellement (FR+EN) | Immunite et Defenses | batch (queued)
 
 ## Semaine 19 (05/05/2026 - 11/05/2026)

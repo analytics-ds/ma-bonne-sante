@@ -1,9 +1,9 @@
 ---
 title: "Female Libido: How to Boost Desire Naturally"
 translationKey: "retrouver-libido-femme-naturellement"
-date: 2026-05-29
-lastmod: 2026-05-29
-publishDate: 2026-05-29
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Menopause, stress, contraceptive pill: causes of low libido in women and natural solutions with maca, ashwagandha and adaptogenic plants."
 categories: ["Women Wellness"]
 tags: ["female libido", "maca", "ashwagandha", "sexual desire", "menopause"]

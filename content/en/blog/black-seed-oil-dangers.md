@@ -1,9 +1,9 @@
 ---
 title: "Black Seed Oil: Dangers, Contraindications and Precautions"
 translationKey: "huile-de-nigelle-dangereux"
-date: 2026-05-19
-lastmod: 2026-05-19
-publishDate: 2026-05-19
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Black seed oil: real dangers, contraindications and safety precautions for using this vegetable oil without risk."
 categories: ["Vegetable Oils"]
 tags: ["black seed oil", "contraindications", "precautions", "vegetable oil", "thymoquinone"]

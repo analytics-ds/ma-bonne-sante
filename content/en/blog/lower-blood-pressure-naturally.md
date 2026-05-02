@@ -1,9 +1,9 @@
 ---
 title: "How to Lower Blood Pressure Naturally: Effective Solutions"
 translationKey: "faire-baisser-tension-naturellement"
-date: 2026-05-22
-lastmod: 2026-05-22
-publishDate: 2026-05-22
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Diet, physical activity, gemmotherapy, magnesium: validated natural methods to lower blood pressure and maintain it durably."
 categories: ["Gemmotherapy"]
 tags: ["blood pressure", "hypertension", "gemmotherapy", "hawthorn", "natural remedies"]

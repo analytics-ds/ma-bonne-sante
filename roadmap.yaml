@@ -124,7 +124,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-05-15"
+    scheduled_date: "2026-05-02"
     status: queued
     queued_date: "2026-05-02"
     published_date: null
@@ -136,7 +136,7 @@ articles:
     category: "Huiles Vegetales"
     volume: null
     kd: null
-    scheduled_date: "2026-05-19"
+    scheduled_date: "2026-05-02"
     status: queued
     queued_date: "2026-05-02"
     published_date: null
@@ -171,7 +171,7 @@ articles:
     category: "Gemmotherapie"
     volume: null
     kd: null
-    scheduled_date: "2026-05-22"
+    scheduled_date: "2026-05-02"
     status: queued
     queued_date: "2026-05-02"
     published_date: null
@@ -183,7 +183,7 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2026-05-26"
+    scheduled_date: "2026-05-02"
     status: queued
     queued_date: "2026-05-02"
     published_date: null
@@ -207,7 +207,7 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-05-29"
+    scheduled_date: "2026-05-02"
     status: queued
     queued_date: "2026-05-02"
     published_date: null

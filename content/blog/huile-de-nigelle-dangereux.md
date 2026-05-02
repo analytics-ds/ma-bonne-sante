@@ -1,9 +1,9 @@
 ---
 title: "Huile de nigelle : dangers, contre-indications et précautions"
 translationKey: "huile-de-nigelle-dangereux"
-date: 2026-05-19
-lastmod: 2026-05-19
-publishDate: 2026-05-19
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Huile de nigelle : dangers réels, contre-indications et précautions d'emploi pour utiliser cette huile végétale en toute sécurité."
 categories: ["Huiles Vegetales"]
 tags: ["huile de nigelle", "contre-indications", "précautions", "huile végétale", "thymoquinone"]

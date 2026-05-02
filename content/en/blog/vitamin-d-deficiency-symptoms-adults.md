@@ -1,9 +1,9 @@
 ---
 title: "Vitamin D Deficiency in Adults: Symptoms and Solutions"
 translationKey: "manque-vitamine-d-symptomes-adulte"
-date: 2026-05-15
-lastmod: 2026-05-15
-publishDate: 2026-05-15
+date: 2026-05-02
+lastmod: 2026-05-02
+publishDate: 2026-05-02
 description: "Chronic fatigue, bone pain, weakened immunity: symptoms of vitamin D deficiency in adults and natural solutions to address it effectively."
 categories: ["Dietary Supplements"]
 tags: ["vitamin D", "deficiency", "symptoms", "dietary supplements", "bone health"]
