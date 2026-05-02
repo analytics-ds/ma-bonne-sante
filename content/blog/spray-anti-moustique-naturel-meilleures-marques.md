@@ -1,13 +1,28 @@
 ---
 title: "Quelles sont les meilleures marques de spray anti-moustique naturel ?"
+translationKey: "spray-anti-moustique-naturel"
 date: 2026-04-12
-lastmod: 2026-04-12
+lastmod: 2026-05-02
+publishDate: 2026-04-12
 description: "Comparatif des meilleures marques de spray anti-moustique naturel : efficacité, durée de protection et composition analysées pour bien choisir."
 categories: ["Aromathérapie"]
 tags: ["anti-moustique", "spray naturel", "comparatif", "huiles essentielles", "été"]
-author: "La Rédaction"
+author: laura-verdier
+image: "/images/blog/spray-anti-moustique-naturel-meilleures-marques.webp"
+imageAlt: "Flacons d'huiles essentielles aromathérapie pour un spray anti-moustique naturel"
+imageCredit: "Photo par Naomi King via Flickr (CC BY 2.0)"
+faq:
+  - question: "Un spray anti-moustique naturel est-il efficace contre le moustique tigre ?"
+    answer: "Oui. Les sprays à base de citriodiol (PMD) ou de synergies d'Huiles Essentielles comme l'eucalyptus citronné et le géranium rosat sont efficaces contre le moustique tigre (Aedes albopictus). Pranarôm Aromapic et Care Plus Natural ont démontré leur efficacité sur cette espèce lors de tests indépendants."
+  - question: "À partir de quel âge peut-on utiliser un spray anti-moustique naturel ?"
+    answer: "Cela dépend de la formulation. MoustiKids (MoustiCare) et Puressentiel bébé sont utilisables dès 6 mois. Pranarôm Aromapic est adapté à partir de 30 mois. Pour les nourrissons de moins de 6 mois, la moustiquaire reste la protection recommandée."
+  - question: "Combien de temps dure la protection d'un spray anti-moustique naturel ?"
+    answer: "La durée varie de 1 heure (Huile Essentielle de citronnelle seule) à 7-8 heures (Pranarôm Aromapic). Les formulations à base de citriodiol offrent 4 à 6 heures de protection. La durée dépend aussi des conditions d'utilisation (transpiration, chaleur, humidité)."
+  - question: "Peut-on utiliser un spray anti-moustique naturel pendant la grossesse ?"
+    answer: "Les sprays à base de citriodiol (comme Care Plus Natural) sont généralement autorisés pendant la grossesse. Les sprays à base d'Huiles Essentielles nécessitent un avis médical, certaines Huiles Essentielles étant déconseillées pendant les premiers mois de grossesse."
+  - question: "Quelle est la différence entre un spray au citriodiol et un spray aux Huiles Essentielles ?"
+    answer: "Le citriodiol (PMD) est un actif unique, synthétisé ou extrait de l'eucalyptus citronné, qui agit comme barrière olfactive. Les sprays aux Huiles Essentielles combinent plusieurs actifs végétaux en synergie pour une action à la fois répulsive et apaisante. Les synergies d'Huiles Essentielles bio, comme celle de Pranarôm, peuvent offrir une durée de protection supérieure au citriodiol seul."
 readingTime: true
-image: "https://images.unsplash.com/photo-1692954645890-aaa90ce3fcb2?w=800&h=400&fit=crop"
 ---
 
 > **En bref :**

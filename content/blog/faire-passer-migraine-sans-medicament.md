@@ -8,6 +8,9 @@ description: "Froid, huiles essentielles, massages et gemmothérapie : 8 méthod
 categories: ["Douleurs et Articulations"]
 tags: ["migraine", "maux de tête", "huile essentielle", "menthe poivrée", "lavande", "gemmothérapie", "remède naturel"]
 author: "laura-verdier"
+image: "/images/blog/faire-passer-migraine-sans-medicament.webp"
+imageAlt: "Méthodes naturelles pour soulager une migraine sans médicament"
+imageCredit: "Photo par lindz graham via Flickr (CC BY 2.0)"
 faq:
   - question: "Comment faire disparaître une migraine rapidement ?"
     answer: "Pour faire passer une migraine rapidement, s'isoler dans une pièce sombre et silencieuse reste la première étape. Appliquer une compresse froide sur la nuque ou le front et masser délicatement les tempes avec une goutte d'huile essentielle de menthe poivrée diluée sont les actions les plus efficaces à combiner dès le début de la crise."
