@@ -1,5 +1,6 @@
 baseURL = "https://ma-bonne-sante.com/"
 languageCode = "fr"
+defaultContentLanguage = "fr"
 title = "Ma Bonne Santé"
 theme = "ma-bonne-sante-theme"
 paginate = 12
