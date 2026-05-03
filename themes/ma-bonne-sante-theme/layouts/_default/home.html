@@ -96,10 +96,11 @@
         </div>
         <div class="grid-articles">
             {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+            {{ $page := . }}
             <article class="article-card">
                 {{ with .Params.image }}
-                <a href="{{ $.RelPermalink }}" class="article-card-image-wrapper">
-                    <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" class="article-card-image" loading="lazy">
+                <a href="{{ $page.RelPermalink }}" class="article-card-image-wrapper">
+                    <img src="{{ . }}" alt="{{ $page.Params.imageAlt | default $page.Title }}" class="article-card-image" loading="lazy">
                 </a>
                 {{ end }}
                 <div class="article-card-body">
