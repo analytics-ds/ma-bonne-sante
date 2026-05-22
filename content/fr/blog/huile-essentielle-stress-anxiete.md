@@ -9,8 +9,8 @@ categories: ["Stress et Équilibre émotionnel"]
 tags: ["huile essentielle", "stress", "anxiete", "lavande vraie", "camomille romaine"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-stress-anxiete.webp"
-imageAlt: "Brins de lavande, plante phare des huiles essentielles anti-stress et apaisantes"
-imageCredit: "Photo par anathea via Flickr (CC BY 2.0)"
+imageAlt: "Fleurs de lavande en gros plan, huile essentielle apaisante contre le stress et l'anxiété"
+imageCredit: "Photo par elminium via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelle est l'huile essentielle la plus efficace contre le stress ?"
     answer: "L'huile essentielle de **lavande vraie** (Lavandula angustifolia) reste la reference. Riche en linalol et en acetate de linalyle, elle a fait l'objet d'etudes cliniques montrant une reduction du systeme nerveux sympathique. La camomille romaine arrive juste apres pour les episodes d'angoisse aigue."

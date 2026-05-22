@@ -36,7 +36,10 @@
     </header>
 
     {{ with .Params.image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" class="article-hero-image" loading="lazy">
+    <figure class="article-hero">
+        <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" class="article-hero-image" loading="eager" fetchpriority="high">
+        {{ with $.Params.imageCredit }}<figcaption class="article-hero-credit">{{ . }}</figcaption>{{ end }}
+    </figure>
     {{ end }}
 
     <div class="article-content">

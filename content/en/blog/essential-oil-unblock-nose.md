@@ -9,8 +9,8 @@ categories: ["Respiratory"]
 tags: ["essential oil", "blocked nose", "peppermint", "eucalyptus radiata", "inhalation"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-deboucher-nez.webp"
-imageAlt: "Fresh aromatic plant, source of essential oils used to unblock the nose"
-imageCredit: "Photo by sermarr erGuiri via Flickr (CC BY 2.0)"
+imageAlt: "Peppermint plant, a decongestant essential oil to unblock the nose"
+imageCredit: "Photo par Joshua T Polito via Wikimedia (CC CC0 1.0)"
 faq:
   - question: "Which is the best essential oil to unblock the nose quickly?"
     answer: "**Peppermint** is the fastest thanks to its menthol, which instantly opens the nasal passages with a cooling effect. A single drop on a tissue, followed by 3 breaths, unblocks the nose in under 30 seconds. Reserved for adults and adolescents, never before age 6."

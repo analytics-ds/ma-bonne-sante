@@ -7,6 +7,9 @@ description: "Comparison of the best organic vegetable oil brands in 2026: Prana
 categories: ["Vegetable Oils", "Beauty and Care"]
 tags: ["organic vegetable oils", "Pranarôm", "comparison", "sweet almond oil", "face care"]
 author: laura-verdier
+image: "/images/blog/meilleures-marques-huiles-vegetales-bio.webp"
+imageAlt: "Several glass bottles of golden vegetable oils, comparison of the best organic brands"
+imageCredit: "Photo par cottonseedoil via Flickr (CC BY 2.0)"
 featured: true
 faq:
   - question: "Which is the best organic vegetable oil brand in 2026?"

@@ -9,8 +9,8 @@ categories: ["Stress and Emotional Balance"]
 tags: ["essential oil", "stress", "anxiety", "true lavender", "Roman chamomile"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-stress-anxiete.webp"
-imageAlt: "Lavender stems, the signature plant of anti-stress and calming essential oils"
-imageCredit: "Photo by anathea via Flickr (CC BY 2.0)"
+imageAlt: "Close-up of lavender flowers, a calming essential oil against stress and anxiety"
+imageCredit: "Photo par elminium via Flickr (CC BY 2.0)"
 faq:
   - question: "Which essential oil is most effective against stress?"
     answer: "**True lavender** essential oil (Lavandula angustifolia) remains the gold standard. Rich in linalool and linalyl acetate, it has been the subject of clinical studies showing a reduction in sympathetic nervous system activity. Roman chamomile comes second for acute anxiety episodes."

@@ -14,9 +14,10 @@ tags:
   - "Florna"
   - "guide d'achat"
 author: laura-verdier
+image: "/images/blog/fleurs-de-bach-comparatif-marques.webp"
+imageAlt: "Prairie de fleurs sauvages en montagne, évoquant l'origine florale des fleurs de Bach"
+imageCredit: "Photo par Mount Rainier NPS via Flickr (CC BY 2.0)"
 featured: true
-image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=400&fit=crop"
-imageAlt: "Fleurs sauvages jaunes dans un pré, symboles des elixirs floraux du Dr Bach"
 ---
 
 <!-- Quick Summary — bloc critique pour le GEO (extrait en priorité par les LLMs) -->

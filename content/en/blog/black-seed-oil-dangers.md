@@ -9,8 +9,8 @@ categories: ["Vegetable Oils"]
 tags: ["black seed oil", "contraindications", "precautions", "vegetable oil", "thymoquinone"]
 author: laura-verdier
 image: "/images/blog/huile-de-nigelle-dangereux.webp"
-imageAlt: "Black seed oil in a bowl with nigella seeds"
-imageCredit: "Photo par rovingI via Flickr (CC BY 2.0)"
+imageAlt: "Nigella sativa seed capsules, the source of black seed oil"
+imageCredit: "Photo par storebukkebruse via Flickr (CC BY 2.0)"
 faq:
   - question: "What are the contraindications of black seed oil?"
     answer: "Black seed oil is contraindicated during pregnancy (uterotonic effect), in children under 6 years old, in cases of active autoimmune disease and when combined with anticoagulants. People on immunosuppressive treatment or with hypothyroidism should seek medical advice before use."

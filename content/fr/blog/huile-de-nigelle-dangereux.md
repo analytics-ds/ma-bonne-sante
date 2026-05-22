@@ -9,8 +9,8 @@ categories: ["Huiles Végétales"]
 tags: ["huile de nigelle", "contre-indications", "précautions", "huile végétale", "thymoquinone"]
 author: laura-verdier
 image: "/images/blog/huile-de-nigelle-dangereux.webp"
-imageAlt: "Huile de nigelle noire dans un bol avec des graines de nigelle"
-imageCredit: "Photo par rovingI via Flickr (CC BY 2.0)"
+imageAlt: "Capsules de graines de nigelle (Nigella sativa), source de l'huile de nigelle"
+imageCredit: "Photo par storebukkebruse via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelles sont les contre-indications de l'huile de nigelle ?"
     answer: "L'huile de nigelle est contre-indiquée pendant la grossesse (effet utérotonique), chez les enfants de moins de 6 ans, en cas de maladie auto-immune en phase active et en association avec des anticoagulants. Les personnes sous traitement immunosuppresseur ou souffrant d'hypothyroïdie doivent demander l'avis d'un médecin avant toute utilisation."

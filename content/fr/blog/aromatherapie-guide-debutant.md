@@ -7,7 +7,9 @@ draft: false
 categories: ["Aromathérapie"]
 tags: ["débutant", "guide", "précautions"]
 author: laura-verdier
-image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=400&fit=crop"
+image: "/images/blog/aromatherapie-guide-debutant.webp"
+imageAlt: "Flacon d'huile essentielle ambré ouvert posé sur une table, en aromathérapie"
+imageCredit: "Photo par 1DayReview via Flickr (CC BY 2.0)"
 ---
 
 L'aromathérapie est l'utilisation des huiles essentielles extraites de plantes aromatiques à des fins de bien-être. Cette pratique ancestrale, aujourd'hui soutenue par de nombreuses études, offre des solutions naturelles pour accompagner le quotidien.

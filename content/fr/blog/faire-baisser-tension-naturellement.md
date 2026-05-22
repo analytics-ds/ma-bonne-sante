@@ -9,8 +9,8 @@ categories: ["Gemmothérapie"]
 tags: ["tension artérielle", "hypertension", "gemmothérapie", "aubépine", "remèdes naturels"]
 author: laura-verdier
 image: "/images/blog/faire-baisser-tension-naturellement.webp"
-imageAlt: "Fleurs de tilleul, plante médicinale pour la tension artérielle naturelle"
-imageCredit: "Photo par wallygrom via Flickr (CC BY-SA 2.0)"
+imageAlt: "Fleur d'hibiscus rouge, plante réputée pour aider à faire baisser la tension artérielle"
+imageCredit: "Photo par Jangra Works via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelle boisson fait descendre la tension ?"
     answer: "L'eau, les jus de betterave rouge (riches en nitrates), le thé vert et les tisanes à base d'aubépine sont les boissons les plus documentées pour leurs effets hypotenseurs modérés. La betterave rouge est particulièrement étudiée : 200 ml de jus par jour peuvent réduire la pression systolique de 4 à 5 mmHg selon plusieurs essais cliniques. L'alcool, les sodas sucrés et le café en excès sont à limiter."

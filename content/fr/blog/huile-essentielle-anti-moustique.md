@@ -6,8 +6,9 @@ description: "Huile essentielle anti-moustique : les HE les plus efficaces, dosa
 categories: ["Huiles Essentielles", "Nuisibles"]
 tags: ["anti-moustique", "citronnelle", "eucalyptus citronné", "géranium", "Pranarôm"]
 author: laura-verdier
-image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=400&fit=crop"
-imageAlt: "Flacons d'huiles essentielles anti-moustiques posés sur une table en bois"
+image: "/images/blog/huile-essentielle-anti-moustique.webp"
+imageAlt: "Plantes aromatiques en pot (menthe, basilic, sauge), utilisées en huiles essentielles répulsives"
+imageCredit: "Photo par saragoldsmith via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelle est l'huile essentielle la plus efficace contre les moustiques ?"
     answer: "L'huile essentielle d'eucalyptus citronné (Corymbia citriodora) est considérée comme la plus efficace. Son principe actif, le citronellal (65 à 80 % de sa composition), est reconnu par l'OMS comme répulsif naturel performant. La gamme Aromapic de Pranarôm exploite cette HE dans ses formulations anti-moustiques."

@@ -9,8 +9,8 @@ categories: ["Compléments Alimentaires"]
 tags: ["vitamine D", "carence", "symptômes", "compléments alimentaires", "santé osseuse"]
 author: laura-verdier
 image: "/images/blog/manque-vitamine-d-symptomes-adulte.webp"
-imageAlt: "Compléments alimentaires et vitamines pour la santé et la vitalité"
-imageCredit: "Photo par JeepersMedia via Flickr (CC BY 2.0)"
+imageAlt: "Gélules et comprimés de compléments alimentaires, dont la vitamine D"
+imageCredit: "Photo par shannonkringen via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "Quels sont les symptômes d'une vitamine D trop basse ?"
     answer: "Les symptômes d'un manque de vitamine D chez l'adulte incluent une fatigue chronique, des douleurs osseuses et musculaires diffuses, une fragilité immunitaire accrue, des troubles de l'humeur et des difficultés de cicatrisation. Ces signes sont peu spécifiques et doivent être confirmés par un dosage sanguin de la 25-OH-D."

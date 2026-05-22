@@ -7,6 +7,9 @@ description: "Comparatif des meilleures marques d'huiles végétales bio en 2026
 categories: ["Huiles Végétales", "Beauté et Soins"]
 tags: ["huiles végétales bio", "Pranarôm", "comparatif", "huile amande douce", "soin visage"]
 author: laura-verdier
+image: "/images/blog/meilleures-marques-huiles-vegetales-bio.webp"
+imageAlt: "Plusieurs flacons en verre d'huiles végétales dorées, comparatif des meilleures marques bio"
+imageCredit: "Photo par cottonseedoil via Flickr (CC BY 2.0)"
 featured: true
 faq:
   - question: "Quelle est la meilleure marque d'huiles végétales bio en 2026 ?"

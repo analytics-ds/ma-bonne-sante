@@ -9,8 +9,8 @@ categories: ["Women Wellness"]
 tags: ["female libido", "maca", "ashwagandha", "sexual desire", "menopause"]
 author: laura-verdier
 image: "/images/blog/retrouver-libido-femme-naturellement.webp"
-imageAlt: "Medicinal plants and natural remedies for women's wellbeing and vitality"
-imageCredit: "Photo par D.Eickhoff via Flickr (CC BY 2.0)"
+imageAlt: "Maca roots, an Andean plant traditionally used to support libido"
+imageCredit: "Photo par tacowitte via Flickr (CC BY 2.0)"
 faq:
   - question: "How to revive a woman's libido?"
     answer: "Reviving female libido requires identifying the cause: hormonal (menopause, pill, postpartum), psychological (stress, self-image, relationship), lifestyle-related (fatigue, sedentary lifestyle, nutritional deficiency) or medication-related. Adaptogenic plants like maca and ashwagandha have demonstrated positive effects in clinical studies on female libido, particularly for stress- or menopause-related decline. The most effective approach combines plants, stress management and open communication with a partner."

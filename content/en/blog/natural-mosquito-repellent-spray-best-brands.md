@@ -9,8 +9,8 @@ categories: ["Aromatherapy"]
 tags: ["mosquito repellent", "natural spray", "comparison", "essential oils", "summer"]
 author: laura-verdier
 image: "/images/blog/spray-anti-moustique-naturel-meilleures-marques.webp"
-imageAlt: "Aromatherapy essential oil bottles for a natural mosquito repellent spray"
-imageCredit: "Photo par Naomi King via Flickr (CC BY 2.0)"
+imageAlt: "Citronella plant foliage, the base of natural mosquito repellent sprays"
+imageCredit: "Photo par robstephaustralia via Flickr (CC BY 2.0)"
 faq:
   - question: "Is a natural mosquito repellent spray effective against tiger mosquitoes?"
     answer: "Yes. Sprays based on citriodiol (PMD) or essential oil blends such as lemon eucalyptus and rose geranium are effective against the tiger mosquito (Aedes albopictus). Pranarôm Aromapic and Care Plus Natural have demonstrated their effectiveness against this species in independent tests."

@@ -9,8 +9,8 @@ categories: ["Respiration"]
 tags: ["huile essentielle", "nez bouche", "menthe poivree", "eucalyptus radie", "inhalation"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-deboucher-nez.webp"
-imageAlt: "Plante aromatique fraiche, source des huiles essentielles utilisees pour deboucher le nez"
-imageCredit: "Photo par sermarr erGuiri via Flickr (CC BY 2.0)"
+imageAlt: "Plant de menthe poivrée, huile essentielle décongestionnante pour déboucher le nez"
+imageCredit: "Photo par Joshua T Polito via Wikimedia (CC CC0 1.0)"
 faq:
   - question: "Quelle est la meilleure huile essentielle pour deboucher le nez rapidement ?"
     answer: "La **menthe poivree** est la plus rapide grace a son menthol qui ouvre instantanement les voies nasales par effet rafraichissant. Une seule goutte sur un mouchoir, suivie de 3 inspirations, debouche le nez en moins de 30 secondes. Reservee aux adultes et adolescents, jamais avant 6 ans."

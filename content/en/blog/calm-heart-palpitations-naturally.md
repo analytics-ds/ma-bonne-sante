@@ -9,8 +9,8 @@ categories: ["Stress and Emotional Balance"]
 tags: ["palpitations", "heart coherence", "magnesium", "hawthorn", "cardiac stress"]
 author: laura-verdier
 image: "/images/blog/calmer-palpitations-coeur-naturellement.webp"
-imageAlt: "Medicinal plants and natural remedies for heart rhythm and relaxation"
-imageCredit: "Photo par Wonderlane via Flickr (CC CC0 1.0)"
+imageAlt: "Red hawthorn berries on the branch, a heart plant used against palpitations"
+imageCredit: "Photo par tednsteph via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "How to stop palpitations quickly?"
     answer: "The fastest and best documented method is the vagal maneuver: breathe deeply, hold the breath and press gently on the abdomen (Valsalva maneuver), or plunge the face into cold water for 15 seconds. Heart coherence (5 breaths per minute for 3 to 5 minutes) is effective for stress-related palpitations within minutes. If palpitations are accompanied by chest pain, shortness of breath or faintness, call emergency services immediately."

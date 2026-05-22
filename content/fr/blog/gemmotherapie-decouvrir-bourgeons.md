@@ -7,7 +7,9 @@ draft: false
 categories: ["Gemmothérapie"]
 tags: ["bourgeons", "guide", "macérat"]
 author: laura-verdier
-image: "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=800&h=400&fit=crop"
+image: "/images/blog/gemmotherapie-decouvrir-bourgeons.webp"
+imageAlt: "Bourgeons et fleurs de cerisier au printemps, illustrant la gemmothérapie des bourgeons"
+imageCredit: "Photo par Michiel Thomas via Flickr (CC BY 2.0)"
 ---
 
 La gemmothérapie est une branche de la phytothérapie qui utilise les tissus embryonnaires végétaux (bourgeons, jeunes pousses, radicelles) pour leurs propriétés concentrées. Moins connue que l'[aromathérapie]({{< ref "/blog/aromatherapie-guide-debutant" >}}), elle gagne en popularité grâce à sa douceur d'utilisation et son large spectre d'action.

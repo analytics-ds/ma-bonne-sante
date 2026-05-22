@@ -9,8 +9,8 @@ categories: ["Gemmothérapie"]
 tags: ["bourgeon de figuier", "gemmotherapie", "stress", "digestion", "sommeil"]
 author: laura-verdier
 image: "/images/blog/bourgeon-figuier-utilisation-bienfaits.webp"
-imageAlt: "Bourgeon en debourrement, illustration des extraits utilises en gemmotherapie"
-imageCredit: "Photo par woodleywonderworks via Flickr (CC BY 2.0)"
+imageAlt: "Jeunes figues et bourgeons sur une branche de figuier, base du macérat de bourgeons en gemmothérapie"
+imageCredit: "Photo par U.S. Department of Agriculture via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Comment utiliser le bourgeon de figuier ?"
     answer: "La posologie standard est de **5 a 15 gouttes** de macerat de bourgeon de figuier dilue dans un verre d'eau, **15 minutes avant le repas**, 1 a 3 fois par jour. Commencez progressivement (5 gouttes) puis augmentez en 1 a 2 semaines. Cure de 3 semaines, suivie d'une pause d'une semaine."

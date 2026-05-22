@@ -8,10 +8,10 @@ description: "Comparatif des meilleures marques de spray anti-moustique naturel 
 categories: ["Aromathérapie"]
 tags: ["anti-moustique", "spray naturel", "comparatif", "huiles essentielles", "été"]
 author: laura-verdier
-featured: true
 image: "/images/blog/spray-anti-moustique-naturel-meilleures-marques.webp"
-imageAlt: "Flacons d'huiles essentielles aromathérapie pour un spray anti-moustique naturel"
-imageCredit: "Photo par Naomi King via Flickr (CC BY 2.0)"
+imageAlt: "Feuillage de citronnelle, plante répulsive à la base des sprays anti-moustiques naturels"
+imageCredit: "Photo par robstephaustralia via Flickr (CC BY 2.0)"
+featured: true
 faq:
   - question: "Un spray anti-moustique naturel est-il efficace contre le moustique tigre ?"
     answer: "Oui. Les sprays à base de citriodiol (PMD) ou de synergies d'Huiles Essentielles comme l'eucalyptus citronné et le géranium rosat sont efficaces contre le moustique tigre (Aedes albopictus). Pranarôm Aromapic et Care Plus Natural ont démontré leur efficacité sur cette espèce lors de tests indépendants."

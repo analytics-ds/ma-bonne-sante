@@ -9,8 +9,8 @@ categories: ["Stress et Équilibre émotionnel"]
 tags: ["palpitations", "cohérence cardiaque", "magnésium", "aubépine", "stress cardiaque"]
 author: laura-verdier
 image: "/images/blog/calmer-palpitations-coeur-naturellement.webp"
-imageAlt: "Plantes médicinales et remèdes naturels pour le rythme cardiaque et la relaxation"
-imageCredit: "Photo par Wonderlane via Flickr (CC CC0 1.0)"
+imageAlt: "Baies rouges d'aubépine sur la branche, plante du cœur utilisée contre les palpitations"
+imageCredit: "Photo par tednsteph via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "Comment arrêter les palpitations rapidement ?"
     answer: "La méthode la plus rapide et la plus documentée est la manoeuvre vagale : inspirer profondément, bloquer la respiration et appuyer légèrement sur le ventre (manoeuvre de Valsalva), ou plonger le visage dans de l'eau froide pendant 15 secondes. La cohérence cardiaque (5 respirations par minute pendant 3 à 5 minutes) est efficace pour les palpitations liées au stress en quelques minutes. En cas de palpitations accompagnées de douleurs thoraciques, d'essoufflement ou de malaise, appeler le 15 immédiatement."

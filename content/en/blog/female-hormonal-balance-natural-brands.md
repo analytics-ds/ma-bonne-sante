@@ -8,6 +8,9 @@ description: "Compare natural brand solutions for female hormonal balance: Herba
 categories: ["Women's Wellness"]
 tags: ["female hormonal balance", "gemmotherapy", "women's wellness", "menstrual cycle", "phytotherapy"]
 author: laura-verdier
+image: "/images/blog/marques-equilibre-hormonal-feminin.webp"
+imageAlt: "Fresh aromatic herbs in a garden, plants linked to female hormonal balance"
+imageCredit: "Photo par Salvadonica, Chianti, Tuscany via Flickr (CC BY 2.0)"
 featured: true
 faq:
   - question: "Which brands offer natural solutions for female hormonal balance?"

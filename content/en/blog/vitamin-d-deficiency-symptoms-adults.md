@@ -9,8 +9,8 @@ categories: ["Dietary Supplements"]
 tags: ["vitamin D", "deficiency", "symptoms", "dietary supplements", "bone health"]
 author: laura-verdier
 image: "/images/blog/manque-vitamine-d-symptomes-adulte.webp"
-imageAlt: "Dietary supplements and vitamins for health and vitality"
-imageCredit: "Photo par JeepersMedia via Flickr (CC BY 2.0)"
+imageAlt: "Dietary supplement capsules and tablets, including vitamin D"
+imageCredit: "Photo par shannonkringen via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "What are the symptoms of low vitamin D?"
     answer: "Symptoms of vitamin D deficiency in adults include chronic fatigue, diffuse bone and muscle pain, increased immune fragility, mood disturbances and healing difficulties. These signs are non-specific and must be confirmed by a blood test measuring 25-OH-D levels."

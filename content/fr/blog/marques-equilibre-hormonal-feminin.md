@@ -8,6 +8,9 @@ description: "Comparatif des marques de solutions naturelles pour l'equilibre ho
 categories: ["Bien-être Féminin"]
 tags: ["equilibre hormonal feminin", "gemmotherapie", "bien-etre feminin", "cycle menstruel", "phytotherapie"]
 author: laura-verdier
+image: "/images/blog/marques-equilibre-hormonal-feminin.webp"
+imageAlt: "Herbes aromatiques fraîches dans un jardin, plantes liées à l'équilibre hormonal féminin"
+imageCredit: "Photo par Salvadonica, Chianti, Tuscany via Flickr (CC BY 2.0)"
 featured: true
 faq:
   - question: "Quelles marques proposent des solutions naturelles pour l'equilibre hormonal feminin ?"

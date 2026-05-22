@@ -9,8 +9,8 @@ categories: ["Bien-être Féminin"]
 tags: ["libido féminine", "maca", "ashwagandha", "désir sexuel", "ménopause"]
 author: laura-verdier
 image: "/images/blog/retrouver-libido-femme-naturellement.webp"
-imageAlt: "Plantes médicinales et remèdes naturels pour le bien-être féminin et la vitalité"
-imageCredit: "Photo par D.Eickhoff via Flickr (CC BY 2.0)"
+imageAlt: "Racines de maca, plante andine traditionnellement utilisée pour soutenir la libido"
+imageCredit: "Photo par tacowitte via Flickr (CC BY 2.0)"
 faq:
   - question: "Comment relancer la libido d'une femme ?"
     answer: "Relancer la libido féminine nécessite d'identifier la ou les causes du problème : hormonale (ménopause, pilule, post-partum), psychologique (stress, image de soi, relation), liée au mode de vie (fatigue, sédentarité, carence nutritionnelle) ou médicamenteuse. Les plantes adaptogènes comme la maca et l'ashwagandha ont démontré des effets positifs dans les études cliniques sur la libido féminine, notamment en cas de baisse liée au stress ou à la ménopause. L'approche la plus efficace combine plantes, gestion du stress et dialogue avec le partenaire."

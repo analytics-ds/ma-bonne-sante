@@ -9,8 +9,8 @@ categories: ["Gemmotherapy"]
 tags: ["blood pressure", "hypertension", "gemmotherapy", "hawthorn", "natural remedies"]
 author: laura-verdier
 image: "/images/blog/faire-baisser-tension-naturellement.webp"
-imageAlt: "Linden flowers, medicinal plant for natural blood pressure management"
-imageCredit: "Photo par wallygrom via Flickr (CC BY-SA 2.0)"
+imageAlt: "Red hibiscus flower, a plant known to help lower blood pressure"
+imageCredit: "Photo par Jangra Works via Flickr (CC BY 2.0)"
 faq:
   - question: "What drink lowers blood pressure?"
     answer: "Water, red beet juice (rich in nitrates), green tea and hawthorn herbal teas are the best documented drinks for their moderate hypotensive effects. Red beet is particularly studied: 200 ml of juice per day can reduce systolic pressure by 4 to 5 mmHg according to several clinical trials. Alcohol, sugary sodas and excessive coffee should be limited."

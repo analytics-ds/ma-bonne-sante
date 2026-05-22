@@ -9,8 +9,8 @@ categories: ["Gemmotherapy"]
 tags: ["fig bud", "gemmotherapy", "stress", "digestion", "sleep"]
 author: laura-verdier
 image: "/images/blog/bourgeon-figuier-utilisation-bienfaits.webp"
-imageAlt: "Bursting bud, illustration of the extracts used in gemmotherapy"
-imageCredit: "Photo by woodleywonderworks via Flickr (CC BY 2.0)"
+imageAlt: "Young figs and buds on a fig tree branch, the source of fig bud macerate in gemmotherapy"
+imageCredit: "Photo par U.S. Department of Agriculture via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "How do you use fig bud?"
     answer: "The standard dosage is **5 to 15 drops** of fig bud macerate diluted in a glass of water, **15 minutes before meals**, 1 to 3 times a day. Start gradually (5 drops) then build up over 1 to 2 weeks. 3-week cure, followed by a one-week break."
