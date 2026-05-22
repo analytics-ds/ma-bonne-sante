@@ -1,22 +1,50 @@
 baseURL = "https://ma-bonne-sante.com/"
 languageCode = "fr"
 defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
 title = "Ma Bonne Santé"
 theme = "ma-bonne-sante-theme"
 paginate = 12
 removePathAccents = true
+
+[languages]
+  [languages.fr]
+    languageCode = "fr-FR"
+    languageName = "Français"
+    weight = 1
+    title = "Ma Bonne Santé"
+    contentDir = "content/fr"
+
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 2
+    title = "Ma Bonne Santé"
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "Expert guide to natural health and wellness: aromatherapy, gemmotherapy, Bach flowers, essential oils and food supplements. Natural solutions for every need, backed by science."
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 # Menu principal (Accueil + Blog, les dropdowns Domaines/Besoins sont gérés dans le header partial)
-[[menus.main]]
+[[languages.fr.menus.main]]
   name = "Accueil"
   pageRef = "/"
   weight = 1
 
-[[menus.main]]
+[[languages.fr.menus.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 4
+
+[[languages.en.menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+
+[[languages.en.menus.main]]
   name = "Blog"
   pageRef = "/blog"
   weight = 4
