@@ -49,8 +49,8 @@ Cette skill ne fait pas elle-meme d'ajout dans `roadmap.yaml`, mais si l'utilisa
 ### Prompt GEO et query fan-out
 
 Demander a l'utilisateur :
-- **Prompt GEO cible** : la question exacte que les utilisateurs posent aux moteurs IA generatifs (ChatGPT, Perplexity, Google AI Overviews). Ce prompt deviendra le **H1 de l'article**. C'est une question naturelle, pas un mot-cle optimise. Exemple : "Quel anti-moustique naturel choisir ?"
-- **Query fan-out (mot-cle SEO)** : le terme SEO sur lequel l'article se positionne dans Google. Il decoule du prompt et represente la recherche "classique" associee. Exemple : "huile essentielle anti moustique". Si l'utilisateur ne fournit pas de query fan-out, la determiner a partir du prompt en choisissant un mot-cle avec du volume de recherche.
+- **Prompt GEO cible** : la question naturelle que les utilisateurs posent aux moteurs IA generatifs (ChatGPT, Perplexity, Google AI Overviews). Ce prompt deviendra le **H1 de l'article affiche dans la page (= frontmatter `h1`), reformule naturellement si besoin**. Si le prompt est deja une question bien formee, le garder tel quel. S'il est maladroit, le reformuler en question naturelle qui conserve le sens et les mots-cles porteurs. Exemple : prompt "huile essentielle stress et anxiete" -> H1 "Quelle huile essentielle utiliser contre le stress et l'anxiete ?"
+- **Query fan-out (mot-cle SEO)** : le terme SEO sur lequel l'article se positionne dans Google. Il decoule du prompt mais s'en distingue : le prompt est conversationnel (cible LLMs), la query est lexicale (cible SERP). **La query fan-out sert de base au meta title (= balise HTML <title>, = frontmatter `title`) avec un ajout naturel court** (annee, qualificatif, angle, marque). Exemple : query "meilleure huile essentielle stress" -> title "Meilleure huile essentielle stress : top 5 et avis 2026". Si l'utilisateur ne fournit pas de query fan-out, la determiner a partir du prompt en choisissant un mot-cle avec du volume de recherche.
 - **Categorie** : dans quelle categorie du blog ? (proposer les categories existantes du site, definies dans hugo.toml ou visibles dans content/blog/). L'utilisateur DOIT choisir une categorie, ne pas passer cette etape.
 
 **Note multilingue** : le consultant fournit ces infos dans la langue principale du site. La query fan-out et le prompt seront automatiquement traduits en anglais par Claude au moment de la redaction de la version EN (avec recherche de mots-cles SEO pertinents en anglais, pas une simple traduction litterale).
@@ -237,7 +237,8 @@ Les deux versions ont le meme schema de frontmatter, avec le champ `translationK
 | Champ | Regle |
 |-------|-------|
 | `translationKey` | **OBLIGATOIRE**. Identique entre FR et EN. Format : slug-article-generique (ex: `bienfaits-the-vert`). Ce champ permet a Hugo de lier les 2 versions et de generer le hreflang et le language switcher |
-| `title` | **= prompt GEO cible dans la langue de l'article** (FR : question naturelle en francais, EN : question naturelle en anglais). C'est le H1 de l'article. Max ~60 caracteres. Contient le mot-cle principal de la langue si possible |
+| `title` | **= meta title HTML (balise <title>) = query fan-out + ajout naturel** dans la langue de l'article (annee, qualificatif, angle, marque). Cible la SERP classique. Max ~60 caracteres / 580px (cf skill `/tech-title`). Exemple : "Meilleure huile essentielle stress : top 5 et avis 2026" |
+| `h1` | **= H1 affiche dans la page = prompt GEO cible reformule naturellement si besoin** dans la langue de l'article (FR : question naturelle en francais, EN : question naturelle en anglais). Garder le prompt tel quel s'il est deja une question bien formee, le reformuler en question naturelle s'il est maladroit. Le layout Hugo doit afficher `h1` en titre principal de l'article (et fallback sur `title` si `h1` non renseigne) |
 | `description` | Meta description optimisee pour la SERP dans la langue de l'article. Max 140 caracteres, contient la query fan-out de la langue |
 | `date` | Date du jour (YYYY-MM-DD). Identique entre FR et EN |
 | `lastmod` | Date du jour (YYYY-MM-DD), identique a `date` a la creation |
@@ -256,7 +257,8 @@ Ces regles sont fondamentales pour que l'article soit cite par les moteurs IA ge
 
 | Regle | Detail |
 |-------|--------|
-| **H1 = prompt cible** | Le H1 (title) est TOUJOURS le prompt exact que l'utilisateur pose aux moteurs IA. C'est une question naturelle, pas un mot-cle optimise |
+| **H1 = prompt cible reformule** | Le H1 affiche dans la page (frontmatter `h1`) reprend le prompt cible reformule naturellement si besoin. Garder le prompt tel quel s'il est deja une question bien formee. Reformuler en question naturelle s'il est maladroit. Jamais transforme en mot-cle SEO. Cible les LLMs |
+| **Meta title (HTML <title>) = query + ajout naturel** | Le meta title (frontmatter `title`) commence par la query fan-out (telle quelle ou tres legerement reformulee pour la fluidite) suivie d'un ajout naturel court (annee, qualificatif, angle, marque). Cible la SERP, distinct du H1 |
 | **Query fan-out dans le body** | La query fan-out (mot-cle SEO) doit apparaitre dans le premier paragraphe et dans les variations des H2 |
 | **1 paragraphe = 1 idee** | Chaque paragraphe traite d'une seule idee distincte. Ne jamais melanger plusieurs concepts dans un meme paragraphe. Cela facilite l'extraction par les LLMs |
 | **Quick summary auto-suffisant** | Le bloc "En bref" est le bloc le plus critique : les LLMs l'extraient en priorite. Il doit etre auto-suffisant (comprehensible seul) et contenir les faits cles avec des donnees chiffrees |
@@ -293,10 +295,12 @@ Lire les commentaires HTML `<!-- NOTES POUR CLAUDE -->` en bas du template chois
 - [ ] Les 2 versions sont creees (FR dans `content/blog/`, EN dans `content/en/blog/`)
 - [ ] Les 2 versions partagent le meme `translationKey` dans le frontmatter
 - [ ] Slug = query fan-out en minuscules, tirets, sans accents, dans la langue de l'article
-- [ ] Title = prompt GEO cible (question naturelle dans la langue de l'article), < 60 caracteres
+- [ ] Frontmatter `title` (= meta title HTML) = query fan-out + ajout naturel court, < 60 caracteres / 580px
+- [ ] Frontmatter `h1` (= H1 affiche) = prompt GEO cible reformule naturellement si besoin (question naturelle dans la langue de l'article)
 - [ ] Meta description <= 140 caracteres, contient la query fan-out (mot-cle SEO dans la langue)
 - [ ] Auteur renseigne dans le frontmatter (ID slug correspondant a une cle de `data/authors.yaml`, meme ID pour FR et EN)
-- [ ] H1 = prompt cible (verifie que c'est bien une question naturelle, pas un mot-cle)
+- [ ] H1 = prompt cible reformule (verifie que c'est bien une question naturelle, pas un mot-cle)
+- [ ] `title` et `h1` sont distincts (le `h1` vise les LLMs, le `title` vise la SERP)
 - [ ] Query fan-out presente dans le premier paragraphe
 - [ ] Structure Hn conforme au type (voir notes du template)
 - [ ] H2 explicites et auto-suffisants (comprehensibles hors contexte)

@@ -10,7 +10,7 @@
                 <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
                 <span class="reading-time">{{ .ReadingTime }} min de lecture</span>
             </div>
-            <h1>{{ .Title }}</h1>
+            <h1>{{ .Params.h1 | default .Title }}</h1>
             {{ with .Description }}
             <p class="article-description">{{ . }}</p>
             {{ end }}
