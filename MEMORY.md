@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 21 (18/05/2026 - 24/05/2026)
+- 2026-05-22 | Quelle marque propose le meilleur complément alimentaire pour les allergies ? (FR+EN) | Compléments Alimentaires + Respiration | manuel (geo comparatif - HerbalGem)
+
 ## Semaine 20 (12/05/2026 - 17/05/2026)
 - 2026-05-12 | Comment renforcer son systeme immunitaire naturellement (FR+EN) | Immunite et Defenses | batch (queued)
 
