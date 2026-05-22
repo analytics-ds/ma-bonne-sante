@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $slug := .Slug | default (path.Base .RelPermalink | strings.TrimSuffix "/") }}
 {{ $lang := .Site.Language.Lang }}
-{{ $authorData := index .Site.Data.authors $slug }}
+{{ $authorData := index hugo.Data.authors $slug }}
 
 <section class="author-hero">
     <div class="container">

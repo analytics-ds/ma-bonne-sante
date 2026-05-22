@@ -130,7 +130,7 @@
             <p class="section-subtitle">Des journalistes formés à la phytothérapie et à l'aromathérapie. Indépendance totale, sources scientifiques systématiquement citées.</p>
         </div>
         <div class="authors-home-grid">
-            {{ range $slug, $data := .Site.Data.authors }}
+            {{ range $slug, $data := hugo.Data.authors }}
             {{ $articles := where site.RegularPages "Params.author" $slug }}
             {{ $articles = where $articles "Section" "blog" }}
             {{ $count := len $articles }}

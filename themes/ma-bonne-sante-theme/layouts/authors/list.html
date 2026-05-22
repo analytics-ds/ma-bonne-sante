@@ -12,7 +12,7 @@
 <section class="authors-grid-section">
     <div class="container">
         <div class="authors-grid">
-            {{ range $slug, $data := .Site.Data.authors }}
+            {{ range $slug, $data := hugo.Data.authors }}
             {{ $articles := where site.RegularPages "Params.author" $slug }}
             {{ $articles = where $articles "Section" "blog" }}
             {{ $count := len $articles }}

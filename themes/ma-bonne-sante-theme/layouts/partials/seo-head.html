@@ -33,7 +33,7 @@
 {{- /* Author */ -}}
 {{- if .IsPage }}
 {{- with .Params.author }}
-{{- $authorData := index $.Site.Data.authors . }}
+{{- $authorData := index hugo.Data.authors . }}
 {{- with $authorData }}<meta name="author" content="{{ .name }}">{{ end }}
 {{- end }}
 {{- end }}
@@ -44,10 +44,10 @@
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ .Site.Language.LanguageCode | default (.Site.LanguageCode | default "fr_FR") | replaceRE "-" "_" }}">
-{{- range .Site.Languages }}
-{{- if ne .Lang $.Site.Language.Lang }}
-<meta property="og:locale:alternate" content="{{ .LanguageCode | replaceRE "-" "_" }}">
+<meta property="og:locale" content="{{ .Site.Language.Locale | default (.Site.Language.Locale | default "fr_FR") | replaceRE "-" "_" }}">
+{{- range hugo.Sites }}
+{{- if ne .Language.Lang $.Site.Language.Lang }}
+<meta property="og:locale:alternate" content="{{ .Language.Locale | replaceRE "-" "_" }}">
 {{- end }}
 {{- end }}
 
@@ -73,7 +73,7 @@
 {{- /* Article meta */ -}}
 {{- if .IsPage }}
 {{- with .Params.author }}
-{{- $articleAuthor := index $.Site.Data.authors . }}
+{{- $articleAuthor := index hugo.Data.authors . }}
 {{- with $articleAuthor }}<meta property="article:author" content="{{ .name }}">{{ end }}
 {{- end }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
@@ -116,7 +116,7 @@
 {{- $lang := .Site.Language.Lang }}
 {{- $author := dict }}
 {{- with .Params.author }}
-    {{- $author = index $.Site.Data.authors . }}
+    {{- $author = index hugo.Data.authors . }}
 {{- end }}
 <script type="application/ld+json">
 {
@@ -124,7 +124,7 @@
     "@type": "Article",
     "headline": {{ .Title | jsonify }},
     "description": {{ .Description | jsonify }},
-    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "inLanguage": "{{ .Site.Language.Locale | default "fr-FR" }}",
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "wordCount": {{ .WordCount }},
@@ -233,7 +233,7 @@
     "description": {{ .Site.Params.description | jsonify }},
     "url": "{{ .Site.BaseURL }}",
     "publisher": { "@id": "{{ .Site.BaseURL }}#organization" },
-    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "inLanguage": "{{ .Site.Language.Locale | default "fr-FR" }}",
     "potentialAction": {
         "@type": "SearchAction",
         "target": {
@@ -255,7 +255,7 @@
     "name": {{ .Title | jsonify }},
     "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
     "url": "{{ .Permalink }}",
-    "inLanguage": "{{ .Site.Language.LanguageCode | default "fr-FR" }}",
+    "inLanguage": "{{ .Site.Language.Locale | default "fr-FR" }}",
     "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
     "mainEntity": {
         "@type": "ItemList",

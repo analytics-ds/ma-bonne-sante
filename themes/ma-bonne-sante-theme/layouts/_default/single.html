@@ -15,7 +15,7 @@
             <p class="article-description">{{ . }}</p>
             {{ end }}
             {{ with .Params.author }}
-            {{ $authorData := index $.Site.Data.authors . }}
+            {{ $authorData := index hugo.Data.authors . }}
             {{ $lang := $.Site.Language.Lang }}
             <a href="{{ (printf "authors/%s/" .) | relURL }}" class="article-author">
                 {{ with $authorData.avatar }}
@@ -57,7 +57,7 @@
 
             <!-- Bloc auteur -->
             {{ with .Params.author }}
-            {{ $authorData := index $.Site.Data.authors . }}
+            {{ $authorData := index hugo.Data.authors . }}
             {{ $lang := $.Site.Language.Lang }}
             {{ if $authorData }}
             <aside class="author-block">
