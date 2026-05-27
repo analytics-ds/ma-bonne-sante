@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Bouffées de chaleur et traitement naturel : sauge, actée à grappes noires, houblon, gemmothérapie. Le guide complet pour soulager durablement."
-categories: ["Bien-etre Feminin"]
+categories: ["Bien-être Féminin"]
 tags: ["bouffees de chaleur", "menopause", "phytotherapie", "actee a grappes noires", "sauge", "isoflavones"]
 author: laura-verdier
 featured: true

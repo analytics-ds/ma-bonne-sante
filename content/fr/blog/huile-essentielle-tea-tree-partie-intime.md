@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Huile essentielle de tea tree sur les parties intimes : mycose vaginale, démangeaisons, irritations. Dilution, protocole, précautions à connaître."
-categories: ["Bien-etre Feminin"]
+categories: ["Bien-être Féminin"]
 tags: ["tea tree", "mycose vaginale", "candida albicans", "hygiene intime", "bien-etre feminin"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-partie-intime.webp"

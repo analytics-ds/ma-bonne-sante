@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Bouffées de chaleur et thyroïde : symptômes hyperthyroïdie vs ménopause, examens, solutions naturelles. Comment faire la différence et agir."
-categories: ["Bien-etre Feminin"]
+categories: ["Bien-être Féminin"]
 tags: ["bouffees de chaleur", "thyroide", "hyperthyroidie", "menopause", "hormones"]
 author: laura-verdier
 image: "/images/blog/bouffees-de-chaleur-et-thyroide.webp"

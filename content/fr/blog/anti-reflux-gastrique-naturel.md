@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Anti-reflux gastrique naturel : aloe vera, bourgeon de figuier, gingembre, citron, plantes. Le guide complet pour soulager les remontées acides."
-categories: ["Digestion et Detox"]
+categories: ["Digestion et Détox"]
 tags: ["reflux gastrique", "RGO", "remontees acides", "gemmotherapie", "figuier", "aloe vera"]
 author: laura-verdier
 featured: true

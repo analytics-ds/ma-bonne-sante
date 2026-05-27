@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Tea tree contre les mycoses : application, dilution, durée, mycose pieds, ongles, peau. Le protocole complet pour traiter naturellement."
-categories: ["Beaute et Soins", "Huiles Essentielles"]
+categories: ["Beauté et Soins", "Huiles Essentielles"]
 tags: ["tea tree", "mycose", "antifongique", "candida albicans", "pranarom"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-mycose.webp"

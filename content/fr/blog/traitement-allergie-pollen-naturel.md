@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Allergie au pollen et traitement naturel : cassis gemmothérapie, quercétine, ortie, huiles essentielles, probiotiques. Les solutions qui marchent."
-categories: ["Respiration", "Complements Alimentaires"]
+categories: ["Respiration", "Compléments Alimentaires"]
 tags: ["allergie pollen", "rhinite allergique", "antihistaminique naturel", "cassis", "ortie", "quercetine"]
 author: laura-verdier
 featured: true

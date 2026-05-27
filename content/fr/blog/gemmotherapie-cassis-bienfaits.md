@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Gemmothérapie de cassis : tous les bienfaits du bourgeon de Ribes nigrum. Allergies, inflammation, fatigue surrénalienne, posologie et précautions."
-categories: ["Gemmotherapie"]
+categories: ["Gemmothérapie"]
 tags: ["gemmotherapie", "cassis", "ribes nigrum", "bourgeon", "anti-inflammatoire", "herbalgem"]
 author: laura-verdier
 featured: true

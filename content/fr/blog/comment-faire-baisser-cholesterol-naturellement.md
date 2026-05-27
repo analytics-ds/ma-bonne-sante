@@ -6,7 +6,7 @@ date: "2026-05-27"
 lastmod: "2026-05-27"
 publishDate: "2026-05-27"
 description: "Faire baisser le cholestérol naturellement : alimentation, plantes, oméga-3, fibres solubles, gemmothérapie. Le guide complet pour un taux maitrisé."
-categories: ["Complements Alimentaires"]
+categories: ["Compléments Alimentaires"]
 tags: ["cholesterol", "ldl", "complements alimentaires", "omega 3", "phytotherapie", "gemmotherapie"]
 author: laura-verdier
 featured: true
