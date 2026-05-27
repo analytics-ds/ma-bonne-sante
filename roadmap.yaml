@@ -1031,3 +1031,124 @@ articles:
     published_url_fr: null
     published_url_en: null
     error: null
+
+  # ============ Batch ponctuel 2026-05-27 (10 articles immediate) ============
+  - kw: "huile essentielle tea tree danger"
+    category: "Huiles Essentielles"
+    volume: 2700
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "huile essentielle tea tree bienfaits"
+    category: "Huiles Essentielles"
+    volume: 1727
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "traitement allergie pollen naturel"
+    category: "Respiration"
+    volume: 677
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "huile essentielle tea tree mycose"
+    category: "Beaute et Soins"
+    volume: 590
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "huile essentielle tea tree partie intime"
+    category: "Bien-etre Feminin"
+    volume: 400
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "comment faire baisser le cholesterol naturellement"
+    category: "Complements Alimentaires"
+    volume: 277
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bouffees de chaleur et thyroide"
+    category: "Bien-etre Feminin"
+    volume: 236
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "anti reflux gastrique naturel"
+    category: "Digestion et Detox"
+    volume: 170
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bouffees de chaleur traitement naturel"
+    category: "Bien-etre Feminin"
+    volume: 295
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "gemmotherapie cassis bienfaits"
+    category: "Gemmotherapie"
+    volume: 1462
+    kd: null
+    scheduled_date: "2026-05-27"
+    status: queued
+    queued_date: "2026-05-27"
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null

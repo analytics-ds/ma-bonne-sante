@@ -1,5 +1,17 @@
 # Journal de publication
 
+## Semaine 22 (25/05/2026 - 31/05/2026)
+- 2026-05-27 | Huile essentielle tea tree : dangers et précautions (FR+EN) | Huiles Essentielles | ponctuel batch 10
+- 2026-05-27 | Huile essentielle tea tree : bienfaits et utilisations (FR+EN) | Huiles Essentielles | ponctuel batch 10
+- 2026-05-27 | Traitement allergie pollen naturel : 8 solutions efficaces (FR+EN) | Respiration + Compléments Alimentaires | ponctuel batch 10
+- 2026-05-27 | Huile essentielle tea tree mycose : guide d'utilisation (FR+EN) | Beauté et Soins + Huiles Essentielles | ponctuel batch 10
+- 2026-05-27 | Huile essentielle tea tree partie intime : utilisation (FR+EN) | Bien-être Féminin | ponctuel batch 10
+- 2026-05-27 | Comment faire baisser le cholestérol naturellement (FR+EN) | Compléments Alimentaires | ponctuel batch 10
+- 2026-05-27 | Bouffées de chaleur et thyroïde : faire la différence (FR+EN) | Bien-être Féminin | ponctuel batch 10
+- 2026-05-27 | Anti-reflux gastrique naturel : 10 solutions efficaces (FR+EN) | Digestion et Détox | ponctuel batch 10
+- 2026-05-27 | Bouffées de chaleur traitement naturel : guide complet (FR+EN) | Bien-être Féminin | ponctuel batch 10
+- 2026-05-27 | Gemmothérapie cassis bienfaits : guide complet 2026 (FR+EN) | Gemmothérapie | ponctuel batch 10
+
 ## Semaine 21 (18/05/2026 - 24/05/2026)
 - 2026-05-22 | Quelle marque propose le meilleur complément alimentaire pour les allergies ? (FR+EN) | Compléments Alimentaires + Respiration | manuel (geo comparatif - HerbalGem)
 
