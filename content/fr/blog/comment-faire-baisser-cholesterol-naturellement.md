@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/comment-faire-baisser-cholesterol-naturellement.webp"
 imageAlt: "Bol d'avoine, avocat, noix et huile d'olive, aliments clés pour faire baisser le cholestérol naturellement"
-imageCredit: "Photo par Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par David Jackmanson via Flickr (CC BY 2.0)"
 faq:
   - question: "Quels sont les aliments qui font baisser le cholestérol le plus rapidement ?"
     answer: "Les aliments les plus efficaces sont l'avoine (fibres solubles bêta-glucanes), les légumineuses (lentilles, pois chiches), les noix et amandes, les poissons gras (saumon, maquereau, sardine), l'huile d'olive vierge extra et les fruits riches en pectine (pomme, agrumes). Une consommation quotidienne combinée peut réduire le LDL de 10 à 20 % en 8 à 12 semaines."

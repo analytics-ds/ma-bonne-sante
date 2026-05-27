@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/bouffees-de-chaleur-traitement-naturel.webp"
 imageAlt: "Woman holding a fan, natural management of menopause hot flashes"
-imageCredit: "Photo by Cytonn Photography via Unsplash (Unsplash License)"
+imageCredit: "Photo par Syrio via Wikimedia (CC BY-SA 4.0)"
 faq:
   - question: "What is the best natural hot flashes treatment?"
     answer: "Black cohosh (Cimicifuga racemosa) is the best documented plant for hot flashes, with effectiveness compared at 40 percent to hormone treatment for moderate forms. Common sage particularly reduces night sweats. Hops and red clover provide phytoestrogens. Count 8 to 12 weeks for optimal effectiveness."

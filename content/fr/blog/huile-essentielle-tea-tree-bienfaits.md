@@ -11,7 +11,7 @@ tags: ["tea tree", "arbre a the", "huile essentielle", "bienfaits", "pranarom", 
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-bienfaits.webp"
 imageAlt: "Branches d'arbre à thé avec feuilles vert sombre, plante source de l'huile essentielle de tea tree"
-imageCredit: "Photo par Robert Whyte via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par John Tann via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelles sont les principales vertus de l'huile essentielle de tea tree ?"
     answer: "L'huile essentielle de tea tree est antibactérienne à large spectre, antifongique, antivirale et stimulante immunitaire. Elle est plébiscitée contre l'acné, les mycoses cutanées et unguéales, les aphtes, les infections ORL et les imperfections du cuir chevelu. Elle a également une légère action anti-inflammatoire et apaisante."

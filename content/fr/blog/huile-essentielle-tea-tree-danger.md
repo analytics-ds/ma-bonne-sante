@@ -11,7 +11,7 @@ tags: ["tea tree", "arbre a the", "huile essentielle", "danger", "contre-indicat
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-danger.webp"
 imageAlt: "Flacon d'huile essentielle de tea tree avec feuilles d'arbre à thé sur fond bois clair"
-imageCredit: "Photo par Sosiukin via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par jeans_Photos via Flickr (CC BY 2.0)"
 faq:
   - question: "Quels sont les principaux dangers de l'huile essentielle de tea tree ?"
     answer: "L'huile essentielle de tea tree présente trois risques principaux : une toxicité par ingestion liée au terpinèn-4-ol et au méthyleugénol, des réactions cutanées allergiques (irritation, eczéma de contact) en application pure prolongée, et un effet perturbateur endocrinien suspecté chez le jeune enfant. Elle est aussi à manier avec précaution chez les personnes sensibles aux dermatites."

@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/traitement-allergie-pollen-naturel.webp"
 imageAlt: "Branches de bouleau libérant du pollen, principale cause d'allergie saisonnière au printemps"
-imageCredit: "Photo par Petr Filippov via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par saaby via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "Quel est le meilleur traitement naturel contre l'allergie au pollen ?"
     answer: "La gemmothérapie de cassis (Ribes nigrum), prise 4 à 6 semaines avant la saison pollinique puis pendant toute la période, est l'une des approches naturelles les plus reconnues. Elle s'associe efficacement à la quercétine (stabilisateur de mastocytes) et à l'ortie (riche en histamine-like). Ces 3 piliers couvrent à la fois le terrain de fond et les symptômes."

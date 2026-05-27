@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/bouffees-de-chaleur-traitement-naturel.webp"
 imageAlt: "Femme tenant un éventail, gestion naturelle des bouffées de chaleur en ménopause"
-imageCredit: "Photo par Cytonn Photography via Unsplash (Unsplash License)"
+imageCredit: "Photo par Syrio via Wikimedia (CC BY-SA 4.0)"
 faq:
   - question: "Quel est le meilleur traitement naturel contre les bouffées de chaleur ?"
     answer: "L'actée à grappes noires (Cimicifuga racemosa) est la plante la mieux documentée pour les bouffées de chaleur, avec une efficacité comparée à 40 % à un traitement hormonal pour les formes modérées. La sauge officinale réduit particulièrement la transpiration nocturne. Le houblon et le trèfle rouge apportent des phyto-œstrogènes. Compter 8 à 12 semaines pour une efficacité optimale."

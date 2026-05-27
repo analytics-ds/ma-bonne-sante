@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/anti-reflux-gastrique-naturel.webp"
 imageAlt: "Tisane de camomille et gingembre frais, remèdes naturels contre le reflux gastrique"
-imageCredit: "Photo par Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par Swallowtail Garden Seeds via Flickr (CC BY 2.0)"
 faq:
   - question: "Quel est le meilleur anti-reflux gastrique naturel ?"
     answer: "Le bourgeon de figuier (Ficus carica) en gemmothérapie est considéré comme l'anti-reflux naturel le plus efficace. Il apaise le système nerveux entérique et régule la sécrétion d'acide gastrique. Posologie : 5 à 15 gouttes 2 fois par jour, en cure de 3 semaines. À combiner avec aloe vera en jus pour un effet pansement gastrique."

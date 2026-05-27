@@ -11,7 +11,7 @@ tags: ["tea tree", "essential oil", "danger", "contraindications", "side effects
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-danger.webp"
 imageAlt: "Bottle of tea tree essential oil with tea tree leaves on a light wood background"
-imageCredit: "Photo by Sosiukin via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par jeans_Photos via Flickr (CC BY 2.0)"
 faq:
   - question: "What are the main dangers of tea tree essential oil?"
     answer: "Tea tree essential oil presents three main risks: oral toxicity linked to terpinen-4-ol and methyleugenol, allergic skin reactions (irritation, contact eczema) with prolonged pure application, and a suspected endocrine-disrupting effect in young children. It should also be used with caution in people prone to dermatitis."

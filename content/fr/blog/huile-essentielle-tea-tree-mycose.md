@@ -11,7 +11,7 @@ tags: ["tea tree", "mycose", "antifongique", "candida albicans", "pranarom"]
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-mycose.webp"
 imageAlt: "Flacon d'huile essentielle de tea tree et brins d'arbre à thé, antifongique naturel contre les mycoses"
-imageCredit: "Photo par Itineranttrader via Wikimedia Commons (CC BY-SA 3.0)"
+imageCredit: "Photo par Best For My Feet via Wikimedia (CC BY 3.0)"
 faq:
   - question: "Le tea tree est-il vraiment efficace contre les mycoses ?"
     answer: "Oui, plusieurs études cliniques ont démontré l'efficacité du tea tree contre Candida albicans (mycoses cutanées et muqueuses), Trichophyton (mycoses des pieds et des ongles) et Malassezia (pellicules, dermite séborrhéique). Son principal composé actif, le terpinèn-4-ol, a une action antifongique comparable au clotrimazole sur certaines souches."

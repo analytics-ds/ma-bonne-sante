@@ -11,7 +11,7 @@ tags: ["tea tree", "essential oil", "benefits", "antifungal", "antibacterial", "
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-bienfaits.webp"
 imageAlt: "Tea tree branches with dark green leaves, source plant of tea tree essential oil"
-imageCredit: "Photo by Robert Whyte via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par John Tann via Flickr (CC BY 2.0)"
 faq:
   - question: "What are the main virtues of tea tree essential oil?"
     answer: "Tea tree essential oil is broad-spectrum antibacterial, antifungal, antiviral and immune stimulating. It is widely used against acne, cutaneous and nail fungal infections, mouth ulcers, ENT infections and scalp imperfections. It also has a mild anti-inflammatory and soothing action."

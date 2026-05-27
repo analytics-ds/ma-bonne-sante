@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/gemmotherapie-cassis-bienfaits.webp"
 imageAlt: "Blackcurrant berry clusters (Ribes nigrum) on their shrub, basis of blackcurrant gemmotherapy"
-imageCredit: "Photo by Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par kahvikisu via Flickr (CC BY 2.0)"
 faq:
   - question: "What are the benefits of blackcurrant bud?"
     answer: "Blackcurrant bud (Ribes nigrum) is considered the vegetable aspirin of gemmotherapy. Its main benefits: powerful anti-inflammatory (rheumatism, allergies), stimulant of adrenal cortex glands (fight against fatigue), background antihistamine (hay fever, eczema), drainer (liver, kidneys), action on mood and anxious terrain."

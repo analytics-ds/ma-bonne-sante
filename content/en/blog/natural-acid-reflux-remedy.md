@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/anti-reflux-gastrique-naturel.webp"
 imageAlt: "Chamomile tea and fresh ginger, natural remedies for acid reflux"
-imageCredit: "Photo by Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par Swallowtail Garden Seeds via Flickr (CC BY 2.0)"
 faq:
   - question: "What is the best natural acid reflux remedy?"
     answer: "Fig bud (Ficus carica) in gemmotherapy is considered the most effective natural anti-reflux. It soothes the enteric nervous system and regulates gastric acid secretion. Dosage: 5 to 15 drops 2 times a day, in a 3-week cure. To combine with aloe vera juice for a gastric dressing effect."

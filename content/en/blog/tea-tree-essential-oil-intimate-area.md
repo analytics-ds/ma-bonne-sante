@@ -11,7 +11,7 @@ tags: ["tea tree", "vaginal fungal infection", "candida albicans", "intimate hyg
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-partie-intime.webp"
 imageAlt: "Tea tree essential oil bottle and flax flower for natural feminine intimate care"
-imageCredit: "Photo by Marco Verch via Wikimedia Commons (CC BY 2.0)"
+imageCredit: "Photo par Swallowtail Garden Seeds via Flickr (CC BY 2.0)"
 faq:
   - question: "Can you apply tea tree on intimate areas?"
     answer: "Yes but never pure. On genital mucous membranes, tea tree must be diluted at 1 percent maximum in a gentle intimate gel or vegetable oil (calendula, jojoba). External application only on the vulva, 1 to 2 times a day, for 5 to 7 days. For internal use (ovules), mandatory medical advice."

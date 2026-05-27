@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/traitement-allergie-pollen-naturel.webp"
 imageAlt: "Birch branches releasing pollen, main cause of seasonal allergy in spring"
-imageCredit: "Photo by Petr Filippov via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par saaby via Flickr (CC BY-SA 2.0)"
 faq:
   - question: "What is the best natural treatment for pollen allergy?"
     answer: "Blackcurrant gemmotherapy (Ribes nigrum), taken 4 to 6 weeks before the pollen season then throughout the period, is one of the most recognized natural approaches. It pairs effectively with quercetin (mast cell stabilizer) and nettle (rich in histamine-like compounds). These 3 pillars cover both background terrain and symptoms."

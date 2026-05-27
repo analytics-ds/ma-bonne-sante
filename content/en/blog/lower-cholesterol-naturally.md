@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/comment-faire-baisser-cholesterol-naturellement.webp"
 imageAlt: "Bowl of oatmeal, avocado, nuts and olive oil, key foods to lower cholesterol naturally"
-imageCredit: "Photo by Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par David Jackmanson via Flickr (CC BY 2.0)"
 faq:
   - question: "Which foods lower cholesterol fastest?"
     answer: "The most effective foods are oats (soluble beta-glucan fibers), legumes (lentils, chickpeas), walnuts and almonds, fatty fish (salmon, mackerel, sardine), extra virgin olive oil and pectin-rich fruits (apple, citrus). Combined daily consumption can reduce LDL by 10 to 20 percent in 8 to 12 weeks."

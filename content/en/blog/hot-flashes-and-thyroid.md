@@ -11,7 +11,7 @@ tags: ["hot flashes", "thyroid", "hyperthyroidism", "menopause", "hormones"]
 author: laura-verdier
 image: "/images/blog/bouffees-de-chaleur-et-thyroide.webp"
 imageAlt: "Diagram of thyroid gland on a woman's neck, organ closely linked to hot flashes"
-imageCredit: "Photo by BruceBlaus via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par Knowledge Collector via Flickr (CC PDM 1.0)"
 faq:
   - question: "Can the thyroid really cause hot flashes?"
     answer: "Yes, hyperthyroidism (Graves' disease, toxic nodule) frequently causes hot flashes, excessive sweating and heat intolerance. The excess secretion of thyroid hormones accelerates metabolism and body heat production. This is one of the causes to systematically exclude in case of flashes without obvious menopausal context."

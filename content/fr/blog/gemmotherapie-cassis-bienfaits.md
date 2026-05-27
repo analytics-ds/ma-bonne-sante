@@ -12,7 +12,7 @@ author: laura-verdier
 featured: true
 image: "/images/blog/gemmotherapie-cassis-bienfaits.webp"
 imageAlt: "Grappes de baies de cassis (Ribes nigrum) sur leur arbuste, base de la gemmothérapie de cassis"
-imageCredit: "Photo par Marco Verch via Flickr (CC BY 2.0)"
+imageCredit: "Photo par kahvikisu via Flickr (CC BY 2.0)"
 faq:
   - question: "Quels sont les bienfaits du bourgeon de cassis ?"
     answer: "Le bourgeon de cassis (Ribes nigrum) est considéré comme l'aspirine végétale de la gemmothérapie. Ses bienfaits principaux : anti-inflammatoire puissant (rhumatismes, allergies), stimulant des glandes corticosurrénales (lutte contre la fatigue), antiallergique de fond (rhume des foins, eczéma), drainant (foie, reins), action sur l'humeur et le terrain anxieux."

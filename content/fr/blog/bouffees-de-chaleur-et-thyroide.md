@@ -11,7 +11,7 @@ tags: ["bouffees de chaleur", "thyroide", "hyperthyroidie", "menopause", "hormon
 author: laura-verdier
 image: "/images/blog/bouffees-de-chaleur-et-thyroide.webp"
 imageAlt: "Schéma de la glande thyroïde sur le cou d'une femme, organe en lien étroit avec les bouffées de chaleur"
-imageCredit: "Photo par BruceBlaus via Wikimedia Commons (CC BY-SA 4.0)"
+imageCredit: "Photo par Knowledge Collector via Flickr (CC PDM 1.0)"
 faq:
   - question: "La thyroïde peut-elle vraiment provoquer des bouffées de chaleur ?"
     answer: "Oui, l'hyperthyroïdie (Basedow, nodule toxique) provoque fréquemment des bouffées de chaleur, transpiration excessive et intolérance à la chaleur. La sécrétion en excès d'hormones thyroïdiennes accélère le métabolisme et la production de chaleur corporelle. C'est l'une des causes à exclure systématiquement en cas de bouffées sans contexte de ménopause évident."

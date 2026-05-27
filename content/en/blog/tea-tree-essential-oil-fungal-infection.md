@@ -11,7 +11,7 @@ tags: ["tea tree", "fungal infection", "antifungal", "candida albicans", "athlet
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-mycose.webp"
 imageAlt: "Tea tree essential oil bottle and tea tree sprigs, natural antifungal against fungal infections"
-imageCredit: "Photo by Itineranttrader via Wikimedia Commons (CC BY-SA 3.0)"
+imageCredit: "Photo par Best For My Feet via Wikimedia (CC BY 3.0)"
 faq:
   - question: "Is tea tree really effective against fungal infections?"
     answer: "Yes, several clinical studies have demonstrated tea tree's effectiveness against Candida albicans (skin and mucous fungal infections), Trichophyton (foot and nail fungus) and Malassezia (dandruff, seborrheic dermatitis). Its main active compound, terpinen-4-ol, has antifungal action comparable to clotrimazole on some strains."

@@ -11,7 +11,7 @@ tags: ["tea tree", "mycose vaginale", "candida albicans", "hygiene intime", "bie
 author: laura-verdier
 image: "/images/blog/huile-essentielle-tea-tree-partie-intime.webp"
 imageAlt: "Flacon d'huile essentielle de tea tree et fleur de lin, pour les soins intimes féminins naturels"
-imageCredit: "Photo par Marco Verch via Wikimedia Commons (CC BY 2.0)"
+imageCredit: "Photo par Swallowtail Garden Seeds via Flickr (CC BY 2.0)"
 faq:
   - question: "Peut-on appliquer du tea tree sur les parties intimes ?"
     answer: "Oui mais jamais pur. Sur les muqueuses génitales, le tea tree doit être dilué à 1 % maximum dans un gel intime doux ou une huile végétale (calendula, jojoba). Application externe uniquement sur la vulve, 1 à 2 fois par jour, pendant 5 à 7 jours. Pour la voie interne (ovules), avis médical obligatoire."
