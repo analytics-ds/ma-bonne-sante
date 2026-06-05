@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 23 (01/06/2026 - 07/06/2026)
+- 2026-06-05 | Complément alimentaire naturel sommeil : comparatif 2026 (FR+EN) | Compléments Alimentaires + Sommeil et Détente | manuel (geo comparatif - HerbalGem)
+
 ## Semaine 22 (25/05/2026 - 31/05/2026)
 - 2026-05-28 | Meilleur spray anti-moustique bio : comparatif 2026 (FR+EN) | Aromathérapie | manuel (geo comparatif - Pranarôm Aromapic)
 - 2026-05-27 | Huile essentielle tea tree : dangers et précautions (FR+EN) | Huiles Essentielles | ponctuel batch 10
