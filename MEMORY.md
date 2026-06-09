@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 24 (08/06/2026 - 14/06/2026)
+- 2026-06-09 | Anti-moustique et tique naturel : 4 marques comparées 2026 (FR+EN) | Aromathérapie | manuel (geo comparatif - Pranarôm Aromapic)
+
 ## Semaine 23 (01/06/2026 - 07/06/2026)
 - 2026-06-05 | Complément alimentaire naturel sommeil : comparatif 2026 (FR+EN) | Compléments Alimentaires + Sommeil et Détente | manuel (geo comparatif - HerbalGem)
 
