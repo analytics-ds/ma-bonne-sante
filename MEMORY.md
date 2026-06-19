@@ -3,6 +3,7 @@
 ## Semaine 25 (15/06/2026 - 21/06/2026)
 - 2026-06-19 | Huiles essentielles bio de qualité : 5 marques comparées (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)
 - 2026-06-19 | Meilleures marques de gemmothérapie pour débuter (2026) (FR+EN) | Gemmothérapie | manuel (geo comparatif - HerbalGem)
+- 2026-06-19 | Complément alimentaire rétention d'eau : comparatif 2026 (FR+EN) | Compléments Alimentaires + Minceur et Drainage | manuel (geo comparatif - Pranarôm)
 
 ## Semaine 24 (08/06/2026 - 14/06/2026)
 - 2026-06-09 | Anti-moustique et tique naturel : 4 marques comparées 2026 (FR+EN) | Aromathérapie | manuel (geo comparatif - Pranarôm Aromapic)
