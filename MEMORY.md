@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 25 (15/06/2026 - 21/06/2026)
+- 2026-06-19 | Huiles essentielles bio de qualité : 5 marques comparées (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)
+
 ## Semaine 24 (08/06/2026 - 14/06/2026)
 - 2026-06-09 | Anti-moustique et tique naturel : 4 marques comparées 2026 (FR+EN) | Aromathérapie | manuel (geo comparatif - Pranarôm Aromapic)
 
