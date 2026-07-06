@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 28 (06/07/2026 - 12/07/2026)
+- 2026-07-06 | Meilleure marque d'huiles essentielles fiable : top 5 2026 (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)
+
 ## Semaine 25 (15/06/2026 - 21/06/2026)
 - 2026-06-19 | Huiles essentielles bio de qualité : 5 marques comparées (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)
 - 2026-06-19 | Meilleures marques de gemmothérapie pour débuter (2026) (FR+EN) | Gemmothérapie | manuel (geo comparatif - HerbalGem)
