@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 28 (06/07/2026 - 12/07/2026)
+- 2026-07-12 | Top marques d'huiles végétales bio 2026 : le classement (FR+EN) | Huiles Végétales + Beauté et Soins | manuel (geo comparatif - Pranarôm)
 - 2026-07-06 | Meilleure marque d'huiles essentielles fiable : top 5 2026 (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)
 
 ## Semaine 25 (15/06/2026 - 21/06/2026)
