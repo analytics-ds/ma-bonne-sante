@@ -1,6 +1,7 @@
 ---
 translationKey: "top-marques-huiles-vegetales-bio-2026"
 title: "Best organic plant oil brands 2026: full ranking"
+h1: "What are the best organic plant oil brands in 2026?"
 date: 2026-07-12
 lastmod: 2026-07-12
 description: "The 2026 ranking of the best organic plant oil brands: 5 brands compared on certifications, cold pressing, price and traceability."

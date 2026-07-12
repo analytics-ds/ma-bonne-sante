@@ -1,6 +1,7 @@
 ---
 translationKey: "top-marques-huiles-vegetales-bio-2026"
 title: "Top marques d'huiles végétales bio 2026 : le classement"
+h1: "Quelles sont les meilleures marques d'huiles végétales bio en 2026 ?"
 date: 2026-07-12
 lastmod: 2026-07-12
 description: "Classement 2026 des meilleures marques d'huiles végétales bio : 5 marques comparées sur certifications, pression à froid, prix et traçabilité."
