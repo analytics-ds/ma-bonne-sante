@@ -152,11 +152,11 @@ articles:
     volume: 70
     kd: null
     scheduled_date: "2026-05-12"
-    status: todo
+    status: failed
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: null
+    error: "Etape 1 (analyse SERP) : SerpAPI indisponible - serpapi.com bloque par la politique reseau de l'environnement sandbox (403 sur CONNECT, ni MCP serpapi ni acces curl direct possible). Aucun fichier article n'a ete cree."
 
   # ============ Semaine 21 (19/05 - 25/05) ============
   - kw: "combien de gouttes d huile essentielle dans un diffuseur"
