@@ -152,11 +152,11 @@ articles:
     volume: 70
     kd: null
     scheduled_date: "2026-05-12"
-    status: failed
+    status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: "Etape 1 (analyse SERP) : SerpAPI indisponible - serpapi.com bloque par la politique reseau de l'environnement sandbox (403 sur CONNECT, ni MCP serpapi ni acces curl direct possible). Aucun fichier article n'a ete cree."
+    error: null
 
   # ============ Semaine 21 (19/05 - 25/05) ============
   - kw: "combien de gouttes d huile essentielle dans un diffuseur"
@@ -164,11 +164,11 @@ articles:
     volume: 436
     kd: null
     scheduled_date: "2026-05-15"
-    status: failed
+    status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: "Etape 1 (analyse SERP) : SerpAPI indisponible - serpapi.com bloque par la politique reseau de l'environnement sandbox (403 sur CONNECT, confirme via /__agentproxy/status : connect_rejected policy denial). Ni MCP serpapi ni acces curl direct possible. Aucun fichier article n'a ete cree."
+    error: null
 
   - kw: "comment soulager une digestion difficile naturellement"
     category: "Digestion et Detox"
