@@ -16,17 +16,17 @@ Elle est destinee a etre declenchee par une routine planifiee (ex: 2x/semaine a 
 - `data/authors.yaml` present (systeme d'auteurs partage).
 - `content/blog/` existe (peut etre vide pour un premier article).
 - Remote git `origin` configure, acces push.
-- Clef SerpAPI disponible (via MCP `mcp__serpapi__search` ou variable d'env `SERPAPI_API_KEY`).
+- Outil `WebSearch` disponible (recommande, execute cote serveur donc non soumis aux restrictions reseau du sandbox). S'il est absent, la skill degrade en mode "kw seul" sans echouer.
 
 ## Philosophie : full auto, pas de human in the loop
 
 Aucune question a l'utilisateur. Toutes les decisions sont prises par l'agent a partir de :
 - Le mot-cle de la roadmap
-- L'analyse SERP automatique
+- L'analyse du sujet via `WebSearch` (ou le kw seul si WebSearch indispo)
 - Le contexte du site (CLAUDE.md du blog, authors.yaml, hugo.toml)
 - Les articles deja publies (scan `content/blog/`)
 
-Si une etape bloque (SerpAPI indispo, image introuvable, build Hugo echoue, push rejete apres rebase), l'agent **n'insiste pas** : il marque l'entree `status: failed` dans la roadmap avec le message d'erreur, commit le roadmap, et sort proprement en exit code non-zero.
+Si une etape bloque (image introuvable, build Hugo echoue, push rejete apres rebase), l'agent **n'insiste pas** : il marque l'entree `status: failed` dans la roadmap avec le message d'erreur, commit le roadmap, et sort proprement en exit code non-zero. **Exception : l'indisponibilite de WebSearch n'est PAS un motif d'echec** (voir Etape 1), on continue en mode degrade.
 
 ## Pas de quota hebdomadaire (regle exemptee)
 
@@ -43,10 +43,10 @@ Le seul critere d'eligibilite est defini a l'Etape 0 : `status == todo` et `sche
 | Interactivite | Oui, plusieurs points d'arret | Non, full auto |
 | Type d'article | Standard OU geo-comparatif (GEO) | Standard uniquement (SEO pur) |
 | Mots-cles | Prompt GEO + query fan-out | Mot-cle SEO simple |
-| FAQ | Toujours (3+) | Seulement si la SERP en a (50%+ concurrents) |
+| FAQ | Toujours (3+) | Seulement si le sujet s'y prete (questions vues en recherche) |
 | "En bref" numerote | Oui (GEO) | Non |
 | Source KW | Demande a l'utilisateur | Lit `roadmap.yaml` |
-| Analyse concurrents | Manuelle ou absente | Automatique via SerpAPI + WebFetch |
+| Analyse concurrents | Manuelle ou absente | Automatique via `WebSearch` (titres + snippets), sans SerpAPI |
 | Validation | Humaine a chaque etape | Aucune |
 
 ## Etape 0 — Selection de l'entree roadmap
@@ -66,40 +66,32 @@ Le seul critere d'eligibilite est defini a l'Etape 0 : `status == todo` et `sche
 
 L'entree selectionnee fournit : `kw`, `category`, `scheduled_date`.
 
-## Etape 1 — Analyse SERP automatique
+## Etape 1 — Analyse du sujet via WebSearch (sans SerpAPI)
 
-### 1.1 Requete SerpAPI (2 modes possibles)
+Cette skill **n'utilise plus SerpAPI**. L'analyse du paysage concurrentiel se fait avec l'outil natif `WebSearch`, execute cote serveur Anthropic (donc non soumis au proxy d'egress reseau du sandbox cloud). Aucune cle API, aucun curl externe.
 
-**Mode A - MCP (runtime local)** : si l'outil `mcp__serpapi__search` est disponible, appeler avec `q=<kw>`, `engine=google`, `hl=fr`, `gl=fr`, `num=10`, `location=France`.
+### 1.1 Recherche WebSearch
 
-**Mode B - curl direct (runtime cloud ou MCP indispo)** : si le MCP n'est pas charge, faire un appel HTTP a l'endpoint public SerpAPI. La cle API doit etre disponible dans la variable d'environnement `SERPAPI_API_KEY` (exportee par le prompt de la routine cloud) :
+1. Lancer un `WebSearch` sur le `kw` de la roadmap (formule en francais).
+2. Optionnel selon le sujet : 1 a 2 recherches complementaires pour elargir le champ, par exemple `"<kw> avis"`, `"comparatif <kw>"`, `"meilleur <kw>"` ou `"<kw> guide"`. Se limiter a 3 WebSearch maximum par article.
+3. Recuperer de chaque resultat : **titre, URL, extrait (snippet)**. Ce sont les seules donnees exploitees.
 
-```bash
-QUERY_ENC=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1]))" "$KW")
-curl -s "https://serpapi.com/search.json?q=${QUERY_ENC}&engine=google&hl=fr&gl=fr&num=10&location=France&api_key=${SERPAPI_API_KEY}" > /tmp/serp.json
-```
+**Repli si WebSearch est indisponible dans l'environnement** : NE PAS marquer `failed`. Continuer en **mode degrade** : l'analyse se fait uniquement a partir du `kw`, de la `category` et du contexte editorial du blog (CLAUDE.md). L'article est quand meme produit et publie. Noter "WebSearch indispo, mode degrade" dans le log.
 
-Parser le JSON avec python3 pour extraire les donnees ci-dessous. Si `SERPAPI_API_KEY` est absente ET mcp__serpapi__search indispo : marquer failed avec `error: "SerpAPI indispo (ni MCP ni env var)"` et abort.
+### 1.2 Ne pas ouvrir les pages concurrentes
 
-### 1.2 Extraction donnees (sans fetch des concurrents)
-
-Extraire uniquement du resultat SerpAPI :
-- `organic_results[0..9]` : `title`, `link`, `snippet`
-- `related_questions` (People Also Ask) si presents
-- `related_searches` si presents
-
-**Ne PAS tenter de fetch les URLs concurrentes via WebFetch** : dans le sandbox cloud, les domaines commerciaux renvoient 503/403 systematiquement. L'analyse se fait uniquement sur les titles/snippets/PAA retournes par SerpAPI.
+Ne **PAS** utiliser `WebFetch` sur les URLs concurrentes : dans le sandbox cloud les domaines commerciaux sont bloques par la politique reseau (403/503). L'analyse se fait uniquement sur les **titres et snippets** renvoyes par `WebSearch`.
 
 ### 1.3 Synthese auto (aucun output humain, juste des variables internes)
 
-L'agent determine a partir des donnees SerpAPI :
-- **Intention de recherche** : inferee du pattern recurrent des titles top 5 (informationnelle, transactionnelle, comparative, etc.)
-- **Angles concurrents** : sous-themes qui reviennent dans les titles et snippets (ex: prix, comparatif, avis, guide, duree de vie...)
-- **Champ semantique** : mots recurrents dans les titles, snippets et related_searches
-- **FAQ pertinente ?** : vrai si `related_questions` sont retournes par SerpAPI (PAA = signal fort que les utilisateurs posent des questions sur ce sujet)
-- **Longueur cible** : 1500-2000 mots par defaut (pas de mesure possible des concurrents, cible raisonnable pour un article evergreen qualitatif)
-- **Tableau pertinent ?** : vrai par defaut pour les requetes a intention comparative (mots "meilleur", "top", "vs", "ou" dans les titles), false sinon
-- **Si FAQ pertinente** : construire la liste de questions a partir des `related_questions` de SerpAPI, retirer doublons, reformuler (pas de copie mot pour mot), garder 4-6 questions
+L'agent determine a partir des resultats WebSearch (ou du `kw` seul en mode degrade) :
+- **Intention de recherche** : inferee du pattern recurrent des titres du top des resultats (informationnelle, transactionnelle, comparative, etc.)
+- **Angles concurrents** : sous-themes qui reviennent dans les titres et snippets (ex: prix, comparatif, avis, guide, duree de vie...)
+- **Champ semantique** : mots recurrents dans les titres et snippets
+- **FAQ pertinente ?** : vrai si les resultats font ressortir des questions recurrentes (formulations interrogatives dans les titres/snippets, "comment", "pourquoi", "quel", "combien"...). En mode degrade : juger selon la nature du sujet.
+- **Longueur cible** : 1500-2000 mots par defaut (cible raisonnable pour un article evergreen qualitatif)
+- **Tableau pertinent ?** : vrai par defaut pour les requetes a intention comparative (mots "meilleur", "top", "vs", "ou", "comparatif" dans le kw ou les titres), false sinon
+- **Si FAQ pertinente** : construire 4-6 questions a partir des themes/questions vus dans les resultats, retirer les doublons, reformuler (pas de copie mot pour mot)
 
 ## Etape 2 — Title et meta description (regles pixel inline)
 
@@ -153,8 +145,8 @@ bash .claude/scripts/fetch-image.sh "<kw traduit en anglais>" "<slug-fr>" "stati
 
 - La query image est le `kw` traduit en anglais (Openverse est majoritairement indexe en anglais).
 - Si le script renvoie un code non-zero, retenter **une seule fois** avec une query plus generique (la `category` traduite en anglais).
-- Si 2e echec : marquer `failed` avec erreur "image fetch failed" et abort.
-- Recuperer les 3 sorties du script (chemin, alt, credit) pour le frontmatter.
+- Si 2e echec : **ne pas marquer `failed`**. Continuer la publication sans image hero (champs `image`, `imageAlt`, `imageCredit` omis du frontmatter ou laisses vides). L'absence d'image n'est pas une raison d'avorter : l'article est publie, le site fonctionne sans hero.
+- Recuperer les 3 sorties du script (chemin, alt, credit) pour le frontmatter **uniquement si le script a reussi**.
 
 ## Etape 6 — Maillage interne auto
 
