@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 29 (13/07/2026 - 19/07/2026)
+- 2026-07-13 | Quelle fleur de Bach pour le sommeil ? (FR+EN) | Sommeil et Détente | auto
+
 ## Semaine 28 (06/07/2026 - 12/07/2026)
 - 2026-07-12 | Top marques d'huiles végétales bio 2026 : le classement (FR+EN) | Huiles Végétales + Beauté et Soins | manuel (geo comparatif - Pranarôm)
 - 2026-07-06 | Meilleure marque d'huiles essentielles fiable : top 5 2026 (FR+EN) | Huiles Essentielles + Aromathérapie | manuel (geo comparatif - Pranarôm)

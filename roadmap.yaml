@@ -152,10 +152,10 @@ articles:
     volume: 70
     kd: null
     scheduled_date: "2026-05-12"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-13"
+    published_url_fr: "https://ma-bonne-sante.com/blog/fleur-de-bach-sommeil/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/bach-flower-for-sleep/"
     error: null
 
   # ============ Semaine 21 (19/05 - 25/05) ============
