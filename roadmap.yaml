@@ -164,11 +164,11 @@ articles:
     volume: 436
     kd: null
     scheduled_date: "2026-05-15"
-    status: todo
+    status: failed
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: null
+    error: "Etape 1 (analyse SERP) : SerpAPI indisponible - serpapi.com bloque par la politique reseau de l'environnement sandbox (403 sur CONNECT, confirme via /__agentproxy/status : connect_rejected policy denial). Ni MCP serpapi ni acces curl direct possible. Aucun fichier article n'a ete cree."
 
   - kw: "comment soulager une digestion difficile naturellement"
     category: "Digestion et Detox"
