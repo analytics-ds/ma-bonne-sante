@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 29 (13/07/2026 - 19/07/2026)
+- 2026-07-14 | Diffuseur huile essentielle : quel dosage ? (FR+EN) | Aromathérapie | auto
 - 2026-07-13 | Quelle fleur de Bach pour le sommeil ? (FR+EN) | Sommeil et Détente | auto
 
 ## Semaine 28 (06/07/2026 - 12/07/2026)

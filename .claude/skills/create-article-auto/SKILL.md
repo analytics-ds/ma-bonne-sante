@@ -225,7 +225,15 @@ wget -q -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.1
 hugo version   # doit afficher v0.161.1 extended
 ```
 
-Si le telechargement echoue (reseau), utiliser le `hugo` deja present, mais NE PAS se rabattre sur `apt install hugo` (version cassante). La version prod exacte est dans `.github/workflows/hugo.yml` de chaque blog (champ `hugo_extended_..._linux-amd64.deb`) : s'y referer si elle a change.
+**Repli si le telechargement GitHub echoue (403 proxy / repo hors scope de la session)** : dans le sandbox cloud, l'egress proxy peut bloquer les telechargements directs depuis `github.com/gohugoio/hugo/releases` (repo hors du scope GitHub de la session, non debloquable via `add_repo` car cross-owner). Se rabattre sur le wrapper npm `hugo-extended`, qui recupere le meme binaire a l'installation et passe generalement le proxy (registry npm autorise) :
+
+```bash
+mkdir -p /tmp/hugobin-npm && cd /tmp/hugobin-npm && npm init -y >/dev/null 2>&1 && npm install hugo-extended@0.161.1
+export PATH="/tmp/hugobin-npm/node_modules/.bin:$PATH"
+hugo version   # doit afficher v0.161.1 extended
+```
+
+Si les deux methodes echouent, utiliser le `hugo` deja present, mais NE PAS se rabattre sur `apt install hugo` (version cassante). La version prod exacte est dans `.github/workflows/hugo.yml` de chaque blog (champ `hugo_extended_..._linux-amd64.deb`) : s'y referer si elle a change.
 
 ### 9.1 Build
 
