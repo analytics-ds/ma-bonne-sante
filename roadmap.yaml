@@ -175,10 +175,10 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-19"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-17"
+    published_url_fr: "https://ma-bonne-sante.com/blog/digestion-difficile-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/relieve-difficult-digestion-naturally/"
     error: null
 
   # ============ Semaine 22 (26/05 - 01/06) ============
