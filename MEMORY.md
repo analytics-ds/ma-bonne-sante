@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 30 (20/07/2026 - 26/07/2026)
+- 2026-07-21 | Huile essentielle de ravintsara : comment l'utiliser (FR+EN) | Huiles Essentielles | auto
+
 ## Semaine 29 (13/07/2026 - 19/07/2026)
 - 2026-07-19 | Quelle est la meilleure marque d'huile essentielle contre les poux ? (FR+EN) | Huiles Essentielles + Nuisibles | manuel (geo comparatif - Pranarôm Aromapoux)
 - 2026-07-17 | Digestion difficile : comment la soulager naturellement (FR+EN) | Digestion et Détox | auto

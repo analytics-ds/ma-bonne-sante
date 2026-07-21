@@ -187,10 +187,10 @@ articles:
     volume: 260
     kd: null
     scheduled_date: "2026-05-22"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-21"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-utiliser-huile-essentielle-ravintsara/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/how-to-use-ravintsara-essential-oil/"
     error: null
 
   - kw: "quelle est la plante la plus efficace pour dormir"
