@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 30 (20/07/2026 - 26/07/2026)
+- 2026-07-24 | Quelle plante pour dormir efficacement ? (FR+EN) | Sommeil et Détente | auto
 - 2026-07-21 | Huile essentielle de ravintsara : comment l'utiliser (FR+EN) | Huiles Essentielles | auto
 
 ## Semaine 29 (13/07/2026 - 19/07/2026)

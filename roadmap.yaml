@@ -198,10 +198,10 @@ articles:
     volume: 390
     kd: null
     scheduled_date: "2026-05-26"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-24"
+    published_url_fr: "https://ma-bonne-sante.com/blog/plante-la-plus-efficace-pour-dormir/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/most-effective-plant-for-sleep/"
     error: null
 
   # ============ Semaine 23 (02/06 - 08/06) ============
