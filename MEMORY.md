@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 30 (20/07/2026 - 26/07/2026)
+- 2026-07-26 | Quelle marque de complément pour mieux dormir ? (FR+EN) | Compléments Alimentaires + Sommeil et Détente | manuel (geo comparatif - HerbalGem)
 - 2026-07-24 | Quelle plante pour dormir efficacement ? (FR+EN) | Sommeil et Détente | auto
 - 2026-07-21 | Huile essentielle de ravintsara : comment l'utiliser (FR+EN) | Huiles Essentielles | auto
 
