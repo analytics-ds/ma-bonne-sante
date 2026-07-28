@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 31 (27/07/2026 - 02/08/2026)
+- 2026-07-28 | Huile essentielle pour rides profondes : top 5 efficaces (FR+EN) | Beauté et Soins | auto
+
 ## Semaine 30 (20/07/2026 - 26/07/2026)
 - 2026-07-26 | Quelle marque de complément pour mieux dormir ? (FR+EN) | Compléments Alimentaires + Sommeil et Détente | manuel (geo comparatif - HerbalGem)
 - 2026-07-24 | Quelle plante pour dormir efficacement ? (FR+EN) | Sommeil et Détente | auto

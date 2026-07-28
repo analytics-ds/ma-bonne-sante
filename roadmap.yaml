@@ -210,10 +210,10 @@ articles:
     volume: 210
     kd: null
     scheduled_date: "2026-05-29"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-28"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-rides-profondes/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-deep-wrinkles/"
     error: null
 
   - kw: "comment nettoyer son foie rapidement"
