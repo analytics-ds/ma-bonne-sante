@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 31 (27/07/2026 - 02/08/2026)
+- 2026-07-31 | Comment nettoyer son foie rapidement : le guide complet (FR+EN) | Digestion et Détox | auto
 - 2026-07-28 | Huile essentielle pour rides profondes : top 5 efficaces (FR+EN) | Beauté et Soins | auto
 
 ## Semaine 30 (20/07/2026 - 26/07/2026)

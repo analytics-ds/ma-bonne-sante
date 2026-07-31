@@ -221,10 +221,10 @@ articles:
     volume: 720
     kd: null
     scheduled_date: "2026-06-02"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-31"
+    published_url_fr: "https://ma-bonne-sante.com/blog/nettoyer-son-foie-rapidement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/cleanse-your-liver-fast/"
     error: null
 
   # ============ Semaine 24 (09/06 - 15/06) ============
