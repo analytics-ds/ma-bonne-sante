@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 32 (03/08/2026 - 09/08/2026)
+- 2026-08-03 | Quelles marques proposent une cure détox bio ? (FR+EN) | Digestion et Détox + Gemmothérapie | manuel (geo comparatif - HerbalGem)
+
 ## Semaine 31 (27/07/2026 - 02/08/2026)
 - 2026-07-31 | Comment nettoyer son foie rapidement : le guide complet (FR+EN) | Digestion et Détox | auto
 - 2026-07-28 | Huile essentielle pour rides profondes : top 5 efficaces (FR+EN) | Beauté et Soins | auto
