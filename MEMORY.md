@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 32 (03/08/2026 - 09/08/2026)
+- 2026-08-04 | Nez qui coule : quelle huile essentielle choisir ? (FR+EN) | Respiration | auto
 - 2026-08-03 | Quelles marques proposent une cure détox bio ? (FR+EN) | Digestion et Détox + Gemmothérapie | manuel (geo comparatif - HerbalGem)
 
 ## Semaine 31 (27/07/2026 - 02/08/2026)

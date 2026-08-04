@@ -233,10 +233,10 @@ articles:
     volume: 260
     kd: null
     scheduled_date: "2026-06-05"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-04"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-nez-qui-coule/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-runny-nose/"
     error: null
 
   - kw: "quelle fleur de bach choisir"
