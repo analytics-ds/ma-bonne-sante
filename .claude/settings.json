@@ -33,5 +33,8 @@
       "Grep(**)",
       "WebFetch(**)"
     ]
+  },
+  "worktree": {
+    "bgIsolation": "none"
   }
 }
