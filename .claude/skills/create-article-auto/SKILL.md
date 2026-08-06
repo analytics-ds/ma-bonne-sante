@@ -14,7 +14,7 @@ Elle est destinee a etre declenchee par une routine planifiee (ex: 2x/semaine a 
 - `roadmap.yaml` existe et contient au moins une entree `status: todo`.
 - `hugo.toml` configure avec la langue principale + la langue EN.
 - `data/authors.yaml` present (systeme d'auteurs partage).
-- `content/blog/` existe (peut etre vide pour un premier article).
+- `content/fr/blog/` et `content/en/blog/` existent. **Le FR vit sous `content/fr/`, pas sous `content/fr/blog/`** : `hugo.toml` declare un `contentDir` par langue, un fichier depose ailleurs n'appartient a aucune langue et Hugo l'ignore silencieusement.
 - Remote git `origin` configure, acces push.
 - Cle `CRAZYSERP_API_KEY` exportee par le prompt de la routine (source SERP nominale). Outil `WebSearch` disponible en repli. Si les deux manquent, la skill degrade en mode "kw seul" sans echouer.
 
@@ -24,7 +24,7 @@ Aucune question a l'utilisateur. Toutes les decisions sont prises par l'agent a 
 - Le mot-cle de la roadmap
 - L'analyse SERP via CrazySERP (ou WebSearch en repli, ou le kw seul en mode degrade)
 - Le contexte du site (CLAUDE.md du blog, authors.yaml, hugo.toml)
-- Les articles deja publies (scan `content/blog/`)
+- Les articles deja publies (scan `content/fr/blog/`)
 
 Si une etape bloque (image introuvable, build Hugo echoue, push rejete apres rebase), l'agent **n'insiste pas** : il marque l'entree `status: failed` dans la roadmap avec le message d'erreur, commit le roadmap, et sort proprement en exit code non-zero. **Exception : l'indisponibilite de la source SERP n'est PAS un motif d'echec** (voir Etape 1), CrazySERP puis WebSearch puis mode degrade, on publie dans tous les cas.
 
@@ -197,7 +197,7 @@ bash .claude/scripts/fetch-image.sh "<kw traduit en anglais>" "<slug-fr>" "stati
 
 ## Etape 6 — Maillage interne auto
 
-1. Lister tous les `.md` dans `content/blog/` (articles FR uniquement pour cette passe).
+1. Lister tous les `.md` dans `content/fr/blog/` (articles FR uniquement pour cette passe).
 2. Lire le frontmatter de chacun : `title`, `kw` (via slug), `categories`, `tags`.
 3. Scorer chaque article par proximite avec le nouveau (categorie identique = +3, tags partages = +1 par tag, mots communs entre kw = +2).
 4. Garder les 3 a 5 meilleurs scores.
@@ -210,7 +210,7 @@ Si le blog a moins de 3 articles FR publies : faire au mieux avec ce qui existe 
 
 ## Etape 7 — Redaction FR complete
 
-Produire le fichier `content/blog/[slug-fr].md`.
+Produire le fichier `content/fr/blog/[slug-fr].md`.
 
 ### Frontmatter
 ```yaml
@@ -290,6 +290,16 @@ hugo
 
 - Si exit code non-zero : marquer `failed` avec log de l'erreur, abort.
 - Si OK : noter le nombre de pages generees.
+
+### 9.2 Verifier que les deux pages sont reellement dans le build
+
+```bash
+ls public/blog/[slug-fr]/index.html public/en/blog/[slug-en]/index.html
+```
+
+Ce controle n'est pas cosmetique. Un article ecrit hors du `contentDir` de sa langue **n'est pas construit par Hugo, sans provoquer la moindre erreur de build** : `hugo` rend 0 et l'article est en 404 en production. C'est deja arrive sur le reseau et ca a mis plusieurs jours a etre vu.
+
+Si un des deux fichiers manque, marquer `failed` avec l'erreur "page absente du build" **meme si `hugo` a rendu 0**, et verifier en priorite le chemin d'ecriture du fichier de contenu.
 
 ## Etape 10 — Update roadmap et MEMORY.md
 
