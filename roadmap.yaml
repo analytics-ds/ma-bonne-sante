@@ -28,8 +28,8 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: 400
     kd: null
-    scheduled_date: "2026-04-25"
-    status: queued
+    scheduled_date: "2026-08-07"
+    status: todo
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -40,8 +40,8 @@ articles:
     category: "Sommeil et Detente"
     volume: 300
     kd: null
-    scheduled_date: "2026-04-28"
-    status: queued
+    scheduled_date: "2026-08-11"
+    status: todo
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -53,8 +53,8 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2026-05-02"
-    status: queued
+    scheduled_date: "2026-08-18"
+    status: todo
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -65,8 +65,8 @@ articles:
     category: "Gemmotherapie"
     volume: null
     kd: null
-    scheduled_date: "2026-05-02"
-    status: queued
+    scheduled_date: "2026-08-21"
+    status: todo
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -77,8 +77,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-05-02"
-    status: queued
+    scheduled_date: "2026-08-25"
+    status: todo
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -89,8 +89,8 @@ articles:
     category: "Huiles Vegetales"
     volume: null
     kd: null
-    scheduled_date: "2026-05-02"
-    status: queued
+    scheduled_date: "2026-08-28"
+    status: todo
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -101,8 +101,8 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-05-02"
-    status: queued
+    scheduled_date: "2026-09-01"
+    status: todo
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -114,8 +114,8 @@ articles:
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-05-01"
-    status: queued
+    scheduled_date: "2026-08-14"
+    status: todo
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -126,8 +126,8 @@ articles:
     category: "Gemmotherapie"
     volume: 800
     kd: null
-    scheduled_date: "2026-05-05"
-    status: queued
+    scheduled_date: "2026-09-04"
+    status: todo
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -139,8 +139,8 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-05-08"
-    status: queued
+    scheduled_date: "2026-09-08"
+    status: todo
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -243,7 +243,7 @@ articles:
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-06-09"
+    scheduled_date: "2026-10-16"
     status: todo
     published_date: null
     published_url_fr: null
@@ -255,7 +255,7 @@ articles:
     category: "Huiles Essentielles"
     volume: 260
     kd: null
-    scheduled_date: "2026-06-12"
+    scheduled_date: "2026-10-20"
     status: todo
     published_date: null
     published_url_fr: null
@@ -266,7 +266,7 @@ articles:
     category: "Gemmotherapie"
     volume: 390
     kd: null
-    scheduled_date: "2026-06-16"
+    scheduled_date: "2026-10-23"
     status: todo
     published_date: null
     published_url_fr: null
@@ -278,7 +278,7 @@ articles:
     category: "Respiration"
     volume: 260
     kd: null
-    scheduled_date: "2026-06-19"
+    scheduled_date: "2026-10-27"
     status: todo
     published_date: null
     published_url_fr: null
@@ -289,7 +289,7 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-06-23"
+    scheduled_date: "2026-10-30"
     status: todo
     published_date: null
     published_url_fr: null
@@ -301,7 +301,7 @@ articles:
     category: "Beaute et Soins"
     volume: 236
     kd: null
-    scheduled_date: "2026-06-26"
+    scheduled_date: "2026-11-03"
     status: todo
     published_date: null
     published_url_fr: null
@@ -312,7 +312,7 @@ articles:
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-06-30"
+    scheduled_date: "2026-11-06"
     status: todo
     published_date: null
     published_url_fr: null
@@ -324,7 +324,7 @@ articles:
     category: "Respiration"
     volume: 110
     kd: null
-    scheduled_date: "2026-07-03"
+    scheduled_date: "2026-11-10"
     status: todo
     published_date: null
     published_url_fr: null
@@ -335,7 +335,7 @@ articles:
     category: "Gemmotherapie"
     volume: 880
     kd: null
-    scheduled_date: "2026-07-07"
+    scheduled_date: "2026-11-13"
     status: todo
     published_date: null
     published_url_fr: null
@@ -347,7 +347,7 @@ articles:
     category: "Huiles Essentielles"
     volume: 155
     kd: null
-    scheduled_date: "2026-07-10"
+    scheduled_date: "2026-11-17"
     status: todo
     published_date: null
     published_url_fr: null
@@ -358,7 +358,7 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2026-07-14"
+    scheduled_date: "2026-11-20"
     status: todo
     published_date: null
     published_url_fr: null
@@ -370,7 +370,7 @@ articles:
     category: "Respiration"
     volume: 140
     kd: null
-    scheduled_date: "2026-07-17"
+    scheduled_date: "2026-11-24"
     status: todo
     published_date: null
     published_url_fr: null
@@ -381,7 +381,7 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2026-07-21"
+    scheduled_date: "2026-11-27"
     status: todo
     published_date: null
     published_url_fr: null
@@ -393,7 +393,7 @@ articles:
     category: "Beaute et Soins"
     volume: 170
     kd: null
-    scheduled_date: "2026-07-24"
+    scheduled_date: "2026-12-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -404,7 +404,7 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2026-07-28"
+    scheduled_date: "2026-12-04"
     status: todo
     published_date: null
     published_url_fr: null
@@ -416,7 +416,7 @@ articles:
     category: "Aromatherapie"
     volume: 110
     kd: null
-    scheduled_date: "2026-07-31"
+    scheduled_date: "2026-12-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -427,7 +427,7 @@ articles:
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-08-04"
+    scheduled_date: "2026-12-11"
     status: todo
     published_date: null
     published_url_fr: null
@@ -439,7 +439,7 @@ articles:
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-08-07"
+    scheduled_date: "2026-12-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -450,7 +450,7 @@ articles:
     category: "Digestion et Detox"
     volume: 260
     kd: null
-    scheduled_date: "2026-08-11"
+    scheduled_date: "2026-12-18"
     status: todo
     published_date: null
     published_url_fr: null
@@ -462,7 +462,7 @@ articles:
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-08-14"
+    scheduled_date: "2026-12-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -473,7 +473,7 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-08-18"
+    scheduled_date: "2026-12-25"
     status: todo
     published_date: null
     published_url_fr: null
@@ -485,7 +485,7 @@ articles:
     category: "Respiration"
     volume: 500
     kd: null
-    scheduled_date: "2026-08-21"
+    scheduled_date: "2026-12-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -496,7 +496,7 @@ articles:
     category: "Respiration"
     volume: 590
     kd: null
-    scheduled_date: "2026-08-25"
+    scheduled_date: "2027-01-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -508,7 +508,7 @@ articles:
     category: "Aromatherapie"
     volume: 110
     kd: null
-    scheduled_date: "2026-08-28"
+    scheduled_date: "2027-01-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -519,7 +519,7 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2026-09-01"
+    scheduled_date: "2027-01-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -531,7 +531,7 @@ articles:
     category: "Huiles Essentielles"
     volume: 210
     kd: null
-    scheduled_date: "2026-09-04"
+    scheduled_date: "2027-01-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -542,7 +542,7 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-09-08"
+    scheduled_date: "2027-01-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -554,7 +554,7 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2026-09-11"
+    scheduled_date: "2027-01-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -565,7 +565,7 @@ articles:
     category: "Digestion et Detox"
     volume: 2300
     kd: null
-    scheduled_date: "2026-09-15"
+    scheduled_date: "2027-01-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -577,7 +577,7 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2026-09-18"
+    scheduled_date: "2027-01-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -588,7 +588,7 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2026-09-22"
+    scheduled_date: "2027-01-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -600,7 +600,7 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2026-09-25"
+    scheduled_date: "2027-02-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -611,7 +611,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-09-29"
+    scheduled_date: "2027-02-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -623,7 +623,7 @@ articles:
     category: "Minceur et Drainage"
     volume: null
     kd: null
-    scheduled_date: "2026-10-02"
+    scheduled_date: "2027-02-09"
     status: todo
     published_date: null
     published_url_fr: null
@@ -634,7 +634,7 @@ articles:
     category: "Minceur et Drainage"
     volume: null
     kd: null
-    scheduled_date: "2026-10-06"
+    scheduled_date: "2027-02-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -646,7 +646,7 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-10-09"
+    scheduled_date: "2027-02-16"
     status: todo
     published_date: null
     published_url_fr: null
@@ -657,7 +657,7 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-10-13"
+    scheduled_date: "2027-02-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -669,7 +669,7 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-10-16"
+    scheduled_date: "2027-02-23"
     status: todo
     published_date: null
     published_url_fr: null
@@ -680,7 +680,7 @@ articles:
     category: "Douleurs et Articulations"
     volume: 210
     kd: null
-    scheduled_date: "2026-10-20"
+    scheduled_date: "2027-02-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -692,7 +692,7 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2026-10-23"
+    scheduled_date: "2027-03-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -703,7 +703,7 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2026-10-27"
+    scheduled_date: "2027-03-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -715,7 +715,7 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2026-10-30"
+    scheduled_date: "2027-03-09"
     status: todo
     published_date: null
     published_url_fr: null
@@ -726,7 +726,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-11-03"
+    scheduled_date: "2027-03-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -738,7 +738,7 @@ articles:
     category: "Complements Alimentaires"
     volume: 600
     kd: null
-    scheduled_date: "2026-11-06"
+    scheduled_date: "2027-03-16"
     status: todo
     published_date: null
     published_url_fr: null
@@ -749,7 +749,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-11-10"
+    scheduled_date: "2027-03-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -761,7 +761,7 @@ articles:
     category: "Complements Alimentaires"
     volume: 1182
     kd: null
-    scheduled_date: "2026-11-13"
+    scheduled_date: "2027-03-23"
     status: todo
     published_date: null
     published_url_fr: null
@@ -772,7 +772,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-11-17"
+    scheduled_date: "2027-03-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -784,7 +784,7 @@ articles:
     category: "Beaute et Soins"
     volume: 210
     kd: null
-    scheduled_date: "2026-11-20"
+    scheduled_date: "2027-03-30"
     status: todo
     published_date: null
     published_url_fr: null
@@ -795,7 +795,7 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2026-11-24"
+    scheduled_date: "2027-04-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -807,7 +807,7 @@ articles:
     category: "Complements Alimentaires"
     volume: 1300
     kd: null
-    scheduled_date: "2026-11-27"
+    scheduled_date: "2027-04-06"
     status: todo
     published_date: null
     published_url_fr: null
@@ -818,7 +818,7 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2026-12-01"
+    scheduled_date: "2027-04-09"
     status: todo
     published_date: null
     published_url_fr: null
@@ -830,7 +830,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-12-04"
+    scheduled_date: "2027-04-13"
     status: todo
     published_date: null
     published_url_fr: null
@@ -841,7 +841,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-12-08"
+    scheduled_date: "2027-04-16"
     status: todo
     published_date: null
     published_url_fr: null
@@ -853,7 +853,7 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-12-11"
+    scheduled_date: "2027-04-20"
     status: todo
     published_date: null
     published_url_fr: null
@@ -864,7 +864,7 @@ articles:
     category: "Complements Alimentaires"
     volume: 3200
     kd: null
-    scheduled_date: "2026-12-15"
+    scheduled_date: "2027-04-23"
     status: todo
     published_date: null
     published_url_fr: null
@@ -876,7 +876,7 @@ articles:
     category: "Complements Alimentaires"
     volume: 300
     kd: null
-    scheduled_date: "2026-12-18"
+    scheduled_date: "2027-04-27"
     status: todo
     published_date: null
     published_url_fr: null
@@ -899,7 +899,7 @@ articles:
     category: "Respiration"
     volume: 260
     kd: null
-    scheduled_date: "2026-12-25"
+    scheduled_date: "2027-04-30"
     status: todo
     published_date: null
     published_url_fr: null
@@ -910,7 +910,7 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2026-12-29"
+    scheduled_date: "2027-05-04"
     status: todo
     published_date: null
     published_url_fr: null
@@ -922,7 +922,7 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2027-01-01"
+    scheduled_date: "2027-05-07"
     status: todo
     published_date: null
     published_url_fr: null
@@ -933,7 +933,7 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2027-01-05"
+    scheduled_date: "2027-05-11"
     status: todo
     published_date: null
     published_url_fr: null
@@ -945,7 +945,7 @@ articles:
     category: "Huiles Essentielles"
     volume: null
     kd: null
-    scheduled_date: "2027-01-08"
+    scheduled_date: "2027-05-14"
     status: todo
     published_date: null
     published_url_fr: null
@@ -956,7 +956,7 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2027-01-12"
+    scheduled_date: "2027-05-18"
     status: todo
     published_date: null
     published_url_fr: null
@@ -968,7 +968,7 @@ articles:
     category: "Gemmotherapie"
     volume: 70
     kd: null
-    scheduled_date: "2027-01-15"
+    scheduled_date: "2027-05-21"
     status: todo
     published_date: null
     published_url_fr: null
@@ -979,7 +979,7 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2027-01-19"
+    scheduled_date: "2027-05-25"
     status: todo
     published_date: null
     published_url_fr: null
@@ -991,7 +991,7 @@ articles:
     category: "Peurs et Angoisses"
     volume: null
     kd: null
-    scheduled_date: "2027-01-22"
+    scheduled_date: "2027-05-28"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1002,7 +1002,7 @@ articles:
     category: "Confiance et Estime de Soi"
     volume: null
     kd: null
-    scheduled_date: "2027-01-26"
+    scheduled_date: "2027-06-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1014,7 +1014,7 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2027-01-29"
+    scheduled_date: "2027-06-04"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1025,7 +1025,7 @@ articles:
     category: "Minceur et Drainage"
     volume: 110
     kd: null
-    scheduled_date: "2027-02-02"
+    scheduled_date: "2027-06-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1037,8 +1037,8 @@ articles:
     category: "Huiles Essentielles"
     volume: 2700
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-11"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1049,8 +1049,8 @@ articles:
     category: "Huiles Essentielles"
     volume: 1727
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-15"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1061,8 +1061,8 @@ articles:
     category: "Respiration"
     volume: 677
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-18"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1073,8 +1073,8 @@ articles:
     category: "Beaute et Soins"
     volume: 590
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-22"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1085,8 +1085,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 400
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-25"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1097,8 +1097,8 @@ articles:
     category: "Complements Alimentaires"
     volume: 277
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-09-29"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1109,8 +1109,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 236
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-10-02"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1121,8 +1121,8 @@ articles:
     category: "Digestion et Detox"
     volume: 170
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-10-06"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1133,8 +1133,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 295
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-10-09"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1145,8 +1145,8 @@ articles:
     category: "Gemmotherapie"
     volume: 1462
     kd: null
-    scheduled_date: "2026-05-27"
-    status: queued
+    scheduled_date: "2026-10-13"
+    status: todo
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
