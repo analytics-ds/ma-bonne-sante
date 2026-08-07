@@ -28,20 +28,20 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: 400
     kd: null
-    scheduled_date: "2026-08-07"
-    status: failed
+    scheduled_date: "2026-04-25"
+    status: queued
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: "Etape 0: doublon detecte avant redaction - kw identique (overlap 100%) a l'article deja publie le 2026-04-25 : content/fr/blog/huile-essentielle-stress-anxiete.md (https://ma-bonne-sante.com/blog/huile-essentielle-stress-anxiete/). Publication annulee pour eviter la cannibalisation. A verifier manuellement : de nombreuses autres entrees todo de roadmap.yaml semblent dupliquer des articles deja publies, probable desynchronisation du champ status lors de publications passees hors de cette routine."
+    error: null
 
   - kw: "quelle est la meilleure tisane pour dormir"
     category: "Sommeil et Detente"
     volume: 300
     kd: null
-    scheduled_date: "2026-08-11"
-    status: todo
+    scheduled_date: "2026-04-28"
+    status: queued
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -53,8 +53,8 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2026-08-18"
-    status: todo
+    scheduled_date: "2026-05-02"
+    status: queued
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -65,8 +65,8 @@ articles:
     category: "Gemmotherapie"
     volume: null
     kd: null
-    scheduled_date: "2026-08-21"
-    status: todo
+    scheduled_date: "2026-05-02"
+    status: queued
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -77,8 +77,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2026-08-25"
-    status: todo
+    scheduled_date: "2026-05-02"
+    status: queued
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -89,8 +89,8 @@ articles:
     category: "Huiles Vegetales"
     volume: null
     kd: null
-    scheduled_date: "2026-08-28"
-    status: todo
+    scheduled_date: "2026-05-02"
+    status: queued
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -101,8 +101,8 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2026-09-01"
-    status: todo
+    scheduled_date: "2026-05-02"
+    status: queued
     queued_date: "2026-05-02"
     published_date: null
     published_url_fr: null
@@ -114,8 +114,8 @@ articles:
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-08-14"
-    status: todo
+    scheduled_date: "2026-05-01"
+    status: queued
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -126,8 +126,8 @@ articles:
     category: "Gemmotherapie"
     volume: 800
     kd: null
-    scheduled_date: "2026-09-04"
-    status: todo
+    scheduled_date: "2026-05-05"
+    status: queued
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -139,8 +139,8 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-09-08"
-    status: todo
+    scheduled_date: "2026-05-08"
+    status: queued
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
@@ -1037,8 +1037,8 @@ articles:
     category: "Huiles Essentielles"
     volume: 2700
     kd: null
-    scheduled_date: "2026-09-11"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1049,8 +1049,8 @@ articles:
     category: "Huiles Essentielles"
     volume: 1727
     kd: null
-    scheduled_date: "2026-09-15"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1061,8 +1061,8 @@ articles:
     category: "Respiration"
     volume: 677
     kd: null
-    scheduled_date: "2026-09-18"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1073,8 +1073,8 @@ articles:
     category: "Beaute et Soins"
     volume: 590
     kd: null
-    scheduled_date: "2026-09-22"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1085,8 +1085,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 400
     kd: null
-    scheduled_date: "2026-09-25"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1097,8 +1097,8 @@ articles:
     category: "Complements Alimentaires"
     volume: 277
     kd: null
-    scheduled_date: "2026-09-29"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1109,8 +1109,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 236
     kd: null
-    scheduled_date: "2026-10-02"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1121,8 +1121,8 @@ articles:
     category: "Digestion et Detox"
     volume: 170
     kd: null
-    scheduled_date: "2026-10-06"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1133,8 +1133,8 @@ articles:
     category: "Bien-etre Feminin"
     volume: 295
     kd: null
-    scheduled_date: "2026-10-09"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
@@ -1145,8 +1145,8 @@ articles:
     category: "Gemmotherapie"
     volume: 1462
     kd: null
-    scheduled_date: "2026-10-13"
-    status: todo
+    scheduled_date: "2026-05-27"
+    status: queued
     queued_date: "2026-05-27"
     published_date: null
     published_url_fr: null
