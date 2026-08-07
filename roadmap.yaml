@@ -29,12 +29,12 @@ articles:
     volume: 400
     kd: null
     scheduled_date: "2026-08-07"
-    status: todo
+    status: failed
     queued_date: "2026-04-25"
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: null
+    error: "Etape 0: doublon detecte avant redaction - kw identique (overlap 100%) a l'article deja publie le 2026-04-25 : content/fr/blog/huile-essentielle-stress-anxiete.md (https://ma-bonne-sante.com/blog/huile-essentielle-stress-anxiete/). Publication annulee pour eviter la cannibalisation. A verifier manuellement : de nombreuses autres entrees todo de roadmap.yaml semblent dupliquer des articles deja publies, probable desynchronisation du champ status lors de publications passees hors de cette routine."
 
   - kw: "quelle est la meilleure tisane pour dormir"
     category: "Sommeil et Detente"
