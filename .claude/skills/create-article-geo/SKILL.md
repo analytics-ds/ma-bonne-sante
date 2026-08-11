@@ -14,6 +14,8 @@ Tous les blogs generes par ce template sont bilingues (langue principale + angla
 
 Les deux versions partagent un `translationKey` identique dans le frontmatter, ce qui permet a Hugo de generer automatiquement les liens hreflang et le language switcher.
 
+**Chemins reels sur ce blog (verifie le 2026-08-11)** : le `contentDir` est declare par langue dans `hugo.toml`, donc la version FR va dans **`content/fr/blog/`** et la version EN dans `content/en/blog/`. Le dossier `content/blog/` n'existe pas. Partout ou cette skill ecrit `content/blog/[slug-fr].md`, lire `content/fr/blog/[slug-fr].md`. Les URLs publiques restent `/blog/<slug>/` (FR, langue par defaut) et `/en/blog/<slug>/` (EN).
+
 Ne JAMAIS demander au consultant s'il veut la version anglaise. C'est systematique.
 
 ## Etape 0 — Pull du repo (sync obligatoire)

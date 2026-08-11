@@ -112,7 +112,7 @@ Ce garde-fou est purement informatif. L'utilisateur peut toujours forcer l'ajout
 ## Regles generales
 
 - Toujours utiliser `relURL` dans les templates Hugo pour les liens (compatibilite GitHub Pages)
-- Les articles vont dans `content/blog/`
+- **Les articles FR vont dans `content/fr/blog/`, les articles EN dans `content/en/blog/`.** Ce blog est multilingue avec un `contentDir` par langue declare dans `hugo.toml` (`content/fr` et `content/en`) : le dossier `content/blog/` n'existe PAS. Toute doc ou skill qui parle de `content/blog/` pour la version FR designe en realite `content/fr/blog/` (constate le 2026-08-11, la skill `create-article-geo` porte encore l'ancien chemin par endroits). Les URLs publiques restent `/blog/<slug>/` en FR (langue par defaut, sans prefixe) et `/en/blog/<slug>/` en EN
 - Les slugs sont en minuscules, sans accents, mots separes par des tirets
 - Ne JAMAIS utiliser `&` dans les noms de categories ou de tags — toujours remplacer par "et" (Hugo genere un double tiret `--` dans le slug, ce qui casse les URLs)
 - Le ton des articles est impersonnel (pas de je/tu/nous/vous) sauf instruction contraire
