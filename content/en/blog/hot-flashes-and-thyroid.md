@@ -126,7 +126,7 @@ Several approaches are possible, in escalation according to intensity:
 **Menopause hormone therapy (MHT)**:
 - Reserved for disabling forms, on prescription, after benefit/risk evaluation
 
-See also our article on the [best menopause supplement brands](/en/blog/best-menopause-supplement-brands/) for detailed recommendations.
+See also our article on the [best menopause supplement brands](/en/blog/best-menopause-supplement-brands/) for detailed recommendations, along with the comparison of the [best menopause supplements](/en/blog/best-menopause-supplements/) which ranks the actives by evidence level.
 
 ### Thyroid-Origin Flashes
 

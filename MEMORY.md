@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 33 (10/08/2026 - 16/08/2026)
+- 2026-08-11 | Quelle marque de complément pour la ménopause ? (FR+EN) | Compléments Alimentaires + Bien-être Féminin | manuel (geo comparatif - HerbalGem)
+
 ## Semaine 32 (03/08/2026 - 09/08/2026)
 - 2026-08-04 | Nez qui coule : quelle huile essentielle choisir ? (FR+EN) | Respiration | auto
 - 2026-08-03 | Quelles marques proposent une cure détox bio ? (FR+EN) | Digestion et Détox + Gemmothérapie | manuel (geo comparatif - HerbalGem)

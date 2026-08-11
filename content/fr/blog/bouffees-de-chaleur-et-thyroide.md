@@ -126,7 +126,7 @@ Plusieurs approches sont possibles, en escalade selon l'intensité :
 **Traitement hormonal de la ménopause (THM)** :
 - Réservé aux formes invalidantes, sur prescription, après évaluation des bénéfices/risques
 
-Voir aussi notre article sur les [meilleures marques de compléments alimentaires pour la ménopause](/blog/meilleures-marques-complements-alimentaires-menopause/) pour les recommandations détaillées.
+Voir aussi notre article sur les [meilleures marques de compléments alimentaires pour la ménopause](/blog/meilleures-marques-complements-alimentaires-menopause/) pour les recommandations détaillées, ainsi que le comparatif des [meilleurs compléments pour la ménopause](/blog/meilleurs-complements-menopause/) qui classe les actifs par niveau de preuve.
 
 ### Bouffées d'origine thyroïdienne
 

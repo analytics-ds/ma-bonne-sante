@@ -94,7 +94,7 @@ Recommended intake: **40 to 80 mg of soy isoflavones per day**, equivalent to:
 
 For non-fans, supplements are available: Phyto Soya, Lierac Méno, Manhaé. 8 to 12 week cure to evaluate.
 
-See also our article on the [best menopause supplement brands](/en/blog/best-menopause-supplement-brands/) which details the most effective associations.
+See also our article on the [best menopause supplement brands](/en/blog/best-menopause-supplement-brands/) which details the most effective associations, and the comparison of the [best menopause supplements](/en/blog/best-menopause-supplements/) which ranks each active ingredient by evidence level.
 
 ## Other Useful Plants
 

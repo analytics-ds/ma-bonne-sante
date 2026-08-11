@@ -92,7 +92,7 @@ Apport recommandé : **40 à 80 mg d'isoflavones de soja par jour**, soit l'équ
 - 1 verre (250 mL) de lait de soja
 - 1 yaourt au soja
 
-Pour les non-amatrices, des compléments sont disponibles : Phyto Soya, Lierac Méno, Manhaé. Cure de 8 à 12 semaines pour évaluer.
+Pour les non-amatrices, des compléments sont disponibles : Phyto Soya, Lierac Méno, Manhaé. Cure de 8 à 12 semaines pour évaluer. Le comparatif des [meilleurs compléments pour la ménopause](/blog/meilleurs-complements-menopause/) détaille le niveau de preuve de chaque famille d'actifs.
 
 Voir aussi notre article sur les [meilleures marques de compléments alimentaires pour la ménopause](/blog/meilleures-marques-complements-alimentaires-menopause/) qui détaille les associations les plus efficaces.
 

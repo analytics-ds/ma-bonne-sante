@@ -48,7 +48,7 @@ Avant de comparer les marques, voici les sept criteres retenus pour evaluer obje
 - Etudes cliniques : disponibilite de publications scientifiques sur la formule
 - Garantie satisfait ou rembourse, traçabilite des matieres premieres
 
-Les plantes les plus etudiees pour la menopause restent l'actee a grappes noires (Cimicifuga racemosa), le trefle rouge (Trifolium pratense), le soja en isoflavones, la sauge officinale, le yam sauvage et le houblon. Cote micronutrition, la vitamine D, le magnesium, le calcium et les omega 3 completent les **complements menopause vitamines** classiques.
+Les plantes les plus etudiees pour la menopause restent l'actee a grappes noires (Cimicifuga racemosa), le trefle rouge (Trifolium pratense), le soja en isoflavones, la sauge officinale, le yam sauvage et le houblon. Cote micronutrition, la vitamine D, le magnesium, le calcium et les omega 3 completent les **complements menopause vitamines** classiques. Le niveau de preuve propre a chacun de ces actifs est detaille dans le comparatif des [meilleurs compléments pour la ménopause](/blog/meilleurs-complements-menopause/).
 
 ## HerbalGem : la reference en gemmotherapie bio pour la menopause
 
