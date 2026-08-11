@@ -7,7 +7,10 @@
 #   - Pranarom : aroma, huiles essentielles, respiration, beaute
 #   - HerbalGem : gemmotherapie, immunite, detox, douleurs
 #   - Biofloral : Fleurs de Bach, sommeil, stress, emotions
-# Extension : 82 articles repartis du 28/04/2026 au 12/02/2027.
+# Extension : 97 entrees au total. Les 68 entrees todo sont planifiees
+#             du 14/08/2026 au 06/04/2027 (creneaux mardi + vendredi).
+#             Replanifiees le 11/08/2026 : la manoeuvre du 07/08 avait laisse
+#             un trou de creneaux du 05/06 au 16/10, la routine tournait a blanc.
 #
 # Format documente dans .claude/templates/roadmap-template.yaml
 #
@@ -239,23 +242,24 @@ articles:
     published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-runny-nose/"
     error: null
 
+  # ============ Semaine 33 (10/08 - 16/08) ============
   - kw: "quelle fleur de bach choisir"
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-10-16"
+    scheduled_date: "2026-08-14"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 25 (16/06 - 22/06) ============
+  # ============ Semaine 34 (17/08 - 23/08) ============
   - kw: "comment utiliser l huile essentielle d eucalyptus radie"
     category: "Huiles Essentielles"
     volume: 260
     kd: null
-    scheduled_date: "2026-10-20"
+    scheduled_date: "2026-08-18"
     status: todo
     published_date: null
     published_url_fr: null
@@ -266,19 +270,19 @@ articles:
     category: "Gemmotherapie"
     volume: 390
     kd: null
-    scheduled_date: "2026-10-23"
+    scheduled_date: "2026-08-21"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 26 (23/06 - 29/06) ============
+  # ============ Semaine 35 (24/08 - 30/08) ============
   - kw: "quelle huile essentielle pour degager les bronches"
     category: "Respiration"
     volume: 260
     kd: null
-    scheduled_date: "2026-10-27"
+    scheduled_date: "2026-08-25"
     status: todo
     published_date: null
     published_url_fr: null
@@ -289,19 +293,19 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-10-30"
+    scheduled_date: "2026-08-28"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 27 (30/06 - 06/07) ============
+  # ============ Semaine 36 (31/08 - 06/09) ============
   - kw: "comment utiliser l huile de tea tree sur le visage"
     category: "Beaute et Soins"
     volume: 236
     kd: null
-    scheduled_date: "2026-11-03"
+    scheduled_date: "2026-09-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -312,19 +316,19 @@ articles:
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-11-06"
+    scheduled_date: "2026-09-04"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 28 (07/07 - 13/07) ============
+  # ============ Semaine 37 (07/09 - 13/09) ============
   - kw: "quelles huiles essentielles pour inhalation"
     category: "Respiration"
     volume: 110
     kd: null
-    scheduled_date: "2026-11-10"
+    scheduled_date: "2026-09-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -335,19 +339,19 @@ articles:
     category: "Gemmotherapie"
     volume: 880
     kd: null
-    scheduled_date: "2026-11-13"
+    scheduled_date: "2026-09-11"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 29 (14/07 - 20/07) ============
+  # ============ Semaine 38 (14/09 - 20/09) ============
   - kw: "comment utiliser l huile essentielle de lavande"
     category: "Huiles Essentielles"
     volume: 155
     kd: null
-    scheduled_date: "2026-11-17"
+    scheduled_date: "2026-09-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -358,19 +362,19 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2026-11-20"
+    scheduled_date: "2026-09-18"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 30 (21/07 - 27/07) ============
+  # ============ Semaine 39 (21/09 - 27/09) ============
   - kw: "quelles huiles essentielles pour le rhume"
     category: "Respiration"
     volume: 140
     kd: null
-    scheduled_date: "2026-11-24"
+    scheduled_date: "2026-09-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -381,19 +385,19 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2026-11-27"
+    scheduled_date: "2026-09-25"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 31 (28/07 - 03/08) ============
+  # ============ Semaine 40 (28/09 - 04/10) ============
   - kw: "comment utiliser les huiles essentielles sur la peau"
     category: "Beaute et Soins"
     volume: 170
     kd: null
-    scheduled_date: "2026-12-01"
+    scheduled_date: "2026-09-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -404,19 +408,19 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2026-12-04"
+    scheduled_date: "2026-10-02"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 32 (04/08 - 10/08) ============
+  # ============ Semaine 41 (05/10 - 11/10) ============
   - kw: "comment utiliser un diffuseur d huiles essentielles"
     category: "Aromatherapie"
     volume: 110
     kd: null
-    scheduled_date: "2026-12-08"
+    scheduled_date: "2026-10-06"
     status: todo
     published_date: null
     published_url_fr: null
@@ -427,19 +431,19 @@ articles:
     category: "Fleurs de Bach"
     volume: 50
     kd: null
-    scheduled_date: "2026-12-11"
+    scheduled_date: "2026-10-09"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 33 (11/08 - 17/08) ============
+  # ============ Semaine 42 (12/10 - 18/10) ============
   - kw: "comment soigner rapidement une angine naturellement"
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-12-15"
+    scheduled_date: "2026-10-13"
     status: todo
     published_date: null
     published_url_fr: null
@@ -450,19 +454,19 @@ articles:
     category: "Digestion et Detox"
     volume: 260
     kd: null
-    scheduled_date: "2026-12-18"
+    scheduled_date: "2026-10-16"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 34 (18/08 - 24/08) ============
+  # ============ Semaine 43 (19/10 - 25/10) ============
   - kw: "que faire en cas de rhume solutions naturelles"
     category: "Respiration"
     volume: 210
     kd: null
-    scheduled_date: "2026-12-22"
+    scheduled_date: "2026-10-20"
     status: todo
     published_date: null
     published_url_fr: null
@@ -473,19 +477,19 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2026-12-25"
+    scheduled_date: "2026-10-23"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 35 (25/08 - 31/08) ============
+  # ============ Semaine 44 (26/10 - 01/11) ============
   - kw: "comment couper un rhume rapidement"
     category: "Respiration"
     volume: 500
     kd: null
-    scheduled_date: "2026-12-29"
+    scheduled_date: "2026-10-27"
     status: todo
     published_date: null
     published_url_fr: null
@@ -496,19 +500,19 @@ articles:
     category: "Respiration"
     volume: 590
     kd: null
-    scheduled_date: "2027-01-01"
+    scheduled_date: "2026-10-30"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 36 (01/09 - 07/09) ============
+  # ============ Semaine 45 (02/11 - 08/11) ============
   - kw: "comment utiliser les huiles essentielles dans la maison"
     category: "Aromatherapie"
     volume: 110
     kd: null
-    scheduled_date: "2027-01-05"
+    scheduled_date: "2026-11-03"
     status: todo
     published_date: null
     published_url_fr: null
@@ -519,19 +523,19 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2027-01-08"
+    scheduled_date: "2026-11-06"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 37 (08/09 - 14/09) ============
+  # ============ Semaine 46 (09/11 - 15/11) ============
   - kw: "combien de temps les huiles essentielles restent dans le corps"
     category: "Huiles Essentielles"
     volume: 210
     kd: null
-    scheduled_date: "2027-01-12"
+    scheduled_date: "2026-11-10"
     status: todo
     published_date: null
     published_url_fr: null
@@ -542,19 +546,19 @@ articles:
     category: "Immunite et Defenses"
     volume: null
     kd: null
-    scheduled_date: "2027-01-15"
+    scheduled_date: "2026-11-13"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 38 (15/09 - 21/09) ============
+  # ============ Semaine 47 (16/11 - 22/11) ============
   - kw: "comment soulager un mal de tete rapidement"
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2027-01-19"
+    scheduled_date: "2026-11-17"
     status: todo
     published_date: null
     published_url_fr: null
@@ -565,19 +569,19 @@ articles:
     category: "Digestion et Detox"
     volume: 2300
     kd: null
-    scheduled_date: "2027-01-22"
+    scheduled_date: "2026-11-20"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 39 (22/09 - 28/09) ============
+  # ============ Semaine 48 (23/11 - 29/11) ============
   - kw: "comment soulager les ballonnements rapidement"
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2027-01-26"
+    scheduled_date: "2026-11-24"
     status: todo
     published_date: null
     published_url_fr: null
@@ -588,19 +592,19 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2027-01-29"
+    scheduled_date: "2026-11-27"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 40 (29/09 - 05/10) ============
+  # ============ Semaine 49 (30/11 - 06/12) ============
   - kw: "comment stopper la chute des cheveux chez la femme"
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2027-02-02"
+    scheduled_date: "2026-12-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -611,19 +615,19 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-02-05"
+    scheduled_date: "2026-12-04"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 41 (06/10 - 12/10) ============
+  # ============ Semaine 50 (07/12 - 13/12) ============
   - kw: "comment se debarrasser de la cellulite naturellement"
     category: "Minceur et Drainage"
     volume: null
     kd: null
-    scheduled_date: "2027-02-09"
+    scheduled_date: "2026-12-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -634,19 +638,19 @@ articles:
     category: "Minceur et Drainage"
     volume: null
     kd: null
-    scheduled_date: "2027-02-12"
+    scheduled_date: "2026-12-11"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 42 (13/10 - 19/10) ============
+  # ============ Semaine 51 (14/12 - 20/12) ============
   - kw: "comment soulager les regles douloureuses naturellement"
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2027-02-16"
+    scheduled_date: "2026-12-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -657,19 +661,19 @@ articles:
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2027-02-19"
+    scheduled_date: "2026-12-18"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 43 (20/10 - 26/10) ============
+  # ============ Semaine 52 (21/12 - 27/12) ============
   - kw: "comment soigner une cystite naturellement"
     category: "Bien-etre Feminin"
     volume: null
     kd: null
-    scheduled_date: "2027-02-23"
+    scheduled_date: "2026-12-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -680,19 +684,19 @@ articles:
     category: "Douleurs et Articulations"
     volume: 210
     kd: null
-    scheduled_date: "2027-02-26"
+    scheduled_date: "2026-12-25"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 44 (27/10 - 02/11) ============
+  # ============ Semaine 53 (28/12 - 03/01) ============
   - kw: "comment soulager l arthrose naturellement"
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2027-03-02"
+    scheduled_date: "2026-12-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -703,19 +707,19 @@ articles:
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2027-03-05"
+    scheduled_date: "2027-01-01"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 45 (03/11 - 09/11) ============
+  # ============ Semaine 1 (04/01 - 10/01) ============
   - kw: "quelle plante pour la memoire"
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2027-03-09"
+    scheduled_date: "2027-01-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -726,19 +730,19 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-03-12"
+    scheduled_date: "2027-01-08"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 46 (10/11 - 16/11) ============
+  # ============ Semaine 2 (11/01 - 17/01) ============
   - kw: "comment consommer le curcuma pour qu il soit efficace"
     category: "Complements Alimentaires"
     volume: 600
     kd: null
-    scheduled_date: "2027-03-16"
+    scheduled_date: "2027-01-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -749,19 +753,19 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-03-19"
+    scheduled_date: "2027-01-15"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 47 (17/11 - 23/11) ============
+  # ============ Semaine 3 (18/01 - 24/01) ============
   - kw: "comment consommer le gingembre"
     category: "Complements Alimentaires"
     volume: 1182
     kd: null
-    scheduled_date: "2027-03-23"
+    scheduled_date: "2027-01-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -772,19 +776,19 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-03-26"
+    scheduled_date: "2027-01-22"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 48 (24/11 - 30/11) ============
+  # ============ Semaine 4 (25/01 - 31/01) ============
   - kw: "comment hydrater une peau tres seche naturellement"
     category: "Beaute et Soins"
     volume: 210
     kd: null
-    scheduled_date: "2027-03-30"
+    scheduled_date: "2027-01-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -795,19 +799,19 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2027-04-02"
+    scheduled_date: "2027-01-29"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 49 (01/12 - 07/12) ============
+  # ============ Semaine 5 (01/02 - 07/02) ============
   - kw: "quels sont les probiotiques les plus efficaces"
     category: "Complements Alimentaires"
     volume: 1300
     kd: null
-    scheduled_date: "2027-04-06"
+    scheduled_date: "2027-02-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -818,19 +822,19 @@ articles:
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2027-04-09"
+    scheduled_date: "2027-02-05"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 50 (08/12 - 14/12) ============
+  # ============ Semaine 6 (08/02 - 14/02) ============
   - kw: "quand faire une cure de probiotiques"
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-04-13"
+    scheduled_date: "2027-02-09"
     status: todo
     published_date: null
     published_url_fr: null
@@ -841,19 +845,19 @@ articles:
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-04-16"
+    scheduled_date: "2027-02-12"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 51 (15/12 - 21/12) ============
+  # ============ Semaine 7 (15/02 - 21/02) ============
   - kw: "quels sont les symptomes d une carence en magnesium"
     category: "Complements Alimentaires"
     volume: null
     kd: null
-    scheduled_date: "2027-04-20"
+    scheduled_date: "2027-02-16"
     status: todo
     published_date: null
     published_url_fr: null
@@ -864,19 +868,19 @@ articles:
     category: "Complements Alimentaires"
     volume: 3200
     kd: null
-    scheduled_date: "2027-04-23"
+    scheduled_date: "2027-02-19"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 52 (22/12 - 28/12) ============
+  # ============ Semaine 8 (22/02 - 28/02) ============
   - kw: "quel magnesium choisir en pharmacie"
     category: "Complements Alimentaires"
     volume: 300
     kd: null
-    scheduled_date: "2027-04-27"
+    scheduled_date: "2027-02-23"
     status: todo
     published_date: null
     published_url_fr: null
@@ -894,12 +898,12 @@ articles:
     published_url_en: "https://ma-bonne-sante.com/en/blog/relieve-migraine-without-medication/"
     error: null
 
-  # ============ Semaine 1 - 2027 (05/01 - 11/01) ============
+  # ============ Semaine 8 (22/02 - 28/02) ============
   - kw: "quelle huile essentielle pour les infections pulmonaires"
     category: "Respiration"
     volume: 260
     kd: null
-    scheduled_date: "2027-04-30"
+    scheduled_date: "2027-02-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -910,19 +914,19 @@ articles:
     category: "Sommeil et Detente"
     volume: null
     kd: null
-    scheduled_date: "2027-05-04"
+    scheduled_date: "2027-03-02"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 2 - 2027 (12/01 - 18/01) ============
+  # ============ Semaine 9 (01/03 - 07/03) ============
   - kw: "comment dégonfler le ventre rapidement"
     category: "Digestion et Detox"
     volume: null
     kd: null
-    scheduled_date: "2027-05-07"
+    scheduled_date: "2027-03-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -933,19 +937,19 @@ articles:
     category: "Beaute et Soins"
     volume: null
     kd: null
-    scheduled_date: "2027-05-11"
+    scheduled_date: "2027-03-09"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 3 - 2027 (19/01 - 25/01) ============
+  # ============ Semaine 10 (08/03 - 14/03) ============
   - kw: "huile essentielle de menthe poivree utilisation"
     category: "Huiles Essentielles"
     volume: null
     kd: null
-    scheduled_date: "2027-05-14"
+    scheduled_date: "2027-03-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -956,19 +960,19 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2027-05-18"
+    scheduled_date: "2027-03-16"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 4 - 2027 (26/01 - 01/02) ============
+  # ============ Semaine 11 (15/03 - 21/03) ============
   - kw: "quelle plante fait baisser la tension"
     category: "Gemmotherapie"
     volume: 70
     kd: null
-    scheduled_date: "2027-05-21"
+    scheduled_date: "2027-03-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -979,19 +983,19 @@ articles:
     category: "Stress et Equilibre emotionnel"
     volume: null
     kd: null
-    scheduled_date: "2027-05-25"
+    scheduled_date: "2027-03-23"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 5 - 2027 (02/02 - 08/02) ============
+  # ============ Semaine 12 (22/03 - 28/03) ============
   - kw: "fleur de bach pour les peurs et angoisses"
     category: "Peurs et Angoisses"
     volume: null
     kd: null
-    scheduled_date: "2027-05-28"
+    scheduled_date: "2027-03-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1002,19 +1006,19 @@ articles:
     category: "Confiance et Estime de Soi"
     volume: null
     kd: null
-    scheduled_date: "2027-06-01"
+    scheduled_date: "2027-03-30"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
 
-  # ============ Semaine 6 - 2027 (09/02 - 15/02) ============
+  # ============ Semaine 13 (29/03 - 04/04) ============
   - kw: "huile essentielle pour la migraine"
     category: "Douleurs et Articulations"
     volume: null
     kd: null
-    scheduled_date: "2027-06-04"
+    scheduled_date: "2027-04-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -1025,7 +1029,7 @@ articles:
     category: "Minceur et Drainage"
     volume: 110
     kd: null
-    scheduled_date: "2027-06-08"
+    scheduled_date: "2027-04-06"
     status: todo
     published_date: null
     published_url_fr: null
