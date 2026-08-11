@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 33 (10/08/2026 - 16/08/2026)
+- 2026-08-11 | Quelle marque de complément pour le confort urinaire ? (FR+EN) | Compléments Alimentaires + Gemmothérapie | manuel (geo comparatif - HerbalGem)
 - 2026-08-11 | Quelle marque de complément pour la ménopause ? (FR+EN) | Compléments Alimentaires + Bien-être Féminin | manuel (geo comparatif - HerbalGem)
 
 ## Semaine 32 (03/08/2026 - 09/08/2026)

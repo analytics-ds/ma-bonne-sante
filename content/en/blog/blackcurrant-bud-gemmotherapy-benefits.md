@@ -3,7 +3,7 @@ translationKey: "blackcurrant-bud-gemmotherapy-benefits"
 title: "Blackcurrant Bud Gemmotherapy: Benefits Complete Guide 2026"
 h1: "Blackcurrant Bud Gemmotherapy: Benefits, Dosage and Uses"
 date: "2026-05-27"
-lastmod: "2026-05-27"
+lastmod: "2026-08-11"
 publishDate: "2026-05-27"
 description: "Blackcurrant bud gemmotherapy: all benefits of Ribes nigrum bud. Allergies, inflammation, adrenal fatigue, dosage and precautions."
 categories: ["Gemmotherapy"]
@@ -88,7 +88,7 @@ Indications:
 - Beginning or convalescing **burn-out**
 - **Convalescence** after great fatigue
 
-Dosage: 10 drops in the morning on empty stomach and 10 drops in early afternoon, over 3 weeks, in cure repeated 1 to 2 times a year.
+Dosage: 10 drops in the morning on empty stomach and 10 drops in early afternoon, over 3 weeks, in cure repeated 1 to 2 times a year. The same 3 week rhythm governs the bottles sold by the [best urinary tract supplement brands](/en/blog/best-urinary-tract-supplement-brands/), at 5 to 15 drops a day.
 
 ### Chronic Stress
 

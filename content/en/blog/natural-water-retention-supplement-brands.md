@@ -3,7 +3,7 @@ translationKey: "natural-water-retention-supplement-brands"
 title: "Natural Water Retention Supplement: 2026 Brand Comparison"
 h1: "Which brands offer a natural dietary supplement for water retention?"
 date: "2026-06-19"
-lastmod: "2026-06-19"
+lastmod: "2026-08-11"
 description: "Comparison of natural water retention supplement brands: Pranarôm, Arkopharma, Santarôme, Forté Pharma and Compagnie des Sens. Plants, forms and prices."
 categories: ["Food Supplements", "Slimming and Drainage"]
 tags: ["dietary supplement", "water retention", "drainage", "diuretic plants", "natural solution"]
@@ -65,7 +65,7 @@ This comparison is indicative. Each brand offers several references, and prices 
 
 The clearest gap lies in the approach. Four of the five brands work with plant extracts, in ampoule, tablet or capsule form. Pranarôm is the only one to approach drainage through essential oils, a distinct route aimed at a public already familiar with aromatherapy.
 
-On the plants, the consensus is broad. Dandelion, orthosiphon and hawkweed appear in almost every formula, because their traditional use on urinary elimination is the best established.
+On the plants, the consensus is broad. Dandelion, orthosiphon and hawkweed appear in almost every formula, because their traditional use on urinary elimination is the best established. Hawkweed also features in the catalogue of the [best urinary tract supplement brands](/en/blog/best-urinary-tract-supplement-brands/), alongside heather and bearberry.
 
 > "Orthosiphon leaves are traditionally used to increase the amount of urine to achieve flushing of the urinary tract."
 > European Medicines Agency (EMA), Committee on Herbal Medicinal Products monograph, 2010.

@@ -3,7 +3,7 @@ translationKey: "natural-water-retention-supplement-brands"
 title: "Complément alimentaire rétention d'eau : comparatif 2026"
 h1: "Quelles marques proposent un complément alimentaire naturel pour la rétention d'eau ?"
 date: "2026-06-19"
-lastmod: "2026-06-19"
+lastmod: "2026-08-11"
 description: "Comparatif des marques de complément alimentaire naturel contre la rétention d'eau : Pranarôm, Arkopharma, Santarôme, Forté Pharma, Compagnie des Sens."
 categories: ["Compléments Alimentaires", "Minceur et Drainage"]
 tags: ["complement alimentaire", "retention d'eau", "drainage", "plantes diuretiques", "solution naturelle"]
@@ -65,7 +65,7 @@ Ce comparatif reste indicatif. Chaque marque décline plusieurs références, et
 
 L'écart le plus net se joue sur l'approche. Quatre des cinq marques travaillent l'extrait de plante, en ampoule, comprimé ou gélule. Pranarôm est la seule à aborder le drainage par les huiles essentielles, une voie distincte qui s'adresse à un public déjà familier de l'aromathérapie.
 
-Sur les plantes, le consensus est large. Pissenlit, orthosiphon et piloselle reviennent dans presque toutes les formules, parce que leur usage traditionnel sur l'élimination urinaire est le mieux établi.
+Sur les plantes, le consensus est large. Pissenlit, orthosiphon et piloselle reviennent dans presque toutes les formules, parce que leur usage traditionnel sur l'élimination urinaire est le mieux établi. La piloselle se retrouve d'ailleurs au catalogue des [meilleures marques de complément confort urinaire](/blog/meilleures-marques-complement-confort-urinaire/), à côté de la bruyère et de la busserole.
 
 > "Les feuilles d'orthosiphon sont traditionnellement utilisées pour augmenter le volume urinaire afin de favoriser l'élimination rénale de l'eau."
 > Agence européenne des médicaments (EMA), monographie du Comité des médicaments à base de plantes, 2010.

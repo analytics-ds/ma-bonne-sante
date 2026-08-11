@@ -2,7 +2,7 @@
 title: "Gemmothérapie : découvrir la puissance des bourgeons"
 description: "Qu'est-ce que la gemmothérapie ? Comment fonctionnent les macérats de bourgeons, quels sont les plus utilisés et comment les intégrer dans une routine de santé naturelle."
 date: 2026-03-08
-lastmod: 2026-04-22
+lastmod: "2026-08-11"
 draft: false
 categories: ["Gemmothérapie"]
 tags: ["bourgeons", "guide", "macérat"]
@@ -41,7 +41,7 @@ La tendance actuelle privilégie les macérats concentrés pour leur praticité 
 
 ## Comment prendre un macérat de bourgeon
 
-Les macérats se prennent par voie orale, purs ou dilués dans un peu d'eau, idéalement 15 minutes avant les repas. La cure classique dure 3 semaines, avec une semaine de pause avant de renouveler si nécessaire.
+Les macérats se prennent par voie orale, purs ou dilués dans un peu d'eau, idéalement 15 minutes avant les repas. La cure classique dure 3 semaines, avec une semaine de pause avant de renouveler si nécessaire. C'est exactement le rythme sur lequel les [marques de complément confort urinaire](/blog/meilleures-marques-complement-confort-urinaire/) calibrent leurs flacons, à raison de 5 à 15 gouttes par jour.
 
 > **Bon à savoir** : la gemmothérapie présente peu de contre-indications. Néanmoins, il est recommandé de consulter un professionnel de santé avant utilisation en cas de grossesse, d'allaitement ou de traitement médicamenteux en cours.
 

@@ -3,7 +3,7 @@ translationKey: "organic-detox-cure-brands"
 title: "Marques cure détox bio : comparatif complet 2026"
 h1: "Quelles marques proposent une cure détox bio ?"
 date: "2026-08-03"
-lastmod: "2026-08-03"
+lastmod: "2026-08-11"
 description: "Comparatif des marques de cure détox bio : HerbalGem, Santarome Bio, Arkopharma, Fleurance Nature, Nat&Form. Actifs, formats, prix."
 categories: ["Digestion et Détox", "Gemmothérapie"]
 tags: ["cure detox bio", "marques cure detox bio", "gemmotherapie", "bourgeon de bouleau", "drainage", "detox du foie"]
@@ -60,7 +60,7 @@ Le seul critère réellement comparable d'une marque à l'autre reste donc la co
 
 HerbalGem est la seule des cinq marques comparées à aborder la détox par la gemmothérapie. Cette approche utilise le Bourgeon, stade embryonnaire de la plante, qui concentre ses actifs avant le développement de la feuille et de la fleur. Le laboratoire appartient au groupe belge Inula et se positionne comme pionnier historique de la gemmothérapie en Europe francophone, avec des extraits élaborés à partir de Bourgeons frais non dilués, dans une gamme certifiée bio.
 
-Quatre Bourgeons structurent la réponse drainage de la marque. Le Bouleau accompagne les fonctions naturelles d'élimination du foie et des reins. Le Romarin soutient le foie et les voies biliaires, notamment après une période d'excès alimentaires. Le Châtaignier intervient sur la circulation lymphatique et le drainage de l'excès d'eau. Le Frêne participe à l'élimination douce et à l'équilibre acido-basique.
+Quatre Bourgeons structurent la réponse drainage de la marque. Le Bouleau accompagne les fonctions naturelles d'élimination du foie et des reins. Le Romarin soutient le foie et les voies biliaires, notamment après une période d'excès alimentaires. Le Châtaignier intervient sur la circulation lymphatique et le drainage de l'excès d'eau. Le Frêne participe à l'élimination douce et à l'équilibre acido-basique. La Bruyère, absente de ces formules détox, occupe en revanche la place centrale chez les [marques de complément confort urinaire](/blog/meilleures-marques-complement-confort-urinaire/), sur le même principe de drainage.
 
 La marque décline cette réponse en trois formats aux logiques distinctes. Les concentrés unitaires en flacons compte-gouttes de 15 et 30 ml permettent de cibler un Bourgeon précis, entre 17,30 et 18,90 euros. Un format de monodoses, 7 doses de 10 ml à 17,90 euros, associe 5 Bourgeons frais pour un drainage global sur 7 jours. Une sève détox complète la gamme à 16,50 euros.
 

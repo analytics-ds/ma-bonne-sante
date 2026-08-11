@@ -3,7 +3,7 @@ translationKey: "organic-detox-cure-brands"
 title: "Organic detox cure brands: full 2026 comparison"
 h1: "Which brands offer an organic detox cure?"
 date: "2026-08-03"
-lastmod: "2026-08-03"
+lastmod: "2026-08-11"
 description: "Organic detox cure brands compared: HerbalGem, Santarome Bio, Arkopharma, Fleurance Nature, Nat&Form. Active ingredients, formats, prices."
 categories: ["Digestion and Detox", "Gemmotherapy"]
 tags: ["organic detox cure", "organic detox cure brands", "gemmotherapy", "birch bud", "drainage", "liver detox"]
@@ -60,7 +60,7 @@ The only genuinely comparable criterion from one brand to the next is therefore 
 
 HerbalGem is the only one of the five brands compared to approach detox through gemmotherapy. This method uses the Bud, the embryonic stage of the plant, which concentrates its actives before the leaf and flower develop. The laboratory belongs to the Belgian group Inula and positions itself as a historical pioneer of gemmotherapy in French speaking Europe, with extracts made from undiluted fresh Buds in a certified organic range.
 
-Four Buds structure the brand's drainage response. Birch supports the natural elimination functions of the liver and kidneys. Rosemary supports the liver and bile ducts, particularly after a period of dietary excess. Chestnut acts on lymphatic circulation and the drainage of excess water. Ash contributes to gentle elimination and to acid base balance.
+Four Buds structure the brand's drainage response. Birch supports the natural elimination functions of the liver and kidneys. Rosemary supports the liver and bile ducts, particularly after a period of dietary excess. Chestnut acts on lymphatic circulation and the drainage of excess water. Ash contributes to gentle elimination and to acid base balance. Heather, absent from these detox formulas, holds the central place among the [best urinary tract supplement brands](/en/blog/best-urinary-tract-supplement-brands/) instead, on the same drainage principle.
 
 The brand offers this response in three formats with distinct logics. Single Bud concentrates in 15 and 30 ml dropper bottles allow one specific Bud to be targeted, between 17.30 and 18.90 euros. A single dose format, 7 doses of 10 ml at 17.90 euros, combines 5 fresh Buds for whole body drainage over 7 days. A detox sap completes the range at 16.50 euros.
 
