@@ -248,10 +248,10 @@ articles:
     volume: 50
     kd: null
     scheduled_date: "2026-08-14"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-14"
+    published_url_fr: "https://ma-bonne-sante.com/blog/quelle-fleur-de-bach-choisir/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/which-bach-flower-to-choose/"
     error: null
 
   # ============ Semaine 34 (17/08 - 23/08) ============
