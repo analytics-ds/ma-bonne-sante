@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 34 (17/08/2026 - 23/08/2026)
+- 2026-08-18 | Huile essentielle d'eucalyptus radié : comment l'utiliser (FR+EN) | Huiles Essentielles | auto (websearch, CrazySERP timeout apres 240s)
+
 ## Semaine 33 (10/08/2026 - 16/08/2026)
 - 2026-08-14 | Quelle fleur de Bach choisir selon son émotion ? (FR+EN) | Fleurs de Bach | auto (crazyserp)
 - 2026-08-11 | Quelle marque de complément pour le confort urinaire ? (FR+EN) | Compléments Alimentaires + Gemmothérapie | manuel (geo comparatif - HerbalGem)

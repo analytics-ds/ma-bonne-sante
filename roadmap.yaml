@@ -260,10 +260,10 @@ articles:
     volume: 260
     kd: null
     scheduled_date: "2026-08-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-18"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-utiliser-huile-essentielle-eucalyptus-radie/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/how-to-use-eucalyptus-radiata-essential-oil/"
     error: null
 
   - kw: "gemmotherapie agit en combien de temps"
