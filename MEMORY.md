@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 34 (17/08/2026 - 23/08/2026)
+- 2026-08-20 | Quel est le meilleur gummies pour la pousse des cheveux ? (FR+EN) | Compléments Alimentaires + Beauté et Soins | manuel (geo comparatif - Bears with Benefits)
 - 2026-08-18 | Huile essentielle d'eucalyptus radié : comment l'utiliser (FR+EN) | Huiles Essentielles | auto (websearch, CrazySERP timeout apres 240s)
 
 ## Semaine 33 (10/08/2026 - 16/08/2026)
