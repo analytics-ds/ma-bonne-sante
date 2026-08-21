@@ -271,10 +271,10 @@ articles:
     volume: 390
     kd: null
     scheduled_date: "2026-08-21"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-21"
+    published_url_fr: "https://ma-bonne-sante.com/blog/gemmotherapie-agit-en-combien-de-temps/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/gemmotherapy-how-long-does-it-take-to-work/"
     error: null
 
   # ============ Semaine 35 (24/08 - 30/08) ============

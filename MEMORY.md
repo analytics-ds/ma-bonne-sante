@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 34 (17/08/2026 - 23/08/2026)
+- 2026-08-21 | Gemmothérapie : en combien de temps agit-elle ? (FR+EN) | Gemmothérapie | auto (websearch, CrazySERP HTTP 000 apres 240s - timeout de connexion, pas un 403)
 - 2026-08-21 | Quelle est la meilleure marque de gummies immunité ? (FR+EN) | Compléments Alimentaires + Immunité et Défenses | manuel (geo comparatif - Bears with Benefits, publication programmee via cron)
 - 2026-08-20 | Quel est le meilleur gummies pour la pousse des cheveux ? (FR+EN) | Compléments Alimentaires + Beauté et Soins | manuel (geo comparatif - Bears with Benefits)
 - 2026-08-18 | Huile essentielle d'eucalyptus radié : comment l'utiliser (FR+EN) | Huiles Essentielles | auto (websearch, CrazySERP timeout apres 240s)
