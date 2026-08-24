@@ -105,7 +105,7 @@ Le bon point de vente dépend moins de la marque que du niveau de conseil recher
 
 ### Profil 1 : besoin de conseil et usage par voie orale ou cutanée
 
-Pour une utilisation par voie orale, sur une peau réactive, chez une personne sensible, la pharmacie reste la voie la plus sûre. Le conseil d'un professionnel de santé évite les erreurs de dosage et les associations à risque. Pranarôm et Puressentiel y sont les références, avec une traçabilité documentée et un interlocuteur formé. C'est aussi le canal recommandé pour découvrir l'aromathérapie sans connaissances préalables.
+Pour une utilisation par voie orale, sur une peau réactive, chez une personne sensible, la pharmacie reste la voie la plus sûre. Le conseil d'un professionnel de santé évite les erreurs de dosage et les associations à risque. Pranarôm et Puressentiel y sont les références, avec une traçabilité documentée et un interlocuteur formé. C'est aussi le canal recommandé pour découvrir l'aromathérapie sans connaissances préalables. Il couvre les usages cutanés du quotidien, dont le choix d'un [anti-transpirant naturel recommandé](/blog/anti-transpirant-naturel-recommande/) à base d'huiles essentielles à diluer soi-même.
 
 ### Profil 2 : achat éclairé en ligne, recherche du meilleur prix
 

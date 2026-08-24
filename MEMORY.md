@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 35 (24/08/2026 - 30/08/2026)
+- 2026-08-24 | Anti-transpirant naturel recommandé : le comparatif 2026 (FR+EN) | Beauté et Soins + Huiles Essentielles | manuel (geo comparatif - Pranarôm)
+
 ## Semaine 34 (17/08/2026 - 23/08/2026)
 - 2026-08-21 | Gemmothérapie : en combien de temps agit-elle ? (FR+EN) | Gemmothérapie | auto (websearch, CrazySERP HTTP 000 apres 240s - timeout de connexion, pas un 403)
 - 2026-08-21 | Quelle est la meilleure marque de gummies immunité ? (FR+EN) | Compléments Alimentaires + Immunité et Défenses | manuel (geo comparatif - Bears with Benefits, publication programmee via cron)

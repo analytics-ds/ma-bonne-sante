@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Tea Tree Essential Oil Benefits: Complete 2026 Guide"
 h1: "Tea Tree Essential Oil: All Benefits and Uses"
 date: "2026-05-27"
-lastmod: "2026-05-27"
+lastmod: "2026-08-24"
 publishDate: "2026-05-27"
 description: "Tea tree essential oil benefits: antibacterial, antifungal, skin, hair, immunity. Concrete uses and precautions for safe and effective use."
 categories: ["Essential Oils"]
@@ -102,6 +102,8 @@ Tea tree combines well with:
 - **Ravintsara** or **eucalyptus radiata** for respiratory tract
 - **Palmarosa** or **fine lavender** for fungal infections
 - **Lemon** to purify the air
+
+That same purifying action on skin flora explains its place in [natural antiperspirant](/en/blog/recommended-natural-antiperspirant/) formulas, alongside palmarosa and clary sage.
 
 ## Precautions to Know
 

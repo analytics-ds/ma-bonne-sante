@@ -3,7 +3,7 @@ translationKey: "natural-hot-flashes-treatment"
 title: "Bouffées de chaleur traitement naturel : guide complet"
 h1: "Quel traitement naturel pour les bouffées de chaleur de la ménopause ?"
 date: "2026-05-27"
-lastmod: "2026-05-27"
+lastmod: "2026-08-24"
 publishDate: "2026-05-27"
 description: "Bouffées de chaleur et traitement naturel : sauge, actée à grappes noires, houblon, gemmothérapie. Le guide complet pour soulager durablement."
 categories: ["Bien-être Féminin"]
@@ -72,6 +72,8 @@ Posologie :
 Attention : la sauge officinale contient de la **thuyone**, neurotoxique à fortes doses. Ne pas dépasser 6 semaines de cure continue, faire des pauses, contre-indiquée en cas d'épilepsie et pendant la grossesse.
 
 La **sauge sclarée** (Salvia sclarea), moins riche en thuyone, peut être préférée en cure prolongée. Elle contient des **sclaréols aux propriétés œstrogéniques douces** très intéressantes en péri-ménopause.
+
+Sur la transpiration diurne, en revanche, la question se règle sur le terrain cosmétique : le comparatif des [anti-transpirants naturels recommandés](/blog/anti-transpirant-naturel-recommande/) détaille ce que valent réellement la pierre d'alun, le bicarbonate et les huiles essentielles.
 
 ## Le houblon et le trèfle rouge : les phyto-œstrogènes
 

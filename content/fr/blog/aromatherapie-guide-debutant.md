@@ -41,6 +41,8 @@ Avant d'utiliser des huiles essentielles, il est indispensable de respecter cert
 | Menthe poivrée | Confort digestif | Orale (avec avis) |
 | Eucalyptus radié | Voies respiratoires | Diffusion, inhalation |
 
+Le tea tree sort d'ailleurs vite du cadre du soin de la peau : il figure dans la plupart des formules d'[anti-transpirant naturel](/blog/anti-transpirant-naturel-recommande/), pour son action purifiante sur la flore cutanée.
+
 ## Comment choisir une huile essentielle de qualité
 
 La qualité d'une huile essentielle dépend de plusieurs critères : l'origine botanique certifiée, le mode d'extraction (distillation à la vapeur d'eau pour la plupart), et les contrôles qualité effectués en laboratoire.

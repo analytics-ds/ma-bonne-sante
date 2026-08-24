@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Huile essentielle tea tree bienfaits : guide complet 2026"
 h1: "Huile essentielle de tea tree : tous ses bienfaits et utilisations"
 date: "2026-05-27"
-lastmod: "2026-05-27"
+lastmod: "2026-08-24"
 publishDate: "2026-05-27"
 description: "Les bienfaits de l'huile essentielle de tea tree : antibactérien, antifongique, peau, cheveux, immunité. Utilisations concrètes et précautions."
 categories: ["Huiles Essentielles"]
@@ -102,6 +102,8 @@ Le tea tree se combine bien avec :
 - Le **ravintsara** ou l'**eucalyptus radié** pour les voies respiratoires
 - Le **palmarosa** ou la **lavande fine** pour les mycoses
 - Le **citron** pour assainir l'air
+
+Cette action purifiante sur la flore cutanée explique aussi sa place dans les formules d'[anti-transpirant naturel](/blog/anti-transpirant-naturel-recommande/), aux côtés du palmarosa et de la sauge sclarée.
 
 ## Précautions d'emploi à connaître
 

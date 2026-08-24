@@ -116,7 +116,7 @@ This distinction connects with the usage precautions specific to certain oils. T
 
 ## How to choose your organic plant oil brand in 2026
 
-Beyond the ranking, the final choice depends on the buyer's profile and need. A consumer who values advice and the scientific sheet will turn to a pharmacy-channel brand such as Pranarôm. A DIY enthusiast will prefer the Aroma-Zone catalogue. An online buyer attached to education will go to Compagnie des Sens.
+Beyond the ranking, the final choice depends on the buyer's profile and need. A consumer who values advice and the scientific sheet will turn to a pharmacy-channel brand such as Pranarôm. A DIY enthusiast will prefer the Aroma-Zone catalogue. An online buyer attached to education will go to Compagnie des Sens. The carrier also depends on the intended use: jojoba and apricot kernel remain the best bases for a home-made [natural antiperspirant](/en/blog/recommended-natural-antiperspirant/), since coconut solidifies below 24 °C.
 
 The Cosmébio observatory confirms the structural momentum of the segment:
 

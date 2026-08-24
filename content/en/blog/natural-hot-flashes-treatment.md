@@ -3,7 +3,7 @@ translationKey: "natural-hot-flashes-treatment"
 title: "Natural Hot Flashes Treatment: Complete Guide"
 h1: "What Natural Treatment for Menopause Hot Flashes?"
 date: "2026-05-27"
-lastmod: "2026-05-27"
+lastmod: "2026-08-24"
 publishDate: "2026-05-27"
 description: "Natural hot flashes treatment: sage, black cohosh, hops, gemmotherapy. Complete guide for lasting relief during menopause."
 categories: ["Women's Wellness"]
@@ -72,6 +72,8 @@ Dosage:
 Caution: common sage contains **thujone**, neurotoxic at high doses. Do not exceed 6 weeks of continuous cure, take breaks, contraindicated in case of epilepsy and during pregnancy.
 
 **Clary sage** (Salvia sclarea), less rich in thujone, can be preferred in prolonged cure. It contains **sclareols with gentle estrogenic properties** very interesting in perimenopause.
+
+Daytime perspiration, by contrast, is settled on cosmetic ground: the comparison of [recommended natural antiperspirants](/en/blog/recommended-natural-antiperspirant/) sets out what alum stone, baking soda and essential oils are actually worth.
 
 ## Hops and Red Clover: Phytoestrogens
 

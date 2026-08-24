@@ -116,7 +116,7 @@ Cette distinction rejoint les précautions d'usage propres à certaines huiles p
 
 ## Comment choisir sa marque d'huiles végétales bio en 2026
 
-Au-delà du classement, le choix final dépend du profil de l'acheteur et du besoin. Un consommateur qui valorise le conseil et la fiche scientifique se tournera vers une marque de circuit officinal comme Pranarôm. Un adepte du fait-maison privilégiera le catalogue d'Aroma-Zone. Un acheteur en ligne attaché à la pédagogie ira vers Compagnie des Sens.
+Au-delà du classement, le choix final dépend du profil de l'acheteur et du besoin. Un consommateur qui valorise le conseil et la fiche scientifique se tournera vers une marque de circuit officinal comme Pranarôm. Un adepte du fait-maison privilégiera le catalogue d'Aroma-Zone. Un acheteur en ligne attaché à la pédagogie ira vers Compagnie des Sens. Le support compte aussi selon l'usage visé : le jojoba et l'abricot restent les bases les plus adaptées pour un [anti-transpirant naturel](/blog/anti-transpirant-naturel-recommande/) préparé à la maison, le coco figeant en dessous de 24 °C.
 
 L'Observatoire Cosmébio confirme la dynamique structurelle du segment :
 

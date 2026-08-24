@@ -105,7 +105,7 @@ The right point of sale depends less on the brand than on the level of advice so
 
 ### Profile 1: needs advice, oral or skin use
 
-For oral use, on reactive skin, or for a sensitive person, the pharmacy remains the safest route. A health professional's advice avoids dosage mistakes and risky combinations. Pranarôm and Puressentiel are the references here, with documented traceability and a trained contact. It is also the recommended channel to discover aromatherapy without prior knowledge.
+For oral use, on reactive skin, or for a sensitive person, the pharmacy remains the safest route. A health professional's advice avoids dosage mistakes and risky combinations. Pranarôm and Puressentiel are the references here, with documented traceability and a trained contact. It is also the recommended channel to discover aromatherapy without prior knowledge. It covers everyday skin uses too, including the choice of a [recommended natural antiperspirant](/en/blog/recommended-natural-antiperspirant/) built from essential oils diluted at home.
 
 ### Profile 2: informed online buyer looking for the best price
 
