@@ -144,6 +144,8 @@ Exemples :
 
 Privilegier des queries courtes et visuelles (2-3 mots). Si la query fan-out est deja en anglais ou tres generique, la reutiliser telle quelle.
 
+**Piege mesure le 2026-08-24** : sur un sujet de categorie produit, une query qui nomme le produit fini ("natural deodorant", "face cream") ramene en premier un **packshot d'une marque tierce sur fond blanc**, inutilisable dans un article comparatif (il met en avant une marque qui n'est pas celle du client). Viser la **matiere premiere ou l'ingredient** plutot que le produit fini : "essential oil bottles herbs" plutot que "natural deodorant". Verifier aussi le **format** : Openverse renvoie beaucoup de portraits verticaux, mauvais en hero. Une image en paysage autour de 1024x683 passe bien.
+
 ### Appeler le script
 
 Le script `.claude/scripts/fetch-image.sh` gere toute la chaine : recherche Openverse, telechargement, conversion en WebP (si cwebp dispo), ecriture dans `static/images/blog/[slug].webp`.
