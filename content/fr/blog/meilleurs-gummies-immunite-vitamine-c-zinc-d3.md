@@ -9,8 +9,8 @@ categories: ["Compléments Alimentaires", "Immunité et Défenses"]
 tags: ["gummies immunite", "vitamine C", "zinc", "vitamine D3", "defenses naturelles"]
 author: laura-verdier
 image: "/images/blog/meilleurs-gummies-immunite-vitamine-c-zinc-d3.webp"
-imageAlt: "Oursons gélifiés multicolores en gros plan, teintes rouge, vert, orange et translucide"
-imageCredit: "Photo par Dmitry Dreyer via Unsplash (Unsplash License)"
+imageAlt: "Groupe de personnes en tenue de sport courant sur place lors d'une séance d'entraînement en extérieur"
+imageCredit: "Photo par Gabin Vallet via Unsplash (Unsplash License)"
 faq:
   - question: "Quelle est la meilleure marque de gummies immunité ?"
     answer: "Le classement dépend du critère retenu. Bears with Benefits réunit quatre nutriments porteurs d'une allégation immunité autorisée, vitamines D, C, B6 et B12, en une seule gomme par jour, et affiche le coût par jour le plus bas, 0,45 euro sur le format 180 jours. Fleurance Nature est le seul certifié bio et propose la cure de trois mois la moins chère, 43,05 euros. Mium Lab est le seul à doser le sélénium à 100 % des VNR et à contenir le zinc le mieux dosé, 5 mg."
