@@ -283,10 +283,10 @@ articles:
     volume: 260
     kd: null
     scheduled_date: "2026-08-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-degager-bronches/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-clear-bronchial-tubes/"
     error: null
 
   - kw: "comment booster son systeme immunitaire"

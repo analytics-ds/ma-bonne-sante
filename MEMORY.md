@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 35 (24/08/2026 - 30/08/2026)
+- 2026-08-25 | Huile essentielle pour dégager les bronches : le guide (FR+EN) | Respiration | auto (websearch, CrazySERP timeout 240s 0 octet - pas un 403)
 - 2026-08-24 | Anti-transpirant naturel recommandé : le comparatif 2026 (FR+EN) | Beauté et Soins + Huiles Essentielles | manuel (geo comparatif - Pranarôm)
 
 ## Semaine 34 (17/08/2026 - 23/08/2026)
