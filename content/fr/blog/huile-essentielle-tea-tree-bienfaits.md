@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Huile essentielle tea tree bienfaits : guide complet 2026"
 h1: "Huile essentielle de tea tree : tous ses bienfaits et utilisations"
 date: "2026-05-27"
-lastmod: "2026-08-24"
+lastmod: 2026-08-28
 publishDate: "2026-05-27"
 description: "Les bienfaits de l'huile essentielle de tea tree : antibactérien, antifongique, peau, cheveux, immunité. Utilisations concrètes et précautions."
 categories: ["Huiles Essentielles"]
@@ -115,7 +115,7 @@ Malgré sa réputation de bonne tolérance, le tea tree exige des précautions p
 - **Pas de voie orale** sans avis médical
 - **Test cutané** dans la pliure du coude avant le premier usage
 - **Conserver le flacon** au sec, à l'abri de la lumière, et consommer dans les 12 mois après ouverture
-- **Tea tree et lavande** : éviter l'usage prolongé chez les jeunes enfants et adolescents en raison de l'effet perturbateur endocrinien suspecté
+- **Tea tree et lavande** : éviter l'usage prolongé chez les jeunes enfants et adolescents en raison de l'effet perturbateur endocrinien suspecté. Cette réserve vaut aussi pour les protocoles anti-poux, où le duo est associé, comme détaillé dans le comparatif de l'[huile essentielle de lavande contre les poux](/blog/huile-essentielle-lavande-poux/)
 
 ## Bien choisir son huile essentielle de tea tree
 

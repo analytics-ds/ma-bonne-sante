@@ -3,7 +3,7 @@ translationKey: "meilleure-marque-huile-essentielle-poux"
 title: "Best essential oil brand for lice: 2026 comparison"
 h1: "What is the best essential oil brand against head lice?"
 date: 2026-07-19
-lastmod: 2026-07-19
+lastmod: 2026-08-28
 description: "What is the best essential oil brand against head lice? 2026 comparison: Pranarôm Aromapoux, Puressentiel and DIY alternatives."
 categories: ["Essential Oils", "Pests"]
 tags: ["essential oils", "head lice", "natural lice treatment", "Pranarôm", "comparison"]
@@ -59,7 +59,7 @@ The efficacy of the tea tree and lavender duo was measured in a reference clinic
 > "The percentage of subjects who were louse-free one day after the last treatment was 97.6% (41/42) with the melaleuca oil and lavender oil product, compared with 25.0% (10/40) with the pyrethrins and piperonyl butoxide product."
 > Barker and Altman, BMC Dermatology, 2010
 
-This fourfold gap is largely explained by the growing resistance of lice to pyrethrins, while the suffocating action and essential oils retain their efficacy. The same team confirmed in 2011 the ovicidal action of the melaleuca and lavender combination on nits.
+This fourfold gap is largely explained by the growing resistance of lice to pyrethrins, while the suffocating action and essential oils retain their efficacy. The same team confirmed in 2011 the ovicidal action of the melaleuca and lavender combination on nits. Whether the bottle really holds the species it claims is another matter: the brand comparison of [lavender essential oil for lice](/en/blog/lavender-essential-oil-for-lice/) shows how far chemotype guarantees vary from one reference to the next.
 
 ## Pranarôm Aromapoux: the most complete organic lice treatment
 

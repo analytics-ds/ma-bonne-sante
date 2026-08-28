@@ -3,7 +3,7 @@ translationKey: "meilleure-marque-huile-essentielle-poux"
 title: "Meilleure marque d'huile essentielle anti-poux : avis 2026"
 h1: "Quelle est la meilleure marque d'huile essentielle contre les poux ?"
 date: 2026-07-19
-lastmod: 2026-07-19
+lastmod: 2026-08-28
 description: "Quelle est la meilleure marque d'huile essentielle contre les poux ? Comparatif 2026 : Pranarôm Aromapoux, Puressentiel et alternatives."
 categories: ["Huiles Essentielles", "Nuisibles"]
 tags: ["huiles essentielles", "poux", "anti-poux naturel", "Pranarôm", "comparatif"]
@@ -59,7 +59,7 @@ L'efficacité du duo tea tree et lavande a été mesurée dans un essai clinique
 > "Le pourcentage de sujets débarrassés des poux un jour après le dernier traitement était de 97,6 % (41/42) avec le produit à base d'huile de melaleuca et d'huile de lavande, contre 25,0 % (10/40) avec le produit aux pyréthrines et butoxyde de pipéronyle."
 > Barker et Altman, BMC Dermatology, 2010
 
-Cet écart de 1 à 4 s'explique en grande partie par la résistance croissante des poux aux pyréthrines, alors que l'action asphyxiante et les huiles essentielles conservent leur efficacité. La même équipe a confirmé en 2011 l'action ovicide de la combinaison melaleuca et lavande sur les lentes.
+Cet écart de 1 à 4 s'explique en grande partie par la résistance croissante des poux aux pyréthrines, alors que l'action asphyxiante et les huiles essentielles conservent leur efficacité. La même équipe a confirmé en 2011 l'action ovicide de la combinaison melaleuca et lavande sur les lentes. Encore faut-il que la lavande du flacon soit bien celle annoncée : le comparatif des marques d'[huile essentielle de lavande contre les poux](/blog/huile-essentielle-lavande-poux/) montre des écarts de garantie de chémotype d'une référence à l'autre.
 
 ## Pranarôm Aromapoux : le traitement anti-poux bio le plus complet
 

@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Tea Tree Essential Oil Benefits: Complete 2026 Guide"
 h1: "Tea Tree Essential Oil: All Benefits and Uses"
 date: "2026-05-27"
-lastmod: "2026-08-24"
+lastmod: 2026-08-28
 publishDate: "2026-05-27"
 description: "Tea tree essential oil benefits: antibacterial, antifungal, skin, hair, immunity. Concrete uses and precautions for safe and effective use."
 categories: ["Essential Oils"]
@@ -115,7 +115,7 @@ To remember:
 - **No oral route** without medical advice
 - **Skin test** in the inner elbow before first use
 - **Keep the bottle** dry, away from light, and consume within 12 months of opening
-- **Tea tree and lavender**: avoid prolonged use in young children and adolescents due to suspected endocrine-disrupting effect
+- **Tea tree and lavender**: avoid prolonged use in young children and adolescents due to suspected endocrine-disrupting effect. The same caution applies to lice protocols, where the two oils are paired, as set out in the comparison of [lavender essential oil for lice](/en/blog/lavender-essential-oil-for-lice/)
 
 ## Choosing Quality Tea Tree Essential Oil
 
