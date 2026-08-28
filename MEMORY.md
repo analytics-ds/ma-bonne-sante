@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 35 (24/08/2026 - 30/08/2026)
+- 2026-08-28 | Comment booster son système immunitaire : le guide express (FR+EN) | Immunité et Défenses | auto (crazyserp) - angle differencie (gemmotherapie/huiles essentielles/vitamines a action rapide) de l'article existant "renforcer-systeme-immunitaire-naturellement" pour limiter la cannibalisation
 - 2026-08-25 | Huile essentielle pour dégager les bronches : le guide (FR+EN) | Respiration | auto (websearch, CrazySERP timeout 240s 0 octet - pas un 403)
 - 2026-08-24 | Anti-transpirant naturel recommandé : le comparatif 2026 (FR+EN) | Beauté et Soins + Huiles Essentielles | manuel (geo comparatif - Pranarôm)
 
