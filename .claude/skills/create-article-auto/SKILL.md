@@ -72,9 +72,19 @@ L'analyse du paysage concurrentiel passe par l'**API Datafer**, l'outil semantiq
 
 **Datafer est la source nominale depuis le 2026-09-01.** CrazySERP reste branche pour deux usages precis : le **check AI Overview** (Datafer ne l'expose pas) et le **repli** si Datafer echoue.
 
-Les deux cles sont fournies dans le prompt de la routine (`DATAFER_API_KEY` et `CRAZYSERP_API_KEY`) et **ne doivent jamais etre ecrites dans le repo** : les repos du reseau sont publics.
+Les deux cles sont fournies dans le prompt de la routine (`DATAFER_API_KEY` et `CRAZYSERP_API_KEY`) et **ne doivent jamais etre ecrites dans le repo** : les repos du reseau sont publics. Si le prompt n'en fournit qu'une, la cascade de repli (1.5) s'adapte toute seule et l'article sort quand meme.
 
-### 1.1 Creer le brief Datafer
+### 1.1 Verifier la cle, puis creer le brief Datafer
+
+**Premier reflexe : la cle est-elle la ?**
+
+```bash
+if [ -z "$DATAFER_API_KEY" ]; then
+  echo "DATAFER_API_KEY absente, mode crazyserp"   # voir 1.5, cas 0
+fi
+```
+
+Si elle est absente ou vide, **ne pas tenter Datafer du tout** : passer directement au mode `crazyserp` (1.5, cas 0). C'est la situation normale sur un blog dont le prompt de routine n'a pas encore ete patche, et ce n'est jamais un motif d'echec.
 
 ```bash
 export BASE="https://datafer.analytics-e0d.workers.dev"
@@ -161,6 +171,7 @@ curl -s --max-time 240 -G "https://crazyserp.com/api/search" \
 
 Bascule **des le premier echec, sans insister ni retenter** :
 
+0. **`DATAFER_API_KEY` absente ou vide** : ne pas appeler Datafer, passer directement en mode `crazyserp` et loguer `DATAFER_API_KEY absente, mode crazyserp`. **Cas a connaitre** : les routines du parc mises en pause portent encore un prompt CrazySERP seul, donc une routine simplement reactivee par `{"enabled": true}` tourne sans cle Datafer. Le run publie quand meme, proprement, en mode degrade d'un cran. Pour recuperer le mode `datafer`, il faut patcher son prompt, ce que fait la skill `geo-pbn-routine-setup`.
 1. **Datafer repond** : cas nominal, mode `datafer`.
 2. **Datafer en erreur** (creation non-200, `status: failed`, timeout de polling, 409 persistant) : passer en mode `crazyserp` et travailler sur l'appel de 1.4, qui est deja fait. On perd les structures Hn concurrentes, les termes NLP et le nombre de mots cible ; on garde organiques, PAA, recherches associees et AIO. Loguer `DATAFER indisponible, repli crazyserp` et le signaler dans le message de commit.
 3. **Datafer et CrazySERP tous les deux injoignables** : mode `websearch`, 3 recherches maximum sur le `kw`, titres et snippets uniquement.
