@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 36 (31/08/2026 - 06/09/2026)
+- 2026-09-01 | Huile de tea tree sur le visage : comment l'utiliser (FR+EN) | Beauté et Soins | auto (crazyserp)
+
 ## Semaine 35 (24/08/2026 - 30/08/2026)
 - 2026-08-28 | Quelle est la meilleure marque d'huile essentielle de lavande contre les poux ? (FR+EN) | Huiles Essentielles + Nuisibles | manuel (geo comparatif Inula - Pranarôm, skill sem-redaction-geo-inula-auto) - angle flacon unitaire de lavande (chemotype, especes, prix au 10 ml) differencie de l'article existant "meilleure-marque-huile-essentielle-poux" qui compare les kits 2 en 1
 - 2026-08-28 | Comment booster son système immunitaire : le guide express (FR+EN) | Immunité et Défenses | auto (crazyserp) - angle differencie (gemmotherapie/huiles essentielles/vitamines a action rapide) de l'article existant "renforcer-systeme-immunitaire-naturellement" pour limiter la cannibalisation

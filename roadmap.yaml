@@ -306,10 +306,10 @@ articles:
     volume: 236
     kd: null
     scheduled_date: "2026-09-01"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-01"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-utiliser-huile-tea-tree-visage/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/tea-tree-oil-on-face/"
     error: null
 
   - kw: "le rescue fleur de bach est il efficace"
