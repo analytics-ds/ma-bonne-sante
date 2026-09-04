@@ -202,24 +202,52 @@ PYW2
 }
 
 # --- Palier 0 : banque centrale datashake (photos officielles client) --------
+# Ce palier vient de lulli-magazine et tribune-inextenso, ou un autre consultant l'avait
+# ajoute pour que les photos OFFICIELLES du client passent avant toute photo de stock.
+# Il est conserve tel quel, avec ses deux subtilites qu'il ne faut pas perdre :
+#   - le picker renvoie un CHEMIN DE FICHIER LOCAL, pas une URL : on copie, on ne telecharge
+#     pas (un curl sur un chemin local echoue en silence et fait perdre le visuel client) ;
+#   - il ecrit sur stderr des alertes utiles (visuel sur-utilise, theme sature) qu'on relaie.
+# Au 2026-09-04 le picker n'existe nulle part dans ~/code, donc ce palier est inactif.
 try_bank() {
-    local picker="" _d
-    _d="$(pwd)"
-    for _ in 1 2 3 4 5 6; do
+    local picker="" _d="$PWD" _i
+    for _i in 1 2 3 4 5 6 7 8; do
         if [ -f "$_d/tools/banque-images/bank-pick.py" ]; then picker="$_d/tools/banque-images/bank-pick.py"; break; fi
-        _d="$(dirname "$_d")"
         [ "$_d" = "/" ] && break
+        _d="$(dirname "$_d")"
     done
     [ -n "$picker" ] || return 1
-    echo "[fetch-image] banque centrale : $picker" >&2
-    local out
-    out=$(python3 "$picker" "$QUERY" "$SLUG" 2>/dev/null) || { echo "[fetch-image] banque : pas de match, palier suivant" >&2; return 1; }
-    IMAGE_URL=$(sed -n '1p' <<< "$out")
-    IMAGE_TITLE=$(sed -n '2p' <<< "$out")
-    IMAGE_CREDIT=$(sed -n '3p' <<< "$out")
-    IMAGE_ID="bank-$SLUG"
+    echo "[fetch-image] banque centrale trouvee : $picker" >&2
+    local err out
+    err=$(mktemp)
+    if ! out=$(python3 "$picker" "$QUERY" "$SLUG" 2>"$err"); then
+        [ -s "$err" ] && cat "$err" >&2
+        rm -f "$err"
+        echo "[fetch-image] banque : pas de match, palier suivant" >&2
+        return 1
+    fi
+    [ -s "$err" ] && cat "$err" >&2
+    rm -f "$err"
+    local src alt credit
+    src=$(sed -n '1p' <<< "$out")
+    alt=$(sed -n '2p' <<< "$out")
+    credit=$(sed -n '3p' <<< "$out")
+    [ -z "$credit" ] && credit="Photo via Pexels (usage commercial, sans attribution requise)"
+    if [ -z "$src" ] || [ ! -f "$src" ]; then
+        echo "[fetch-image] banque : chemin invalide ($src), palier suivant" >&2
+        return 1
+    fi
+    OUTPUT_FILE="$OUTPUT_DIR/$SLUG.webp"
+    cp "$src" "$OUTPUT_FILE"
     IMAGE_SOURCE="banque"
-    [ -n "$IMAGE_URL" ]
+    IMAGE_ID="$(basename "$src")"
+    record_in_ledger
+    local hp
+    hp=$(printf '%s' "$OUTPUT_FILE" | sed -E 's|^\.?/?static/|/|')
+    case "$hp" in /*) ;; *) hp="/$hp" ;; esac
+    echo "[fetch-image] banque centrale : match, $OUTPUT_FILE" >&2
+    printf '%s\n%s\n%s\n' "$hp" "$alt" "$credit"
+    exit 0
 }
 
 # --- Palier 1 : Pexels -------------------------------------------------------
