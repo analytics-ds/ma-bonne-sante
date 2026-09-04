@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 36 (31/08/2026 - 06/09/2026)
+- 2026-09-04 | Rescue fleur de Bach : est-il efficace ? (FR+EN) | Fleurs de Bach | auto | mode: datafer | score: 51/46
 - 2026-09-01 | Huile de tea tree sur le visage : comment l'utiliser (FR+EN) | Beauté et Soins | auto (crazyserp)
 
 ## Semaine 35 (24/08/2026 - 30/08/2026)
