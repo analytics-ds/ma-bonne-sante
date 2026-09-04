@@ -264,6 +264,20 @@ Injecter `author: <id-slug>` dans le frontmatter. Meme ID pour FR et EN.
 
 ### 2.7 Image hero
 
+> **Cascade des sources d'image, revue le 2026-09-04.** Le script `.claude/scripts/fetch-image.sh`
+> essaie dans cet ordre : **Pexels**, puis **Unsplash**, puis **Openverse**, puis un visuel de
+> charte genere en local par `.claude/scripts/make-placeholder.py`. Il ne rend jamais la main
+> sans visuel. **Openverse n'est plus la source nominale, il est le dernier recours** : mesure
+> sur les 45 heros de journal-marketing, il n'avait produit que 15 photos pertinentes, contre
+> 10 franchement hors sujet, 15 generiques et 5 degrades de secours, et il sert aussi des URLs
+> mortes. Les cles `PEXELS_API_KEY` et `UNSPLASH_ACCESS_KEY` viennent du **prompt de la routine**
+> ou du `.env` local, **jamais du repo** : les repos du reseau sont publics. Sans cle, la cascade
+> demarre a Openverse et l'article sort quand meme. Le script tient un registre
+> `.claude/hero-sources.json` qui **empeche deux articles de porter la meme photo**.
+> **Le controle visuel de l'image reste obligatoire avant publication, quelle que soit la banque.**
+
+
+
 ```bash
 bash .claude/scripts/fetch-image.sh "<kw traduit en anglais>" "<slug-fr>" "static/images/blog"
 ```

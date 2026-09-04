@@ -131,7 +131,21 @@ Hugo resoudra automatiquement les infos (nom, avatar, bio, role) depuis `data/au
 
 ## Etape 1.5 — Recuperation automatique de l'image hero
 
-Chaque article doit obligatoirement avoir une image hero (utilisee dans les cards du blog, la bannière de l'article, og:image et le schema Article JSON-LD). Le systeme recupere automatiquement une image libre de droit compatible usage commercial depuis l'API publique Openverse (federe Wikimedia, Flickr, etc.). Aucune cle API, aucune action manuelle du consultant.
+> **Cascade des sources d'image, revue le 2026-09-04.** Le script `.claude/scripts/fetch-image.sh`
+> essaie dans cet ordre : **Pexels**, puis **Unsplash**, puis **Openverse**, puis un visuel de
+> charte genere en local par `.claude/scripts/make-placeholder.py`. Il ne rend jamais la main
+> sans visuel. **Openverse n'est plus la source nominale, il est le dernier recours** : mesure
+> sur les 45 heros de journal-marketing, il n'avait produit que 15 photos pertinentes, contre
+> 10 franchement hors sujet, 15 generiques et 5 degrades de secours, et il sert aussi des URLs
+> mortes. Les cles `PEXELS_API_KEY` et `UNSPLASH_ACCESS_KEY` viennent du **prompt de la routine**
+> ou du `.env` local, **jamais du repo** : les repos du reseau sont publics. Sans cle, la cascade
+> demarre a Openverse et l'article sort quand meme. Le script tient un registre
+> `.claude/hero-sources.json` qui **empeche deux articles de porter la meme photo**.
+> **Le controle visuel de l'image reste obligatoire avant publication, quelle que soit la banque.**
+
+
+
+Chaque article doit obligatoirement avoir une image hero (utilisee dans les cards du blog, la bannière de l'article, og:image et le schema Article JSON-LD). Le systeme recupere automatiquement une image libre de droit compatible usage commercial via la cascade Pexels puis Unsplash puis Openverse (voir la note ci-dessous). Aucune cle API, aucune action manuelle du consultant.
 
 ### Determiner la query image
 
@@ -148,7 +162,7 @@ Privilegier des queries courtes et visuelles (2-3 mots). Si la query fan-out est
 
 ### Appeler le script
 
-Le script `.claude/scripts/fetch-image.sh` gere toute la chaine : recherche Openverse, telechargement, conversion en WebP (si cwebp dispo), ecriture dans `static/images/blog/[slug].webp`.
+Le script `.claude/scripts/fetch-image.sh` gere toute la chaine : recherche dans la cascade Pexels/Unsplash/Openverse, telechargement, conversion en WebP (si cwebp dispo), ecriture dans `static/images/blog/[slug].webp`.
 
 ```bash
 bash .claude/scripts/fetch-image.sh "<query image en anglais>" "<slug-de-l-article>" "static/images/blog"

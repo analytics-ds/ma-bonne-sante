@@ -127,7 +127,8 @@ Ce garde-fou est purement informatif. L'utilisateur peut toujours forcer l'ajout
 - Le sitemap HTML (`/plan-du-site/`) se regenere automatiquement a chaque build Hugo
 - Toujours build et verifier (`hugo`) avant de commit
 - Chaque article doit avoir un champ `faq` dans le frontmatter (liste de questions/reponses) pour generer automatiquement le schema FAQPage JSON-LD. Minimum 3 questions
-- Le champ `image` (optionnel) dans le frontmatter permet d'ajouter une image hero a l'article. Elle est aussi utilisee pour og:image et le schema Article JSON-LD. Si presente, `imageAlt` est obligatoire
+- Le champ `image` du frontmatter porte l'image hero, reprise aussi pour og:image et le schema Article JSON-LD.
+- **Image hero OBLIGATOIRE, jamais optionnelle.** Elle est recuperee par `.claude/scripts/fetch-image.sh`, qui suit la **cascade Pexels -> Unsplash -> Openverse -> visuel de charte genere** (`.claude/scripts/make-placeholder.py`) et ne rend jamais la main sans visuel. Revue du 2026-09-04 : Openverse n'est plus la source nominale, il ne produisait que 15 photos pertinentes sur 45 heros mesures. Les cles `PEXELS_API_KEY` et `UNSPLASH_ACCESS_KEY` viennent du **prompt de la routine** ou du `.env` local, **jamais du repo** qui est public ; sans cle la cascade demarre a Openverse et l'article sort quand meme. Le registre `.claude/hero-sources.json` empeche deux articles de porter la meme photo. Si `image` est renseigne, `imageAlt` est obligatoire, et `imageCredit` des que le script renvoie un credit. **Controle visuel obligatoire avant publication, quelle que soit la banque.**
 - Les Google Fonts sont chargees en non-bloquant (media="print" + swap JS) pour de meilleures performances
 - Le layout inclut un lien "Skip to content" pour l'accessibilite
 - Les navigations ont des `aria-label` pour les lecteurs d'ecran
