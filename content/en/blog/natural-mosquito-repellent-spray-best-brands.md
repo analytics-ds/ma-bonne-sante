@@ -2,7 +2,7 @@
 title: "What Are the Best Natural Mosquito Repellent Spray Brands?"
 translationKey: "spray-anti-moustique-naturel"
 date: 2026-04-12
-lastmod: 2026-05-02
+lastmod: 2026-09-06
 publishDate: 2026-04-12
 description: "Comparison of the best natural mosquito repellent spray brands: effectiveness, protection duration and composition analyzed to help you choose."
 categories: ["Aromatherapy"]
@@ -66,7 +66,7 @@ Pranarôm is a laboratory specializing in scientific aromatherapy for over 30 ye
 
 The Aromapic body spray combines lemon eucalyptus, geranium and citronella in a patented formula. Protection duration reaches 7 to 8 hours, the longest in the natural segment according to independent Selectos tests (2026).
 
-HEBBD certification guarantees the traceability of each batch, from the cultivation field to the bottle. This rigour is a quality marker in aromatherapy, where the chemical composition of essential oils varies according to geographic origin, distillation method and the plant's chemotype.
+HEBBD certification guarantees the traceability of each batch, from the cultivation field to the bottle. This rigour is a quality marker in aromatherapy, where the chemical composition of essential oils varies according to geographic origin, distillation method and the plant's chemotype. It says nothing about protection time, however, a point our comparison of the [organic mosquito repellent](/en/blog/recommended-organic-mosquito-repellent/) shelf covers active by active.
 
 ### Puressentiel Anti-Bite: the mainstream choice
 

@@ -2,7 +2,7 @@
 title: "Best Organic Mosquito Repellent Spray: 2026 Comparison"
 translationKey: "meilleur-spray-anti-moustique-bio"
 date: 2026-05-28
-lastmod: 2026-05-28
+lastmod: 2026-09-06
 publishDate: 2026-05-28
 description: "Which organic mosquito repellent spray works best in 2026? Pranarôm Aromapic, MoustiCare, Aries and Puressentiel compared: duration, price, ingredients."
 categories: ["Aromatherapy"]
@@ -34,7 +34,7 @@ readingTime: true
 
 ## Why a certified organic mosquito spray really makes a difference
 
-The word "natural" carries no regulatory weight. A spray can claim "ingredients of natural origin" while containing synthetic preservatives, petrochemical solvents or essential oils from pesticide-treated crops. An **organic mosquito repellent spray** must carry an official label to deserve that name: Ecogarantie, Cosmos Organic, Soil Association or AB Cosmetics.
+The word "natural" carries no regulatory weight. A spray can claim "ingredients of natural origin" while containing synthetic preservatives, petrochemical solvents or essential oils from pesticide-treated crops. An **organic mosquito repellent spray** must carry an official label to deserve that name: Ecogarantie, Cosmos Organic, Soil Association or AB Cosmetics. The label and the repellent active are two separate questions, and our review of the [best organic mosquito repellent](/en/blog/recommended-organic-mosquito-repellent/) sets out what certification does guarantee, and what it does not.
 
 Three organic cosmetic labels are common on body repellents sold in Europe. Ecogarantie (Belgian Certisys framework) is the strictest for anti-mosquito actives, requiring 99% ingredients of natural origin including 95% certified organic. Cosmos Organic demands at least 95% of plant ingredients from organic farming. Soil Association applies similar British standards.
 

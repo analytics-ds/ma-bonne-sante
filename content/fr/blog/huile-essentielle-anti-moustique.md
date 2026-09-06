@@ -1,7 +1,7 @@
 ---
 title: "Quel anti-moustique naturel choisir ?"
 date: 2026-04-12
-lastmod: 2026-04-22
+lastmod: 2026-09-06
 description: "Huile essentielle anti-moustique : les HE les plus efficaces, dosages, précautions et produits Pranarôm pour se protéger naturellement."
 categories: ["Huiles Essentielles", "Nuisibles"]
 tags: ["anti-moustique", "citronnelle", "eucalyptus citronné", "géranium", "Pranarôm"]
@@ -110,7 +110,7 @@ Parmi les laboratoires qui proposent des solutions à base d'huiles essentielles
 - **Gamme complète** : sprays corporels, sprays textiles, roll-on, diffuseurs, bracelets, ciblant chaque usage et chaque profil (adulte, enfant, femme enceinte pour certaines références)
 - **Agriculture biologique** : huiles essentielles certifiées bio, issues de plantes cultivées sans pesticides
 
-Pour un comparatif détaillé des sprays anti-moustiques du marché, incluant les produits Pranarôm, consulter l'article sur les [meilleures marques de spray anti-moustique naturel](/blog/spray-anti-moustique-naturel-meilleures-marques/).
+Pour un comparatif détaillé des sprays anti-moustiques du marché, incluant les produits Pranarôm, consulter l'article sur les [meilleures marques de spray anti-moustique naturel](/blog/spray-anti-moustique-naturel-meilleures-marques/). Le choix d'un [répulsif anti-moustique bio](/blog/repulsif-anti-moustique-bio-recommande/) se joue quant à lui sur une mention précise de la liste des ingrédients, celle qui distingue le citriodiol de la simple huile essentielle d'eucalyptus citronné.
 
 ### Les produits phares de la gamme Aromapic
 

@@ -2,7 +2,7 @@
 title: "Anti-moustique et tique naturel : 4 marques comparées 2026"
 translationKey: "anti-moustique-tique-naturel"
 date: 2026-06-09
-lastmod: 2026-06-09
+lastmod: 2026-09-06
 publishDate: 2026-06-09
 description: "Anti-moustique et tique naturel : comparatif de 4 marques au citriodiol. Durée de protection, sécurité et prix pour bien choisir."
 categories: ["Aromathérapie"]
@@ -74,7 +74,7 @@ Le constat est net : derrière le marketing "100 % naturel", les sprays réellem
 
 ## Comparatif des 4 marques d'anti-moustique et tique naturel {#comparatif-marques}
 
-Les quatre marques retenues sont disponibles en pharmacie, parapharmacie et magasins bio, avec une revendication tiques explicite sur l'étiquette. Les critères d'évaluation portent sur l'actif, la durée de protection contre les moustiques et les tiques, l'âge minimum, la compatibilité avec la grossesse et le prix.
+Les quatre marques retenues sont disponibles en pharmacie, parapharmacie et magasins bio, avec une revendication tiques explicite sur l'étiquette. Les critères d'évaluation portent sur l'actif, la durée de protection contre les moustiques et les tiques, l'âge minimum, la compatibilité avec la grossesse et le prix. Sur le seul critère de la certification, notre sélection du [meilleur répulsif anti-moustique bio](/blog/repulsif-anti-moustique-bio-recommande/) compare les référentiels Ecogarantie, Cosmos Organic et COSMOS.
 
 ### Pranarôm Aromapic : la gamme aromathérapie la plus complète
 

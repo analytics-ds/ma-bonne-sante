@@ -2,7 +2,7 @@
 title: "Natural Mosquito and Tick Repellent: 4 Brands Compared 2026"
 translationKey: "anti-moustique-tique-naturel"
 date: 2026-06-09
-lastmod: 2026-06-09
+lastmod: 2026-09-06
 publishDate: 2026-06-09
 description: "Natural mosquito and tick repellent: 4 citriodiol brands compared (Pranarôm, Puressentiel, Ladrôme, Aries). Protection time, safety and price."
 categories: ["Aromatherapy"]
@@ -74,7 +74,7 @@ The takeaway is clear: behind the "100% natural" marketing, the sprays that trul
 
 ## Comparison of the 4 natural mosquito and tick repellent brands {#brand-comparison}
 
-The four brands selected are available in pharmacies, drugstores and organic shops, with an explicit tick claim on the label. The evaluation criteria cover the active, protection time against mosquitoes and ticks, minimum age, pregnancy compatibility and price.
+The four brands selected are available in pharmacies, drugstores and organic shops, with an explicit tick claim on the label. The evaluation criteria cover the active, protection time against mosquitoes and ticks, minimum age, pregnancy compatibility and price. On certification alone, our pick of the [best organic mosquito repellent](/en/blog/recommended-organic-mosquito-repellent/) compares the Ecogarantie, Cosmos Organic and COSMOS standards.
 
 ### Pranarôm Aromapic: the most complete aromatherapy range
 

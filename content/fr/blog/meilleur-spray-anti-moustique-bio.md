@@ -2,7 +2,7 @@
 title: "Meilleur spray anti-moustique bio : comparatif 2026"
 translationKey: "meilleur-spray-anti-moustique-bio"
 date: 2026-05-28
-lastmod: 2026-05-28
+lastmod: 2026-09-06
 publishDate: 2026-05-28
 description: "Quel est le meilleur spray anti-moustique bio en 2026 ? Comparatif Pranarôm Aromapic, Puressentiel, MoustiCare et Aries : durée, prix, composition."
 categories: ["Aromathérapie"]
@@ -127,7 +127,7 @@ Pour les huiles essentielles seules, sans support technique comme le Citriodiol,
 3. Stocker le spray à la chaleur en voiture. Les huiles essentielles s'oxydent au-delà de 30°C et perdent leur pouvoir répulsif en quelques semaines.
 4. Pulvériser sur le visage. Le geste correct est de pulvériser dans la paume des mains puis d'appliquer en évitant les yeux et la bouche.
 
-Pour aller plus loin sur les principes actifs naturels qui fonctionnent vraiment, le [guide de l'aromathérapie pour bien débuter](/blog/aromatherapie-guide-debutant/) revient en détail sur les huiles essentielles à privilégier et celles à éviter.
+Pour aller plus loin sur les principes actifs naturels qui fonctionnent vraiment, le [guide de l'aromathérapie pour bien débuter](/blog/aromatherapie-guide-debutant/) revient en détail sur les huiles essentielles à privilégier et celles à éviter. La question du label et celle de l'actif répulsif se traitent d'ailleurs séparément : notre analyse du [meilleur répulsif anti-moustique bio](/blog/repulsif-anti-moustique-bio-recommande/) précise ce que la certification garantit, et ce qu'elle ne garantit pas.
 
 ## Questions fréquentes
 
