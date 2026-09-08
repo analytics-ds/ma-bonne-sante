@@ -329,10 +329,10 @@ articles:
     volume: 110
     kd: null
     scheduled_date: "2026-09-08"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-08"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huiles-essentielles-inhalation/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oils-for-inhalation/"
     error: null
 
   - kw: "gemmotherapie danger et contre indications"

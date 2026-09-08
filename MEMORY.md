@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 37 (07/09/2026 - 13/09/2026)
+- 2026-09-08 | Huiles essentielles pour inhalation : guide (FR+EN) | Respiration | auto | mode: datafer | score: 64/49
+
 ## Semaine 36 (31/08/2026 - 06/09/2026)
 - 2026-09-06 | Quel bon répulsif anti-moustique bio recommander en 2026 ? (FR+EN) | Aromathérapie + Nuisibles | manuel (geo comparatif Inula - Pranarôm, skill sem-redaction-geo-inula-auto) - cluster anti-moustique deja couvert par 4 articles, angle differencie sur l'ACTIF et le REFERENTIEL (citriodiol/PMD vs huiles essentielles, biocide TP19 et ANSES, mention INCI "hydrated cyclized") et jeu de marques bio certifiees inedit (Florame, Comme Avant) au lieu du comparatif de sprays
 - 2026-09-04 | Rescue fleur de Bach : est-il efficace ? (FR+EN) | Fleurs de Bach | auto | mode: datafer | score: 51/46
