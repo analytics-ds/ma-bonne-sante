@@ -27,7 +27,7 @@
 {{- if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (eq .Data.Singular "tag") }}
 <meta name="robots" content="noindex, follow">
 {{- else }}
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{/* pbn-legal-noindex */}}{{- if .Params.noindex }}<meta name="robots" content="noindex, follow">{{ else }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{{ end }}
 {{- end }}
 
 {{- /* Author */ -}}
