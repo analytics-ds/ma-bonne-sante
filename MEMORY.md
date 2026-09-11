@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 37 (07/09/2026 - 13/09/2026)
+- 2026-09-11 | Gemmothérapie danger et contre-indications (FR+EN) | Gemmothérapie | auto | mode: datafer | score: 62/49 | image: pexels | AIO: Declenchee
 - 2026-09-08 | Huiles essentielles pour inhalation : guide (FR+EN) | Respiration | auto | mode: datafer | score: 64/49
 
 ## Semaine 36 (31/08/2026 - 06/09/2026)

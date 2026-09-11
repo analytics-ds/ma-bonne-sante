@@ -340,10 +340,10 @@ articles:
     volume: 880
     kd: null
     scheduled_date: "2026-09-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-11"
+    published_url_fr: "https://ma-bonne-sante.com/blog/gemmotherapie-danger-contre-indications/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/gemmotherapy-dangers-and-contraindications/"
     error: null
 
   # ============ Semaine 38 (14/09 - 20/09) ============
