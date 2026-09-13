@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Huile essentielle tea tree bienfaits : guide complet 2026"
 h1: "Huile essentielle de tea tree : tous ses bienfaits et utilisations"
 date: "2026-05-27"
-lastmod: 2026-08-28
+lastmod: 2026-09-13
 publishDate: "2026-05-27"
 description: "Les bienfaits de l'huile essentielle de tea tree : antibactérien, antifongique, peau, cheveux, immunité. Utilisations concrètes et précautions."
 categories: ["Huiles Essentielles"]
@@ -72,7 +72,7 @@ En soin localisé, une goutte sur un bouton, le soir, permet de réduire sensibl
 
 Le tea tree assainit le cuir chevelu en cas de **pellicules**, **démangeaisons** ou **excès de sébum**. Ajouter 2 à 3 gouttes dans une dose de shampoing au moment du lavage, masser le cuir chevelu, laisser poser 2 minutes puis rincer. Cure de 3 à 4 semaines en alternance avec un shampoing doux.
 
-Pour les **poux**, le tea tree fait partie des huiles essentielles couramment proposées en synergie, bien que son efficacité seule reste limitée comparée aux traitements anti-poux classiques.
+Pour les **poux**, le tea tree fait partie des huiles essentielles couramment proposées en synergie, bien que son efficacité seule reste limitée comparée aux lotions traitantes prêtes à l'emploi passées en revue dans le comparatif du [meilleur produit anti-poux naturel](/blog/meilleur-produit-anti-poux-naturel/).
 
 ### Hygiène bucco-dentaire et aphtes
 

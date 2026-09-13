@@ -3,7 +3,7 @@ translationKey: "huile-essentielle-lavande-poux"
 title: "Huile essentielle lavande poux : quelle marque en 2026"
 h1: "Quelle est la meilleure marque d'huile essentielle de lavande contre les poux ?"
 date: 2026-08-28
-lastmod: 2026-08-28
+lastmod: 2026-09-13
 description: "Huile essentielle lavande poux : 5 marques comparées sur le chémotype, le prix au flacon et la traçabilité. Lavande vraie, aspic ou lavandin."
 categories: ["Huiles Essentielles", "Nuisibles"]
 tags: ["huile essentielle lavande", "poux", "lavande vraie", "Pranarôm", "comparatif", "aromathérapie"]
@@ -33,7 +33,7 @@ readingTime: true
 
 ## Huile essentielle de lavande contre les poux : le comparatif des marques 2026
 
-La recherche d'une **huile essentielle de lavande** contre les poux monte chaque année à la rentrée scolaire, quand la pédiculose circule dans les classes de 6 à 8 ans. Le réflexe est logique : la lavande sent bon, elle est bien tolérée, et elle figure dans presque toutes les recettes anti-poux qui circulent. Reste une question rarement traitée sérieusement, celle de la marque du flacon, alors que deux lavandes vendues sous la même étiquette peuvent avoir des profils biochimiques très différents.
+La recherche d'une **huile essentielle de lavande** contre les poux monte chaque année à la rentrée scolaire, quand la pédiculose circule dans les classes de 6 à 8 ans. Le réflexe est logique : la lavande sent bon, elle est bien tolérée, et elle figure dans presque toutes les recettes anti-poux qui circulent. Reste une question rarement traitée sérieusement, celle de la marque du flacon, alors que deux lavandes vendues sous la même étiquette peuvent avoir des profils biochimiques très différents. Ce choix de flacon intervient en aval d'une autre décision, celle de la forme du traitement, traitée dans le comparatif du [meilleur produit anti-poux naturel](/blog/meilleur-produit-anti-poux-naturel/).
 
 Le tableau ci-dessous compare les cinq marques les plus distribuées en France sur des critères vérifiables au dos du flacon.
 

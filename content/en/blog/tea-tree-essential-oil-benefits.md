@@ -3,7 +3,7 @@ translationKey: "tea-tree-essential-oil-benefits"
 title: "Tea Tree Essential Oil Benefits: Complete 2026 Guide"
 h1: "Tea Tree Essential Oil: All Benefits and Uses"
 date: "2026-05-27"
-lastmod: 2026-08-28
+lastmod: 2026-09-13
 publishDate: "2026-05-27"
 description: "Tea tree essential oil benefits: antibacterial, antifungal, skin, hair, immunity. Concrete uses and precautions for safe and effective use."
 categories: ["Essential Oils"]
@@ -72,7 +72,7 @@ In localized care, one drop on a pimple in the evening significantly reduces red
 
 Tea tree cleans the scalp in case of **dandruff**, **itching** or **excess sebum**. Add 2 to 3 drops to a shampoo dose at washing time, massage the scalp, leave on for 2 minutes then rinse. 3 to 4 weeks cure alternating with a gentle shampoo.
 
-For **lice**, tea tree is one of the essential oils commonly proposed in synergy, although its effectiveness alone remains limited compared to conventional anti-lice treatments.
+For **lice**, tea tree is one of the essential oils commonly proposed in synergy, although its effectiveness alone remains limited compared to the ready-to-use treatment lotions reviewed in the comparison of the [best natural head lice treatment](/en/blog/best-natural-head-lice-treatment/).
 
 ### Oral Hygiene and Mouth Ulcers
 

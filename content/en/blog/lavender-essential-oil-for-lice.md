@@ -3,7 +3,7 @@ translationKey: "huile-essentielle-lavande-poux"
 title: "Lavender essential oil for lice: best brands 2026"
 h1: "Which brand of lavender essential oil works best against head lice?"
 date: 2026-08-28
-lastmod: 2026-08-28
+lastmod: 2026-09-13
 description: "Lavender essential oil for lice: 5 brands compared on chemotype, price per bottle and traceability. True lavender, spike lavender or lavandin."
 categories: ["Essential Oils", "Pests"]
 tags: ["lavender essential oil", "head lice", "true lavender", "Pranarôm", "comparison", "aromatherapy"]
@@ -33,7 +33,7 @@ readingTime: true
 
 ## Lavender essential oil for head lice: the 2026 brand comparison
 
-Searches for **lavender essential oil** against head lice peak every year at the start of the school term, when pediculosis spreads through classes of 6 to 8 year olds. The reflex makes sense: lavender smells good, it is well tolerated, and it appears in almost every home lice recipe in circulation. One question rarely gets a serious answer, though, and that is which brand to buy, given that two bottles sold under the same label can carry very different biochemical profiles.
+Searches for **lavender essential oil** against head lice peak every year at the start of the school term, when pediculosis spreads through classes of 6 to 8 year olds. The reflex makes sense: lavender smells good, it is well tolerated, and it appears in almost every home lice recipe in circulation. One question rarely gets a serious answer, though, and that is which brand to buy, given that two bottles sold under the same label can carry very different biochemical profiles. That choice of bottle comes after another decision, the form the treatment takes, covered in the comparison of the [best natural head lice treatment](/en/blog/best-natural-head-lice-treatment/).
 
 The table below compares the five most widely distributed brands in France on criteria that can be checked on the back of the bottle.
 
