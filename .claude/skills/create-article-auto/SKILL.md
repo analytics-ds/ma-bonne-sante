@@ -87,7 +87,7 @@ fi
 Si elle est absente ou vide, **ne pas tenter Datafer du tout** : passer directement au mode `crazyserp` (1.5, cas 0). Ce n'est jamais un motif d'echec. **Au 2026-09-07, les 14 routines du parc portent toutes la cle** : si un run tombe malgre tout dans ce cas 0, ce n'est plus une situation normale mais le signe que son prompt a ete modifie ou restaure depuis, a signaler.
 
 ```bash
-export BASE="https://datafer.analytics-e0d.workers.dev"
+export BASE="https://corpus.datashake.fr"
 curl -s -w '\nHTTP=%{http_code}\n' --max-time 120 -X POST "$BASE/api/v1/briefs" \
   -H "Authorization: Bearer $DATAFER_API_KEY" \
   -H 'Content-Type: application/json' \
