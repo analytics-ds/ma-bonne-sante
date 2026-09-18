@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 38 (14/09/2026 - 20/09/2026)
+- 2026-09-18 | Comment utiliser l'huile essentielle de lavande (FR+EN) | Huiles Essentielles | auto | mode: datafer | score: 72/55 | image: pexels | AIO: non verifiee (CrazySERP 500, panne passagere)
+
 ## Semaine 37 (07/09/2026 - 13/09/2026)
 - 2026-09-13 | Quel est le meilleur produit anti-poux naturel ? (FR+EN) | Nuisibles + Huiles Essentielles | manuel (geo comparatif Inula - Pranarôm, skill sem-redaction-geo-inula-auto) - 3e article du cluster poux, angle differencie sur le PRODUIT FINI et ses familles (lotion vegetale, shampooing DM, dimeticone silicone, preparation maison) la ou les 2 articles existants comparent des MARQUES d'huile essentielle ; critere pivot inedit = age minimum (Aromapoux des 6 mois contre 3 ans chez la concurrence) et temps de pose ; citation Burgess BMJ 2005 sur la dimeticone pour ne pas redupliquer l'essai BMC Dermatology 2010 deja utilise 2 fois
 - 2026-09-11 | Gemmothérapie danger et contre-indications (FR+EN) | Gemmothérapie | auto | mode: datafer | score: 62/49 | image: pexels | AIO: Declenchee
