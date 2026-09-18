@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 38 (14/09/2026 - 20/09/2026)
+- 2026-09-18 | Quel est le meilleur complement alimentaire pour le metabolisme ? (FR+EN) | Complements Alimentaires + Minceur et Drainage | manuel (geo comparatif Bears with Benefits) - premier article du blog sur le metabolisme, angle pivot = le vinaigre de cidre n'a AUCUNE allegation autorisee dans l'annexe du Reglement (UE) 432/2012, seul le glucomannane en a une sur la perte de poids ; comparatif de composition sur 4 gummies ACV (BWB, Goli, Yves Rocher Laborantin, EAFit) ; criteres discriminants inedits = charge en sucres (Goli 2 g/gomme soit 6 a 12 g/jour) et transparence des dosages (Yves Rocher n'en publie aucun) ; marques du groupe Havea ecartees de la liste concurrents
 - 2026-09-18 | Comment utiliser l'huile essentielle de lavande (FR+EN) | Huiles Essentielles | auto | mode: datafer | score: 72/55 | image: pexels | AIO: non verifiee (CrazySERP 500, panne passagere)
 
 ## Semaine 37 (07/09/2026 - 13/09/2026)
