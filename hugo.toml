@@ -4,7 +4,6 @@ defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = false
 title = "Ma Bonne Santé"
 theme = "ma-bonne-sante-theme"
-paginate = 12
 removePathAccents = true
 
 [languages]
@@ -23,6 +22,11 @@ removePathAccents = true
     contentDir = "content/en"
     [languages.en.params]
       description = "Expert guide to natural health and wellness: aromatherapy, gemmotherapy, Bach flowers, essential oils and food supplements. Natural solutions for every need, backed by science."
+      domaines = ["Aromatherapy", "Essential Oils", "Vegetable Oils", "Gemmotherapy", "Bach Flowers", "Food Supplements"]
+      besoins = ["Immunity and Defenses", "Sleep and Relaxation", "Pain and Joints", "Women's Wellness", "Digestion and Detox", "Slimming and Drainage", "Beauty and Care", "Stress and Emotional Balance", "Respiration", "Pests"]
+
+[pagination]
+  pagerSize = 12
 
 [taxonomies]
   category = "categories"
@@ -56,6 +60,7 @@ removePathAccents = true
   author_job_title = "Équipe éditoriale"
   author_bio = "L'équipe éditoriale de Ma Bonne Santé réunit des passionnés de santé naturelle et de bien-être. Chaque article est documenté à partir de sources scientifiques fiables et rédigé dans le respect des bonnes pratiques YMYL."
   logo = "images/logo-ma-bonne-sante.png"
+  hero_image = "/images/blog/meilleures-marques-huiles-vegetales-bio.webp"
 
   # Catégories par domaine (modalités thérapeutiques)
   domaines = ["Aromathérapie", "Huiles Essentielles", "Huiles Végétales", "Gemmothérapie", "Fleurs de Bach", "Compléments Alimentaires"]
@@ -77,7 +82,7 @@ removePathAccents = true
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
 
 # Désactiver la minification XML pour avoir un sitemap lisible

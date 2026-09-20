@@ -1,0 +1,13 @@
+{{- $pages := where .Site.RegularPages "Section" "blog" -}}
+{{- $out := slice -}}
+{{- range $pages -}}
+  {{- $cat := "" -}}
+  {{- with .Params.categories }}{{ $cat = index . 0 }}{{ end -}}
+  {{- $raw := lower (printf "%s %s %s %s" .Title .Description $cat (delimit .Params.tags " ")) -}}
+  {{- $s := $raw -}}
+  {{- range $pair := (slice (slice "é" "e") (slice "è" "e") (slice "ê" "e") (slice "ë" "e") (slice "à" "a") (slice "â" "a") (slice "ä" "a") (slice "î" "i") (slice "ï" "i") (slice "ô" "o") (slice "ö" "o") (slice "ù" "u") (slice "û" "u") (slice "ü" "u") (slice "ç" "c") (slice "œ" "oe")) -}}
+    {{- $s = replace $s (index $pair 0) (index $pair 1) -}}
+  {{- end -}}
+  {{- $out = $out | append (dict "u" .RelPermalink "t" .Title "c" $cat "s" $s) -}}
+{{- end -}}
+{{- $out | jsonify -}}

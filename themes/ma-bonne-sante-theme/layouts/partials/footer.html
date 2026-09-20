@@ -1,66 +1,71 @@
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $taxo := .Site.Taxonomies.categories -}}
 <footer class="site-footer">
-    <div class="footer-container">
+    <div class="footer-top">
         <div class="footer-grid">
-            <div class="footer-col footer-col-about">
-                <a href="{{ site.Home.RelPermalink }}" class="footer-logo">
-                    {{ with .Site.Params.logo }}
-                    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" width="32" height="32">
-                    {{ end }}
+            <div class="footer-col">
+                <a href="{{ site.Home.RelPermalink }}" class="footer-brand">
+                    {{ with .Site.Params.logo }}<img src="{{ . | relURL }}" alt="" width="30" height="30">{{ end }}
                     <span>{{ .Site.Title }}</span>
                 </a>
-                <p>{{ .Site.Params.description }}</p>
+                <p class="footer-about">{{ .Site.Params.description }}</p>
+                <p class="footer-note">{{ if $en }}Editorial content only. Natural remedies never replace medical advice: always consult a healthcare professional before starting a treatment.{{ else }}Contenu éditorial uniquement. Les remèdes naturels ne remplacent jamais un avis médical : consultez un professionnel de santé avant toute prise.{{ end }}</p>
             </div>
+
             <div class="footer-col">
-                <h4>Catégories</h4>
+                <h4>{{ if $en }}Disciplines{{ else }}Domaines{{ end }}</h4>
                 <ul>
-                    {{ range .Site.Params.domaines }}
-                    {{ $name := . }}
-                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
+                    {{- range $name := .Site.Params.domaines }}
+                        {{- range $key, $tax := $taxo }}
+                            {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                            <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
                 </ul>
             </div>
+
             <div class="footer-col">
-                <h4>Besoins</h4>
+                <h4>{{ if $en }}Needs{{ else }}Besoins{{ end }}</h4>
                 <ul>
-                    {{ range .Site.Params.besoins }}
-                    {{ $name := . }}
-                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
+                    {{- range $i, $name := first 7 .Site.Params.besoins }}
+                        {{- range $key, $tax := $taxo }}
+                            {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                            <li><a href="{{ $tax.Page.RelPermalink }}">{{ $name }}</a></li>
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
                 </ul>
             </div>
+
             <div class="footer-col">
-                <h4>Navigation</h4>
+                <h4>{{ if $en }}The magazine{{ else }}Le magazine{{ end }}</h4>
                 <ul>
-                    <li><a href="{{ site.Home.RelPermalink }}">Accueil</a></li>
-                    <li><a href="{{ "blog/" | relLangURL }}">Blog</a></li>
-                    <li><a href="{{ "authors/" | relLangURL }}">Notre équipe</a></li>
-                    <li><a href="{{ "plan-du-site/" | relLangURL }}">Plan du site</a></li>
+                    <li><a href="{{ site.Home.RelPermalink }}">{{ if $en }}Home{{ else }}Accueil{{ end }}</a></li>
+                    <li><a href="{{ "blog/" | relLangURL }}">{{ if $en }}All articles{{ else }}Tous les articles{{ end }}</a></li>
+                    <li><a href="{{ "authors/" | relLangURL }}">{{ if $en }}The desk{{ else }}La rédaction{{ end }}</a></li>
+                    <li><a href="{{ "plan-du-site/" | relLangURL }}">{{ if $en }}Site map{{ else }}Plan du site{{ end }}</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. Tous droits reserves.</p>
         </div>
     </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ if $en }}All rights reserved.{{ else }}Tous droits réservés.{{ end }}</p>
 <!-- pbn-legal:start -->
-<div class="footer-legal">
-    <ul>
-        {{- $lg := .Site.Language.Lang }}
-        {{- $map := dict "fr" (slice (slice "mentions-legales/" "Mentions légales") (slice "politique-de-confidentialite/" "Politique de confidentialité") (slice "cgu/" "CGU")) "en" (slice (slice "legal-notice/" "Legal notice") (slice "privacy-policy/" "Privacy policy") (slice "terms-of-service/" "Terms of use")) }}
-        {{- $items := index $map $lg }}
-        {{- if not $items }}{{ $items = index $map "fr" }}{{ end }}
-        {{- range $items }}
-        <li><a href="{{ (index . 0) | relLangURL }}">{{ index . 1 }}</a></li>
-        {{- end }}
-    </ul>
-</div>
+            <div class="footer-legal">
+                <ul>
+                    {{- $lg := .Site.Language.Lang }}
+                    {{- $map := dict "fr" (slice (slice "mentions-legales/" "Mentions légales") (slice "politique-de-confidentialite/" "Politique de confidentialité") (slice "cgu/" "CGU")) "en" (slice (slice "legal-notice/" "Legal notice") (slice "privacy-policy/" "Privacy policy") (slice "terms-of-service/" "Terms of use")) }}
+                    {{- $items := index $map $lg }}
+                    {{- if not $items }}{{ $items = index $map "fr" }}{{ end }}
+                    {{- range $items }}
+                    <li><a href="{{ (index . 0) | relLangURL }}">{{ index . 1 }}</a></li>
+                    {{- end }}
+                </ul>
+            </div>
 <!-- pbn-legal:end -->
+        </div>
+    </div>
 </footer>

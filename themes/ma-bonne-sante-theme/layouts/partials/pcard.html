@@ -1,0 +1,23 @@
+{{- $p := .p -}}
+{{- $lead := .lead | default false -}}
+{{- $excerpt := .excerpt | default true -}}
+{{- $en := eq $p.Site.Language.Lang "en" -}}
+<article class="pcard{{ if $lead }} pcard--lead{{ end }}">
+    <a href="{{ $p.RelPermalink }}" class="pcard-media" aria-hidden="true" tabindex="-1">
+        {{- with $p.Params.image }}
+        <img src="{{ . }}" alt="{{ $p.Params.imageAlt | default $p.Title }}" loading="{{ if $lead }}eager{{ else }}lazy{{ end }}" decoding="async">
+        {{- end }}
+        {{- if $p.Params.featured }}<span class="pcard-flag">{{ if $en }}Brand test{{ else }}Comparatif{{ end }}</span>{{ end }}
+    </a>
+    <div class="pcard-body">
+        <div class="pcard-kicker">
+            {{- with $p.Params.categories }}<span class="k-cat">{{ index . 0 }}</span><span class="k-sep" aria-hidden="true"></span>{{ end }}
+            <span>{{ $p.ReadingTime }} min{{ if not $en }} de lecture{{ end }}</span>
+            <span class="k-sep" aria-hidden="true"></span>
+            <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02.01.2006" }}</time>
+        </div>
+        <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+        {{- if $excerpt }}{{ with $p.Description }}<p class="pcard-excerpt">{{ . | truncate (cond $lead 210 130) }}</p>{{ end }}{{ end }}
+        <span class="pcard-more">{{ if $en }}Read{{ else }}Lire l'article{{ end }}</span>
+    </div>
+</article>

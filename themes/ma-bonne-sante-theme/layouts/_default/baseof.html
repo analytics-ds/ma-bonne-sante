@@ -6,29 +6,30 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="theme-color" content="#0C3A33">
 
     {{ partial "seo-head.html" . }}
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     {{ $css := resources.Get "css/main.css" }}
     {{ if $css }}
         <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     {{ end }}
 
-    <!-- Favicon -->
     <link rel="icon" href="{{ .Site.Params.logo | relURL }}" type="image/png">
 </head>
 <body>
+    {{ partial "topbar.html" . }}
     {{ partial "header.html" . }}
 
-    <main>
+    <main id="main">
         {{ block "main" . }}{{ end }}
     </main>
 
     {{ partial "footer.html" . }}
+    {{ partial "search.html" . }}
 </body>
 </html>

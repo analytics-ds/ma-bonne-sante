@@ -1,41 +1,30 @@
 {{ define "main" }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $pages := .Pages.ByDate.Reverse -}}
+{{- $paginator := .Paginate $pages -}}
+{{- $isCat := eq .Data.Plural "categories" -}}
 
-<section class="list-header">
-    <div class="container">
+<div class="wrap">
+    <nav class="crumbs" aria-label="{{ if $en }}Breadcrumb{{ else }}Fil d'ariane{{ end }}">
+        <a href="{{ site.Home.RelPermalink }}">{{ if $en }}Home{{ else }}Accueil{{ end }}</a>
+        <span class="crumbs-sep">/</span>
+        <a href="{{ "blog/" | relLangURL }}">{{ if $en }}Articles{{ else }}Articles{{ end }}</a>
+        <span class="crumbs-sep">/</span>
+        <span aria-current="page">{{ .Title }}</span>
+    </nav>
+
+    <header class="listhead">
+        {{- if $isCat }}<span class="eyebrow">{{ if $en }}Section{{ else }}Rubrique{{ end }}</span>{{ end }}
         <h1>{{ .Title }}</h1>
-        {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
-        <span class="list-count">{{ len .Pages }} {{ if gt (len .Pages) 1 }}articles{{ else }}article{{ end }}</span>
-    </div>
-</section>
+        {{- with .Description }}<p>{{ . }}</p>{{ end }}
+        <span class="listhead-count">{{ len .Pages }} {{ if gt (len .Pages) 1 }}{{ if $en }}articles{{ else }}articles{{ end }}{{ else }}article{{ end }}</span>
+    </header>
 
-<section class="list-content">
-    <div class="container">
-        <div class="articles-list">
-            {{ range .Pages.ByDate.Reverse }}
-            <article class="article-card-horizontal">
-                {{ with .Params.image }}
-                <img src="{{ . }}" alt="{{ $.Title }}" class="article-card-horizontal-image" loading="lazy">
-                {{ end }}
-                <div class="article-body">
-                    <div class="article-meta">
-                        {{ with .Params.categories }}
-                        <span class="article-category">{{ index . 0 }}</span>
-                        {{ end }}
-                        <time>{{ .Date.Format "2 January 2006" }}</time>
-                        <span class="reading-time">{{ .ReadingTime }} min</span>
-                    </div>
-                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                    <p>{{ .Description }}</p>
-                    <div class="article-tags">
-                        {{ range .Params.tags }}
-                        <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag">#{{ . }}</a>
-                        {{ end }}
-                    </div>
-                </div>
-            </article>
-            {{ end }}
+    <section class="section section--tight">
+        <div class="cardgrid cardgrid--3">
+            {{- range $paginator.Pages }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
         </div>
-    </div>
-</section>
-
+        {{ partial "pager.html" . }}
+    </section>
+</div>
 {{ end }}

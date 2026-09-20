@@ -1,0 +1,9 @@
+{{- $en := eq .Site.Language.Lang "en" -}}
+<div class="topbar">
+    <div class="topbar-inner">
+        <span class="topbar-dot" aria-hidden="true"></span>
+        <span>{{ if $en }}<strong>Independent guides</strong> on natural health, sourced and reviewed{{ else }}<strong>Des guides indépendants</strong> sur la santé naturelle, sourcés et relus{{ end }}</span>
+        <span class="topbar-dot" aria-hidden="true"></span>
+        <a href="{{ "authors/" | relLangURL }}">{{ if $en }}Meet the desk{{ else }}Qui écrit pour vous{{ end }}</a>
+    </div>
+</div>

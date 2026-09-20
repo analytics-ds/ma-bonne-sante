@@ -1,106 +1,51 @@
 {{ define "main" }}
-{{ $slug := .Slug | default (path.Base .RelPermalink | strings.TrimSuffix "/") }}
-{{ $lang := .Site.Language.Lang }}
-{{ $authorData := index hugo.Data.authors $slug }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $slug := .Slug | default (path.Base .RelPermalink | strings.TrimSuffix "/") -}}
+{{- $a := index site.Data.authors $slug -}}
+{{- $arts := where (where site.RegularPages "Params.author" $slug) "Section" "blog" -}}
+{{- $arts = where $arts "Lang" $lang -}}
 
-<section class="author-hero">
-    <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="{{ "/" | relURL }}">{{ if eq $lang "en" }}Home{{ else }}Accueil{{ end }}</a></li>
-                <li class="breadcrumb-item"><a href="{{ "authors/" | relURL }}">{{ if eq $lang "en" }}Authors{{ else }}Auteurs{{ end }}</a></li>
-                <li class="breadcrumb-item"><span aria-current="page">{{ .Title }}</span></li>
-            </ol>
-        </nav>
-        <div class="author-hero-inner">
-            {{ with $authorData }}
-            {{ with .avatar }}
-            <img src="{{ . | relURL }}" alt="{{ $authorData.name }}" class="author-hero-avatar" width="160" height="160" loading="eager">
-            {{ end }}
-            <div class="author-hero-content">
-                <span class="author-hero-label">{{ if eq $lang "en" }}Author{{ else }}Auteur{{ end }}</span>
-                <h1 class="author-hero-name">{{ .name }}</h1>
-                {{ with index .role $lang }}<p class="author-hero-role">{{ . }}</p>{{ end }}
+<div class="wrap">
+    <nav class="crumbs" aria-label="{{ if $en }}Breadcrumb{{ else }}Fil d'ariane{{ end }}">
+        <a href="{{ site.Home.RelPermalink }}">{{ if $en }}Home{{ else }}Accueil{{ end }}</a>
+        <span class="crumbs-sep">/</span>
+        <a href="{{ "authors/" | relLangURL }}">{{ if $en }}The desk{{ else }}La rédaction{{ end }}</a>
+        <span class="crumbs-sep">/</span>
+        <span aria-current="page">{{ .Title }}</span>
+    </nav>
 
-                <ul class="author-hero-meta" aria-label="{{ if eq $lang "en" }}Quick facts{{ else }}Informations clés{{ end }}">
-                    {{ with .location }}
-                    <li class="author-hero-meta-item">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <span>{{ . }}</span>
-                    </li>
-                    {{ end }}
-                    {{ with .yearsExperience }}
-                    <li class="author-hero-meta-item">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        <span>{{ if eq $lang "en" }}{{ . }}+ years of experience{{ else }}{{ . }}+ ans d'expérience{{ end }}</span>
-                    </li>
-                    {{ end }}
-                </ul>
+    <header class="authorhero">
+        {{- with $a }}
+        {{- with .avatar }}
+        <img src="{{ . | relURL }}" alt="{{ $a.name }}" class="authorhero-avatar" width="128" height="128" loading="eager">
+        {{- else }}
+        <span class="authorhero-avatar is-ph">{{ slicestr $a.name 0 1 }}</span>
+        {{- end }}
+        <div>
+            <span class="eyebrow">{{ if $en }}Author{{ else }}Auteur{{ end }}</span>
+            <h1>{{ .name }}</h1>
+            {{- with index .role $lang }}<p class="authorhero-role">{{ . }}</p>{{ end }}
+            {{- with index .bio $lang }}<p class="authorhero-bio">{{ . }}</p>{{ end }}
+            {{- with .expertise }}
+            <div class="authorhero-exp">{{ range . }}<span class="tagpill">{{ . }}</span>{{ end }}</div>
+            {{- end }}
+        </div>
+        {{- end }}
+    </header>
 
-                {{ with index .bio $lang }}<p class="author-hero-bio">{{ . }}</p>{{ end }}
-                {{ with .expertise }}
-                <div class="author-hero-expertise">
-                    {{ range . }}<span class="author-tag">{{ . }}</span>{{ end }}
-                </div>
-                {{ end }}
+    {{- with .Content }}<div class="postbody" style="padding-top:var(--s3)">{{ . }}</div>{{ end }}
+
+    <section class="section section--tight">
+        <div class="sectionhead">
+            <div>
+                <h2>{{ if $en }}Articles by {{ with $a }}{{ .name }}{{ end }}{{ else }}Les articles de {{ with $a }}{{ .name }}{{ end }}{{ end }}</h2>
+                <p>{{ len $arts }} {{ if gt (len $arts) 1 }}{{ if $en }}articles{{ else }}articles publiés{{ end }}{{ else }}{{ if $en }}article{{ else }}article publié{{ end }}{{ end }}</p>
             </div>
-            {{ end }}
         </div>
-    </div>
-</section>
-
-{{ with $authorData }}
-{{ $certifications := index .certifications $lang }}
-{{ if $certifications }}
-<section class="author-section author-certifications-section">
-    <div class="container">
-        <h2 class="section-title">{{ if eq $lang "en" }}Certifications{{ else }}Certifications et formations{{ end }}</h2>
-        <ul class="author-certifications-list">
-            {{ range $certifications }}
-            <li class="author-certification-item">
-                <span class="author-certification-year">{{ .year }}</span>
-                <div class="author-certification-body">
-                    <span class="author-certification-name">{{ .name }}</span>
-                    {{ with .issuer }}<span class="author-certification-issuer">{{ . }}</span>{{ end }}
-                </div>
-            </li>
-            {{ end }}
-        </ul>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-
-<section class="author-articles">
-    <div class="container">
-        <h2 class="section-title">{{ if eq $lang "en" }}Articles by {{ else }}Articles de {{ end }}{{ with $authorData }}{{ .name }}{{ end }}</h2>
-        {{ $articles := where .Site.RegularPages "Params.author" $slug }}
-        {{ $articles = where $articles "Section" "blog" }}
-        {{ if $articles }}
-        <div class="grid-articles">
-            {{ range $articles.ByDate.Reverse }}
-            <article class="article-card">
-                {{ $page := . }}
-                {{ with .Params.image }}
-                <a href="{{ $page.RelPermalink }}" class="article-card-image-wrapper">
-                    <img src="{{ . }}" alt="{{ $page.Params.imageAlt | default $page.Title }}" class="article-card-image" loading="lazy">
-                </a>
-                {{ end }}
-                <div class="article-card-body">
-                    <div class="article-meta">
-                        {{ with .Params.categories }}<span class="article-category">{{ index . 0 }}</span>{{ end }}
-                        <time>{{ .Date.Format "2 January 2006" }}</time>
-                    </div>
-                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    <p>{{ .Description }}</p>
-                </div>
-            </article>
-            {{ end }}
+        <div class="cardgrid cardgrid--3">
+            {{- range $arts.ByDate.Reverse }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
         </div>
-        {{ else }}
-        <p>{{ if eq $lang "en" }}No articles published yet by this author.{{ else }}Aucun article publié par cet auteur pour le moment.{{ end }}</p>
-        {{ end }}
-    </div>
-</section>
-
+    </section>
+</div>
 {{ end }}
