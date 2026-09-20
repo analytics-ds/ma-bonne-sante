@@ -45,8 +45,8 @@
     --sh-lg: 0 10px 30px rgba(15,29,26,.11);
 
     /* --- Typographie --- */
-    --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
-    --font-body:    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body:    'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* --- Rythme --- */
     --s1: .5rem;
@@ -93,7 +93,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* --- Titres --- */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    font-variation-settings: 'SOFT' 0, 'WONK' 0;
     font-weight: 600;
     line-height: 1.12;
     letter-spacing: -.015em;
