@@ -1,0 +1,14 @@
+{{- $p := .p -}}
+{{- $en := eq $p.Site.Language.Lang "en" -}}
+<article class="hcard">
+    <a href="{{ $p.RelPermalink }}" class="hcard-media" aria-hidden="true" tabindex="-1">
+        {{- with $p.Params.image }}<img src="{{ . }}" alt="" loading="lazy" decoding="async">{{ end }}
+    </a>
+    <div>
+        <div class="pcard-kicker">
+            {{- with $p.Params.categories }}<span class="k-cat">{{ index . 0 }}</span><span class="k-sep" aria-hidden="true"></span>{{ end }}
+            <span>{{ $p.ReadingTime }} min</span>
+        </div>
+        <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    </div>
+</article>

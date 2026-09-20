@@ -1,185 +1,43 @@
 {{ define "main" }}
-{{ $allArticles := where .Site.RegularPages "Section" "blog" }}
-{{ $allArticles = where $allArticles "Lang" .Site.Language.Lang }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $taxo := .Site.Taxonomies.categories -}}
+{{- $all := where (where .Site.RegularPages "Section" "blog") "Lang" .Site.Language.Lang -}}
+{{- $sorted := $all.ByDate.Reverse -}}
+{{- $paginator := .Paginate $sorted -}}
 
-<!-- Header + filtres catégorie -->
-<section class="bloghub-header">
-    <div class="container">
-        <span class="hero-badge hero-badge--light">Blog</span>
-        <h1>{{ .Title | default "Tous nos articles" }}</h1>
-        {{ with .Description }}<p class="bloghub-description">{{ . }}</p>{{ end }}
+<div class="wrap">
+    <header class="listhead">
+        <span class="eyebrow">{{ if $en }}The magazine{{ else }}Le magazine{{ end }}</span>
+        <h1>{{ .Title | default (cond $en "All articles" "Tous les articles") }}</h1>
+        {{- with .Description }}<p>{{ . }}</p>{{ end }}
+        <span class="listhead-count">{{ len $all }} {{ if $en }}articles published{{ else }}articles publiés{{ end }}</span>
+    </header>
 
-        <div class="bloghub-filters" role="navigation" aria-label="Filtrer par catégorie">
-            <a href="{{ .RelPermalink }}" class="bloghub-filter bloghub-filter--all is-active">Tout voir<span class="filter-count">{{ len $allArticles }}</span></a>
-            {{ range $cat := .Site.Params.domaines }}
-                {{ $url := "" }}{{ $count := 0 }}
-                {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                    {{ if eq (lower $cat) (lower $tax.Page.Title) }}
-                        {{ $url = $tax.Page.RelPermalink }}{{ $count = $tax.Count }}
-                    {{ end }}
-                {{ end }}
-                {{ if and $url (gt $count 0) }}
-                <a href="{{ $url }}" class="bloghub-filter">{{ $cat }}<span class="filter-count">{{ $count }}</span></a>
-                {{ end }}
-            {{ end }}
-            {{ range $cat := .Site.Params.besoins }}
-                {{ $url := "" }}{{ $count := 0 }}
-                {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                    {{ if eq (lower $cat) (lower $tax.Page.Title) }}
-                        {{ $url = $tax.Page.RelPermalink }}{{ $count = $tax.Count }}
-                    {{ end }}
-                {{ end }}
-                {{ if and $url (gt $count 0) }}
-                <a href="{{ $url }}" class="bloghub-filter bloghub-filter--besoin">{{ $cat }}<span class="filter-count">{{ $count }}</span></a>
-                {{ end }}
-            {{ end }}
+    <nav class="filterbar" aria-label="{{ if $en }}Filter{{ else }}Filtrer{{ end }}">
+        <span class="filterbar-group-label" style="margin-top:0">{{ if $en }}By discipline{{ else }}Par domaine{{ end }}</span>
+        <a href="{{ .RelPermalink }}" class="is-active">{{ if $en }}Everything{{ else }}Tout voir{{ end }} <span class="fc">{{ len $all }}</span></a>
+        {{- range $name := .Site.Params.domaines }}
+            {{- range $key, $tax := $taxo }}
+                {{- if and (eq (lower $name) (lower $tax.Page.Title)) (gt $tax.Count 0) }}
+                <a href="{{ $tax.Page.RelPermalink }}">{{ $name }} <span class="fc">{{ $tax.Count }}</span></a>
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        <span class="filterbar-group-label">{{ if $en }}By need{{ else }}Par besoin{{ end }}</span>
+        {{- range $name := .Site.Params.besoins }}
+            {{- range $key, $tax := $taxo }}
+                {{- if and (eq (lower $name) (lower $tax.Page.Title)) (gt $tax.Count 0) }}
+                <a href="{{ $tax.Page.RelPermalink }}">{{ $name }} <span class="fc">{{ $tax.Count }}</span></a>
+                {{- end }}
+            {{- end }}
+        {{- end }}
+    </nav>
+
+    <section class="section section--tight">
+        <div class="cardgrid cardgrid--3">
+            {{- range $paginator.Pages }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
         </div>
-    </div>
-</section>
-
-<!-- Layout 2 cols : carrousels par catégorie + sidebar -->
-<section class="bloghub-content">
-    <div class="bloghub-grid">
-
-        <!-- Main : carrousels par catégorie -->
-        <main class="bloghub-main">
-            {{ $domaines := .Site.Params.domaines }}
-            {{ $besoins := .Site.Params.besoins }}
-            {{ $allCats := append $domaines $besoins }}
-            {{ range $cat := $allCats }}
-                {{ $catLower := lower $cat }}
-                {{ $catArticles := slice }}
-                {{ range $allArticles }}
-                    {{ $hasCategory := false }}
-                    {{ range .Params.categories }}
-                        {{ if eq (lower .) $catLower }}{{ $hasCategory = true }}{{ end }}
-                    {{ end }}
-                    {{ if $hasCategory }}{{ $catArticles = $catArticles | append . }}{{ end }}
-                {{ end }}
-                {{ $count := len $catArticles }}
-                {{ if gt $count 0 }}
-                {{ $taxUrl := "" }}
-                {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                    {{ if eq $catLower (lower $tax.Page.Title) }}{{ $taxUrl = $tax.Page.RelPermalink }}{{ end }}
-                {{ end }}
-                <article class="bloghub-carousel" data-category="{{ $cat | urlize }}">
-                    <header class="bloghub-carousel-header">
-                        <div>
-                            <h2>{{ $cat }}</h2>
-                            <p>{{ $count }} article{{ if gt $count 1 }}s{{ end }}</p>
-                        </div>
-                        <div class="bloghub-carousel-controls">
-                            {{ with $taxUrl }}<a href="{{ . }}" class="bloghub-carousel-link">Voir tout →</a>{{ end }}
-                            <button class="carousel-btn carousel-btn-prev" aria-label="Précédent" type="button">‹</button>
-                            <button class="carousel-btn carousel-btn-next" aria-label="Suivant" type="button">›</button>
-                        </div>
-                    </header>
-                    <div class="bloghub-carousel-track">
-                        {{ range first 12 ($catArticles | first 12) }}
-                        {{ $page := . }}
-                        <article class="carousel-card">
-                            {{ with .Params.image }}
-                            <a href="{{ $page.RelPermalink }}" class="carousel-card-image-wrapper">
-                                <img src="{{ . }}" alt="{{ $page.Params.imageAlt | default $page.Title }}" class="carousel-card-image" loading="lazy">
-                                {{ if $page.Params.featured }}<span class="carousel-card-badge">Comparatif</span>{{ end }}
-                            </a>
-                            {{ end }}
-                            <div class="carousel-card-body">
-                                <time class="carousel-card-date">{{ $page.Date.Format "2 Jan 2006" }}</time>
-                                <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
-                                <p>{{ $page.Description | truncate 110 }}</p>
-                            </div>
-                        </article>
-                        {{ end }}
-                    </div>
-                </article>
-                {{ end }}
-            {{ end }}
-        </main>
-
-        <!-- Sidebar : derniers articles + articles vedettes -->
-        <aside class="bloghub-sidebar">
-            <div class="bloghub-sidebar-sticky">
-
-                <!-- Articles vedettes -->
-                {{ $featured := where $allArticles "Params.featured" true }}
-                {{ if $featured }}
-                <section class="sidebar-block sidebar-block--featured">
-                    <h2 class="sidebar-block-title">
-                        <span class="sidebar-block-icon">⭐</span> Articles vedettes
-                    </h2>
-                    <p class="sidebar-block-subtitle">Nos comparatifs de marques approfondis</p>
-                    <ul class="sidebar-list sidebar-list--featured">
-                        {{ range first 4 $featured.ByDate.Reverse }}
-                        {{ $page := . }}
-                        <li>
-                            <a href="{{ $page.RelPermalink }}" class="sidebar-item sidebar-item--featured">
-                                {{ with .Params.image }}<img src="{{ . }}" alt="{{ $page.Title }}" class="sidebar-item-image" loading="lazy">{{ end }}
-                                <div class="sidebar-item-body">
-                                    {{ with .Params.categories }}<span class="sidebar-item-cat">{{ index . 0 }}</span>{{ end }}
-                                    <h3>{{ .Title }}</h3>
-                                </div>
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </section>
-                {{ end }}
-
-                <!-- Derniers articles -->
-                <section class="sidebar-block sidebar-block--latest">
-                    <h2 class="sidebar-block-title">
-                        <span class="sidebar-block-icon">🆕</span> Derniers articles
-                    </h2>
-                    <ul class="sidebar-list">
-                        {{ range first 5 $allArticles.ByDate.Reverse }}
-                        {{ $page := . }}
-                        <li>
-                            <a href="{{ $page.RelPermalink }}" class="sidebar-item">
-                                {{ with .Params.image }}<img src="{{ . }}" alt="{{ $page.Title }}" class="sidebar-item-thumb" loading="lazy">{{ end }}
-                                <div class="sidebar-item-body">
-                                    <time>{{ $page.Date.Format "2 Jan 2006" }}</time>
-                                    <h3>{{ .Title }}</h3>
-                                </div>
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </section>
-
-            </div>
-        </aside>
-    </div>
-</section>
-
-<script>
-// Carrousels horizontaux : boutons prev/next
-document.querySelectorAll('.bloghub-carousel').forEach(function(carousel) {
-    var track = carousel.querySelector('.bloghub-carousel-track');
-    var prev = carousel.querySelector('.carousel-btn-prev');
-    var next = carousel.querySelector('.carousel-btn-next');
-    if (!track || !prev || !next) return;
-
-    function scrollAmount() {
-        var card = track.querySelector('.carousel-card');
-        if (!card) return 320;
-        var style = getComputedStyle(track);
-        var gap = parseInt(style.columnGap || style.gap || 16, 10);
-        return card.getBoundingClientRect().width + gap;
-    }
-
-    prev.addEventListener('click', function() { track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }); });
-    next.addEventListener('click', function() { track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }); });
-
-    function updateButtons() {
-        var max = track.scrollWidth - track.clientWidth - 2;
-        prev.disabled = track.scrollLeft <= 2;
-        next.disabled = track.scrollLeft >= max;
-    }
-    track.addEventListener('scroll', updateButtons, { passive: true });
-    window.addEventListener('resize', updateButtons);
-    updateButtons();
-});
-
-</script>
+        {{ partial "pager.html" . }}
+    </section>
+</div>
 {{ end }}

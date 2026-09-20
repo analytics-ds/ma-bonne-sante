@@ -1,189 +1,177 @@
 {{ define "main" }}
-{{ $lang := .Site.Language.Lang }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $taxo := .Site.Taxonomies.categories -}}
+{{- $all := where .Site.RegularPages "Section" "blog" -}}
+{{- $recent := $all.ByDate.Reverse -}}
+{{- $featured := where $all "Params.featured" true -}}
+{{- $lead := first 3 (cond (ge (len $featured) 3) $featured.ByDate.Reverse $recent) -}}
+{{- $heroImg := "" -}}
+{{- with .Site.Params.hero_image }}{{ $heroImg = . }}{{ else }}{{ with index ($recent | first 1) 0 }}{{ $heroImg = .Params.image }}{{ end }}{{ end -}}
 
-<!-- Hero -->
-<section class="hero">
-    <div class="hero-content">
-        <span class="hero-badge">Santé naturelle et bien-être</span>
-        <h1>Ma Bonne Santé</h1>
-        <p class="hero-description">Aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires. Des guides indépendants, sourcés et rédigés par des journalistes formés, pour prendre soin de soi au naturel.</p>
-        <div class="hero-actions">
-            <a href="{{ "blog/" | relURL }}" class="btn-primary">Découvrir nos articles</a>
-            <a href="{{ "authors/" | relURL }}" class="btn-secondary">Notre équipe</a>
+<!-- Banniere magazine -->
+<div class="wrap">
+    <section class="magbanner">
+        <div class="magbanner-media">
+            {{- with $heroImg }}<img src="{{ . }}" alt="" loading="eager" fetchpriority="high">{{ end }}
         </div>
-        <ul class="hero-trust">
-            <li><strong>{{ len (where .Site.RegularPages "Section" "blog") }}</strong> articles publiés</li>
-            <li><strong>Sources scientifiques</strong> systématiquement citées</li>
-            <li><strong>Indépendance</strong> éditoriale totale</li>
-        </ul>
-    </div>
-</section>
+        <div class="magbanner-body">
+            <span class="magbanner-kicker">{{ if $en }}The natural health review{{ else }}Le magazine de la santé naturelle{{ end }}</span>
+            <h1>{{ .Site.Title }}</h1>
+            <p class="magbanner-sub">{{ if $en }}Aromatherapy, gemmotherapy, Bach flowers, essential oils and food supplements. Independent guides, sourced and written by trained journalists.{{ else }}Aromathérapie, gemmothérapie, fleurs de Bach, huiles essentielles et compléments alimentaires. Des guides indépendants, sourcés et rédigés par des journalistes formés.{{ end }}</p>
+            <ul class="magbanner-stats">
+                <li><b>{{ len $all }}</b>{{ if $en }}articles published{{ else }}articles publiés{{ end }}</li>
+                <li><b>{{ len .Site.Params.domaines }}</b>{{ if $en }}disciplines covered{{ else }}domaines couverts{{ end }}</li>
+                <li><b>{{ len .Site.Params.besoins }}</b>{{ if $en }}needs addressed{{ else }}besoins traités{{ end }}</li>
+            </ul>
+        </div>
+    </section>
 
-<!-- Catégories par domaine -->
-<section class="categories-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-eyebrow">Par approche thérapeutique</span>
-            <h2 class="section-title">Explorer par domaine</h2>
-            <p class="section-subtitle">Six familles de remèdes naturels expliquées sans jargon, avec leurs usages, contre-indications et précautions.</p>
-        </div>
-        <div class="grid-categories grid-domaines">
-            {{ $icons := dict "Aromathérapie" "💧" "Huiles Essentielles" "🌿" "Huiles Végétales" "🫒" "Gemmothérapie" "🌱" "Fleurs de Bach" "🌼" "Compléments Alimentaires" "💊" }}
-            {{ $images := dict "Aromathérapie" "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&h=350&fit=crop" "Huiles Essentielles" "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=350&fit=crop" "Huiles Végétales" "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=350&fit=crop" "Gemmothérapie" "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=500&h=350&fit=crop" "Fleurs de Bach" "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&h=350&fit=crop" "Compléments Alimentaires" "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=350&fit=crop" }}
-            {{ range $name := .Site.Params.domaines }}
-                {{ $icon := index $icons $name | default "🌿" }}
-                {{ $img := index $images $name }}
-                {{ $count := 0 }}
-                {{ $url := "" }}
-                {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                    {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        {{ $count = $tax.Count }}
-                        {{ $url = $tax.Page.RelPermalink }}
-                    {{ end }}
-                {{ end }}
-                <a href="{{ if $url }}{{ $url }}{{ else }}{{ printf "categories/%s/" ($name | urlize) | relURL }}{{ end }}" class="category-card-domaine" {{ with $img }}style="--bg-image: url('{{ . }}')"{{ end }}>
-                    <div class="card-domaine-overlay"></div>
-                    <div class="card-domaine-content">
-                        <span class="card-domaine-icon">{{ $icon }}</span>
-                        <h3>{{ $name }}</h3>
-                        <span class="category-count">{{ $count }} {{ if gt $count 1 }}articles{{ else }}article{{ end }}</span>
-                    </div>
-                </a>
-            {{ end }}
-        </div>
-    </div>
-</section>
-
-<!-- Catégories par besoin -->
-<section class="categories-section categories-section-besoins">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-eyebrow">Par symptôme ou objectif</span>
-            <h2 class="section-title">Trouver une solution naturelle</h2>
-            <p class="section-subtitle">De l'insomnie à la baisse de libido, en passant par le stress et la digestion : nos solutions naturelles classées par besoin.</p>
-        </div>
-        <div class="grid-categories grid-besoins">
-            {{ $besoin_icons := dict "Immunité et Défenses" "🛡️" "Sommeil et Détente" "🌙" "Douleurs et Articulations" "🦴" "Bien-être Féminin" "🌸" "Digestion et Détox" "🍃" "Minceur et Drainage" "⚖️" "Beauté et Soins" "✨" "Stress et Équilibre émotionnel" "🧘" "Peurs et Angoisses" "💚" "Confiance et Estime de Soi" "💪" "Respiration" "🌬️" "Nuisibles" "🦟" }}
-            {{ $besoin_colors := dict "Immunité et Défenses" "#E8F5E9" "Sommeil et Détente" "#EDE7F6" "Douleurs et Articulations" "#FFF3E0" "Bien-être Féminin" "#FCE4EC" "Digestion et Détox" "#E0F2F1" "Minceur et Drainage" "#F1F8E9" "Beauté et Soins" "#FFF8E1" "Stress et Équilibre émotionnel" "#E3F2FD" "Peurs et Angoisses" "#FFF0F5" "Confiance et Estime de Soi" "#FFF8E1" "Respiration" "#E8EAF6" "Nuisibles" "#F5F5F5" }}
-            {{ range $name := .Site.Params.besoins }}
-                {{ $icon := index $besoin_icons $name | default "🌿" }}
-                {{ $color := index $besoin_colors $name | default "#F2F0EA" }}
-                {{ $count := 0 }}
-                {{ $url := "" }}
-                {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                    {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        {{ $count = $tax.Count }}
-                        {{ $url = $tax.Page.RelPermalink }}
-                    {{ end }}
-                {{ end }}
-                <a href="{{ if $url }}{{ $url }}{{ else }}{{ printf "categories/%s/" ($name | urlize) | relURL }}{{ end }}" class="category-card-besoin" style="--card-accent: {{ $color }}">
-                    <span class="card-besoin-icon">{{ $icon }}</span>
-                    <h3>{{ $name }}</h3>
-                    <span class="category-count">{{ $count }} {{ if gt $count 1 }}articles{{ else }}article{{ end }}</span>
-                </a>
-            {{ end }}
-        </div>
-    </div>
-</section>
-
-<!-- Latest Articles -->
-<section class="latest-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-eyebrow">Lectures récentes</span>
-            <h2 class="section-title">Derniers articles</h2>
-            <p class="section-subtitle">Nos publications les plus récentes, mises à jour régulièrement.</p>
-        </div>
-        <div class="grid-articles">
-            {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
-            {{ $page := . }}
-            <article class="article-card">
-                {{ with .Params.image }}
-                <a href="{{ $page.RelPermalink }}" class="article-card-image-wrapper">
-                    <img src="{{ . }}" alt="{{ $page.Params.imageAlt | default $page.Title }}" class="article-card-image" loading="lazy">
-                </a>
-                {{ end }}
-                <div class="article-card-body">
-                    <div class="article-meta">
-                        {{ with .Params.categories }}<span class="article-category">{{ index . 0 }}</span>{{ end }}
-                        <time>{{ .Date.Format "2 January 2006" }}</time>
-                    </div>
-                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    <p>{{ .Description }}</p>
-                    <a href="{{ .RelPermalink }}" class="read-more">Lire la suite →</a>
-                </div>
-            </article>
-            {{ end }}
-        </div>
-        <div class="section-cta">
-            <a href="{{ "blog/" | relURL }}" class="btn-secondary">Voir tous les articles</a>
-        </div>
-    </div>
-</section>
-
-<!-- Notre équipe -->
-<section class="authors-home-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-eyebrow">Qui écrit pour vous</span>
-            <h2 class="section-title">Notre équipe éditoriale</h2>
-            <p class="section-subtitle">Des journalistes formés à la phytothérapie et à l'aromathérapie. Indépendance totale, sources scientifiques systématiquement citées.</p>
-        </div>
-        <div class="authors-home-grid">
-            {{ range $slug, $data := hugo.Data.authors }}
-            {{ $articles := where site.RegularPages "Params.author" $slug }}
-            {{ $articles = where $articles "Section" "blog" }}
-            {{ $count := len $articles }}
-            {{ if gt $count 0 }}
-            <a href="{{ (printf "authors/%s/" $slug) | relURL }}" class="author-home-card">
-                {{ with $data.avatar }}
-                <img src="{{ . | relURL }}" alt="{{ $data.name }}" class="author-home-avatar" width="120" height="120" loading="lazy">
-                {{ else }}
-                <span class="author-home-avatar author-avatar-placeholder">{{ slicestr $data.name 0 1 }}</span>
-                {{ end }}
-                <div class="author-home-body">
-                    <h3>{{ $data.name }}</h3>
-                    {{ with index $data.role $lang }}<p class="author-home-role">{{ . }}</p>{{ end }}
-                    {{ with index $data.bio $lang }}<p class="author-home-bio">{{ . | truncate 180 }}</p>{{ end }}
-                    <span class="author-home-meta">{{ $count }} article{{ if gt $count 1 }}s publiés{{ else }} publié{{ end }}<span class="author-home-arrow">→</span></span>
-                </div>
+    <!-- Rubriques -->
+    <nav class="rubrics" aria-label="{{ if $en }}Disciplines{{ else }}Domaines{{ end }}">
+        {{- range $name := .Site.Params.domaines }}
+            {{- $url := "" }}{{ $count := 0 }}{{ $img := "" }}
+            {{- range $key, $tax := $taxo }}
+                {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                    {{- $url = $tax.Page.RelPermalink }}{{ $count = $tax.Count }}
+                    {{- with index ($tax.Pages.ByDate.Reverse | first 1) 0 }}{{ $img = .Params.image }}{{ end }}
+                {{- end }}
+            {{- end }}
+            {{- if $url }}
+            <a href="{{ $url }}" class="rubric">
+                {{- with $img }}<img src="{{ . }}" alt="" loading="lazy" decoding="async">{{ end }}
+                <span class="rubric-label">
+                    <strong>{{ $name }}</strong>
+                    <span>{{ $count }} article{{ if gt $count 1 }}s{{ end }}</span>
+                </span>
             </a>
-            {{ end }}
-            {{ end }}
+            {{- end }}
+        {{- end }}
+    </nav>
+</div>
+
+<!-- A la une -->
+<section class="section">
+    <div class="wrap">
+        <div class="sectionhead">
+            <div>
+                <span class="eyebrow">{{ if $en }}Editor's picks{{ else }}La sélection de la rédaction{{ end }}</span>
+                <h2>{{ if $en }}Top reads{{ else }}À la une{{ end }}</h2>
+                <p>{{ if $en }}Our most thorough guides: brand comparisons, dosages, contraindications.{{ else }}Nos guides les plus approfondis : comparatifs de marques, posologies, contre-indications.{{ end }}</p>
+            </div>
+            <a href="{{ "blog/" | relLangURL }}" class="sectionhead-link">{{ if $en }}Browse all{{ else }}Tout parcourir{{ end }}</a>
+        </div>
+        <div class="cardgrid cardgrid--3">
+            {{- range $lead }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
         </div>
     </div>
 </section>
 
-<!-- Engagement éditorial -->
-<section class="commitment-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-eyebrow">Notre méthodologie</span>
-            <h2 class="section-title">Pourquoi nous faire confiance</h2>
+<!-- Besoins -->
+<section class="section section--surface">
+    <div class="wrap">
+        <div class="sectionhead">
+            <div>
+                <span class="eyebrow">{{ if $en }}By symptom or goal{{ else }}Par symptôme ou objectif{{ end }}</span>
+                <h2>{{ if $en }}Find a natural answer{{ else }}Trouver une solution naturelle{{ end }}</h2>
+                <p>{{ if $en }}From insomnia to digestion, stress or joint pain: our guides sorted by need.{{ else }}De l'insomnie à la digestion, du stress aux douleurs articulaires : nos guides classés par besoin.{{ end }}</p>
+            </div>
         </div>
-        <div class="commitment-grid">
-            <div class="commitment-card">
-                <span class="commitment-icon">🔬</span>
-                <h3>Sources scientifiques</h3>
-                <p>Chaque affirmation s'appuie sur des études publiées, des monographies de plantes (ESCOP, OMS) ou des avis d'experts identifiés.</p>
+        <div class="needsrow">
+            {{- range $name := .Site.Params.besoins }}
+                {{- range $key, $tax := $taxo }}
+                    {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                    <a href="{{ $tax.Page.RelPermalink }}" class="needchip">{{ $name }} <b>{{ $tax.Count }}</b></a>
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        </div>
+    </div>
+</section>
+
+<!-- Tous les articles -->
+<section class="section">
+    <div class="wrap">
+        <div class="sectionhead">
+            <div>
+                <span class="eyebrow">{{ if $en }}Latest{{ else }}Dernières publications{{ end }}</span>
+                <h2>{{ if $en }}All articles{{ else }}Tous les articles{{ end }}</h2>
             </div>
-            <div class="commitment-card">
-                <span class="commitment-icon">⚖️</span>
-                <h3>Indépendance éditoriale</h3>
-                <p>Aucune marque ne nous rémunère pour figurer dans nos guides. Nos comparatifs reflètent uniquement notre analyse.</p>
+            <a href="{{ "blog/" | relLangURL }}" class="sectionhead-link">{{ if $en }}See the {{ len $all }} articles{{ else }}Voir les {{ len $all }} articles{{ end }}</a>
+        </div>
+        <div class="cardgrid cardgrid--3">
+            {{- range first 9 $recent }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Methodologie -->
+<section class="section section--surface">
+    <div class="wrap">
+        <div class="sectionhead">
+            <div>
+                <span class="eyebrow">{{ if $en }}Our method{{ else }}Notre méthodologie{{ end }}</span>
+                <h2>{{ if $en }}Why you can trust us{{ else }}Pourquoi nous faire confiance{{ end }}</h2>
             </div>
-            <div class="commitment-card">
-                <span class="commitment-icon">🩺</span>
-                <h3>Précautions YMYL</h3>
-                <p>Les remèdes naturels ne remplacent pas un avis médical. Contre-indications, interactions et limites systématiquement signalées.</p>
+        </div>
+        <div class="pillars">
+            <div class="pillar">
+                <span class="pillar-num">01</span>
+                <h3>{{ if $en }}Scientific sources{{ else }}Sources scientifiques{{ end }}</h3>
+                <p>{{ if $en }}Every claim relies on published studies, plant monographs (ESCOP, WHO) or named experts.{{ else }}Chaque affirmation s'appuie sur des études publiées, des monographies de plantes (ESCOP, OMS) ou des avis d'experts identifiés.{{ end }}</p>
             </div>
-            <div class="commitment-card">
-                <span class="commitment-icon">🔄</span>
-                <h3>Mises à jour régulières</h3>
-                <p>Nos articles sont relus et actualisés pour rester alignés avec les dernières études et recommandations.</p>
+            <div class="pillar">
+                <span class="pillar-num">02</span>
+                <h3>{{ if $en }}Editorial independence{{ else }}Indépendance éditoriale{{ end }}</h3>
+                <p>{{ if $en }}No brand pays to appear in our guides. Our comparisons reflect our analysis only.{{ else }}Aucune marque ne nous rémunère pour figurer dans nos guides. Nos comparatifs reflètent uniquement notre analyse.{{ end }}</p>
+            </div>
+            <div class="pillar">
+                <span class="pillar-num">03</span>
+                <h3>{{ if $en }}Health precautions{{ else }}Précautions santé{{ end }}</h3>
+                <p>{{ if $en }}Natural remedies never replace medical advice. Contraindications, interactions and limits are always flagged.{{ else }}Les remèdes naturels ne remplacent pas un avis médical. Contre-indications, interactions et limites systématiquement signalées.{{ end }}</p>
+            </div>
+            <div class="pillar">
+                <span class="pillar-num">04</span>
+                <h3>{{ if $en }}Regular updates{{ else }}Mises à jour régulières{{ end }}</h3>
+                <p>{{ if $en }}Our articles are reviewed and refreshed to stay aligned with the latest studies.{{ else }}Nos articles sont relus et actualisés pour rester alignés avec les dernières études et recommandations.{{ end }}</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Redaction -->
+<section class="section">
+    <div class="wrap">
+        <div class="sectionhead">
+            <div>
+                <span class="eyebrow">{{ if $en }}Who writes for you{{ else }}Qui écrit pour vous{{ end }}</span>
+                <h2>{{ if $en }}The desk{{ else }}La rédaction{{ end }}</h2>
+            </div>
+            <a href="{{ "authors/" | relLangURL }}" class="sectionhead-link">{{ if $en }}All writers{{ else }}Tous les auteurs{{ end }}</a>
+        </div>
+        <div class="deskrow">
+            {{- $shown := 0 }}
+            {{- range $slug, $data := site.Data.authors }}
+                {{- $arts := where (where site.RegularPages "Params.author" $slug) "Section" "blog" }}
+                {{- $c := len $arts }}
+                {{- if and (gt $c 0) (lt $shown 3) }}
+                {{- $shown = add $shown 1 }}
+                <a href="{{ (printf "authors/%s/" $slug) | relLangURL }}" class="desk">
+                    {{- with $data.avatar }}
+                    <img src="{{ . | relURL }}" alt="" class="desk-avatar" width="64" height="64" loading="lazy">
+                    {{- else }}
+                    <span class="desk-avatar is-ph">{{ slicestr $data.name 0 1 }}</span>
+                    {{- end }}
+                    <div>
+                        <h3>{{ $data.name }}</h3>
+                        {{- with index $data.role $lang }}<p class="desk-role">{{ . }}</p>{{ end }}
+                        {{- with index $data.bio $lang }}<p class="desk-bio">{{ . | truncate 120 }}</p>{{ end }}
+                        <span class="desk-count">{{ $c }} article{{ if gt $c 1 }}s{{ end }}</span>
+                    </div>
+                </a>
+                {{- end }}
+            {{- end }}
+        </div>
+    </div>
+</section>
 {{ end }}

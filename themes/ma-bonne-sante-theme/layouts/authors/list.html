@@ -1,39 +1,43 @@
 {{ define "main" }}
-{{ $lang := .Site.Language.Lang }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $lang := .Site.Language.Lang -}}
 
-<section class="authors-list-hero">
-    <div class="container">
-        <span class="hero-badge">{{ if eq $lang "en" }}Editorial team{{ else }}Équipe éditoriale{{ end }}</span>
-        <h1>{{ .Title }}</h1>
-        {{ with .Description }}<p class="hero-description">{{ . }}</p>{{ end }}
-    </div>
-</section>
+<div class="wrap">
+    <nav class="crumbs" aria-label="{{ if $en }}Breadcrumb{{ else }}Fil d'ariane{{ end }}">
+        <a href="{{ site.Home.RelPermalink }}">{{ if $en }}Home{{ else }}Accueil{{ end }}</a>
+        <span class="crumbs-sep">/</span>
+        <span aria-current="page">{{ if $en }}The desk{{ else }}La rédaction{{ end }}</span>
+    </nav>
 
-<section class="authors-grid-section">
-    <div class="container">
-        <div class="authors-grid">
-            {{ range $slug, $data := hugo.Data.authors }}
-            {{ $articles := where site.RegularPages "Params.author" $slug }}
-            {{ $articles = where $articles "Section" "blog" }}
-            {{ $count := len $articles }}
-            {{ if gt $count 0 }}
-            <a href="{{ (printf "authors/%s/" $slug) | relURL }}" class="author-card">
-                {{ with $data.avatar }}
-                <img src="{{ . | relURL }}" alt="{{ $data.name }}" class="author-card-avatar" width="96" height="96" loading="lazy">
-                {{ else }}
-                <span class="author-card-avatar author-avatar-placeholder">{{ slicestr $data.name 0 1 }}</span>
-                {{ end }}
-                <div class="author-card-body">
-                    <h3>{{ $data.name }}</h3>
-                    {{ with index $data.role $lang }}<p class="author-card-role">{{ . }}</p>{{ end }}
-                    {{ with index $data.bio $lang }}<p class="author-card-bio">{{ . | truncate 140 }}</p>{{ end }}
-                    <span class="author-card-count">{{ $count }} article{{ if gt $count 1 }}s{{ end }}</span>
-                </div>
-            </a>
-            {{ end }}
-            {{ end }}
+    <header class="listhead">
+        <span class="eyebrow">{{ if $en }}Who writes for you{{ else }}Qui écrit pour vous{{ end }}</span>
+        <h1>{{ .Title | default (cond $en "The desk" "La rédaction") }}</h1>
+        {{- with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="section section--tight">
+        <div class="deskrow">
+            {{- range $slug, $data := site.Data.authors }}
+                {{- $arts := where (where site.RegularPages "Params.author" $slug) "Section" "blog" }}
+                {{- $arts = where $arts "Lang" $lang }}
+                {{- $c := len $arts }}
+                {{- if gt $c 0 }}
+                <a href="{{ (printf "authors/%s/" $slug) | relLangURL }}" class="desk">
+                    {{- with $data.avatar }}
+                    <img src="{{ . | relURL }}" alt="" class="desk-avatar" width="64" height="64" loading="lazy">
+                    {{- else }}
+                    <span class="desk-avatar is-ph">{{ slicestr $data.name 0 1 }}</span>
+                    {{- end }}
+                    <div>
+                        <h3>{{ $data.name }}</h3>
+                        {{- with index $data.role $lang }}<p class="desk-role">{{ . }}</p>{{ end }}
+                        {{- with index $data.bio $lang }}<p class="desk-bio">{{ . | truncate 150 }}</p>{{ end }}
+                        <span class="desk-count">{{ $c }} article{{ if gt $c 1 }}s{{ end }}</span>
+                    </div>
+                </a>
+                {{- end }}
+            {{- end }}
         </div>
-    </div>
-</section>
-
+    </section>
+</div>
 {{ end }}

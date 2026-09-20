@@ -1,137 +1,206 @@
 {{ define "main" }}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $cat := "" -}}{{- with .Params.categories }}{{ $cat = index . 0 }}{{ end -}}
+{{- $author := "" -}}{{- with .Params.author }}{{ $author = index site.Data.authors . }}{{ end -}}
+{{- $hasToc := and (gt (len .TableOfContents) 80) (ne .Params.toc false) -}}
+{{- $url := .Permalink -}}
 
-<article class="single-article">
-    <header class="article-header">
-        <div class="container">
-            <div class="article-meta">
-                {{ with .Params.categories }}
-                <a href="{{ printf "categories/%s/" (index . 0 | urlize) | relURL }}" class="article-category">{{ index . 0 }}</a>
-                {{ end }}
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
-                <span class="reading-time">{{ .ReadingTime }} min de lecture</span>
+<article class="single">
+    <div class="wrap">
+        <nav class="crumbs" aria-label="{{ if $en }}Breadcrumb{{ else }}Fil d'ariane{{ end }}">
+            <a href="{{ site.Home.RelPermalink }}">{{ if $en }}Home{{ else }}Accueil{{ end }}</a>
+            <span class="crumbs-sep">/</span>
+            <a href="{{ "blog/" | relLangURL }}">{{ if $en }}Articles{{ else }}Articles{{ end }}</a>
+            {{- with $cat }}
+            <span class="crumbs-sep">/</span>
+            <a href="{{ printf "categories/%s/" (. | urlize) | relLangURL }}">{{ . }}</a>
+            {{- end }}
+            <span class="crumbs-sep">/</span>
+            <span aria-current="page">{{ .Title | truncate 60 }}</span>
+        </nav>
+
+        <header class="postbanner">
+            <div class="postbanner-media">
+                {{- with .Params.image }}<img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="eager" fetchpriority="high">{{ end }}
             </div>
-            <h1>{{ .Params.h1 | default .Title }}</h1>
-            {{ with .Description }}
-            <p class="article-description">{{ . }}</p>
-            {{ end }}
-            {{ with .Params.author }}
-            {{ $authorData := index hugo.Data.authors . }}
-            {{ $lang := $.Site.Language.Lang }}
-            <a href="{{ (printf "authors/%s/" .) | relURL }}" class="article-author">
-                {{ with $authorData.avatar }}
-                <img src="{{ . | relURL }}" alt="{{ $authorData.name }}" class="article-author-avatar" width="40" height="40" loading="lazy">
-                {{ end }}
-                <span class="article-author-text">
-                    <span class="author-label">Par</span>
-                    <span class="author-name">{{ with $authorData }}{{ .name }}{{ else }}{{ . }}{{ end }}</span>
-                </span>
-            </a>
-            {{ end }}
-            <div class="article-tags">
-                {{ range .Params.tags }}
-                <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag">#{{ . }}</a>
-                {{ end }}
+            <div class="postbanner-body">
+                {{- with $cat }}<a href="{{ printf "categories/%s/" (. | urlize) | relLangURL }}" class="postbanner-cat">{{ . }}</a>{{ end }}
+                <h1>{{ .Params.h1 | default .Title }}</h1>
+                {{- with .Description }}<p class="postbanner-lede">{{ . }}</p>{{ end }}
+                <div class="postmeta">
+                    <span class="postmeta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+                        {{ .ReadingTime }} min{{ if not $en }} de lecture{{ end }}
+                    </span>
+                    <span class="postmeta-item">
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ if $en }}published {{ .Date.Format "Jan 2, 2006" }}{{ else }}publié le {{ .Date.Format "02/01/2006" }}{{ end }}</time>
+                    </span>
+                    {{- if and .Lastmod (gt (.Lastmod.Sub .Date).Hours 48) }}
+                    <span class="postmeta-item">{{ if $en }}updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else }}mis à jour le {{ .Lastmod.Format "02/01/2006" }}{{ end }}</span>
+                    {{- end }}
+                    {{- if $author }}
+                    <a href="{{ (printf "authors/%s/" .Params.author) | relLangURL }}" class="postmeta-author">
+                        {{- with $author.avatar }}<img src="{{ . | relURL }}" alt="" width="26" height="26" loading="lazy">{{ end }}
+                        <span>{{ if $en }}by{{ else }}par{{ end }} <b>{{ $author.name }}</b></span>
+                    </a>
+                    {{- end }}
+                    <span class="postshare">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank" rel="noopener nofollow" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.7.2-1.1 1.3-1.1H17V3h-2.6C11.6 3 11 4.4 11 6.4v2.1H9V12h2v9h3v-9h2.3l.4-3.5H14z"/></svg></a>
+                        <a href="https://twitter.com/intent/tweet?url={{ $url }}&text={{ .Title }}" target="_blank" rel="noopener nofollow" aria-label="X"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.5 6.7L18.9 2zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20z"/></svg></a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" target="_blank" rel="noopener nofollow" aria-label="LinkedIn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 21H3.6V9.2h3.3V21zM5.2 7.8A1.9 1.9 0 1 1 5.2 4a1.9 1.9 0 0 1 0 3.8zM21 21h-3.3v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H10.3V9.2h3.1v1.6h.1a3.4 3.4 0 0 1 3.1-1.7c3.3 0 3.9 2.2 3.9 5V21z"/></svg></a>
+                    </span>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        {{- with .Params.imageCredit }}<p class="postbanner-credit">{{ . }}</p>{{ end }}
 
-    {{ with .Params.image }}
-    <figure class="article-hero">
-        <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}" class="article-hero-image" loading="eager" fetchpriority="high">
-        {{ with $.Params.imageCredit }}<figcaption class="article-hero-credit">{{ . }}</figcaption>{{ end }}
-    </figure>
-    {{ end }}
-
-    <div class="article-content">
-        <div class="article-content-wrapper">
-            {{ if and (gt (len .TableOfContents) 50) (ne .Params.toc false) }}
-            <aside class="article-toc-sidebar" aria-label="Sommaire de l'article">
-                <div class="article-toc-sticky">
-                    <h2 class="article-toc-title">Sommaire</h2>
-                    {{ .TableOfContents }}
-                </div>
+        <div class="postlayout{{ if not $hasToc }} postlayout--nosidebar{{ end }}">
+            {{- if $hasToc }}
+            <aside class="toc" aria-label="{{ if $en }}Table of contents{{ else }}Sommaire{{ end }}">
+                <p class="toc-title">{{ if $en }}In this article{{ else }}Dans cet article{{ end }}</p>
+                <nav>{{ .TableOfContents }}</nav>
             </aside>
-            {{ end }}
-            <div class="article-body">
-            {{ .Content }}
+            {{- end }}
 
-            <!-- Bloc auteur -->
-            {{ with .Params.author }}
-            {{ $authorData := index hugo.Data.authors . }}
-            {{ $lang := $.Site.Language.Lang }}
-            {{ if $authorData }}
-            <aside class="author-block">
-                <a href="{{ (printf "authors/%s/" .) | relURL }}" class="author-block-link">
-                    {{ with $authorData.avatar }}
-                    <img src="{{ . | relURL }}" alt="{{ $authorData.name }}" class="author-block-avatar" width="96" height="96" loading="lazy">
-                    {{ else }}
-                    <span class="author-block-avatar author-avatar-placeholder">{{ slicestr $authorData.name 0 1 }}</span>
-                    {{ end }}
-                </a>
-                <div class="author-block-info">
-                    <span class="author-block-label">À propos de l'auteur</span>
-                    <h4><a href="{{ (printf "authors/%s/" .) | relURL }}">{{ $authorData.name }}</a></h4>
-                    {{ with index $authorData.role $lang }}<p class="author-block-role">{{ . }}</p>{{ end }}
-                    {{ with index $authorData.bio $lang }}<p class="author-block-bio">{{ . }}</p>{{ end }}
-                    {{ with $authorData.expertise }}
-                    <p class="author-block-expertise">
-                        <span class="author-block-expertise-label">Expertise :</span>
-                        {{ range $i, $e := . }}{{ if $i }}, {{ end }}<span>{{ $e }}</span>{{ end }}
-                    </p>
-                    {{ end }}
-                    <a href="{{ (printf "authors/%s/" .) | relURL }}" class="author-block-cta">Voir tous ses articles →</a>
-                </div>
-            </aside>
-            {{ end }}
-            {{ end }}
+            <div class="postbody" id="postbody">
+                {{ .Content }}
+
+                {{- if $author }}
+                <aside class="authorbox">
+                    <a href="{{ (printf "authors/%s/" .Params.author) | relLangURL }}">
+                        {{- with $author.avatar }}
+                        <img src="{{ . | relURL }}" alt="{{ $author.name }}" class="authorbox-avatar" width="84" height="84" loading="lazy">
+                        {{- else }}
+                        <span class="authorbox-avatar is-ph">{{ slicestr $author.name 0 1 }}</span>
+                        {{- end }}
+                    </a>
+                    <div>
+                        <span class="authorbox-label">{{ if $en }}About the author{{ else }}À propos de l'auteur{{ end }}</span>
+                        <h3><a href="{{ (printf "authors/%s/" .Params.author) | relLangURL }}">{{ $author.name }}</a></h3>
+                        {{- with index $author.role $lang }}<p class="authorbox-role">{{ . }}</p>{{ end }}
+                        {{- with index $author.bio $lang }}<p class="authorbox-bio">{{ . }}</p>{{ end }}
+                        {{- with $author.expertise }}
+                        <p class="authorbox-exp">{{ if $en }}Expertise{{ else }}Expertise{{ end }} : {{ delimit . ", " }}</p>
+                        {{- end }}
+                        <a href="{{ (printf "authors/%s/" .Params.author) | relLangURL }}" class="authorbox-cta">{{ if $en }}All articles by {{ $author.name }}{{ else }}Tous les articles de {{ $author.name }}{{ end }} &rarr;</a>
+                    </div>
+                </aside>
+                {{- end }}
+
+                <nav class="postnav" aria-label="{{ if $en }}More articles{{ else }}Autres articles{{ end }}">
+                    {{- with .PrevInSection }}
+                    <a href="{{ .RelPermalink }}">
+                        <span class="pn-label">{{ if $en }}Previous{{ else }}Précédent{{ end }}</span>
+                        <span class="pn-title">{{ .Title }}</span>
+                    </a>
+                    {{- end }}
+                    {{- with .NextInSection }}
+                    <a href="{{ .RelPermalink }}" class="pn-next">
+                        <span class="pn-label">{{ if $en }}Next{{ else }}Suivant{{ end }}</span>
+                        <span class="pn-title">{{ .Title }}</span>
+                    </a>
+                    {{- end }}
+                </nav>
             </div>
         </div>
     </div>
 
-    <footer class="article-footer">
-        <div class="container container-narrow">
-            <nav class="article-nav">
-                {{ with .PrevInSection }}
-                <a href="{{ .RelPermalink }}" class="nav-prev">
-                    <span class="nav-label">Article précédent</span>
-                    <span class="nav-title">{{ .Title }}</span>
-                </a>
-                {{ end }}
-                {{ with .NextInSection }}
-                <a href="{{ .RelPermalink }}" class="nav-next">
-                    <span class="nav-label">Article suivant</span>
-                    <span class="nav-title">{{ .Title }}</span>
-                </a>
-                {{ end }}
-            </nav>
+    {{- $rel := first 3 (where (where .Site.RegularPages "Section" "blog") "RelPermalink" "!=" .RelPermalink).ByDate.Reverse }}
+    {{- if $cat }}
+        {{- $pool := slice }}
+        {{- range (where (where .Site.RegularPages "Section" "blog") "RelPermalink" "!=" .RelPermalink).ByDate.Reverse }}
+            {{- $match := false }}
+            {{- range .Params.categories }}{{ if eq (lower .) (lower $cat) }}{{ $match = true }}{{ end }}{{ end }}
+            {{- if $match }}{{ $pool = $pool | append . }}{{ end }}
+        {{- end }}
+        {{- if ge (len $pool) 3 }}{{ $rel = first 3 $pool }}{{ end }}
+    {{- end }}
+
+    {{- if $rel }}
+    <section class="section section--surface">
+        <div class="wrap">
+            <div class="sectionhead">
+                <div>
+                    <span class="eyebrow">{{ if $en }}Keep reading{{ else }}Pour aller plus loin{{ end }}</span>
+                    <h2>{{ if $en }}Related articles{{ else }}Articles similaires{{ end }}</h2>
+                </div>
+                {{- with $cat }}<a href="{{ printf "categories/%s/" (. | urlize) | relLangURL }}" class="sectionhead-link">{{ if $en }}All in{{ else }}Tout voir dans{{ end }} {{ . }}</a>{{ end }}
+            </div>
+            <div class="cardgrid cardgrid--3">
+                {{- range $rel }}{{ partial "pcard.html" (dict "p" .) }}{{ end }}
+            </div>
         </div>
-    </footer>
+    </section>
+    {{- end }}
 </article>
 
 <script>
-// TOC active state (intersection observer + smooth scroll offset)
-(function() {
-    var tocLinks = document.querySelectorAll('.article-toc-sticky a');
-    if (!tocLinks.length) return;
-    var headings = [];
-    tocLinks.forEach(function(a) {
-        var id = a.getAttribute('href');
-        if (id && id.indexOf('#') === 0) {
-            var h = document.getElementById(decodeURIComponent(id.slice(1)));
-            if (h) headings.push({ link: a, heading: h });
+(function () {
+    var body = document.getElementById('postbody');
+    if (!body) return;
+
+    // Tableaux : enveloppe scrollable
+    body.querySelectorAll('table').forEach(function (t) {
+        if (t.parentElement && t.parentElement.classList.contains('tablewrap')) return;
+        var w = document.createElement('div');
+        w.className = 'tablewrap';
+        t.parentNode.insertBefore(w, t);
+        w.appendChild(t);
+    });
+
+    // Encart "En bref" : premier blockquote contenant une liste
+    var firstQuote = body.querySelector('blockquote');
+    if (firstQuote && firstQuote.querySelector('ul, ol')) firstQuote.classList.add('is-keypoints');
+
+    // Sommaire inline : h2 "Sommaire" + liste suivante
+    var heads = body.querySelectorAll('h2');
+    for (var i = 0; i < heads.length; i++) {
+        var txt = heads[i].textContent.trim().toLowerCase();
+        if (txt === 'sommaire' || txt === 'table of contents' || txt === 'contents') {
+            var next = heads[i].nextElementSibling;
+            if (next && (next.tagName === 'UL' || next.tagName === 'OL')) {
+                var box = document.createElement('div');
+                box.className = 'inline-toc';
+                heads[i].parentNode.insertBefore(box, heads[i]);
+                box.appendChild(heads[i]);
+                box.appendChild(next);
+            }
+            break;
+        }
+    }
+
+    // Sommaire lateral : retire l'entree "Sommaire" (doublon du bloc inline)
+    document.querySelectorAll('.toc nav a').forEach(function (a) {
+        var t = a.textContent.trim().toLowerCase();
+        if (t === 'sommaire' || t === 'table of contents' || t === 'contents') {
+            var li = a.closest('li');
+            if (li) li.remove(); else a.remove();
         }
     });
-    if (!headings.length) return;
-    var io = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            var match = headings.find(function(h) { return h.heading === entry.target; });
-            if (match && entry.isIntersecting) {
-                tocLinks.forEach(function(a) { a.classList.remove('active'); });
-                match.link.classList.add('active');
-            }
+
+    // Sommaire lateral : lien actif
+    var links = document.querySelectorAll('.toc nav a');
+    if (!links.length) return;
+    var pairs = [];
+    links.forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (href && href.charAt(0) === '#') {
+            var h = document.getElementById(decodeURIComponent(href.slice(1)));
+            if (h) pairs.push({ link: a, head: h });
+        }
+    });
+    if (!pairs.length) return;
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            var m = pairs.find(function (p) { return p.head === e.target; });
+            if (!m) return;
+            links.forEach(function (a) { a.classList.remove('active'); });
+            m.link.classList.add('active');
         });
-    }, { rootMargin: '-100px 0px -60% 0px' });
-    headings.forEach(function(h) { io.observe(h.heading); });
+    }, { rootMargin: '-90px 0px -62% 0px' });
+    pairs.forEach(function (p) { io.observe(p.head); });
 })();
 </script>
 {{ end }}

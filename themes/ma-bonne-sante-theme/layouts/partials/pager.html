@@ -1,0 +1,17 @@
+{{- $p := .Paginator -}}
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- if gt $p.TotalPages 1 }}
+<nav class="pager" aria-label="Pagination">
+    {{- if $p.HasPrev }}<a href="{{ $p.Prev.URL }}" aria-label="{{ if $en }}Previous{{ else }}Précédent{{ end }}">&lsaquo;</a>{{ else }}<span class="is-disabled">&lsaquo;</span>{{ end }}
+    {{- $cur := $p.PageNumber }}
+    {{- range $p.Pagers }}
+        {{- $n := .PageNumber }}
+        {{- if or (eq $n 1) (eq $n $p.TotalPages) (and (ge $n (sub $cur 1)) (le $n (add $cur 1))) }}
+            {{- if eq $n $cur }}<span class="is-current" aria-current="page">{{ $n }}</span>
+            {{- else }}<a href="{{ .URL }}">{{ $n }}</a>{{ end }}
+        {{- else if or (eq $n (sub $cur 2)) (eq $n (add $cur 2)) }}<span class="is-disabled">…</span>
+        {{- end }}
+    {{- end }}
+    {{- if $p.HasNext }}<a href="{{ $p.Next.URL }}" aria-label="{{ if $en }}Next{{ else }}Suivant{{ end }}">&rsaquo;</a>{{ else }}<span class="is-disabled">&rsaquo;</span>{{ end }}
+</nav>
+{{- end }}

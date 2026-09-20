@@ -1,93 +1,91 @@
+{{- $en := eq .Site.Language.Lang "en" -}}
+{{- $taxo := .Site.Taxonomies.categories -}}
 <header class="site-header">
-    <div class="header-container">
-        <a href="{{ site.Home.RelPermalink }}" class="site-logo">
-            {{ with .Site.Params.logo }}
-            <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" width="40" height="40">
-            {{ end }}
-            <span class="site-logo-text">{{ .Site.Title }}</span>
+    <div class="header-inner">
+        <a href="{{ site.Home.RelPermalink }}" class="brandmark">
+            {{ with .Site.Params.logo }}<img src="{{ . | relURL }}" alt="" width="32" height="32">{{ end }}
+            <span class="brandmark-text">
+                <span class="brandmark-name">{{ .Site.Title }}</span>
+                <span class="brandmark-sub">{{ if $en }}The natural health review{{ else }}Le magazine de la santé naturelle{{ end }}</span>
+            </span>
         </a>
 
-        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
-            <span class="hamburger"></span>
-        </button>
-
-        <nav class="site-nav" role="navigation">
-            <a href="{{ site.Home.RelPermalink }}" class="nav-link">Accueil</a>
-
-            <!-- Dropdown Catégories -->
-            <div class="nav-dropdown">
-                <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
-                    Catégories <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <nav class="mainnav" id="mainnav" role="navigation" aria-label="{{ if $en }}Main{{ else }}Principale{{ end }}">
+            <div class="navdrop">
+                <button class="navtrigger" aria-expanded="false" aria-controls="drop-domaines" type="button">
+                    {{ if $en }}Disciplines{{ else }}Domaines{{ end }}
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
-                <div class="nav-dropdown-menu">
-                    {{ range .Site.Params.domaines }}
-                    {{ $name := . }}
-                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        <a href="{{ $tax.Page.RelPermalink }}" class="nav-dropdown-item">{{ $name }}</a>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
+                <div class="navdrop-panel" id="drop-domaines">
+                    {{- range $name := .Site.Params.domaines }}
+                        {{- range $key, $tax := $taxo }}
+                            {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                            <a href="{{ $tax.Page.RelPermalink }}" class="navdrop-item">{{ $name }}<span class="navdrop-count">{{ $tax.Count }}</span></a>
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
                 </div>
             </div>
 
-            <!-- Dropdown Besoins -->
-            <div class="nav-dropdown">
-                <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
-                    Besoins <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="navdrop">
+                <button class="navtrigger" aria-expanded="false" aria-controls="drop-besoins" type="button">
+                    {{ if $en }}Needs{{ else }}Besoins{{ end }}
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
-                <div class="nav-dropdown-menu">
-                    {{ range .Site.Params.besoins }}
-                    {{ $name := . }}
-                    {{ range $key, $tax := $.Site.Taxonomies.categories }}
-                        {{ if eq (lower $name) (lower $tax.Page.Title) }}
-                        <a href="{{ $tax.Page.RelPermalink }}" class="nav-dropdown-item">{{ $name }}</a>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
+                <div class="navdrop-panel navdrop-panel--wide" id="drop-besoins">
+                    {{- range $name := .Site.Params.besoins }}
+                        {{- range $key, $tax := $taxo }}
+                            {{- if eq (lower $name) (lower $tax.Page.Title) }}
+                            <a href="{{ $tax.Page.RelPermalink }}" class="navdrop-item">{{ $name }}<span class="navdrop-count">{{ $tax.Count }}</span></a>
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
                 </div>
             </div>
 
-            <a href="{{ "blog/" | relLangURL }}" class="nav-link">Blog</a>
-            <a href="{{ "authors/" | relLangURL }}" class="nav-link">Auteurs</a>
+            <a href="{{ "blog/" | relLangURL }}">{{ if $en }}All articles{{ else }}Tous les articles{{ end }}</a>
+            <a href="{{ "authors/" | relLangURL }}">{{ if $en }}The desk{{ else }}La rédaction{{ end }}</a>
         </nav>
+
+        <div class="header-actions">
+            <button class="iconbtn" id="search-open" type="button" aria-label="{{ if $en }}Search{{ else }}Rechercher{{ end }}">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            </button>
+            <a href="{{ "blog/" | relLangURL }}" class="btn btn--primary btn--sm">{{ if $en }}Read the magazine{{ else }}Lire le magazine{{ end }}</a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mainnav" aria-label="Menu" type="button"><span></span></button>
+        </div>
     </div>
 </header>
 
 <script>
-// Mobile menu toggle
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('.site-nav');
-    const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', !expanded);
-    nav.classList.toggle('nav-open');
-});
-
-// Dropdown toggles (mobile + desktop click fallback)
-document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-        e.preventDefault();
-        const dropdown = this.parentElement;
-        const isOpen = dropdown.classList.contains('open');
-        // Close all other dropdowns
-        document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
-            d.classList.remove('open');
-            d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-            dropdown.classList.add('open');
-            this.setAttribute('aria-expanded', 'true');
-        }
-    });
-});
-
-// Close dropdowns when clicking outside
-document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav-dropdown')) {
-        document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
-            d.classList.remove('open');
-            d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+(function () {
+    var burger = document.getElementById('burger');
+    var nav = document.getElementById('mainnav');
+    if (burger && nav) {
+        burger.addEventListener('click', function () {
+            var open = nav.classList.toggle('is-open');
+            burger.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
     }
-});
+    document.querySelectorAll('.navtrigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            var drop = this.parentElement;
+            var open = drop.classList.contains('is-open');
+            document.querySelectorAll('.navdrop.is-open').forEach(function (d) {
+                d.classList.remove('is-open');
+                d.querySelector('.navtrigger').setAttribute('aria-expanded', 'false');
+            });
+            if (!open) { drop.classList.add('is-open'); this.setAttribute('aria-expanded', 'true'); }
+        });
+    });
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.navdrop')) {
+            document.querySelectorAll('.navdrop.is-open').forEach(function (d) {
+                d.classList.remove('is-open');
+                d.querySelector('.navtrigger').setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+})();
 </script>
