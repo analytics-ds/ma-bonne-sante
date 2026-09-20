@@ -73,7 +73,7 @@ Les études épidémiologiques estiment qu'entre 60 et 75 % de la population fra
 
 L'aubépine (Crataegus monogyna, C. laevigata) est la plante cardiovasculaire la mieux documentée dans la tradition phytothérapeutique européenne. Elle agit à deux niveaux : régulation du rythme cardiaque (propriétés antiarythmiques légères) et amélioration de la perfusion coronarienne.
 
-En gemmothérapie, le macérat de bourgeon d'aubépine est utilisé pour les troubles du rythme fonctionnel associant palpitations, anxiété et tension artérielle légèrement élevée. Les principes actifs du bourgeon (proanthocyanidines, flavonoïdes, vitexine) sont présents en concentration plus élevée que dans les feuilles et fleurs utilisées en phytothérapie classique.
+En gemmothérapie, le macérat de bourgeon d'aubépine est utilisé pour les troubles du rythme fonctionnel associant palpitations, anxiété et tension artérielle légèrement élevée. Les principes actifs du bourgeon (proanthocyanidines, flavonoïdes, vitexine) sont présents en concentration plus élevée que dans les feuilles et fleurs utilisées en phytothérapie classique. Ce bourgeon d'aubépine figure d'ailleurs dans la plupart des gammes recensées parmi les [meilleurs compléments pour la circulation sanguine](/blog/meilleurs-complements-circulation-sanguine/).
 
 La [gemmothérapie et ses applications pour le système cardiovasculaire](/blog/gemmotherapie-decouvrir-bourgeons/) détaille les protocoles d'utilisation des bourgeons en pratique.
 

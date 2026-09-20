@@ -88,7 +88,7 @@ Indications:
 - Beginning or convalescing **burn-out**
 - **Convalescence** after great fatigue
 
-Dosage: 10 drops in the morning on empty stomach and 10 drops in early afternoon, over 3 weeks, in cure repeated 1 to 2 times a year. The same 3 week rhythm governs the bottles sold by the [best urinary tract supplement brands](/en/blog/best-urinary-tract-supplement-brands/), at 5 to 15 drops a day.
+Dosage: 10 drops in the morning on empty stomach and 10 drops in early afternoon, over 3 weeks, in cure repeated 1 to 2 times a year. The same 3 week rhythm governs the bottles sold by the [best urinary tract supplement brands](/en/blog/best-urinary-tract-supplement-brands/), at 5 to 15 drops a day, and the [best blood circulation supplements](/en/blog/best-blood-circulation-supplements/) follow the same dosing logic.
 
 ### Chronic Stress
 

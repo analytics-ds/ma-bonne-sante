@@ -70,7 +70,7 @@ The standard adult dosage is between 5 and 15 drops of mother macerate diluted i
 
 ## Interactions with medical treatments: when to consult a doctor?
 
-Certain buds interact with common treatments. Blackcurrant, for example, can potentiate the effect of anticoagulants and interfere with cortisone treatment due to its action on the adrenal glands. Medical advice is recommended before any cure for people on chronic treatment: anticoagulants, corticosteroids, hormone therapy, or immunosuppressants.
+Certain buds interact with common treatments. Blackcurrant, for example, can potentiate the effect of anticoagulants and interfere with cortisone treatment due to its action on the adrenal glands. Medical advice is recommended before any cure for people on chronic treatment: anticoagulants, corticosteroids, hormone therapy, or immunosuppressants. The same caution applies to the plants found in the [best blood circulation supplements](/en/blog/best-blood-circulation-supplements/), ginkgo biloba and red vine leaf in particular.
 
 Consulting a doctor or a pharmacist trained in herbal medicine is also advised in case of doubt about an interaction, or before combining several buds in the same cure. As with other natural remedies, [the dangers and contraindications of black seed oil](/en/blog/black-seed-oil-dangers/) are a reminder that even plant-based products can require this kind of precaution.
 

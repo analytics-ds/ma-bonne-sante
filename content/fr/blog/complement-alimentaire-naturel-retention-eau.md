@@ -101,7 +101,7 @@ Avant de comparer les marques en détail, encore faut-il reconnaître les plante
 
 Le pissenlit (Taraxacum officinale) est le point d'entrée le plus fréquent. Sa racine et ses feuilles sont utilisées depuis des siècles pour soutenir l'élimination, et il figure dans la quasi-totalité des draineurs de plantes.
 
-L'orthosiphon, ou thé de Java, est l'autre pilier. La vigne rouge, elle, vise un public différent : celui dont la rétention d'eau s'accompagne de jambes lourdes, où le problème est autant circulatoire que rénal.
+L'orthosiphon, ou thé de Java, est l'autre pilier. La vigne rouge, elle, vise un public différent : celui dont la rétention d'eau s'accompagne de jambes lourdes, où le problème est autant circulatoire que rénal. Dans ce cas de figure, le comparatif des [meilleurs compléments pour la circulation sanguine](/blog/meilleurs-complements-circulation-sanguine/) recense les marques qui travaillent spécifiquement ce versant.
 
 ## Quelle marque choisir selon son profil ?
 

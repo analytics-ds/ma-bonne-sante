@@ -101,7 +101,7 @@ Before comparing the brands in detail, you need to recognise the plants that rec
 
 Dandelion (Taraxacum officinale) is the most common starting point. Its root and leaves have been used for centuries to support elimination, and it appears in almost every plant-based drainer.
 
-Orthosiphon, or Java tea, is the other pillar. Red vine leaf, on the other hand, targets a different audience: those whose water retention comes with heavy legs, where the problem is as much circulatory as renal.
+Orthosiphon, or Java tea, is the other pillar. Red vine leaf, on the other hand, targets a different audience: those whose water retention comes with heavy legs, where the problem is as much circulatory as renal. For that profile, the comparison of the [best blood circulation supplements](/en/blog/best-blood-circulation-supplements/) lists the brands working specifically on that side.
 
 ## Which brand to choose for your profile?
 

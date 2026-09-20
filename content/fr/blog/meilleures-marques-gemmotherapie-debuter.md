@@ -108,7 +108,7 @@ Le Bourgeon de cassis est le point d'entrée le plus fréquent. Son rôle tradit
 
 Le Bourgeon de figuier, lui, est traditionnellement associé à la détente et au confort digestif des périodes de stress. Son usage et sa posologie sont décrits dans l'article dédié au [bourgeon de figuier](/blog/bourgeon-figuier-utilisation-bienfaits/). Le tilleul complète ce trio de départ pour les questions de sommeil.
 
-Toutes les marques du comparatif proposent ces trois Bourgeons en unitaire. La différence se joue surtout sur les complexes, où HerbalGem et Santarôme prennent l'avantage avec des formules prêtes à l'emploi.
+Toutes les marques du comparatif proposent ces trois Bourgeons en unitaire. La différence se joue surtout sur les complexes, où HerbalGem et Santarôme prennent l'avantage avec des formules prêtes à l'emploi. Sur un besoin plus ciblé comme les jambes lourdes, le panorama des [meilleurs compléments pour la circulation sanguine](/blog/meilleurs-complements-circulation-sanguine/) compare la gemmothérapie aux gammes de phytothérapie classique.
 
 ## Quelle marque choisir selon son profil ?
 

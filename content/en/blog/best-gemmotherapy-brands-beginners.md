@@ -108,7 +108,7 @@ The blackcurrant bud is the most frequent entry point. Its traditional role on v
 
 The fig bud, for its part, is traditionally associated with relaxation and digestive comfort during stressful periods. Its use and dosage are described in the dedicated article on the [fig bud](/en/blog/fig-bud-uses-benefits/). Lime completes this starter trio for sleep matters.
 
-All the brands in the comparison offer these three buds as single macerates. The difference plays out mainly on the complexes, where HerbalGem and Santarôme take the lead with ready-to-use formulas.
+All the brands in the comparison offer these three buds as single macerates. The difference plays out mainly on the complexes, where HerbalGem and Santarôme take the lead with ready-to-use formulas. On a more targeted need such as heavy legs, the overview of the [best blood circulation supplements](/en/blog/best-blood-circulation-supplements/) sets gemmotherapy against conventional herbal ranges.
 
 ## Which brand to choose for your profile?
 
