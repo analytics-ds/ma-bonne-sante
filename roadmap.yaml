@@ -363,10 +363,10 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-09-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-22"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-ameliorer-digestion-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/how-to-improve-digestion-naturally/"
     error: null
 
   # ============ Semaine 39 (21/09 - 27/09) ============
