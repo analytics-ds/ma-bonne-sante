@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 39 (21/09/2026 - 27/09/2026)
+- 2026-09-25 | Quelles huiles essentielles pour le rhume ? (FR+EN) | Respiration | auto | mode: datafer | score: 66/50 | image: pexels | AIO: Non declenchee
 - 2026-09-22 | Comment améliorer la digestion naturellement (FR+EN) | Digestion et Detox | auto | mode: crazyserp | score: non mesure | image: pexels | AIO: Non declenchee | DATAFER: brief status failed (id 007ccb66-5077-4323-ae27-8d34984a806f), repli crazyserp
 
 ## Semaine 38 (14/09/2026 - 20/09/2026)

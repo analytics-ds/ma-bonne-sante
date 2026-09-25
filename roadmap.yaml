@@ -375,10 +375,10 @@ articles:
     volume: 140
     kd: null
     scheduled_date: "2026-09-22"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/quelles-huiles-essentielles-rhume/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oils-common-cold/"
     error: null
 
   - kw: "quelle plante pour eviter les reveils nocturnes"
