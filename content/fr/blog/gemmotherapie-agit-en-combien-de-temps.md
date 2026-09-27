@@ -2,7 +2,7 @@
 translationKey: "gemmotherapie-agit-en-combien-de-temps"
 title: "Gemmothérapie : en combien de temps agit-elle ?"
 date: "2026-08-21"
-lastmod: "2026-08-21"
+lastmod: "2026-09-27"
 publishDate: "2026-08-21"
 description: "La gemmothérapie agit en quelques jours pour un trouble aigu et en plusieurs semaines pour un trouble chronique, sur une cure de 21 jours."
 categories: ["Gemmothérapie"]
@@ -60,7 +60,7 @@ Pour une allergie saisonnière par exemple, la [gemmothérapie de cassis](/blog/
 
 ## Quelle est la durée idéale d'une cure de bourgeons
 
-Le protocole le plus répandu en gemmothérapie repose sur des **cures de 21 jours**, suivies d'**une semaine de pause**, un cycle qui peut être répété sur 2 à 3 mois selon les besoins physiologiques. Pour un trouble aigu, une cure courte de 7 à 14 jours suffit généralement à relancer les mécanismes d'autoguérison.
+Le protocole le plus répandu en gemmothérapie repose sur des **cures de 21 jours**, suivies d'**une semaine de pause**, un cycle qui peut être répété sur 2 à 3 mois selon les besoins physiologiques. Les cures liées au cycle féminin se calent plutôt sur trois cycles menstruels, comme le montre le comparatif des [marques de complément SPM et confort menstruel](/blog/marques-complement-spm-confort-menstruel/). Pour un trouble aigu, une cure courte de 7 à 14 jours suffit généralement à relancer les mécanismes d'autoguérison.
 
 La posologie standard chez l'adulte se situe entre **5 et 15 gouttes de macérat-mère**, diluées dans un peu d'eau, **1 à 3 fois par jour**, à distance des repas. Pour bien démarrer, le choix du macérat compte autant que la posologie : consulter les [meilleures marques de gemmothérapie pour débuter](/blog/meilleures-marques-gemmotherapie-debuter/) permet d'éviter les produits mal dosés ou de qualité incertaine, qui retardent d'autant les résultats.
 

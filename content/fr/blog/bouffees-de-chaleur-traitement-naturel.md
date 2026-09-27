@@ -3,7 +3,7 @@ translationKey: "natural-hot-flashes-treatment"
 title: "Bouffées de chaleur traitement naturel : guide complet"
 h1: "Quel traitement naturel pour les bouffées de chaleur de la ménopause ?"
 date: "2026-05-27"
-lastmod: "2026-08-24"
+lastmod: "2026-09-27"
 publishDate: "2026-05-27"
 description: "Bouffées de chaleur et traitement naturel : sauge, actée à grappes noires, houblon, gemmothérapie. Le guide complet pour soulager durablement."
 categories: ["Bien-être Féminin"]
@@ -106,7 +106,7 @@ Voir aussi notre article sur les [meilleures marques de compléments alimentaire
 
 **Maca** (Lepidium meyenii) : adaptogène andin qui soutient l'énergie, la libido et la régulation hormonale. 1500 à 3000 mg par jour.
 
-**Gemmothérapie** : le **bourgeon de framboisier** (Rubus idaeus) est régulateur hormonal féminin, complément utile aux plantes précédentes. Cf. l'article sur la [gemmothérapie en général](/blog/gemmotherapie-decouvrir-bourgeons/).
+**Gemmothérapie** : le **bourgeon de framboisier** (Rubus idaeus) est régulateur hormonal féminin, complément utile aux plantes précédentes. Avant la ménopause, on le retrouve aussi dans plusieurs formules de [complément SPM et confort menstruel](/blog/marques-complement-spm-confort-menstruel/). Cf. l'article sur la [gemmothérapie en général](/blog/gemmotherapie-decouvrir-bourgeons/).
 
 ## L'homéopathie : un soutien à personnaliser
 

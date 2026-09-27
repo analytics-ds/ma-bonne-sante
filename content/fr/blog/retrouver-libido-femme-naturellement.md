@@ -2,7 +2,7 @@
 title: "Libido féminine : retrouver l'envie naturellement"
 translationKey: "retrouver-libido-femme-naturellement"
 date: 2026-05-02
-lastmod: 2026-05-02
+lastmod: 2026-09-27
 publishDate: 2026-05-02
 description: "Ménopause, stress, pilule : causes de la baisse de libido chez la femme et solutions naturelles avec la maca, l'ashwagandha et les plantes adaptogènes."
 categories: ["Bien-être Féminin"]
@@ -29,7 +29,7 @@ La **libido féminine** est un indicateur de santé globale influencé par de no
 
 ## Libido féminine : variabilité normale et signaux d'alerte
 
-La libido féminine varie considérablement d'une femme à l'autre et au cours de la vie d'une même femme. Cycles menstruels, grossesse, allaitement, stress professionnel, évolution de la relation de couple : de nombreux facteurs créent des fluctuations normales du désir.
+La libido féminine varie considérablement d'une femme à l'autre et au cours de la vie d'une même femme. Cycles menstruels, grossesse, allaitement, stress professionnel, évolution de la relation de couple : de nombreux facteurs créent des fluctuations normales du désir. La seconde moitié du cycle joue souvent sur l'envie, un point abordé dans notre comparatif des [compléments pour le SPM et le confort menstruel](/blog/marques-complement-spm-confort-menstruel/).
 
 Le diagnostic de "trouble du désir hypoactif" (TDSH) est posé lorsque la baisse de désir est persistante (au moins 6 mois), cause une souffrance personnelle ou relationnelle, et ne s'explique pas entièrement par un autre trouble médical. Selon les études épidémiologiques, environ 30 à 40 % des femmes expérimentent une baisse de libido à un moment de leur vie, et 10 à 15 % souffrent d'un TDSH persistant.
 

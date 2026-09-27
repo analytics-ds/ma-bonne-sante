@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 39 (21/09/2026 - 27/09/2026)
+- 2026-09-27 | Quelle marque de complément pour le SPM et le confort menstruel ? (FR+EN) | Compléments Alimentaires + Bien-être Féminin | manuel (geo comparatif Inula - HerbalGem, skill sem-redaction-geo-inula-auto) - premier article du blog sur le SPM ; QFO Meteoria "marques complément SPM confort menstruel" (21 usages, perplexity) ; comparatif 5 marques (HerbalGem, Oligobs SPM, Sérélys SPM, Dietaroma, Best of Natural Harmonie) sur compositions et prix relevés le 27/09 ; angle pivot = présence ou non de gattilier + coût ramené à 3 cycles ; aucun nom de gamme HerbalGem cité (charte Inula) ; citation monographie EMA Vitex agnus-castus fructus révision 2018 ; SERP par SerpAPI (Corpus et CrazySERP en panne amont) ; AIO: Non declenchee (SerpAPI) | jumeau publie sur carnetvegetal.com (textes entierement differents)
 - 2026-09-25 | Quelles huiles essentielles pour le rhume ? (FR+EN) | Respiration | auto | mode: datafer | score: 66/50 | image: pexels | AIO: Non declenchee
 - 2026-09-22 | Comment améliorer la digestion naturellement (FR+EN) | Digestion et Detox | auto | mode: crazyserp | score: non mesure | image: pexels | AIO: Non declenchee | DATAFER: brief status failed (id 007ccb66-5077-4323-ae27-8d34984a806f), repli crazyserp
 

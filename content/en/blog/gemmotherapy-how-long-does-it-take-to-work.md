@@ -2,7 +2,7 @@
 translationKey: "gemmotherapie-agit-en-combien-de-temps"
 title: "Gemmotherapy: How Long Does It Take to Work?"
 date: "2026-08-21"
-lastmod: "2026-08-21"
+lastmod: "2026-09-27"
 publishDate: "2026-08-21"
 description: "Gemmotherapy acts within days for a temporary issue and within several weeks for a chronic one, based on a typical 21-day course of bud extracts."
 categories: ["Gemmotherapy"]
@@ -60,7 +60,7 @@ For a seasonal allergy, for instance, [blackcurrant bud gemmotherapy](/en/blog/b
 
 ## What is the ideal length for a bud extract course
 
-The most common gemmotherapy protocol relies on **21-day courses**, followed by **a one-week break**, a cycle that can be repeated over 2 to 3 months depending on physiological needs. For an acute issue, a short 7 to 14-day course is usually enough to restart the body's self-healing mechanisms.
+The most common gemmotherapy protocol relies on **21-day courses**, followed by **a one-week break**, a cycle that can be repeated over 2 to 3 months depending on physiological needs. Courses linked to the female cycle tend to follow three menstrual cycles instead, as shown in our comparison of [PMS and menstrual comfort supplement brands](/en/blog/pms-menstrual-comfort-supplement-brands/). For an acute issue, a short 7 to 14-day course is usually enough to restart the body's self-healing mechanisms.
 
 The standard adult dosage ranges from **5 to 15 drops of mother macerate**, diluted in a little water, **1 to 3 times a day**, away from meals. To get off to a good start, choosing the right macerate matters just as much as the dosage: checking the [best gemmotherapy brands for beginners](/en/blog/best-gemmotherapy-brands-beginners/) helps avoid poorly dosed or uncertain-quality products, which only delay results further.
 

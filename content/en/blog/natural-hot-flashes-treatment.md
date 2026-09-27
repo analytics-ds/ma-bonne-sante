@@ -3,7 +3,7 @@ translationKey: "natural-hot-flashes-treatment"
 title: "Natural Hot Flashes Treatment: Complete Guide"
 h1: "What Natural Treatment for Menopause Hot Flashes?"
 date: "2026-05-27"
-lastmod: "2026-08-24"
+lastmod: "2026-09-27"
 publishDate: "2026-05-27"
 description: "Natural hot flashes treatment: sage, black cohosh, hops, gemmotherapy. Complete guide for lasting relief during menopause."
 categories: ["Women's Wellness"]
@@ -106,7 +106,7 @@ See also our article on the [best menopause supplement brands](/en/blog/best-men
 
 **Maca** (Lepidium meyenii): Andean adaptogen that supports energy, libido and hormonal regulation. 1500 to 3000 mg per day.
 
-**Gemmotherapy**: the **raspberry bud** (Rubus idaeus) is a female hormone regulator, useful complement to previous plants. See the article on [gemmotherapy in general](/en/blog/fig-bud-uses-benefits/).
+**Gemmotherapy**: the **raspberry bud** (Rubus idaeus) is a female hormone regulator, useful complement to previous plants. Before menopause, it also appears in several [PMS and menstrual comfort supplement](/en/blog/pms-menstrual-comfort-supplement-brands/) formulas. See the article on [gemmotherapy in general](/en/blog/fig-bud-uses-benefits/).
 
 ## Homeopathy: Personalized Support
 

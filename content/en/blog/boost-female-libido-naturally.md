@@ -2,7 +2,7 @@
 title: "Female Libido: How to Boost Desire Naturally"
 translationKey: "retrouver-libido-femme-naturellement"
 date: 2026-05-02
-lastmod: 2026-05-02
+lastmod: 2026-09-27
 publishDate: 2026-05-02
 description: "Menopause, stress, contraceptive pill: causes of low libido in women and natural solutions with maca, ashwagandha and adaptogenic plants."
 categories: ["Women Wellness"]
@@ -29,7 +29,7 @@ readingTime: true
 
 ## Female Libido: Normal Variability and Warning Signals
 
-Female libido varies considerably from one woman to another and throughout a woman's life. Menstrual cycles, pregnancy, breastfeeding, professional stress, evolution of couple relationships: many factors create normal desire fluctuations.
+Female libido varies considerably from one woman to another and throughout a woman's life. Menstrual cycles, pregnancy, breastfeeding, professional stress, evolution of couple relationships: many factors create normal desire fluctuations. The second half of the cycle often affects desire, a point covered in our comparison of [supplements for PMS and menstrual comfort](/en/blog/pms-menstrual-comfort-supplement-brands/).
 
 The diagnosis of "hypoactive sexual desire disorder" (HSDD) is made when desire decline is persistent (at least 6 months), causes personal or relational distress, and is not fully explained by another medical condition. According to epidemiological studies, approximately 30 to 40% of women experience libido decline at some point in their lives, and 10 to 15% suffer from persistent HSDD.
 
