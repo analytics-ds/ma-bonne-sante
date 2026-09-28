@@ -32,11 +32,11 @@ articles:
     volume: 400
     kd: null
     scheduled_date: "2026-04-25"
-    status: queued
+    status: done
     queued_date: "2026-04-25"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-04-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-stress-anxiete/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-stress-anxiety/"
     error: null
 
   - kw: "quelle est la meilleure tisane pour dormir"
@@ -44,11 +44,11 @@ articles:
     volume: 300
     kd: null
     scheduled_date: "2026-04-28"
-    status: queued
+    status: done
     queued_date: "2026-04-25"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-04-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/meilleure-tisane-pour-dormir/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/best-tea-for-sleep/"
     error: null
 
   # ----- Ajouts ponctuels datafer (mode C, publies en immediat le 02/05/2026) -----
@@ -57,11 +57,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-02"
-    status: queued
+    status: done
     queued_date: "2026-05-02"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/calmer-palpitations-coeur-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/calm-heart-palpitations-naturally/"
     error: null
 
   - kw: "comment faire baisser la tension naturellement"
@@ -69,11 +69,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-02"
-    status: queued
+    status: done
     queued_date: "2026-05-02"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/faire-baisser-tension-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/lower-blood-pressure-naturally/"
     error: null
 
   - kw: "comment retrouver sa libido femme naturellement"
@@ -81,11 +81,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-02"
-    status: queued
+    status: done
     queued_date: "2026-05-02"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/retrouver-libido-femme-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/boost-female-libido-naturally/"
     error: null
 
   - kw: "huile de nigelle dangereux"
@@ -93,11 +93,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-02"
-    status: queued
+    status: done
     queued_date: "2026-05-02"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-de-nigelle-dangereux/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/black-seed-oil-dangers/"
     error: null
 
   - kw: "manque de vitamine d symptomes chez l adulte"
@@ -105,11 +105,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-02"
-    status: queued
+    status: done
     queued_date: "2026-05-02"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/manque-vitamine-d-symptomes-adulte/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/vitamin-d-deficiency-symptoms-adults/"
     error: null
 
   # ============ Semaine 19 (05/05 - 11/05) ============
@@ -118,11 +118,11 @@ articles:
     volume: 210
     kd: null
     scheduled_date: "2026-05-01"
-    status: queued
+    status: done
     queued_date: "2026-04-25"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-04-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-deboucher-nez/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oil-unblock-nose/"
     error: null
 
   - kw: "bourgeon de figuier utilisation et bienfaits"
@@ -130,11 +130,11 @@ articles:
     volume: 800
     kd: null
     scheduled_date: "2026-05-05"
-    status: queued
+    status: done
     queued_date: "2026-04-25"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-04-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/bourgeon-figuier-utilisation-bienfaits/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/fig-bud-uses-benefits/"
     error: null
 
   # ============ Semaine 20 (12/05 - 18/05) ============
@@ -143,11 +143,11 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-05-08"
-    status: queued
+    status: done
     queued_date: "2026-04-25"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-04-25"
+    published_url_fr: "https://ma-bonne-sante.com/blog/renforcer-systeme-immunitaire-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/strengthen-immune-system-naturally/"
     error: null
 
   - kw: "quelle fleur de bach pour le sommeil"
@@ -1042,11 +1042,11 @@ articles:
     volume: 2700
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-tea-tree-danger/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/tea-tree-essential-oil-dangers/"
     error: null
 
   - kw: "huile essentielle tea tree bienfaits"
@@ -1054,11 +1054,11 @@ articles:
     volume: 1727
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-tea-tree-bienfaits/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/tea-tree-essential-oil-benefits/"
     error: null
 
   - kw: "traitement allergie pollen naturel"
@@ -1066,11 +1066,11 @@ articles:
     volume: 677
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/traitement-allergie-pollen-naturel/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/natural-pollen-allergy-treatment/"
     error: null
 
   - kw: "huile essentielle tea tree mycose"
@@ -1078,11 +1078,11 @@ articles:
     volume: 590
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-tea-tree-mycose/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/tea-tree-essential-oil-fungal-infection/"
     error: null
 
   - kw: "huile essentielle tea tree partie intime"
@@ -1090,11 +1090,11 @@ articles:
     volume: 400
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huile-essentielle-tea-tree-partie-intime/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/tea-tree-essential-oil-intimate-area/"
     error: null
 
   - kw: "comment faire baisser le cholesterol naturellement"
@@ -1102,11 +1102,11 @@ articles:
     volume: 277
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-faire-baisser-cholesterol-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/lower-cholesterol-naturally/"
     error: null
 
   - kw: "bouffees de chaleur et thyroide"
@@ -1114,11 +1114,11 @@ articles:
     volume: 236
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/bouffees-de-chaleur-et-thyroide/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/hot-flashes-and-thyroid/"
     error: null
 
   - kw: "anti reflux gastrique naturel"
@@ -1126,11 +1126,11 @@ articles:
     volume: 170
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/anti-reflux-gastrique-naturel/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/natural-acid-reflux-remedy/"
     error: null
 
   - kw: "bouffees de chaleur traitement naturel"
@@ -1138,11 +1138,11 @@ articles:
     volume: 295
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/bouffees-de-chaleur-traitement-naturel/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/natural-hot-flashes-treatment/"
     error: null
 
   - kw: "gemmotherapie cassis bienfaits"
@@ -1150,9 +1150,9 @@ articles:
     volume: 1462
     kd: null
     scheduled_date: "2026-05-27"
-    status: queued
+    status: done
     queued_date: "2026-05-27"
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    published_date: "2026-05-27"
+    published_url_fr: "https://ma-bonne-sante.com/blog/gemmotherapie-cassis-bienfaits/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/blackcurrant-bud-gemmotherapy-benefits/"
     error: null
