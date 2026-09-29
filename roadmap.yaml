@@ -386,10 +386,10 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-09-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-29"
+    published_url_fr: "https://ma-bonne-sante.com/blog/quelle-plante-reveils-nocturnes/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/which-plant-nighttime-waking/"
     error: null
 
   # ============ Semaine 40 (28/09 - 04/10) ============
