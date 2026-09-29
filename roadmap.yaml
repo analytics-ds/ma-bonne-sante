@@ -398,10 +398,10 @@ articles:
     volume: 170
     kd: null
     scheduled_date: "2026-09-29"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-29"
+    published_url_fr: "https://ma-bonne-sante.com/blog/huiles-essentielles-sur-la-peau/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/essential-oils-on-skin/"
     error: null
 
   - kw: "comment soigner l insomnie naturellement"

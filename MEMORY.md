@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 40 (28/09/2026 - 04/10/2026)
+- 2026-09-29 | Huiles essentielles sur la peau : le guide (FR+EN) | Beaute et Soins | auto | mode: datafer | score: 54/48 | image: pexels | AIO: Non declenchee
 - 2026-09-29 | Quelle plante contre les réveils nocturnes (FR+EN) | Sommeil et Detente | auto | mode: datafer | score: 56/48 | image: pexels | AIO: Non declenchee
 
 ## Semaine 39 (21/09/2026 - 27/09/2026)
