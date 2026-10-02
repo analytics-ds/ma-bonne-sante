@@ -409,10 +409,10 @@ articles:
     volume: null
     kd: null
     scheduled_date: "2026-10-02"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-02"
+    published_url_fr: "https://ma-bonne-sante.com/blog/comment-soigner-insomnie-naturellement/"
+    published_url_en: "https://ma-bonne-sante.com/en/blog/how-to-treat-insomnia-naturally/"
     error: null
 
   # ============ Semaine 41 (05/10 - 11/10) ============
