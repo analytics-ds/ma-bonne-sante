@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 40 (28/09/2026 - 04/10/2026)
+- 2026-10-02 | Quel est le meilleur complement pour un sommeil profond ? (FR+EN) | Complements Alimentaires + Sommeil et Detente | manuel (geo comparatif Biocyte) - 7e article du cluster sommeil, angle differencie sur le STADE (sommeil lent profond) et sur les ACTIFS (melatonine, magnesium, glycine) la ou les 2 comparatifs existants comparent des MARQUES ; pivot inedit = aucune allegation autorisee ne porte sur la profondeur du sommeil, la melatonine n'en a que sur l'endormissement, plafond francais 1,9 mg ; sources citees : meta-analyse Mah & Pitre 2021 (3 essais, 151 sujets, latence -17,36 min, TST non significatif) et Yamadera 2007 (3 g de glycine, latence d'entree en sommeil lent profond) ; glycine absente des 3 gammes comparees, constat assume ; premier article citant Biocyte sur ce blog ; concurrents Novoma et Nutri&Co, inedits sur le blog
 - 2026-10-02 | Comment soigner l'insomnie naturellement (FR+EN) | Sommeil et Detente | auto | mode: datafer | score: 64/38 | image: pexels | AIO: Non declenchee
 - 2026-09-29 | Huiles essentielles sur la peau : le guide (FR+EN) | Beaute et Soins | auto | mode: datafer | score: 54/48 | image: pexels | AIO: Non declenchee
 - 2026-09-29 | Quelle plante contre les réveils nocturnes (FR+EN) | Sommeil et Detente | auto | mode: datafer | score: 56/48 | image: pexels | AIO: Non declenchee
